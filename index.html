@@ -82,7 +82,7 @@
     border:1px dashed var(--c,var(--line));color:var(--c,var(--muted));
   }
   .nav-chip-row{
-    display:flex;flex-wrap:nowrap;justify-content:center;gap:8px;
+    display:flex;flex-wrap:wrap;justify-content:center;gap:8px;
     margin-top:16px;
     overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
   }
@@ -104,6 +104,7 @@
   .signin-row-group{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
   .signin-row-group .fav-hint{font-size:12px;}
   .my-shows-signin{margin-bottom:16px;}
+  #account-btn{text-decoration:underline;}
   .link-btn{color:var(--teal);text-decoration:none;font-weight:600;background:none;border:none;padding:0;font:inherit;cursor:pointer;}
   .link-btn:hover{color:#6fe0c2;}
   .last-updated{font-size:13.2px;color:var(--muted);}
@@ -156,12 +157,13 @@
   }
   /* Same pill convention as the top .nav-chip-row links to the same destinations --
      these are the in-section equivalent, so they read as the same kind of control. */
-  .back-to-top-link, .jump-next-link{
+  .back-to-top-link, .jump-next-link, .venue-filter-toggle{
     font-size:12.6px;font-weight:600;white-space:nowrap;
     padding:5px 12px;border-radius:20px;
     background:rgba(79,209,176,0.07);border:1px solid var(--teal);
+    text-decoration:none;
   }
-  .back-to-top-link:hover, .jump-next-link:hover{background:rgba(79,209,176,0.16);}
+  .back-to-top-link:hover, .jump-next-link:hover, .venue-filter-toggle:hover{background:rgba(79,209,176,0.16);}
   .fav-input-row{display:flex;gap:8px;margin-bottom:10px;}
   .fav-input{
     flex:1;
@@ -201,25 +203,44 @@
   }
   .fav-chip button:hover{color:#fff;}
   .fav-hint{font-size:12.6px;color:var(--muted);}
-  .venue-filter-row{margin-bottom:14px;}
-  .venue-filter-select{
+  .venue-filter-dd{position:relative;}
+  .venue-filter-panel{
+    position:absolute;
+    top:0;left:0;
+    z-index:20;
     background:var(--panel);
-    border:1px solid var(--line);
-    color:var(--text);
-    border-radius:8px;
-    padding:8px 12px;
-    font-size:14.4px;
-    font-family:inherit;
-    width:100%;
-    max-width:280px;
+    border:1px solid var(--teal);
+    border-radius:10px;
+    padding:10px 12px;
+    min-width:230px;
+    max-height:260px;
+    overflow-y:auto;
+    box-shadow:0 8px 24px rgba(0,0,0,0.45);
   }
-  .venue-filter-select:focus{outline:none;border-color:var(--teal);}
+  .venue-filter-group-label{
+    font-size:11px;text-transform:uppercase;letter-spacing:0.06em;
+    color:var(--muted);margin:8px 0 4px;
+  }
+  .venue-filter-group-label:first-child{margin-top:0;}
+  .venue-filter-option{
+    display:flex;align-items:center;gap:8px;
+    font-size:13.8px;color:var(--text);
+    padding:4px 2px;cursor:pointer;
+  }
+  .venue-filter-option input{width:15px;height:15px;flex:0 0 auto;accent-color:var(--teal);cursor:pointer;}
+  .venue-filter-clear-btn{
+    margin-top:10px;width:100%;
+    background:none;border:1px dashed var(--line);color:var(--muted);
+    border-radius:8px;padding:6px;font-size:12.6px;cursor:pointer;font-family:inherit;
+  }
+  .venue-filter-clear-btn:hover{color:var(--text);border-color:var(--teal);}
   .signin-subscribe-row{
     display:flex;align-items:center;gap:8px;
     font-size:13px;color:var(--text);margin:10px 0 4px;cursor:pointer;
   }
   .signin-subscribe-row input{width:16px;height:16px;flex:0 0 auto;accent-color:var(--teal);cursor:pointer;}
   .site-footer{max-width:640px;margin:32px auto 24px auto;padding:0 16px;text-align:center;}
+  .site-footer .last-updated{margin-bottom:14px;}
   .back-to-top-btn{
     display:block;width:fit-content;margin:16px auto 0 auto;font-size:12.6px;font-weight:600;
     padding:5px 12px;border-radius:20px;
@@ -403,7 +424,7 @@
     .wrap{padding:18px 12px 60px;}
     .b2-title{font-size:31px;}
     .b2-frame{padding:12px 18px;}
-    .nav-chip-row{justify-content:flex-start;gap:6px;}
+    .nav-chip-row{justify-content:center;gap:6px;}
     .nav-chip{font-size:12.6px;padding:5px 11px;}
     .venue-chip, .fest-chip{font-size:12.6px;padding:4px 10px;}
     .section-title{font-size:21.8px;}
@@ -438,10 +459,6 @@
       <button type="button" class="nav-chip" id="jump-to-all-shows">All Shows ↓</button>
       <button type="button" class="nav-chip" id="jump-to-my-shows">My Shows ↓</button>
       <button type="button" class="nav-chip" id="jump-to-artists">Favorite Artists ↓</button>
-    </div>
-
-    <div class="status-row">
-      <span class="last-updated" id="last-updated"></span>
     </div>
   </header>
 
@@ -493,14 +510,13 @@
       <div class="section-title-row">
         <div class="section-title teal">All Shows</div>
         <div class="section-title-links">
+          <div class="venue-filter-dd" id="venue-filter-dd">
+            <button type="button" class="link-btn venue-filter-toggle" id="venue-filter-toggle">Show all venues ▾</button>
+            <div class="venue-filter-panel" id="venue-filter-panel" hidden></div>
+          </div>
           <button type="button" class="link-btn back-to-top-link">Back to top ↑</button>
         </div>
       </div>
-    </div>
-    <div class="venue-filter-row">
-      <select id="venue-filter-select" class="venue-filter-select" aria-label="Filter by venue">
-        <option value="">Show all venues</option>
-      </select>
     </div>
     <div id="main-list"></div>
   </section>
@@ -555,6 +571,7 @@
 </div>
 
 <footer class="site-footer">
+  <div class="last-updated" id="last-updated"></div>
   <button type="button" class="link-btn" id="subscribe-btn">Subscribe to email updates</button>
   &nbsp;·&nbsp;
   <button type="button" class="link-btn" id="privacy-toggle-btn">About &amp; Contact</button>
@@ -1405,7 +1422,7 @@ async function render(){
   // list, not a filtered view of this calendar. Optionally narrowed to one venue via
   // the dropdown at the top of the section.
   const mainEl = document.getElementById('main-list');
-  const filteredSorted = VENUE_FILTER ? sorted.filter(s => s.v === VENUE_FILTER) : sorted;
+  const filteredSorted = VENUE_FILTER.size ? sorted.filter(s => VENUE_FILTER.has(s.v)) : sorted;
   mainEl.innerHTML = filteredSorted.length
     ? groupByDayHTML(filteredSorted)
     : '<div class="empty">No shows for this venue right now.</div>';
@@ -1416,25 +1433,46 @@ async function render(){
   const venueEntries = Object.entries(VENUES).filter(([,v])=>v.type==='venue').sort((a,b)=> a[1].name.localeCompare(b[1].name));
   const festivalEntries = Object.entries(VENUES).filter(([,v])=>v.type==='festival').sort((a,b)=> a[1].name.localeCompare(b[1].name));
 
-  // All Shows venue filter dropdown -- built the same way as the chips above, but as
-  // one combined, alphabetized list with "Show all venues" first. Rebuilt every
-  // render() (venue list rarely changes) while preserving whatever's currently
-  // selected in VENUE_FILTER.
-  const filterSelectEl = document.getElementById('venue-filter-select');
-  if(filterSelectEl){
-    const optionsHtml = ['<option value="">Show all venues</option>'];
-    if(venueEntries.length){
-      optionsHtml.push('<optgroup label="Venues">' + venueEntries.map(([code,v])=>
-        `<option value="${escapeHtml(code)}">${escapeHtml(v.name)}</option>`
-      ).join('') + '</optgroup>');
-    }
-    if(festivalEntries.length){
-      optionsHtml.push('<optgroup label="Festivals">' + festivalEntries.map(([code,v])=>
-        `<option value="${escapeHtml(code)}">${escapeHtml(v.name)}</option>`
-      ).join('') + '</optgroup>');
-    }
-    filterSelectEl.innerHTML = optionsHtml.join('');
-    filterSelectEl.value = VENUES[VENUE_FILTER] ? VENUE_FILTER : '';
+  // All Shows venue filter -- a custom checkbox panel (not a native <select>) so more
+  // than one venue can be picked at once. Rebuilt every render() since the checked
+  // state has to reflect VENUE_FILTER (which a checkbox's own change handler below
+  // just updated), but the open/closed state is tracked separately in
+  // VENUE_FILTER_OPEN so a render() triggered by something unrelated (a star toggle
+  // elsewhere) doesn't slam the panel shut mid-selection.
+  const filterPanelEl = document.getElementById('venue-filter-panel');
+  const filterToggleEl = document.getElementById('venue-filter-toggle');
+  if(filterPanelEl && filterToggleEl){
+    const buildOptionsHtml = (entries) => entries.map(([code,v])=>`
+      <label class="venue-filter-option">
+        <input type="checkbox" data-filter-venue="${escapeHtml(code)}" ${VENUE_FILTER.has(code)?'checked':''}>
+        ${escapeHtml(v.name)}
+      </label>`).join('');
+    let panelHtml = '';
+    if(venueEntries.length) panelHtml += `<div class="venue-filter-group-label">Venues</div>${buildOptionsHtml(venueEntries)}`;
+    if(festivalEntries.length) panelHtml += `<div class="venue-filter-group-label">Festivals</div>${buildOptionsHtml(festivalEntries)}`;
+    panelHtml += `<button type="button" class="venue-filter-clear-btn" id="venue-filter-clear">Show all venues</button>`;
+    filterPanelEl.innerHTML = panelHtml;
+    filterPanelEl.hidden = !VENUE_FILTER_OPEN;
+
+    filterPanelEl.querySelectorAll('[data-filter-venue]').forEach(cb=>{
+      cb.addEventListener('change', ()=>{
+        const code = cb.getAttribute('data-filter-venue');
+        if(cb.checked) VENUE_FILTER.add(code); else VENUE_FILTER.delete(code);
+        render();
+      });
+    });
+    const clearBtn = document.getElementById('venue-filter-clear');
+    if(clearBtn) clearBtn.addEventListener('click', ()=>{
+      VENUE_FILTER.clear();
+      render();
+    });
+
+    const selectedCodes = Array.from(VENUE_FILTER);
+    filterToggleEl.textContent = selectedCodes.length === 0
+      ? 'Show all venues ▾'
+      : selectedCodes.length === 1
+        ? `${(VENUES[selectedCodes[0]] && VENUES[selectedCodes[0]].name) || selectedCodes[0]} ▾`
+        : `${selectedCodes.length} venues selected ▾`;
   }
 
   venueLinksEl.innerHTML = venueEntries.map(([code,v])=>
@@ -1459,7 +1497,8 @@ async function render(){
   lastUpdatedEl.innerHTML = `Last updated: <b>${stampStr}</b>`;
 }
 
-let VENUE_FILTER = ''; // '' = show all venues; otherwise a venue/festival code, set by the All Shows dropdown
+let VENUE_FILTER = new Set(); // empty = show all venues; otherwise the set of selected venue/festival codes
+let VENUE_FILTER_OPEN = false; // whether the All Shows venue-filter panel is currently expanded
 let CURRENT_VENUE_CODE = null;
 let CURRENT_VENUE_SORTED = null;
 
@@ -1597,9 +1636,21 @@ document.querySelectorAll('[data-jump-next]').forEach(btn=>{
   });
 });
 
-document.getElementById('venue-filter-select').addEventListener('change', (e)=>{
-  VENUE_FILTER = e.target.value;
-  render();
+document.getElementById('venue-filter-toggle').addEventListener('click', (e)=>{
+  e.stopPropagation();
+  VENUE_FILTER_OPEN = !VENUE_FILTER_OPEN;
+  document.getElementById('venue-filter-panel').hidden = !VENUE_FILTER_OPEN;
+});
+// Closes the panel on any click outside it -- e.g. tapping a show card behind it,
+// which position:absolute means the panel would otherwise just sit open over
+// indefinitely, covering whatever's underneath.
+document.addEventListener('click', (e)=>{
+  if(!VENUE_FILTER_OPEN) return;
+  const dd = document.getElementById('venue-filter-dd');
+  if(dd && !dd.contains(e.target)){
+    VENUE_FILTER_OPEN = false;
+    document.getElementById('venue-filter-panel').hidden = true;
+  }
 });
 
 document.getElementById('suggest-venue-signin-btn').addEventListener('click', toggleSignInSection);
