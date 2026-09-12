@@ -77,6 +77,9 @@ export default {
       if (path === '/api/suggest-venue' && request.method === 'POST') {
         return await handleSuggestVenue(request, env, headers);
       }
+      if (path === '/api/contact' && request.method === 'POST') {
+        return await handleContactUs(request, env, headers);
+      }
       if (path === '/api/admin/stats' && request.method === 'GET') {
         return await handleAdminStats(request, env, headers);
       }
@@ -168,10 +171,11 @@ async function handleRequestLink(request, env, headers) {
   // admin.html-initiated sign-in back to admin.html instead of the main site,
   // without opening up an arbitrary-redirect target.
   const returnTo = body && body.returnTo === 'admin' ? 'admin' : null;
-  // The sign-in form's weekly-digest checkbox, defaulted to checked -- only an
-  // explicit `false` opts out. Absent entirely (e.g. admin.html's own sign-in,
-  // which has no such checkbox) keeps the pre-checkbox default of subscribing.
-  const subscribe = !(body && body.subscribe === false);
+  // The sign-in form's weekly-digest checkbox -- true/false when a caller sends an
+  // explicit choice, or omitted entirely below when it doesn't (e.g. admin.html's
+  // own sign-in has no such checkbox), so handleVerify can tell "no signal" apart
+  // from an actual choice instead of assuming one.
+  const subscribe = body && typeof body.subscribe === 'boolean' ? body.subscribe : undefined;
 
   if (!isValidEmail(email)) {
     return json({ error: 'A valid email address is required' }, 400, headers);
@@ -512,9 +516,10 @@ async function handleVerify(request, env, headers) {
     return Response.redirect(`${siteUrl}?authError=invalid_or_expired`, 302);
   }
 
-  // subscribe defaults true here too, so a token minted before this field existed
-  // (or by a caller that never sends it) still gets the pre-checkbox behavior.
-  const { email, returnTo, subscribe = true } = JSON.parse(raw);
+  // subscribe is true/false when the sign-in checkbox sent an explicit choice, or
+  // absent entirely for a caller that never asked (admin.html's own sign-in has no
+  // such checkbox) -- see the branch below for what each case does.
+  const { email, returnTo, subscribe } = JSON.parse(raw);
   await env.SHOW_TRACKER_KV.delete(`token:${token}`); // one-time use
 
   const sessionToken = crypto.randomUUID();
@@ -524,12 +529,15 @@ async function handleVerify(request, env, headers) {
     { expirationTtl: 60 * 60 * 24 * 30 } // session lasts 30 days
   );
 
-  // Signing in subscribes you to the periodic digest only if the sign-in form's
-  // checkbox was left checked (the default) -- if it was explicitly unchecked, skip
-  // this entirely rather than subscribing anyway. Either way, ensureSubscribed's own
-  // "already unsubscribed before" guard still applies, so this never silently
-  // re-subscribes someone who'd deliberately opted out in the past.
-  if (subscribe) await ensureSubscribed(email, env);
+  // The sign-in form's weekly-digest checkbox is this account's live, current
+  // preference, decided fresh at every sign-in -- checked subscribes them right now
+  // (even overriding a past unsubscribe, the same as explicitly clicking "Subscribe
+  // to email updates"), unchecked unsubscribes them right now (even if they were
+  // already subscribed). `subscribe === undefined` (no checkbox sent at all, e.g.
+  // admin.html's own sign-in) leaves whatever subscription state already exists
+  // untouched, since there's no signal here to act on either way.
+  if (subscribe === true) await subscribeEmail(email, env);
+  else if (subscribe === false) await markUnsubscribed(email, env);
 
   // returnTo === 'admin' sends an admin.html-initiated sign-in back there instead of
   // the main site -- admin.html reads ?session=/&email= off its own URL the same way
@@ -539,24 +547,41 @@ async function handleVerify(request, env, headers) {
   return Response.redirect(redirectUrl, 302);
 }
 
-async function ensureSubscribed(email, env) {
+// Explicit, unconditional subscribe -- used by the sign-in form's checkbox (when
+// checked) and the footer's "Subscribe to email updates" button. Both are the user
+// actively choosing to receive the digest right now, so this overrides any past
+// unsubscribe rather than deferring to it the way an implicit/automatic subscribe
+// would.
+async function subscribeEmail(email, env) {
   const existing = await env.SHOW_TRACKER_KV.get(`subscriber:${email}`);
-  if (existing) return; // already actively subscribed
-
-  // The bug this fixes: unsubscribing used to just delete the subscriber record,
-  // leaving no trace of the choice — so the very next sign-in would silently
-  // re-subscribe someone who'd deliberately opted out. Checking this separate,
-  // permanent marker is what actually makes an unsubscribe stick.
-  const previouslyUnsubscribed = await env.SHOW_TRACKER_KV.get(`unsubscribed:${email}`);
-  if (previouslyUnsubscribed) return;
+  if (existing) return; // already subscribed; no need to rotate the token
 
   const unsubscribeToken = crypto.randomUUID();
   await env.SHOW_TRACKER_KV.put(`subscriber:${email}`, JSON.stringify({ subscribedAt: Date.now(), unsubscribeToken }));
   await env.SHOW_TRACKER_KV.put(`unsubtoken:${unsubscribeToken}`, email);
+  // Explicitly opting back in overrides any prior unsubscribe — clear that marker so
+  // it doesn't linger and confuse anything later.
+  await env.SHOW_TRACKER_KV.delete(`unsubscribed:${email}`);
 }
 
-// Lets someone explicitly (re)subscribe — the only path back in for someone who
-// previously unsubscribed, now that sign-in alone deliberately won't re-subscribe them.
+// Deletes an active subscription (if any) and permanently marks the email as opted
+// out, so nothing silently resubscribes them later. Used by the sign-in form's
+// checkbox (when unchecked) and the confirmed unsubscribe-link click.
+async function markUnsubscribed(email, env) {
+  const raw = await env.SHOW_TRACKER_KV.get(`subscriber:${email}`);
+  if (raw) {
+    const { unsubscribeToken } = JSON.parse(raw);
+    if (unsubscribeToken) await env.SHOW_TRACKER_KV.delete(`unsubtoken:${unsubscribeToken}`);
+  }
+  await env.SHOW_TRACKER_KV.delete(`subscriber:${email}`);
+  // No expiry: this should stick until they explicitly resubscribe (checking the
+  // sign-in box again, or "Subscribe to email updates") -- without a standing marker,
+  // the next unrelated sign-in would have no way to know they'd opted out.
+  await env.SHOW_TRACKER_KV.put(`unsubscribed:${email}`, JSON.stringify({ unsubscribedAt: Date.now() }));
+}
+
+// Lets someone explicitly (re)subscribe from the footer link -- the same action as
+// checking the sign-in checkbox, for someone who's already signed in.
 async function handleSubscribe(request, env, headers) {
   const email = await getEmailFromSession(request, env);
   if (!email) return json({ error: 'Not signed in' }, 401, headers);
@@ -565,14 +590,7 @@ async function handleSubscribe(request, env, headers) {
   if (existing) {
     return json({ ok: true, message: "You're already subscribed." }, 200, headers);
   }
-
-  const unsubscribeToken = crypto.randomUUID();
-  await env.SHOW_TRACKER_KV.put(`subscriber:${email}`, JSON.stringify({ subscribedAt: Date.now(), unsubscribeToken }));
-  await env.SHOW_TRACKER_KV.put(`unsubtoken:${unsubscribeToken}`, email);
-  // Explicitly opting back in overrides any prior unsubscribe — clear that marker so
-  // it doesn't linger and confuse anything later.
-  await env.SHOW_TRACKER_KV.delete(`unsubscribed:${email}`);
-
+  await subscribeEmail(email, env);
   return json({ ok: true, message: "You're subscribed! You'll get the next digest." }, 200, headers);
 }
 
@@ -609,12 +627,7 @@ async function handleUnsubscribe(request, env, headers) {
     );
   }
 
-  await env.SHOW_TRACKER_KV.delete(`subscriber:${email}`);
-  await env.SHOW_TRACKER_KV.delete(`unsubtoken:${token}`);
-  // This is the actual fix — without this, nothing remembers the unsubscribe ever
-  // happened once the record above is deleted, so the next sign-in silently
-  // re-subscribes them. No expiry: this should stick until they explicitly resubscribe.
-  await env.SHOW_TRACKER_KV.put(`unsubscribed:${email}`, JSON.stringify({ unsubscribedAt: Date.now() }));
+  await markUnsubscribed(email, env);
 
   return new Response(
     `<p>You've been unsubscribed from the Lowcountry Show Tracker digest. Your My Shows list and Favorite Artists are untouched — you just won't get the periodic email anymore. You can re-subscribe anytime by signing in again.</p>`,
@@ -1408,6 +1421,105 @@ async function sendVenueSuggestionEmail(toEmail, venueName, html, env, resendApi
   }
 }
 
+// ---- Contact Us ----
+// Deliberately public and unauthenticated, unlike Suggest a Venue -- the footer no
+// longer shows a plain admin@ email address (to keep it off spam-bot scrapers), so
+// this form is the only way a visitor can reach the owner from the site itself.
+// Turnstile + a per-IP rate limit take the place of the per-email limit Suggest a
+// Venue uses, since there's no signed-in identity to key on here.
+async function handleContactUs(request, env, headers) {
+  const body = await request.json().catch(() => null);
+  const message = body && typeof body.message === 'string' ? body.message.trim() : '';
+  const replyEmail = body && typeof body.email === 'string' ? body.email.trim().toLowerCase() : '';
+  const turnstileToken = body && body.turnstileToken ? String(body.turnstileToken) : null;
+
+  if (!message) {
+    return json({ error: 'Please enter a message' }, 400, headers);
+  }
+  if (message.length > 2000 || replyEmail.length > 200) {
+    return json({ error: 'That input is too long' }, 400, headers);
+  }
+  if (replyEmail && !isValidEmail(replyEmail)) {
+    return json({ error: "That email address doesn't look valid" }, 400, headers);
+  }
+  // Defense in depth against stored XSS in admin.html, which will display these
+  // values -- same restriction already applied to venue suggestions and favorites.
+  if (/[<>]/.test(message) || /[<>]/.test(replyEmail)) {
+    return json({ error: 'Please remove < and > characters from your submission' }, 400, headers);
+  }
+
+  const clientIp = request.headers.get('CF-Connecting-IP') || 'unknown';
+  const turnstileSecretKey = await getTurnstileSecretKey(env);
+  if (turnstileSecretKey) {
+    const verified = await verifyTurnstileToken(turnstileToken, clientIp, turnstileSecretKey);
+    if (!verified) {
+      return json({ error: 'Verification failed — please try again' }, 403, headers);
+    }
+  }
+
+  // Rate limit: at most one message per source IP per 60 seconds. Checked after
+  // validation so a rejected/invalid attempt doesn't consume the limit and block a
+  // legitimate follow-up submission.
+  const rateLimitKey = `contact-ratelimit:${clientIp}`;
+  const alreadySubmitted = await env.SHOW_TRACKER_KV.get(rateLimitKey);
+  if (alreadySubmitted) {
+    return json({ error: 'Please wait a bit before sending another message' }, 429, headers);
+  }
+  await env.SHOW_TRACKER_KV.put(rateLimitKey, '1', { expirationTtl: 60 });
+
+  const id = crypto.randomUUID();
+  const record = { email: replyEmail || null, message, submittedAt: Date.now() };
+  await env.SHOW_TRACKER_KV.put(`contact:${id}`, JSON.stringify(record));
+
+  const resendApiKey = await getResendApiKey(env);
+  if (resendApiKey) {
+    try {
+      const html = buildContactEmailHTML(record);
+      const ownerEmail = env.OWNER_EMAIL || 'gigalertchs@gmail.com';
+      await sendContactEmail(ownerEmail, html, env, resendApiKey);
+    } catch (err) {
+      // Already safely stored in KV even if the notification email fails -- don't
+      // fail the whole request just because the "hey, look at this" ping didn't go out.
+      console.error('Failed to send Contact Us notification:', err);
+    }
+  }
+
+  return json({ ok: true, message: "Thanks — your message has been sent!" }, 200, headers);
+}
+
+function buildContactEmailHTML({ email, message }) {
+  return `<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body style="margin:0; padding:0; background-color:#f4f2ec; font-family:Arial, Helvetica, sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f2ec;">
+<tr><td align="center" style="padding:24px 12px;">
+  <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px; width:100%; background-color:#ffffff; border-radius:8px; overflow:hidden;">
+    <tr><td style="background-color:#12141c; padding:24px; text-align:center;">
+      <div style="font-family:Georgia, 'Times New Roman', serif; letter-spacing:1px; color:#f0a83c; font-size:18px; font-weight:bold;">NEW CONTACT US MESSAGE</div>
+    </td></tr>
+    <tr><td style="padding:20px 24px; font-size:14px; color:#333333; line-height:1.6;">
+      <p><strong>Message:</strong> ${escapeHtml(message)}</p>
+      <p><strong>From:</strong> ${email ? escapeHtml(email) : '(no email provided)'}</p>
+    </td></tr>
+  </table>
+</td></tr>
+</table>
+</body></html>`;
+}
+
+async function sendContactEmail(toEmail, html, env, resendApiKey) {
+  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Tracker <shows@gigalertchs.com>';
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: { 'Authorization': `Bearer ${resendApiKey}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ from, to: toEmail, subject: 'New Contact Us message', html })
+  });
+  if (!res.ok) {
+    const errBody = await res.text().catch(() => '');
+    throw new Error(`Resend API responded ${res.status}: ${errBody}`);
+  }
+}
+
 // ---- Admin stats ----
 // Gated to the site owner's email specifically, not just "anyone signed in" — this
 // exposes other people's email addresses (subscribers, suggestion submitters), which
@@ -1421,11 +1533,12 @@ async function handleAdminStats(request, env, headers) {
     return json({ error: 'Not authorized' }, 403, headers);
   }
 
-  const [subscriberKeys, userKeys, suggestionKeys, unsubscribedKeys] = await Promise.all([
+  const [subscriberKeys, userKeys, suggestionKeys, unsubscribedKeys, contactKeys] = await Promise.all([
     listAllKeys(env, 'subscriber:'),
     listAllKeys(env, 'user:'),
     listAllKeys(env, 'suggestion:'),
-    listAllKeys(env, 'unsubscribed:')
+    listAllKeys(env, 'unsubscribed:'),
+    listAllKeys(env, 'contact:')
   ]);
 
   // Best-effort: stats for everything else here come straight from KV, but "which
@@ -1519,6 +1632,10 @@ async function handleAdminStats(request, env, headers) {
   const suggestions = suggestionRows.filter(Boolean).map(raw => JSON.parse(raw));
   suggestions.sort((a, b) => (b.submittedAt || 0) - (a.submittedAt || 0));
 
+  const contactRows = await Promise.all(contactKeys.map(key => env.SHOW_TRACKER_KV.get(key.name)));
+  const contactMessages = contactRows.filter(Boolean).map(raw => JSON.parse(raw));
+  contactMessages.sort((a, b) => (b.submittedAt || 0) - (a.submittedAt || 0));
+
   const [digestDelivered, digestOpened, digestClicked, cloudflareStats] = await Promise.all([
     digestStatsWindow(env, 'delivered'),
     digestStatsWindow(env, 'opened'),
@@ -1551,6 +1668,11 @@ async function handleAdminStats(request, env, headers) {
       count: suggestions.length,
       list: suggestions,
       window: windowCounts(suggestions, s => s.submittedAt)
+    },
+    contactMessages: {
+      count: contactMessages.length,
+      list: contactMessages,
+      window: windowCounts(contactMessages, c => c.submittedAt)
     }
   }, 200, headers);
 }
