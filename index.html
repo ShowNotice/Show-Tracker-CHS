@@ -66,7 +66,7 @@
   }
   .b2-title{
     font-family:'Bebas Neue',sans-serif;font-size:43px;letter-spacing:0.04em;color:var(--amber);
-    text-shadow:0 0 16px rgba(240,168,60,0.4);position:relative;line-height:1;
+    text-shadow:0 0 20px rgba(240,168,60,0.55), 0 0 42px rgba(79,209,176,0.15);position:relative;line-height:1;
   }
   .tagline{font-size:13.8px;color:var(--muted);font-style:italic;margin-top:10px;}
   .chip-row{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;margin-top:16px;}
@@ -83,7 +83,7 @@
   }
   .nav-chip-row{
     display:flex;flex-wrap:nowrap;justify-content:center;gap:8px;
-    margin-top:18px;padding-top:14px;border-top:1px solid var(--line);
+    margin-top:16px;
     overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;
   }
   .nav-chip-row::-webkit-scrollbar{display:none;}
@@ -96,13 +96,14 @@
   }
   .nav-chip:hover{background:rgba(79,209,176,0.16);color:#6fe0c2;}
   .status-row{
-    display:flex;justify-content:space-between;align-items:center;
+    display:flex;justify-content:center;align-items:center;
     flex-wrap:wrap;gap:10px;
     padding-top:12px;border-top:1px solid var(--line);
     font-size:13.2px;color:var(--muted);
   }
   .signin-row-group{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
   .signin-row-group .fav-hint{font-size:12px;}
+  .my-shows-signin{margin-bottom:16px;}
   .link-btn{color:var(--teal);text-decoration:none;font-weight:600;background:none;border:none;padding:0;font:inherit;cursor:pointer;}
   .link-btn:hover{color:#6fe0c2;}
   .last-updated{font-size:13.2px;color:var(--muted);}
@@ -200,6 +201,19 @@
   }
   .fav-chip button:hover{color:#fff;}
   .fav-hint{font-size:12.6px;color:var(--muted);}
+  .venue-filter-row{margin-bottom:14px;}
+  .venue-filter-select{
+    background:var(--panel);
+    border:1px solid var(--line);
+    color:var(--text);
+    border-radius:8px;
+    padding:8px 12px;
+    font-size:14.4px;
+    font-family:inherit;
+    width:100%;
+    max-width:280px;
+  }
+  .venue-filter-select:focus{outline:none;border-color:var(--teal);}
   .signin-subscribe-row{
     display:flex;align-items:center;gap:8px;
     font-size:13px;color:var(--text);margin:10px 0 4px;cursor:pointer;
@@ -350,7 +364,11 @@
   }
   .venue-list a{color:var(--amber);text-decoration:none;font-weight:600;}
   .venue-list a:hover{color:#ffc773;}
-  .venue-view{margin-bottom:20px;}
+  .venue-view{
+    margin-bottom:20px;
+    border-top:3px solid var(--vc, var(--amber));
+    padding-top:14px;
+  }
   .back-link{
     display:inline-block;
     flex:0 0 auto;
@@ -369,14 +387,16 @@
     font-family:'Bebas Neue',sans-serif;
     font-size:32.2px;
     letter-spacing:0.04em;
-    color:var(--amber);
+    color:var(--vc, var(--amber));
     margin:0 0 4px;
   }
+  .venue-view .back-link{color:var(--vc, var(--amber));border-color:var(--vc, var(--amber-dim));}
+  .venue-view .back-link:hover{color:var(--vc, #ffc773);border-color:var(--vc, var(--amber));}
   .venue-view .venue-address{font-size:14.9px;color:var(--muted);margin-top:2px;margin-bottom:6px;overflow-wrap:anywhere;}
   .venue-view .venue-address a{color:var(--muted);text-decoration:none;border-bottom:1px dotted rgba(149,153,173,0.5);}
-  .venue-view .venue-address a:hover{color:var(--amber);border-bottom-color:var(--amber);}
+  .venue-view .venue-address a:hover{color:var(--vc, var(--amber));border-bottom-color:var(--vc, var(--amber));}
   .venue-view .venue-site-link{font-size:13.8px;color:var(--muted);margin-bottom:18px;display:block;overflow-wrap:anywhere;}
-  .venue-view .venue-site-link a{color:var(--amber);text-decoration:none;}
+  .venue-view .venue-site-link a{color:var(--vc, var(--amber));text-decoration:none;font-weight:600;}
   .empty{color:var(--muted);font-size:14.9px;padding:8px 0;}
   .flag{font-size:12.6px;color:var(--muted);font-style:italic;width:100%;}
   @media (max-width: 640px){
@@ -414,37 +434,16 @@
   </div>
 
   <header class="top">
-    <div class="chip-row" id="venue-links"></div>
-    <div class="chip-row" id="festival-links"></div>
-
     <div class="nav-chip-row" id="nav-chip-row">
-      <button type="button" class="nav-chip" id="jump-to-my-shows">My Shows ↓</button>
       <button type="button" class="nav-chip" id="jump-to-all-shows">All Shows ↓</button>
+      <button type="button" class="nav-chip" id="jump-to-my-shows">My Shows ↓</button>
       <button type="button" class="nav-chip" id="jump-to-artists">Favorite Artists ↓</button>
-      <button type="button" class="nav-chip" id="jump-to-suggest-venue">Suggest a Venue ↓</button>
     </div>
 
     <div class="status-row">
-      <span class="signin-row-group">
-        <button type="button" class="link-btn" id="account-btn">Sign in to sync across devices</button>
-        <span class="fav-hint" id="no-spam-note">No spam, ever.</span>
-      </span>
       <span class="last-updated" id="last-updated"></span>
     </div>
   </header>
-
-  <section class="block" id="sign-in-section" style="display:none;">
-    <div class="section-title teal">Sign In</div>
-    <div class="fav-input-row">
-      <input type="email" id="signin-email" class="fav-input" placeholder="your@email.com">
-    </div>
-    <label class="signin-subscribe-row">
-      <input type="checkbox" id="signin-subscribe-check" checked>
-      Send me a once-a-week email of new shows
-    </label>
-    <div id="signin-turnstile" style="margin:10px 0;"></div>
-    <button type="button" id="signin-submit-btn" class="fav-add-btn">Send sign-in link</button>
-  </section>
 
   <div id="venue-view" class="venue-view" style="display:none;"></div>
 
@@ -466,10 +465,25 @@
       <div class="section-title-row">
         <div class="section-title gold">My Shows</div>
         <div class="section-title-links">
-          <button type="button" class="link-btn back-to-top-link">Back to top ↑</button>
           <button type="button" class="link-btn jump-next-link" data-jump-next="all-shows-section">All Shows ↓</button>
+          <button type="button" class="link-btn jump-next-link" data-jump-next="favorite-artists-mgmt">Favorite Artists ↓</button>
         </div>
       </div>
+    </div>
+    <div class="signin-row-group my-shows-signin">
+      <button type="button" class="link-btn" id="account-btn">Sign in to sync across devices</button>
+      <span class="fav-hint" id="no-spam-note">No spam, ever.</span>
+    </div>
+    <div id="sign-in-section" style="display:none;margin-bottom:16px;">
+      <div class="fav-input-row">
+        <input type="email" id="signin-email" class="fav-input" placeholder="your@email.com">
+      </div>
+      <label class="signin-subscribe-row">
+        <input type="checkbox" id="signin-subscribe-check" checked>
+        Send me a once-a-week email of new shows
+      </label>
+      <div id="signin-turnstile" style="margin:10px 0;"></div>
+      <button type="button" id="signin-submit-btn" class="fav-add-btn">Send sign-in link</button>
     </div>
     <div id="watch-list"></div>
   </section>
@@ -480,9 +494,13 @@
         <div class="section-title teal">All Shows</div>
         <div class="section-title-links">
           <button type="button" class="link-btn back-to-top-link">Back to top ↑</button>
-          <button type="button" class="link-btn jump-next-link" data-jump-next="favorite-artists-mgmt">Favorite Artists ↓</button>
         </div>
       </div>
+    </div>
+    <div class="venue-filter-row">
+      <select id="venue-filter-select" class="venue-filter-select" aria-label="Filter by venue">
+        <option value="">Show all venues</option>
+      </select>
     </div>
     <div id="main-list"></div>
   </section>
@@ -493,7 +511,6 @@
         <div class="section-title teal">Favorite Artists</div>
         <div class="section-title-links">
           <button type="button" class="link-btn back-to-top-link">Back to top ↑</button>
-          <button type="button" class="link-btn jump-next-link" data-jump-next="suggest-venue-section">Suggest a Venue ↓</button>
         </div>
       </div>
     </div>
@@ -527,6 +544,11 @@
       <div id="suggest-venue-turnstile" style="margin:10px 0;"></div>
       <button type="button" id="suggest-venue-submit-btn" class="fav-add-btn">Suggest</button>
     </div>
+  </section>
+
+  <section class="block" id="venue-directory-section">
+    <div class="chip-row" id="venue-links"></div>
+    <div class="chip-row" id="festival-links"></div>
   </section>
   </div>
 
@@ -1380,17 +1402,40 @@ async function render(){
     : '<div class="empty">No shows here yet — click ★ on any show to add it.</div>';
 
   // main list grouped by day — My Shows above is intentionally a separate personal
-  // list, not a filtered view of this calendar.
+  // list, not a filtered view of this calendar. Optionally narrowed to one venue via
+  // the dropdown at the top of the section.
   const mainEl = document.getElementById('main-list');
-  mainEl.innerHTML = sorted.length
-    ? groupByDayHTML(sorted)
-    : '<div class="empty">No shows on the calendar yet.</div>';
+  const filteredSorted = VENUE_FILTER ? sorted.filter(s => s.v === VENUE_FILTER) : sorted;
+  mainEl.innerHTML = filteredSorted.length
+    ? groupByDayHTML(filteredSorted)
+    : '<div class="empty">No shows for this venue right now.</div>';
 
   // venue chips, colored per venue, grouped: standing venues row, then festivals row
   const venueLinksEl = document.getElementById('venue-links');
   const festivalLinksEl = document.getElementById('festival-links');
   const venueEntries = Object.entries(VENUES).filter(([,v])=>v.type==='venue').sort((a,b)=> a[1].name.localeCompare(b[1].name));
   const festivalEntries = Object.entries(VENUES).filter(([,v])=>v.type==='festival').sort((a,b)=> a[1].name.localeCompare(b[1].name));
+
+  // All Shows venue filter dropdown -- built the same way as the chips above, but as
+  // one combined, alphabetized list with "Show all venues" first. Rebuilt every
+  // render() (venue list rarely changes) while preserving whatever's currently
+  // selected in VENUE_FILTER.
+  const filterSelectEl = document.getElementById('venue-filter-select');
+  if(filterSelectEl){
+    const optionsHtml = ['<option value="">Show all venues</option>'];
+    if(venueEntries.length){
+      optionsHtml.push('<optgroup label="Venues">' + venueEntries.map(([code,v])=>
+        `<option value="${escapeHtml(code)}">${escapeHtml(v.name)}</option>`
+      ).join('') + '</optgroup>');
+    }
+    if(festivalEntries.length){
+      optionsHtml.push('<optgroup label="Festivals">' + festivalEntries.map(([code,v])=>
+        `<option value="${escapeHtml(code)}">${escapeHtml(v.name)}</option>`
+      ).join('') + '</optgroup>');
+    }
+    filterSelectEl.innerHTML = optionsHtml.join('');
+    filterSelectEl.value = VENUES[VENUE_FILTER] ? VENUE_FILTER : '';
+  }
 
   venueLinksEl.innerHTML = venueEntries.map(([code,v])=>
     `<button type="button" class="venue-chip" style="--c:${escapeHtml(v.color)}" data-venue="${escapeHtml(code)}">${escapeHtml(v.name)}</button>`
@@ -1414,6 +1459,7 @@ async function render(){
   lastUpdatedEl.innerHTML = `Last updated: <b>${stampStr}</b>`;
 }
 
+let VENUE_FILTER = ''; // '' = show all venues; otherwise a venue/festival code, set by the All Shows dropdown
 let CURRENT_VENUE_CODE = null;
 let CURRENT_VENUE_SORTED = null;
 
@@ -1446,8 +1492,17 @@ function showVenueView(code, sorted){
     : '';
   const venueSite = escapeHtml(safeUrl(venue.site));
   const siteLine = venueSite
-    ? `<span class="venue-site-link"><a href="${venueSite}" target="_blank" rel="noopener">${venueSite} ↗</a></span>`
+    ? `<span class="venue-site-link"><a href="${venueSite}" target="_blank" rel="noopener">Website ↗</a></span>`
     : '';
+
+  // Gives each venue's own page a distinct accent (matching that venue's pill color
+  // in the directory at the bottom of the site) instead of every venue page looking
+  // identically amber-on-amber. removeProperty (rather than setting to '') when a
+  // venue has no color, so the var(--vc, var(--amber)) CSS fallback actually kicks
+  // in -- an empty custom property value is still "set", so var()'s fallback wouldn't
+  // apply if this used '' instead.
+  if(venue.color) viewEl.style.setProperty('--vc', venue.color);
+  else viewEl.style.removeProperty('--vc');
 
   viewEl.innerHTML = `
     <div class="sticky-head">
@@ -1519,11 +1574,6 @@ document.getElementById('jump-to-artists').addEventListener('click', ()=>{
   document.getElementById('favorite-artists-mgmt').scrollIntoView({behavior:'smooth', block:'start'});
 });
 
-document.getElementById('jump-to-suggest-venue').addEventListener('click', ()=>{
-  showAllView();
-  document.getElementById('suggest-venue-section').scrollIntoView({behavior:'smooth', block:'start'});
-});
-
 document.getElementById('jump-to-my-shows').addEventListener('click', ()=>{
   showAllView();
   document.getElementById('my-shows-section').scrollIntoView({behavior:'smooth', block:'start'});
@@ -1545,6 +1595,11 @@ document.querySelectorAll('[data-jump-next]').forEach(btn=>{
     const targetEl = document.getElementById(btn.getAttribute('data-jump-next'));
     if(targetEl) targetEl.scrollIntoView({behavior:'smooth', block:'start'});
   });
+});
+
+document.getElementById('venue-filter-select').addEventListener('change', (e)=>{
+  VENUE_FILTER = e.target.value;
+  render();
 });
 
 document.getElementById('suggest-venue-signin-btn').addEventListener('click', toggleSignInSection);
