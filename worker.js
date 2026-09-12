@@ -803,10 +803,11 @@ async function fetchShowData(env) {
 }
 
 // Every upcoming show goes in the digest — no cutoff on how far out. The only
-// filtering is dropping shows more than 1 day in the past, same rule the site itself
-// uses, so the email never lists something that's already happened.
+// filtering is dropping shows before today, same rule the site itself uses (no grace
+// period -- a show drops off the day after it happens), so the email never lists
+// something that's already happened.
 function upcomingShows(shows) {
-  const cutoff = new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  const cutoff = new Date().toISOString().slice(0, 10);
   return shows
     .filter(s => (s.e || s.d) >= cutoff)
     .sort((a, b) => a.d.localeCompare(b.d));
