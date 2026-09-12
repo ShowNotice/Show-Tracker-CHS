@@ -168,6 +168,10 @@ async function handleRequestLink(request, env, headers) {
   // admin.html-initiated sign-in back to admin.html instead of the main site,
   // without opening up an arbitrary-redirect target.
   const returnTo = body && body.returnTo === 'admin' ? 'admin' : null;
+  // The sign-in form's weekly-digest checkbox, defaulted to checked -- only an
+  // explicit `false` opts out. Absent entirely (e.g. admin.html's own sign-in,
+  // which has no such checkbox) keeps the pre-checkbox default of subscribing.
+  const subscribe = !(body && body.subscribe === false);
 
   if (!isValidEmail(email)) {
     return json({ error: 'A valid email address is required' }, 400, headers);
@@ -215,7 +219,7 @@ async function handleRequestLink(request, env, headers) {
   const token = crypto.randomUUID();
   await env.SHOW_TRACKER_KV.put(
     `token:${token}`,
-    JSON.stringify(returnTo ? { email, returnTo } : { email }),
+    JSON.stringify({ email, ...(returnTo ? { returnTo } : {}), subscribe }),
     { expirationTtl: 900 } // link is valid for 15 minutes
   );
 
@@ -475,9 +479,9 @@ async function sendMagicLinkEmail(email, link, env, resendApiKey) {
     body: JSON.stringify({
       from,
       to: email,
-      subject: 'Your Lowcountry Show Tracker sign-in link',
-      html: `<p>Click below to sign in to your Show Tracker account:</p>
-             <p><a href="${link}">${link}</a></p>
+      subject: 'Your Show Notice sign-in link',
+      html: `<p>Click below to sign in to your Show Notice account:</p>
+             <p><a href="${link}">Sign In Here</a></p>
              <p>This link expires in 15 minutes. If you didn't request this, you can ignore it.</p>`
     })
   });
@@ -508,7 +512,9 @@ async function handleVerify(request, env, headers) {
     return Response.redirect(`${siteUrl}?authError=invalid_or_expired`, 302);
   }
 
-  const { email, returnTo } = JSON.parse(raw);
+  // subscribe defaults true here too, so a token minted before this field existed
+  // (or by a caller that never sends it) still gets the pre-checkbox behavior.
+  const { email, returnTo, subscribe = true } = JSON.parse(raw);
   await env.SHOW_TRACKER_KV.delete(`token:${token}`); // one-time use
 
   const sessionToken = crypto.randomUUID();
@@ -518,10 +524,12 @@ async function handleVerify(request, env, headers) {
     { expirationTtl: 60 * 60 * 24 * 30 } // session lasts 30 days
   );
 
-  // Signing in also subscribes you to the periodic digest, unless you've already
-  // unsubscribed before (in which case we leave that choice alone rather than
-  // silently re-subscribing someone who opted out).
-  await ensureSubscribed(email, env);
+  // Signing in subscribes you to the periodic digest only if the sign-in form's
+  // checkbox was left checked (the default) -- if it was explicitly unchecked, skip
+  // this entirely rather than subscribing anyway. Either way, ensureSubscribed's own
+  // "already unsubscribed before" guard still applies, so this never silently
+  // re-subscribes someone who'd deliberately opted out in the past.
+  if (subscribe) await ensureSubscribed(email, env);
 
   // returnTo === 'admin' sends an admin.html-initiated sign-in back there instead of
   // the main site -- admin.html reads ?session=/&email= off its own URL the same way
