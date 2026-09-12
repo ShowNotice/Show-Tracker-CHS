@@ -198,6 +198,11 @@
   }
   .fav-chip button:hover{color:#fff;}
   .fav-hint{font-size:12.6px;color:var(--muted);}
+  .signin-subscribe-row{
+    display:flex;align-items:center;gap:8px;
+    font-size:13px;color:var(--text);margin:10px 0 4px;cursor:pointer;
+  }
+  .signin-subscribe-row input{width:16px;height:16px;flex:0 0 auto;accent-color:var(--teal);cursor:pointer;}
   .site-footer{max-width:640px;margin:32px auto 24px auto;padding:0 16px;text-align:center;}
   .back-to-top-btn{
     display:block;width:fit-content;margin:16px auto 0 auto;font-size:12.6px;font-weight:600;
@@ -209,6 +214,10 @@
   .privacy-details{margin-top:10px;text-align:left;font-size:12.6px;color:var(--muted);line-height:1.6;}
   .privacy-details p{margin:0 0 10px 0;}
   .privacy-details a{color:var(--teal);}
+  .contact-us{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:12.6px;color:var(--muted);line-height:1.6;}
+  .contact-us p{margin:0;}
+  .contact-us .contact-us-title{margin:0 0 4px 0;font-weight:700;color:var(--text);}
+  .contact-us a{color:var(--teal);}
   .day-group{margin-bottom:26px;}
   .day-head{
     font-family:'Bebas Neue',sans-serif;
@@ -426,6 +435,11 @@
     <div class="fav-input-row">
       <input type="email" id="signin-email" class="fav-input" placeholder="your@email.com">
     </div>
+    <div class="fav-hint">No spam, ever — just your sign-in link.</div>
+    <label class="signin-subscribe-row">
+      <input type="checkbox" id="signin-subscribe-check" checked>
+      Send me a once-a-week email of new shows
+    </label>
     <div id="signin-turnstile" style="margin:10px 0;"></div>
     <button type="button" id="signin-submit-btn" class="fav-add-btn">Send sign-in link</button>
   </section>
@@ -526,6 +540,10 @@
     <p>Digest emails include open and click tracking (via our email provider, Resend) so we can see whether emails are opened and which links get clicked — this is to understand what's actually useful, not to build profiles on anyone. We don't sell or share your information with advertisers or any other third party.</p>
     <p>Site hosting, backend storage, and email delivery are handled by GitHub Pages, Cloudflare, and Resend respectively, each under their own privacy practices.</p>
     <p>Unsubscribe from emails anytime via the link in any digest — once you do, signing back in won't automatically re-subscribe you; use the "Subscribe to email updates" link above if you change your mind. To ask us to delete your data entirely, email <a href="mailto:admin@ShowNotice.com">admin@ShowNotice.com</a>.</p>
+  </div>
+  <div class="contact-us">
+    <p class="contact-us-title">Contact Us</p>
+    <p>Did we miss something? Let us know at <a href="mailto:admin@ShowNotice.com">admin@ShowNotice.com</a>.</p>
   </div>
   <button type="button" class="link-btn back-to-top-btn" id="back-to-top-btn">↑ Back to top</button>
 </footer>
@@ -956,12 +974,13 @@ async function submitSignIn(){
   const turnstileToken = (window.turnstile && SIGNIN_TURNSTILE_WIDGET_ID !== null)
     ? turnstile.getResponse(SIGNIN_TURNSTILE_WIDGET_ID)
     : '';
+  const subscribe = document.getElementById('signin-subscribe-check').checked;
 
   try{
     const res = await fetch(`${WORKER_BASE_URL}/api/auth/request-link`, {
       method:'POST',
       headers:{'Content-Type':'application/json'},
-      body: JSON.stringify({email, turnstileToken})
+      body: JSON.stringify({email, turnstileToken, subscribe})
     });
     const data = await res.json();
     if(window.turnstile && SIGNIN_TURNSTILE_WIDGET_ID !== null) turnstile.reset(SIGNIN_TURNSTILE_WIDGET_ID);
