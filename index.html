@@ -101,6 +101,8 @@
     padding-top:12px;border-top:1px solid var(--line);
     font-size:13.2px;color:var(--muted);
   }
+  .signin-row-group{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+  .signin-row-group .fav-hint{font-size:12px;}
   .link-btn{color:var(--teal);text-decoration:none;font-weight:600;background:none;border:none;padding:0;font:inherit;cursor:pointer;}
   .link-btn:hover{color:#6fe0c2;}
   .last-updated{font-size:13.2px;color:var(--muted);}
@@ -423,7 +425,10 @@
     </div>
 
     <div class="status-row">
-      <button type="button" class="link-btn" id="account-btn">Sign in to sync across devices</button>
+      <span class="signin-row-group">
+        <button type="button" class="link-btn" id="account-btn">Sign in to sync across devices</button>
+        <span class="fav-hint" id="no-spam-note">No spam, ever.</span>
+      </span>
       <span class="last-updated" id="last-updated"></span>
     </div>
   </header>
@@ -433,7 +438,6 @@
     <div class="fav-input-row">
       <input type="email" id="signin-email" class="fav-input" placeholder="your@email.com">
     </div>
-    <div class="fav-hint">No spam, ever — just your sign-in link.</div>
     <label class="signin-subscribe-row">
       <input type="checkbox" id="signin-subscribe-check" checked>
       Send me a once-a-week email of new shows
@@ -1019,14 +1023,19 @@ function signOut(){
 function renderAccountUI(){
   const btn = document.getElementById('account-btn');
   const signInSection = document.getElementById('sign-in-section');
+  const noSpamNote = document.getElementById('no-spam-note');
   if(btn){
     if(SESSION_TOKEN && SESSION_EMAIL){
       btn.textContent = `Signed in as ${SESSION_EMAIL} · Sign out`;
       btn.onclick = signOut;
       if(signInSection) signInSection.style.display = 'none';
+      // Irrelevant once already signed in -- this was a reassurance about giving out
+      // an email address, not a standing claim about the account itself.
+      if(noSpamNote) noSpamNote.hidden = true;
     } else {
       btn.textContent = 'Sign in to sync across devices';
       btn.onclick = toggleSignInSection;
+      if(noSpamNote) noSpamNote.hidden = false;
     }
   }
 
@@ -1259,10 +1268,11 @@ async function render(){
   }
 
   const currentIds = new Set();
-  // Same past-show cutoff the digest email uses: anything more than 1 day old is
-  // dropped, using the end date for multi-day events so an ongoing festival doesn't
-  // disappear mid-run just because its start date has passed.
-  const pastCutoff = new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  // Same past-show cutoff the digest email uses: anything before today is dropped,
+  // using the end date for multi-day events so an ongoing festival doesn't disappear
+  // mid-run just because its start date has passed. No grace period -- a show drops
+  // off the list the day after it happens, not the day after that.
+  const pastCutoff = new Date().toISOString().slice(0, 10);
   const pastCutoffAll = SHOWS
     .filter(s => (s.e || s.d) >= pastCutoff)
     .sort((a,b)=> a.d.localeCompare(b.d));
