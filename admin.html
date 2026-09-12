@@ -258,6 +258,7 @@ function renderStats(data){
   ], 'subs');
 
   const suggestionsWindowHtml = windowTableHtml([{ label: 'Suggestions', w: data.suggestions.window }], 'suggestions');
+  const contactWindowHtml = windowTableHtml([{ label: 'Messages', w: data.contactMessages.window }], 'contact');
 
   const cf = data.cloudflareStats;
   const cloudflareHtml = cf.error
@@ -277,6 +278,12 @@ function renderStats(data){
   const suggestionsHtml = data.suggestions.list.length
     ? data.suggestions.list.map(s => `<div class="stat-row" style="display:block;"><div><strong>${escapeHtml(s.venueName)}</strong> <span class="muted">— ${escapeHtml(s.submitterEmail)} &middot; ${escapeHtml(fmtDate(s.submittedAt))}</span></div>${s.notes ? `<div class="muted" style="margin-top:4px;">${escapeHtml(s.notes)}</div>` : ''}</div>`).join('')
     : '<div class="empty">No suggestions yet.</div>';
+
+  // The Contact Us form (unlike Suggest a Venue) doesn't require sign-in, so `email`
+  // is optional and may be null -- shown as "(no email provided)" rather than blank.
+  const contactHtml = data.contactMessages.list.length
+    ? data.contactMessages.list.map(c => `<div class="stat-row" style="display:block;"><div><span class="muted">${c.email ? escapeHtml(c.email) : '(no email provided)'} &middot; ${escapeHtml(fmtDate(c.submittedAt))}</span></div><div style="margin-top:4px;">${escapeHtml(c.message)}</div></div>`).join('')
+    : '<div class="empty">No messages yet.</div>';
 
   el.innerHTML = `
     <div class="section" style="--accent:var(--teal);">
@@ -313,6 +320,11 @@ function renderStats(data){
         <h2>Venue suggestions (${data.suggestions.count})</h2>
         ${suggestionsWindowHtml}
         <details class="raw-list"><summary>Suggestion details</summary>${suggestionsHtml}</details>
+      </div>
+      <div class="block">
+        <h2>Contact Us messages (${data.contactMessages.count})</h2>
+        ${contactWindowHtml}
+        <details class="raw-list"><summary>Message details</summary>${contactHtml}</details>
       </div>
     </div>
 

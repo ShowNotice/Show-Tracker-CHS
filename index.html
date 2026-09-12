@@ -210,14 +210,12 @@
     background:rgba(79,209,176,0.07);border:1px solid var(--teal);
   }
   .back-to-top-btn:hover{background:rgba(79,209,176,0.16);}
-  .site-footer .disclaimer{font-size:12.6px;color:var(--muted);line-height:1.5;margin-bottom:8px;}
   .privacy-details{margin-top:10px;text-align:left;font-size:12.6px;color:var(--muted);line-height:1.6;}
   .privacy-details p{margin:0 0 10px 0;}
   .privacy-details a{color:var(--teal);}
-  .contact-us{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);font-size:12.6px;color:var(--muted);line-height:1.6;}
-  .contact-us p{margin:0;}
-  .contact-us .contact-us-title{margin:0 0 4px 0;font-weight:700;color:var(--text);}
-  .contact-us a{color:var(--teal);}
+  .contact-us{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);}
+  .contact-us .contact-us-title{margin:0 0 4px 0;font-size:12.6px;font-weight:700;color:var(--text);}
+  .contact-us .fav-hint{margin-bottom:8px;}
   .day-group{margin-bottom:26px;}
   .day-head{
     font-family:'Bebas Neue',sans-serif;
@@ -531,19 +529,26 @@
 </div>
 
 <footer class="site-footer">
-  <p class="disclaimer">Show details are believed accurate but not guaranteed. Dates, times, and prices can change — always confirm with the venue or ticket link before making plans.</p>
   <button type="button" class="link-btn" id="subscribe-btn">Subscribe to email updates</button>
   &nbsp;·&nbsp;
-  <button type="button" class="link-btn" id="privacy-toggle-btn">Privacy</button>
+  <button type="button" class="link-btn" id="privacy-toggle-btn">About &amp; Contact</button>
   <div id="privacy-details" class="privacy-details" style="display:none;">
-    <p>If you sign in, we store your email address, My Shows list, and Favorite Artists so they sync across your devices and power the weekly digest email. Venue suggestions you submit are stored along with your email so we can follow up if needed.</p>
+    <p>Show details are believed accurate but not guaranteed. Dates, times, and prices can change — always confirm with the venue or ticket link before making plans.</p>
+    <p>If you sign in, we store your email address, My Shows list, and Favorite Artists so they sync across your devices and power the weekly digest email. Venue suggestions and Contact Us messages you submit are stored along with any email you provide so we can follow up if needed.</p>
     <p>Digest emails include open and click tracking (via our email provider, Resend) so we can see whether emails are opened and which links get clicked — this is to understand what's actually useful, not to build profiles on anyone. We don't sell or share your information with advertisers or any other third party.</p>
     <p>Site hosting, backend storage, and email delivery are handled by GitHub Pages, Cloudflare, and Resend respectively, each under their own privacy practices.</p>
-    <p>Unsubscribe from emails anytime via the link in any digest — once you do, signing back in won't automatically re-subscribe you; use the "Subscribe to email updates" link above if you change your mind. To ask us to delete your data entirely, email <a href="mailto:admin@ShowNotice.com">admin@ShowNotice.com</a>.</p>
-  </div>
-  <div class="contact-us">
-    <p class="contact-us-title">Contact Us</p>
-    <p>Did we miss something? Let us know at <a href="mailto:admin@ShowNotice.com">admin@ShowNotice.com</a>.</p>
+    <div class="contact-us">
+      <p class="contact-us-title">Contact Us</p>
+      <p class="fav-hint">Did we miss a show or venue? Something not working? Send us a note.</p>
+      <div class="fav-input-row">
+        <input type="email" id="contact-email" class="fav-input" placeholder="Your email (optional, so we can reply)">
+      </div>
+      <div class="fav-input-row">
+        <input type="text" id="contact-message" class="fav-input" placeholder="Your message">
+      </div>
+      <div id="contact-turnstile" style="margin:10px 0;"></div>
+      <button type="button" id="contact-submit-btn" class="fav-add-btn">Send</button>
+    </div>
   </div>
   <button type="button" class="link-btn back-to-top-btn" id="back-to-top-btn">↑ Back to top</button>
 </footer>
@@ -669,18 +674,23 @@ const WORKER_BASE_URL = 'https://api.chs.shownotice.com';
 const TURNSTILE_SITE_KEY = '0x4AAAAAAEkfZ3ATboand-06';
 let SIGNIN_TURNSTILE_WIDGET_ID = null;
 let SUGGEST_VENUE_TURNSTILE_WIDGET_ID = null;
+let CONTACT_TURNSTILE_WIDGET_ID = null;
 
-// Explicit rendering (rather than the implicit cf-turnstile class) so each of the two
+// Explicit rendering (rather than the implicit cf-turnstile class) so each of the
 // widgets on this page gets its own tracked ID — needed since turnstile.getResponse()
 // is ambiguous with more than one widget unless you pass an explicit ID.
 window.onTurnstileLoad = function(){
   const signinContainer = document.getElementById('signin-turnstile');
   const suggestContainer = document.getElementById('suggest-venue-turnstile');
+  const contactContainer = document.getElementById('contact-turnstile');
   if(signinContainer){
     SIGNIN_TURNSTILE_WIDGET_ID = turnstile.render(signinContainer, { sitekey: TURNSTILE_SITE_KEY });
   }
   if(suggestContainer){
     SUGGEST_VENUE_TURNSTILE_WIDGET_ID = turnstile.render(suggestContainer, { sitekey: TURNSTILE_SITE_KEY });
+  }
+  if(contactContainer){
+    CONTACT_TURNSTILE_WIDGET_ID = turnstile.render(contactContainer, { sitekey: TURNSTILE_SITE_KEY });
   }
 };
 let SESSION_TOKEN = localStorage.getItem('sessionToken') || null;
@@ -1594,6 +1604,43 @@ async function submitVenueSuggestion(){
 }
 document.getElementById('suggest-venue-submit-btn').addEventListener('click', submitVenueSuggestion);
 document.getElementById('signin-submit-btn').addEventListener('click', submitSignIn);
+
+// Public, unauthenticated (unlike Suggest a Venue) -- this is the only way to reach
+// the owner from the site itself, since the footer deliberately doesn't show a plain
+// email address for bots to scrape.
+async function submitContactUs(){
+  const emailInput = document.getElementById('contact-email');
+  const messageInput = document.getElementById('contact-message');
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
+  if(!message){
+    await showAlert('Please enter a message.');
+    return;
+  }
+  const turnstileToken = (window.turnstile && CONTACT_TURNSTILE_WIDGET_ID !== null)
+    ? turnstile.getResponse(CONTACT_TURNSTILE_WIDGET_ID)
+    : '';
+  try{
+    const res = await fetch(`${WORKER_BASE_URL}/api/contact`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, message, turnstileToken })
+    });
+    const data = await res.json();
+    if(window.turnstile && CONTACT_TURNSTILE_WIDGET_ID !== null) turnstile.reset(CONTACT_TURNSTILE_WIDGET_ID);
+    if(data.error){
+      await showAlert(data.error);
+      return;
+    }
+    await showAlert(data.message || 'Thanks — your message has been sent!');
+    emailInput.value = '';
+    messageInput.value = '';
+  }catch(e){
+    if(window.turnstile && CONTACT_TURNSTILE_WIDGET_ID !== null) turnstile.reset(CONTACT_TURNSTILE_WIDGET_ID);
+    await showAlert('Something went wrong sending your message. Please try again.');
+  }
+}
+document.getElementById('contact-submit-btn').addEventListener('click', submitContactUs);
 
 // Keeps --banner-h in sync with the sticky title banner's actual rendered height, so
 // each section's .sticky-head (top:var(--banner-h)) pins directly below it instead of
