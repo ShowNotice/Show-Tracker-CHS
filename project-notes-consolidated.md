@@ -431,6 +431,24 @@ DJ nights/dance parties/raves, themed party nights with no booked act, podcast t
 8. **No automated test suite** (see "Deploy process" above) — all validation this session was manual. Worth a small smoke-test suite for the Worker's request handlers if the project keeps growing.
 9. **Admin session-expiry UX** — a 401 now recovers gracefully (PR #51) but there's no advance warning before a session expires; worth a "session expiring soon" notice if the owner finds themselves logged out mid-task often. Not actioned — a suggestion, not a confirmed problem.
 10. **Suggestion-form rate limit is per-KV-key, not atomic** — same class of best-effort limitation as the per-IP sign-in rate limit (see Security posture above); Turnstile is the tighter control in front of it. Low risk, not worth added complexity (e.g. Durable Objects) unless abuse is actually observed.
+11. **8 new venues added to `shows.json` 2026-09-12, no shows scraped for any of them yet** — metadata only (name/site/type/color/address); see "New venues added 2026-09-12" below for the routine to pick up on its next run.
+
+### New venues added 2026-09-12 (metadata only — no shows scraped yet)
+
+User-requested addition, added directly to `shows.json`'s `venues` object from this interactive session rather than by the scraping routine. Each venue's own site is set as the `site` field (used as the primary source); `livemusiccharleston.com` was given as a secondary/aggregator source for every one of these and hasn't been individually vetted the way the "Secondary source research" section above vetted AXS/Bandsintown/etc. — worth the same kind of spot-check (does it actually list current, accurate shows for these specific venues) before leaning on it if the venue's own page turns out thin or unreliable.
+
+- **The Tattooed Moose — two locations, tracked separately** since they're expected to book independently:
+  - `TMPC` — Park Circle, 4845 Chateau Ave, North Charleston, SC 29405. Site: https://www.tattooedmoose.com/ (restaurant's main site; no dedicated live-music/events page found during onboarding — check for one directly, or rely on the aggregator below if none exists).
+  - `TMJI` — Johns Island, 3328 Maybank Hwy, Johns Island, SC 29455. Same site note as Park Circle.
+  - Secondary source (both locations): https://livemusiccharleston.com/venue/thetattooedmoose
+- **`US` — Uptown Social**, 587 King St, Charleston, SC 29403. Site: https://www.uptownsocialchs.com/entertainment/. Secondary source: https://livemusiccharleston.com/venue/uptownsocial
+- **`TC` — Tommy Condon's**, 160 Church St, Charleston, SC 29401. Site: https://tommycondons.com/charleston-downtown-tommy-condon-s-calendar. Secondary source: https://livemusiccharleston.com/venue/tommycondonsirishpub
+- **`DIN` — The Dinghy**, 8 J C Long Blvd, Isle of Palms, SC 29451. Site: https://www.dinghyiop.com/the-music. Secondary source: https://livemusiccharleston.com/venue/thedinghy
+- **`RSG` — Rita's Seaside Grille**, 2 Center St, Folly Beach, SC 29439. Site: https://ritasseasidegrille.com/folly-beach-folly-beach-ritas-seaside-grille-live-music. Secondary source: https://livemusiccharleston.com/venue/ritasseasidegrille
+- **`CHA` — Commonhouse Aleworks**, 4831 O'Hear Ave, North Charleston, SC 29405. Site: https://commonhousealeworks.com/events/. Secondary source: https://livemusiccharleston.com/venue/commonhousealeworks
+- **`SNOB` — Slightly North of Broad**, 192 E Bay St, Charleston, SC 29401. Site: https://snobcharleston.com/charleston-french-quarter-slightly-north-of-broad-live-music. Secondary source: https://livemusiccharleston.com/venue/slightlynorthbroadrestaurant
+
+Addresses/sites above came from a web search from this interactive session (not a direct fetch of each venue's own page, which this session's network policy blocks) — treat as reasonably reliable for something as stable as a street address, but worth the routine's own normal direct-fetch verification the first time it actually scrapes each of these, same as any other venue. None of the non-music exclusion rules, pricing conventions, or the no-resale rule have been checked against these specific venues yet — apply the same standing rules documented elsewhere in this file when scraping them for the first time.
 
 ## Repo notes
 

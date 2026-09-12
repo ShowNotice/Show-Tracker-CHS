@@ -97,6 +97,62 @@
       "type": "venue",
       "color": "#c9a23a",
       "address": "970 Morrison Dr, Charleston, SC 29403"
+    },
+    "TMPC": {
+      "name": "The Tattooed Moose (Park Circle)",
+      "site": "https://www.tattooedmoose.com/",
+      "type": "venue",
+      "color": "#d9738f",
+      "address": "4845 Chateau Ave, North Charleston, SC 29405"
+    },
+    "TMJI": {
+      "name": "The Tattooed Moose (Johns Island)",
+      "site": "https://www.tattooedmoose.com/",
+      "type": "venue",
+      "color": "#7a9cd9",
+      "address": "3328 Maybank Hwy, Johns Island, SC 29455"
+    },
+    "US": {
+      "name": "Uptown Social",
+      "site": "https://www.uptownsocialchs.com/entertainment/",
+      "type": "venue",
+      "color": "#e0a83c",
+      "address": "587 King St, Charleston, SC 29403"
+    },
+    "TC": {
+      "name": "Tommy Condon's",
+      "site": "https://tommycondons.com/charleston-downtown-tommy-condon-s-calendar",
+      "type": "venue",
+      "color": "#3ca67a",
+      "address": "160 Church St, Charleston, SC 29401"
+    },
+    "DIN": {
+      "name": "The Dinghy",
+      "site": "https://www.dinghyiop.com/the-music",
+      "type": "venue",
+      "color": "#4a9ec1",
+      "address": "8 J C Long Blvd, Isle of Palms, SC 29451"
+    },
+    "RSG": {
+      "name": "Rita's Seaside Grille",
+      "site": "https://ritasseasidegrille.com/folly-beach-folly-beach-ritas-seaside-grille-live-music",
+      "type": "venue",
+      "color": "#e08a4a",
+      "address": "2 Center St, Folly Beach, SC 29439"
+    },
+    "CHA": {
+      "name": "Commonhouse Aleworks",
+      "site": "https://commonhousealeworks.com/events/",
+      "type": "venue",
+      "color": "#8a5a3c",
+      "address": "4831 O'Hear Ave, North Charleston, SC 29405"
+    },
+    "SNOB": {
+      "name": "Slightly North of Broad",
+      "site": "https://snobcharleston.com/charleston-french-quarter-slightly-north-of-broad-live-music",
+      "type": "venue",
+      "color": "#6ac9a0",
+      "address": "192 E Bay St, Charleston, SC 29401"
     }
   },
   "shows": [
