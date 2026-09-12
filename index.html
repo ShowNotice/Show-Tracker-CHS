@@ -104,7 +104,7 @@
   .signin-row-group{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
   .signin-row-group .fav-hint{font-size:12px;}
   .my-shows-signin{margin-bottom:16px;}
-  #account-btn{text-decoration:underline;}
+  .signin-action{text-decoration:underline;}
   .link-btn{color:var(--teal);text-decoration:none;font-weight:600;background:none;border:none;padding:0;font:inherit;cursor:pointer;}
   .link-btn:hover{color:#6fe0c2;}
   .last-updated{font-size:13.2px;color:var(--muted);}
@@ -164,6 +164,11 @@
     text-decoration:none;
   }
   .back-to-top-link:hover, .jump-next-link:hover, .venue-filter-toggle:hover{background:rgba(79,209,176,0.16);}
+  /* Fixed width (not min/max) so the pill's own box -- and therefore the panel
+     anchored to its top-left corner -- never shifts position as the label text
+     changes length (e.g. "Show all venues" -> "3 venues selected" -> a single long
+     venue name). Long labels ellipsize rather than growing the box. */
+  .venue-filter-toggle{width:168px;text-align:left;overflow:hidden;text-overflow:ellipsis;}
   .fav-input-row{display:flex;gap:8px;margin-bottom:10px;}
   .fav-input{
     flex:1;
@@ -228,19 +233,18 @@
     padding:4px 2px;cursor:pointer;
   }
   .venue-filter-option input{width:15px;height:15px;flex:0 0 auto;accent-color:var(--teal);cursor:pointer;}
-  .venue-filter-clear-btn{
-    margin-top:10px;width:100%;
-    background:none;border:1px dashed var(--line);color:var(--muted);
-    border-radius:8px;padding:6px;font-size:12.6px;cursor:pointer;font-family:inherit;
+  .venue-filter-all-option{
+    font-weight:700;
+    padding-bottom:8px;margin-bottom:6px;
+    border-bottom:1px solid var(--line);
   }
-  .venue-filter-clear-btn:hover{color:var(--text);border-color:var(--teal);}
   .signin-subscribe-row{
     display:flex;align-items:center;gap:8px;
     font-size:13px;color:var(--text);margin:10px 0 4px;cursor:pointer;
   }
   .signin-subscribe-row input{width:16px;height:16px;flex:0 0 auto;accent-color:var(--teal);cursor:pointer;}
   .site-footer{max-width:640px;margin:32px auto 24px auto;padding:0 16px;text-align:center;}
-  .site-footer .last-updated{margin-bottom:14px;}
+  #recently-added-section .last-updated{margin-top:16px;text-align:center;}
   .back-to-top-btn{
     display:block;width:fit-content;margin:16px auto 0 auto;font-size:12.6px;font-weight:600;
     padding:5px 12px;border-radius:20px;
@@ -451,7 +455,7 @@
     <div class="b2-frame">
       <div class="b2-title">LOWCOUNTRY SHOW NOTICE</div>
     </div>
-    <div class="tagline">Live music across Charleston</div>
+    <div class="tagline">Live music is better than no music. Go see a show!</div>
   </div>
 
   <header class="top">
@@ -465,16 +469,19 @@
   <div id="venue-view" class="venue-view" style="display:none;"></div>
 
   <div id="all-view">
-  <section class="block" id="recently-added-section" style="display:none;">
-    <div class="sticky-head">
-      <div class="section-title-row">
-        <div class="section-title teal">Added This Week</div>
-        <div class="section-title-links">
-          <button type="button" class="link-btn jump-next-link" data-jump-next="my-shows-section">My Shows ↓</button>
+  <section class="block" id="recently-added-section">
+    <div id="recently-added-content" style="display:none;">
+      <div class="sticky-head">
+        <div class="section-title-row">
+          <div class="section-title teal">Added This Week</div>
+          <div class="section-title-links">
+            <button type="button" class="link-btn jump-next-link" data-jump-next="my-shows-section">My Shows ↓</button>
+          </div>
         </div>
       </div>
+      <div id="recent-list"></div>
     </div>
-    <div id="recent-list"></div>
+    <div class="last-updated" id="last-updated"></div>
   </section>
 
   <section class="block" id="my-shows-section">
@@ -511,7 +518,7 @@
         <div class="section-title teal">All Shows</div>
         <div class="section-title-links">
           <div class="venue-filter-dd" id="venue-filter-dd">
-            <button type="button" class="link-btn venue-filter-toggle" id="venue-filter-toggle">Show all venues ▾</button>
+            <button type="button" class="link-btn venue-filter-toggle" id="venue-filter-toggle">All Venues ▾</button>
             <div class="venue-filter-panel" id="venue-filter-panel" hidden></div>
           </div>
           <button type="button" class="link-btn back-to-top-link">Back to top ↑</button>
@@ -571,7 +578,6 @@
 </div>
 
 <footer class="site-footer">
-  <div class="last-updated" id="last-updated"></div>
   <button type="button" class="link-btn" id="subscribe-btn">Subscribe to email updates</button>
   &nbsp;·&nbsp;
   <button type="button" class="link-btn" id="privacy-toggle-btn">About &amp; Contact</button>
@@ -1065,14 +1071,17 @@ function renderAccountUI(){
   const noSpamNote = document.getElementById('no-spam-note');
   if(btn){
     if(SESSION_TOKEN && SESSION_EMAIL){
-      btn.textContent = `Signed in as ${SESSION_EMAIL} · Sign out`;
+      // Only the actual actionable word ("Sign out") is underlined -- the rest of the
+      // line is just status text, not a link, and underlining all of it made the whole
+      // line read as clickable when only that part actually is.
+      btn.innerHTML = `Signed in as ${escapeHtml(SESSION_EMAIL)} · <span class="signin-action">Sign out</span>`;
       btn.onclick = signOut;
       if(signInSection) signInSection.style.display = 'none';
       // Irrelevant once already signed in -- this was a reassurance about giving out
       // an email address, not a standing claim about the account itself.
       if(noSpamNote) noSpamNote.hidden = true;
     } else {
-      btn.textContent = 'Sign in to sync across devices';
+      btn.innerHTML = `<span class="signin-action">Sign in</span> to sync across devices`;
       btn.onclick = toggleSignInSection;
       if(noSpamNote) noSpamNote.hidden = false;
     }
@@ -1355,15 +1364,18 @@ async function render(){
   // not in that week's email.
   const recentCutoff = recentAddedCutoff();
   const recentShows = sorted.filter(s => s.added && s.added >= recentCutoff);
-  const recentSectionEl = document.getElementById('recently-added-section');
+  // Only this inner wrapper (title + list) hides when there's nothing new -- the
+  // section itself always stays visible so the "Last updated" line at its bottom
+  // (moved here from the footer) keeps showing even in a week with no new shows.
+  const recentContentEl = document.getElementById('recently-added-content');
   const recentListEl = document.getElementById('recent-list');
-  if(recentSectionEl && recentListEl){
+  if(recentContentEl && recentListEl){
     if(recentShows.length){
-      recentSectionEl.style.display = '';
+      recentContentEl.style.display = '';
       recentListEl.innerHTML = groupByDayHTML(recentShows);
       updateAddedThisWeekHeadHeight(); // after display flip above -- see that function's own comment
     } else {
-      recentSectionEl.style.display = 'none';
+      recentContentEl.style.display = 'none';
     }
   }
 
@@ -1447,13 +1459,24 @@ async function render(){
         <input type="checkbox" data-filter-venue="${escapeHtml(code)}" ${VENUE_FILTER.has(code)?'checked':''}>
         ${escapeHtml(v.name)}
       </label>`).join('');
-    let panelHtml = '';
+    // "All Venues" is a reset option, not a real venue -- always listed first, and
+    // shown checked whenever nothing else is selected. Clicking it always clears the
+    // whole filter regardless of its own prior checked state (there's no meaningful
+    // "unchecked, but nothing else picked either" state).
+    let panelHtml = `<label class="venue-filter-option venue-filter-all-option">
+        <input type="checkbox" id="venue-filter-all-cb" ${VENUE_FILTER.size===0?'checked':''}>
+        All Venues
+      </label>`;
     if(venueEntries.length) panelHtml += `<div class="venue-filter-group-label">Venues</div>${buildOptionsHtml(venueEntries)}`;
     if(festivalEntries.length) panelHtml += `<div class="venue-filter-group-label">Festivals</div>${buildOptionsHtml(festivalEntries)}`;
-    panelHtml += `<button type="button" class="venue-filter-clear-btn" id="venue-filter-clear">Show all venues</button>`;
     filterPanelEl.innerHTML = panelHtml;
     filterPanelEl.hidden = !VENUE_FILTER_OPEN;
 
+    const allCb = document.getElementById('venue-filter-all-cb');
+    if(allCb) allCb.addEventListener('change', ()=>{
+      VENUE_FILTER.clear();
+      render();
+    });
     filterPanelEl.querySelectorAll('[data-filter-venue]').forEach(cb=>{
       cb.addEventListener('change', ()=>{
         const code = cb.getAttribute('data-filter-venue');
@@ -1461,15 +1484,10 @@ async function render(){
         render();
       });
     });
-    const clearBtn = document.getElementById('venue-filter-clear');
-    if(clearBtn) clearBtn.addEventListener('click', ()=>{
-      VENUE_FILTER.clear();
-      render();
-    });
 
     const selectedCodes = Array.from(VENUE_FILTER);
     filterToggleEl.textContent = selectedCodes.length === 0
-      ? 'Show all venues ▾'
+      ? 'All Venues ▾'
       : selectedCodes.length === 1
         ? `${(VENUES[selectedCodes[0]] && VENUES[selectedCodes[0]].name) || selectedCodes[0]} ▾`
         : `${selectedCodes.length} venues selected ▾`;
