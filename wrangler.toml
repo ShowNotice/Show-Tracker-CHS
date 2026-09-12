@@ -56,11 +56,14 @@ store_id = "30c772729ee04e95b2d1ee57b4be87fd"
 secret_name = "cloudflare-analytics-token"
 
 # --- Cron: weekly digest email ---
-# This must match what's live, or a deploy silently reschedules the digest. The
-# remote is "0 19 * * wed" (19:00 UTC Wednesdays) -- an earlier version of this file
-# said "0 18 * * 3", which would have shifted the send an hour earlier.
+# This must match what's live, or a deploy silently reschedules the digest.
+# Moved 2026-09-12 from Wednesday 3pm ET to Thursday 1pm ET, alongside moving the
+# scraping routine itself to Thursday 3am ET, so the digest always goes out well
+# after that week's scrape has landed rather than potentially racing it.
+# 17:00 UTC = 1pm ET while EDT (UTC-4) is in effect; this drifts by an hour once
+# DST ends in November like every other UTC-pinned cron in this file.
 [triggers]
-crons = ["0 19 * * wed"]
+crons = ["0 17 * * thu"]
 
 # --- Custom domain route ---
 # The site calls https://api.chs.shownotice.com; without this the Worker is only
