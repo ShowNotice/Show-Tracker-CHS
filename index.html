@@ -127,7 +127,8 @@
   #favorite-artists-mgmt,
   #suggest-venue-section,
   #my-shows-section,
-  #all-shows-section{scroll-margin-top:var(--banner-h, 0px);}
+  #all-shows-section,
+  #venue-view{scroll-margin-top:var(--banner-h, 0px);}
   .section-title{
     font-family:'Bebas Neue',sans-serif;
     font-size:25.3px;
@@ -1430,7 +1431,13 @@ function showVenueView(code, sorted){
   // Must come after the display:block above -- offsetHeight reads 0 on anything
   // still inside a display:none ancestor, which viewEl was until this line.
   updateVenueHeadHeight();
-  window.scrollTo(0,0);
+  // Was window.scrollTo(0,0) -- reset to the very top of the page, above the banner
+  // and the (now much longer, 21-venue) pill row, so clicking a pill left the user
+  // scrolling back down past all of that to reach the venue's own shows. Scrolling the
+  // venue view itself to the top of the viewport (honoring scroll-margin-top, same
+  // convention as the other jump targets above) lands the venue name right at/near the
+  // top of the screen instead.
+  viewEl.scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 function showAllView(){
