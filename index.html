@@ -127,12 +127,17 @@
      that have their own internal .sticky-head -- directly under (hidden behind) the
      banner instead of below it. scroll-margin-top is what scrollIntoView actually
      honors to leave the right amount of clearance. */
-  #sign-in-section,
   #favorite-artists-mgmt,
   #suggest-venue-section,
   #my-shows-section,
   #all-shows-section,
   #venue-view{scroll-margin-top:var(--banner-h, 0px);}
+  /* #sign-in-section lives inside #my-shows-section, below that section's own
+     .sticky-head (not at a section's own top edge like the others above) -- its
+     scroll clearance needs that sticky-head's height added on top of the banner's,
+     or scrollIntoView lands it exactly where the still-pinned My Shows title sits,
+     hiding the email input's top edge underneath it. */
+  #sign-in-section{scroll-margin-top:calc(var(--banner-h, 0px) + var(--my-shows-head-h, 0px));}
   .section-title{
     font-family:'Bebas Neue',sans-serif;
     font-size:25.3px;
