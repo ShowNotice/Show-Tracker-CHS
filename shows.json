@@ -1,5 +1,5 @@
 {
-  "dataUpdatedAt": "2026-09-12",
+  "dataUpdatedAt": "2026-09-13",
   "venues": {
     "PH": {
       "name": "Charleston Pour House",
@@ -1435,11 +1435,14 @@
     {
       "d": "2026-10-30",
       "b": "Neal Francis",
-      "o": "Sam Fribush",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
+      "o": "Sam Fribush Organ Trio",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/neal-francis-the-charleston-pour-house-20261030"
+      "u": "https://charlestonpourhouse.com/event/neal-francis/",
+      "p": 35,
+      "dop": 40,
+      "s": "Main Stage"
     },
     {
       "d": "2026-11-01",
@@ -1456,7 +1459,10 @@
       "dr": "7:30 PM",
       "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://www.eventticketscenter.com/doom-gong-charleston-11-01-2026/8161256/t"
+      "u": "https://charlestonpourhouse.com/event/doom-gong/",
+      "p": 18,
+      "dop": 23,
+      "s": "Main Stage"
     },
     {
       "d": "2026-11-04",
@@ -1469,10 +1475,14 @@
     {
       "d": "2026-11-05",
       "b": "Tommy Prine",
-      "dr": "see ticket link",
-      "sh": "9:00 PM",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/tommy-prine-the-charleston-pour-house-20261105"
+      "u": "https://charlestonpourhouse.com/event/tommy-prine/",
+      "p": 20,
+      "dop": 25,
+      "s": "Main Stage",
+      "o": "Delaney Ramsdell"
     },
     {
       "d": "2026-11-05",
@@ -1504,10 +1514,13 @@
     {
       "d": "2026-11-07",
       "b": "Satsang",
-      "dr": "see ticket link",
-      "sh": "8:30 PM",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/satsang-the-charleston-pour-house-20261107"
+      "u": "https://charlestonpourhouse.com/event/satsang-3/",
+      "p": 22,
+      "dop": 25,
+      "s": "Main Stage"
     },
     {
       "d": "2026-11-05",
@@ -1521,10 +1534,13 @@
     {
       "d": "2026-11-08",
       "b": "SunSquabi",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/sunsquabi-the-charleston-pour-house-20261108"
+      "u": "https://charlestonpourhouse.com/event/sunsquabi/",
+      "p": 20,
+      "dop": 25,
+      "s": "Main Stage"
     },
     {
       "d": "2026-11-08",
@@ -1590,16 +1606,23 @@
       "dr": "7:30 PM",
       "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://allevents.in/charleston/bearly-dead/10000775675695887"
+      "u": "https://charlestonpourhouse.com/event/bearly-dead-5/",
+      "p": 20,
+      "dop": 25,
+      "s": "Main Stage"
     },
     {
       "d": "2026-11-13",
       "b": "TAUK",
       "o": "lespecial",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/tauk-the-charleston-pour-house-20261113"
+      "u": "https://charlestonpourhouse.com/event/tuak-lespecial/2026-11-13/",
+      "p": 30,
+      "dop": 35,
+      "s": "Main Stage",
+      "flag": "First night of a two-night stand with Nov 14; $50 2-night package also offered"
     },
     {
       "d": "2026-11-13",
@@ -1613,18 +1636,25 @@
     {
       "d": "2026-11-14",
       "b": "The Fretliners",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/the-fretliners-the-charleston-pour-house-20261114"
+      "u": "https://charlestonpourhouse.com/event/the-fretliners/",
+      "p": 15,
+      "dop": 18,
+      "s": "Deck Stage"
     },
     {
       "d": "2026-11-15",
       "b": "Deer Tick",
-      "dr": "see ticket link",
+      "dr": "7:30 PM",
       "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/deer-tick-the-charleston-pour-house-20261115"
+      "u": "https://charlestonpourhouse.com/event/deer-tick/",
+      "p": 29.5,
+      "dop": 35,
+      "s": "Main Stage",
+      "o": "Dug"
     },
     {
       "d": "2026-11-19",
@@ -1664,10 +1694,13 @@
     {
       "d": "2026-11-21",
       "b": "Magnolia Boulevard",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/magnolia-boulevard-the-charleston-pour-house-20261121"
+      "u": "https://charlestonpourhouse.com/event/magnolia-boulevard/",
+      "p": 12,
+      "dop": 15,
+      "s": "Deck Stage"
     },
     {
       "d": "2026-11-25",
@@ -1721,11 +1754,15 @@
     {
       "d": "2026-12-04",
       "b": "moe.phrey's",
-      "o": "Al Schnier, Nate Wilson, Ryan Stasik & more",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
+      "o": "Ryan Stasik & Scotty Zwang (Umphrey's McGee), Al Schnier & Nate Wilson (moe.), Kanika Moore",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/al-schnier-the-charleston-pour-house-20261204"
+      "u": "https://charlestonpourhouse.com/event/moe-phreys/2026-12-04/",
+      "p": 30,
+      "dop": 35,
+      "s": "Main Stage",
+      "flag": "First night of a two-night stand with Dec 5; $56 2-night package also offered. \"moe.phrey's\" is the venue's own name for this collective (not a mistranscription of \"Al Schnier\" as earlier suspected) — confirmed directly on the event page."
     },
     {
       "d": "2026-12-05",
@@ -1738,11 +1775,15 @@
     {
       "d": "2026-12-05",
       "b": "moe.phrey's",
-      "o": "Al Schnier, Nate Wilson, Ryan Stasik & more",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
+      "o": "Ryan Stasik & Scotty Zwang (Umphrey's McGee), Al Schnier & Nate Wilson (moe.), Kanika Moore",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://www.jambase.com/show/al-schnier-the-charleston-pour-house-20261205"
+      "u": "https://charlestonpourhouse.com/event/moe-phreys/2026-12-05/",
+      "p": 30,
+      "dop": 35,
+      "s": "Main Stage",
+      "flag": "Second night of a two-night stand with Dec 4; $56 2-night package also offered. \"moe.phrey's\" is the venue's own name for this collective (not a mistranscription of \"Al Schnier\" as earlier suspected) — confirmed directly on the event page."
     },
     {
       "d": "2026-12-13",
@@ -1750,7 +1791,10 @@
       "dr": "7:00 PM",
       "sh": "8:00 PM",
       "v": "PH",
-      "u": "https://charleston-pour-house.charlestontickets.net/"
+      "u": "https://charlestonpourhouse.com/event/john-cowan-trio/",
+      "p": 30,
+      "dop": 35,
+      "s": "Main Stage"
     },
     {
       "d": "2026-12-11",
@@ -5235,6 +5279,214 @@
       "sh": "6:00 PM",
       "v": "TMJI",
       "added": "2026-09-01"
+    },
+    {
+      "d": "2026-09-19",
+      "b": "Pop-Up Market",
+      "o": "Layton Meacham",
+      "dr": "11:00 AM",
+      "sh": "12:30 PM",
+      "p": 0,
+      "s": "Back Lot",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/pop-up-market/",
+      "flag": "Hybrid: vendor market event with live music explicitly mentioned (music 12:30–3:30pm on the deck)",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-10-13",
+      "b": "Haunt Me",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
+      "p": 15,
+      "dop": 20,
+      "s": "Main Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/haunt-me/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-10-17",
+      "b": "Feast For Us Brunch",
+      "dr": "10:00 AM",
+      "sh": "11:30 AM",
+      "p": 130,
+      "s": "Deck Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/feast-for-us-brunch/",
+      "flag": "Hybrid: yoga + brunch event with live music explicitly mentioned (members of the Jerry Tripsters performing a brunch set); $130 price is a real brunch-ticket price, not a scraping error",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-10-17",
+      "b": "The Poho Night Market",
+      "dr": "5:00 PM",
+      "sh": "5:00 PM",
+      "p": 0,
+      "s": "Back Lot",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/the-poho-night-market/",
+      "flag": "Hybrid: vendor market event with live music explicitly mentioned on the deck",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-10-17",
+      "b": "Jerry Tripsters",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 15,
+      "dop": 20,
+      "s": "Main Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/jerry-tripsters/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-10-30",
+      "b": "Sol Driven Train",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 20,
+      "s": "Deck Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/sol-driven-train/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-02",
+      "b": "A Feast For Us",
+      "dr": "5:30 PM",
+      "sh": "6:00 PM",
+      "p": 225,
+      "s": "Deck Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/a-feast-for-us/",
+      "flag": "Hybrid: intimate chef's-table dinner event with live improvised music explicitly mentioned (Ron Wiltrout, Kebbi Williams, Jonathan Lovett); $225 is a real fine-dining ticket price, not a scraping error",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-05",
+      "b": "Eric Lindell",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 35,
+      "s": "Deck Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/eric-lindell/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-12",
+      "b": "Broken Compass Bluegrass",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 15,
+      "s": "Deck Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/broken-compass-bluegrass/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-13",
+      "b": "Natalie Brooke",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 12,
+      "dop": 15,
+      "s": "Deck Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/natlie-brooke/",
+      "flag": "Billed by the venue as a pre-show for that night's TAUK + lespecial main-stage show",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-14",
+      "b": "Pop-Up Market",
+      "o": "Ward Buckheister (of Sol Driven Train)",
+      "dr": "11:00 AM",
+      "sh": "1:00 PM",
+      "p": 0,
+      "s": "Back Lot",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/pop-up-market-2026-11-14/",
+      "flag": "Hybrid: vendor market event with live music explicitly mentioned (music 1–4pm on the deck)",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-14",
+      "b": "TAUK",
+      "o": "lespecial ft. special guest Kanika Moore",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
+      "p": 30,
+      "dop": 35,
+      "s": "Main Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/tuak-lespecial-2026-11-14/",
+      "flag": "Second night of a two-night stand with Nov 13; $50 2-night package also offered",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-17",
+      "b": "East Nash Grass",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 18,
+      "dop": 20,
+      "s": "Deck Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/east-nash-grass-2/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-19",
+      "b": "She Returns From War",
+      "o": "Maddie Medley, Big Guy & The Very Large Men",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 15,
+      "dop": 20,
+      "s": "Deck Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/she-returns-from-war-maddie-medley-and-the-very-big-guy/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-11-20",
+      "b": "Drivin' N Cryin'",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 25,
+      "dop": 30,
+      "s": "Main Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/drivin-n-cryin/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-12-06",
+      "b": "Joey Harkum",
+      "o": "Droze & the Drift (Acoustic)",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 17,
+      "dop": 20,
+      "s": "Main Stage",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/joey-harkum/",
+      "added": "2026-09-13"
+    },
+    {
+      "d": "2026-12-12",
+      "b": "Pop-Up Market",
+      "dr": "11:00 AM",
+      "sh": "11:00 AM",
+      "p": 0,
+      "s": "Back Lot",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/pop-up-market-2026-12-12/2026-12-12/",
+      "flag": "Hybrid: vendor market event with live music explicitly mentioned on the deck",
+      "added": "2026-09-13"
     }
   ]
 }
