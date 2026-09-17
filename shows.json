@@ -1,5 +1,5 @@
 {
-  "dataUpdatedAt": "2026-09-13",
+  "dataUpdatedAt": "2026-09-17",
   "venues": {
     "PH": {
       "name": "Charleston Pour House",
@@ -575,8 +575,9 @@
       "dr": "—",
       "sh": "9:00 PM",
       "v": "WJ",
-      "u": "",
-      "added": "2026-09-01"
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85157",
+      "added": "2026-09-01",
+      "p": 10
     },
     {
       "d": "2026-09-18",
@@ -771,7 +772,8 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "",
-      "p": 10
+      "p": 15,
+      "o": "w/ Special Guest MJT"
     },
     {
       "d": "2026-09-22",
@@ -821,7 +823,8 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/57jmlo3v9v",
-      "p": 15
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-09-25",
@@ -839,7 +842,8 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/el95nemp92/preview",
-      "p": 15
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-09-26",
@@ -850,7 +854,8 @@
       "sh": "8:30 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/3rx70yvrj1/preview",
-      "p": 15
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-09-26",
@@ -897,7 +902,8 @@
       "sh": "8:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/p79plomkxk/preview",
-      "p": 30
+      "p": 30,
+      "dop": 35
     },
     {
       "d": "2026-09-26",
@@ -911,13 +917,13 @@
     {
       "d": "2026-09-29",
       "b": "Okapi Dream",
-      "o": "MJT",
+      "o": null,
       "s": "Deck Stage",
       "dr": "5:00 PM",
       "sh": "6:00 PM",
       "v": "PH",
       "u": "",
-      "p": 15
+      "p": 10
     },
     {
       "d": "2026-09-30",
@@ -937,7 +943,8 @@
       "sh": "10:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/group/qpxvvplxe1/preview",
-      "p": 35
+      "p": 35,
+      "dop": 40
     },
     {
       "d": "2026-09-30",
@@ -956,7 +963,8 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/group/qpxvvplxe1/preview",
-      "p": 35
+      "p": 35,
+      "dop": 40
     },
     {
       "d": "2026-10-01",
@@ -984,7 +992,8 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/o69nyre4x3/preview",
-      "p": 20
+      "p": 20,
+      "dop": 25
     },
     {
       "d": "2026-10-02",
@@ -995,7 +1004,8 @@
       "sh": "8:30 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/3px8ev4zx1",
-      "p": 15
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-10-02",
@@ -1006,13 +1016,15 @@
       "u": "https://www.ticketmaster.com/lalah-hathaway-charleston-south-carolina-10-02-2026/event/2D0064D0E041E7CF"
     },
     {
-      "d": "2026-10-02",
+      "d": "2026-10-01",
       "b": "Lily Rose",
       "s": "NÜTRL Beach Stage",
       "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
-      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85034"
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85034",
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-10-03",
@@ -1033,7 +1045,8 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/group/68x2g35jg2/preview",
-      "p": 22
+      "p": 22,
+      "dop": 25
     },
     {
       "d": "2026-10-03",
@@ -1062,16 +1075,19 @@
       "sh": "8:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/group/68x2g35jg2/preview",
-      "p": 22
+      "p": 22,
+      "dop": 25
     },
     {
-      "d": "2026-10-04",
+      "d": "2026-10-02",
       "b": "Saxsquatch",
       "s": "NÜTRL Beach Stage",
       "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
-      "u": "https://whollyticket.com/e/Saxsquatch26win"
+      "u": "https://whollyticket.com/e/Saxsquatch26win",
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-10-06",
@@ -1091,7 +1107,8 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/1qjww151j7",
-      "p": 10
+      "p": 10,
+      "dop": 12
     },
     {
       "d": "2026-10-08",
@@ -1101,7 +1118,8 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/p79pp18k9k/preview",
-      "p": 15
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-10-08",
@@ -1112,14 +1130,16 @@
       "u": "https://www.ticketmaster.com/on-the-border-the-ultimate-eagles-charleston-south-carolina-10-08-2026/event/2D0064D1CD79EB91"
     },
     {
-      "d": "2026-10-08",
+      "d": "2026-10-04",
       "b": "The Expendables",
       "o": "Matt & Zack",
       "s": "NÜTRL Beach Stage",
       "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
-      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=84942"
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=84942",
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-10-09",
@@ -1141,7 +1161,8 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/1qjww121j7/preview",
-      "p": 10
+      "p": 10,
+      "dop": 12
     },
     {
       "d": "2026-10-09",
@@ -1151,7 +1172,8 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/nvjqo22pxo/preview",
-      "p": 30
+      "p": 30,
+      "dop": 35
     },
     {
       "d": "2026-10-10",
@@ -1161,7 +1183,8 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/z59rd648jq/preview",
-      "p": 12
+      "p": 12,
+      "dop": 17
     },
     {
       "d": "2026-10-10",
@@ -1172,7 +1195,8 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/7pj6nmzg9r/preview",
-      "p": 35
+      "p": 35,
+      "dop": 40
     },
     {
       "d": "2026-10-10",
@@ -1183,13 +1207,15 @@
       "u": "https://www.ticketmaster.com/the-black-jacket-symphony-presents-def-charleston-south-carolina-10-10-2026/event/2D00649D8DF6F20E"
     },
     {
-      "d": "2026-10-10",
+      "d": "2026-10-08",
       "b": "The California Honeydrops",
       "s": "NÜTRL Beach Stage",
       "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
-      "u": "https://whollyticket.com/e/CaliforniaHdrops26win"
+      "u": "https://whollyticket.com/e/CaliforniaHdrops26win",
+      "p": 35,
+      "dop": 40
     },
     {
       "d": "2026-10-11",
@@ -1200,7 +1226,8 @@
       "sh": "8:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/57jm30p69v/preview",
-      "p": 20
+      "p": 20,
+      "dop": 25
     },
     {
       "d": "2026-10-11",
@@ -1246,7 +1273,8 @@
       "sh": "8:30 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/zp9kqo2595/preview",
-      "p": 25
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-10-16",
@@ -1281,7 +1309,8 @@
       "sh": "7:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/14th-annual-ccc-cornhole-tournament-live-music/",
-      "p": 15
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-10-17",
@@ -1298,7 +1327,9 @@
       "dr": "7:00 PM",
       "sh": "8:00 PM",
       "v": "CMH",
-      "u": "https://www.ticketmaster.com/the-living-tombstone-the-multiplayer-tour-charleston-south-carolina-10-18-2026/event/2D006459B67CC334"
+      "u": "https://www.ticketmaster.com/the-living-tombstone-the-multiplayer-tour-charleston-south-carolina-10-18-2026/event/2D006459B67CC334",
+      "o": "Mystery Skulls",
+      "lowTix": true
     },
     {
       "d": "2026-10-19",
@@ -1316,7 +1347,8 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/lamp/",
-      "p": 25
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-10-23",
@@ -1335,7 +1367,8 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/the-greyboy-allstars/",
-      "p": 35
+      "p": 35,
+      "dop": 40
     },
     {
       "d": "2026-10-23",
@@ -1347,7 +1380,8 @@
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/hotel-hugo/",
       "p": 10,
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "dop": 15
     },
     {
       "d": "2026-10-17",
@@ -1408,7 +1442,8 @@
       "sh": "8:30 PM",
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/porch-light/",
-      "p": 20
+      "p": 20,
+      "dop": 22
     },
     {
       "d": "2026-10-16",
@@ -1420,7 +1455,8 @@
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/be-weir-now/",
       "p": 15,
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "dop": 20
     },
     {
       "d": "2026-10-29",
@@ -1431,7 +1467,8 @@
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/jacoozy-3/",
       "p": 15,
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "dop": 18
     },
     {
       "d": "2026-10-30",
@@ -1526,11 +1563,13 @@
     {
       "d": "2026-11-05",
       "b": "Drake Milligan",
-      "s": "NÜTRL Beach Stage",
+      "s": "Inside Stage",
       "dr": "—",
-      "sh": "6:00 PM",
+      "sh": "8:00 PM",
       "v": "WJ",
-      "u": "https://the-windjammer.com/event/drake-milligan-on-the-nutrl-beach-stage/"
+      "u": "https://the-windjammer.com/event/drake-milligan-on-the-nutrl-beach-stage/",
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-11-08",
@@ -1668,21 +1707,25 @@
     {
       "d": "2026-11-07",
       "b": "Nightrain: The Guns N' Roses Experience",
-      "s": "NÜTRL Beach Stage",
+      "s": "Inside Stage",
       "dr": "—",
-      "sh": "6:00 PM",
+      "sh": "9:00 PM",
       "v": "WJ",
-      "u": "https://the-windjammer.com/event/nightrain-the-guns-n-roses-experience-on-the-nutrl-beach-stage/"
+      "u": "https://the-windjammer.com/event/nightrain-the-guns-n-roses-experience-on-the-nutrl-beach-stage/",
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-11-19",
       "b": "Hunter Flynn — Back To My Roots Tour",
-      "s": "NÜTRL Beach Stage",
+      "s": "Inside Stage",
       "dr": "—",
-      "sh": "6:00 PM",
+      "sh": "8:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/hunter-flynn-back-to-my-roots-tour-on-the-nutrl-beach-stage/",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "p": 20,
+      "dop": 25
     },
     {
       "d": "2026-11-20",
@@ -1690,7 +1733,8 @@
       "dr": "7:00 PM",
       "sh": "8:00 PM",
       "v": "CMH",
-      "u": "https://www.ticketmaster.com/big-head-todd-the-monsters-charleston-south-carolina-02-26-2026/event/2D006304BD93282F"
+      "u": "https://www.ticketmaster.com/big-head-todd-the-monsters-charleston-south-carolina-02-26-2026/event/2D006304BD93282F",
+      "lowTix": true
     },
     {
       "d": "2026-11-21",
@@ -1730,11 +1774,13 @@
     {
       "d": "2026-12-03",
       "b": "FILMORE",
-      "s": "NÜTRL Beach Stage",
+      "s": "Inside Stage",
       "dr": "—",
-      "sh": "6:00 PM",
+      "sh": "8:00 PM",
       "v": "WJ",
-      "u": "https://the-windjammer.com/event/filmore-on-the-nutrl-beach-stage/"
+      "u": "https://the-windjammer.com/event/filmore-on-the-nutrl-beach-stage/",
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-12-03",
@@ -1931,7 +1977,9 @@
       "dr": "7:30 PM",
       "sh": "8:30 PM",
       "v": "PH",
-      "u": "https://charleston-pour-house.charlestontickets.net/"
+      "u": "https://aftontickets.com/event/buyticket/8qj4lwr69m/preview",
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2027-01-16",
@@ -2102,7 +2150,8 @@
       "dr": "7:30 PM",
       "sh": "8:00 PM",
       "v": "MF",
-      "u": "https://www.ticketmaster.com/russian-circles-charleston-south-carolina-10-08-2026/event/2D0064D2A430E9D3"
+      "u": "https://www.ticketmaster.com/russian-circles-charleston-south-carolina-10-08-2026/event/2D0064D2A430E9D3",
+      "o": "Pelican"
     },
     {
       "d": "2026-10-09",
@@ -2279,7 +2328,7 @@
       "dr": "6:00 PM",
       "sh": "7:00 PM",
       "v": "MF",
-      "u": "",
+      "u": "https://www.ticketmaster.com/jupiter-coyote-charleston-south-carolina-01-30-2027/event/2D006523A6D9E5B8",
       "added": "2026-09-01"
     },
     {
@@ -2829,7 +2878,7 @@
     {
       "d": "2026-12-05",
       "b": "Rap-A-Lot: Royal Finale",
-      "o": "DC, THRY, ShogunRew, Mahatma Mook, JxShamar, Amaru tha God",
+      "o": "DC, THRY, ShogunRew, Mahatma Mook, JxShamar, Amaru tha God, DJ Ovets, Special Guests",
       "dr": "9:00 PM",
       "sh": "—",
       "p": 10.0,
@@ -2927,11 +2976,13 @@
     {
       "d": "2026-12-05",
       "b": "Tobacco Road + Wim Tapley & The Cannons",
-      "s": "NÜTRL Beach Stage",
+      "s": "Inside Stage",
       "dr": "—",
-      "sh": "7:00 PM",
+      "sh": "9:00 PM",
       "v": "WJ",
-      "u": "https://the-windjammer.com/event/tobacco-road-wim-tapley-the-cannons-on-the-nutrl-beach-stage/"
+      "u": "https://the-windjammer.com/event/tobacco-road-wim-tapley-the-cannons-on-the-nutrl-beach-stage/",
+      "p": 20,
+      "dop": 25
     },
     {
       "d": "2027-01-01",
@@ -3002,7 +3053,8 @@
       "s": "Deck Stage",
       "u": "https://charlestonpourhouse.com/event/andy-thomas/",
       "p": 13,
-      "added": "2026-09-04"
+      "added": "2026-09-04",
+      "dop": 15
     },
     {
       "d": "2026-09-21",
@@ -3047,7 +3099,8 @@
       "s": "Main Stage",
       "u": "https://charlestonpourhouse.com/event/silverada-2/",
       "p": 20,
-      "added": "2026-09-04"
+      "added": "2026-09-04",
+      "dop": 25
     },
     {
       "d": "2026-11-14",
@@ -4390,10 +4443,11 @@
     },
     {
       "d": "2026-10-18",
-      "b": "Kevin Church",
+      "b": "Chris Tidestrom",
       "sh": "8:00 PM",
       "v": "TC",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "flag": "Replaced 'Kevin Church' per livemusiccharleston.com re-fetch (unverified — Tommy Condon's own site has no independent listing to confirm; this venue's feed shows a recurring pattern of same-time double-bookings, so this could be a genuine lineup change or an aggregator quirk)."
     },
     {
       "d": "2026-10-19",
@@ -4873,11 +4927,12 @@
     },
     {
       "d": "2026-11-14",
-      "b": "Eddie Bush",
+      "b": "HALF BAD",
       "s": "Covered Back Deck",
       "sh": "7:00 PM",
       "v": "DIN",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "flag": "Replaced 'Eddie Bush' per livemusiccharleston.com re-fetch (unverified — sourced solely from the cross-check aggregator, likely a genuine lineup change since the venue's first scrape)."
     },
     {
       "d": "2026-11-14",
@@ -5488,6 +5543,591 @@
       "u": "https://charlestonpourhouse.com/event/pop-up-market-2026-12-12/2026-12-12/",
       "flag": "Hybrid: vendor market event with live music explicitly mentioned on the deck",
       "added": "2026-09-01"
+    },
+    {
+      "d": "2026-10-04",
+      "b": "Fred Armisen",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/fred-armisencomedy-for-musiciansbuteveryone-is-welcome-charleston-south-carolina-10-04-2026/event/2D006495AC97D546",
+      "flag": "Billed as 'Comedy for Musicians But Also Everyone Else' — a music/comedy hybrid show, not a standard stand-up special. Included per the hybrid live-music carve-out rather than the comedy exclusion.",
+      "lowTix": true,
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-26",
+      "b": "John Cameron Mitchell: Hedwig 25th Anniversary Movie Tour",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/john-cameron-mitchell-hedwig-25th-anniversary-charleston-south-carolina-10-26-2026/event/2D0064C1C3837E13",
+      "flag": "Genuinely ambiguous: billed as a film-screening tour with John Cameron Mitchell performing/appearing live (Hedwig and the Angry Inch songs); unclear from venue listing whether it includes a full live band set vs. screening + live intro/Q&A. Flagging rather than excluding or firmly including.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-02",
+      "b": "Jake Shimabukuro",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/jake-shimabukuro-charleston-south-carolina-11-02-2026/event/2D0065288E2D8B34",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-24",
+      "b": "Slaughter To Prevail",
+      "o": "Rev3rent",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/slaughter-to-prevail-north-america-2026-charleston-south-carolina-11-24-2026/event/2D0065239DB7C71A",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-01-09",
+      "b": "Rumours ATL: A Fleetwood Mac Tribute",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/rumours-atl-a-fleetwood-mac-tribute-charleston-south-carolina-01-09-2027/event/2D00652BC3F17789",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-01-22",
+      "b": "A Tribute to Taylor Simon King: 3 American Troubadours",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/a-tribute-to-taylor-simon-king-charleston-south-carolina-01-22-2027/event/2D00652BC8B68AAE",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-01-31",
+      "b": "Alan Walker",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/alan-walker-charleston-south-carolina-01-31-2027/event/2D00652A8DB594F9",
+      "flag": "Touring EDM producer/live act performing a ticketed concert set, not a club DJ night/dance party — included as a genuine touring music act.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-02-20",
+      "b": "Corey Kent",
+      "o": "Tyler Nance",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/corey-kent-heartland-rock-and-roll-charleston-south-carolina-02-20-2027/event/2D00652886C57B24",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-02-27",
+      "b": "JUMP — America's Van Halen Experience",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/jump-americas-van-halen-experience-charleston-south-carolina-02-27-2027/event/2D00652E943F8FDB",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-25",
+      "b": "The Almost Every Wednesday Band",
+      "s": "Covered Back Deck",
+      "sh": "6:00 PM",
+      "v": "DIN",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-27",
+      "b": "Southbound",
+      "s": "Covered Back Deck",
+      "sh": "7:00 PM",
+      "v": "DIN",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-28",
+      "b": "Gracious Day",
+      "s": "Covered Back Deck",
+      "sh": "3:00 PM",
+      "v": "DIN",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-29",
+      "b": "Brandon Lamar Simmons",
+      "s": "Covered Back Deck",
+      "sh": "3:00 PM",
+      "v": "DIN",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-29",
+      "b": "Dave Landeo",
+      "s": "Covered Back Deck",
+      "sh": "6:30 PM",
+      "v": "DIN",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-02",
+      "b": "The Almost Every Wednesday Band",
+      "s": "Covered Back Deck",
+      "sh": "6:00 PM",
+      "v": "DIN",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-03",
+      "b": "40 Years Too Late",
+      "s": "Covered Back Deck",
+      "sh": "6:00 PM",
+      "v": "DIN",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-04",
+      "b": "Chewbacky",
+      "s": "Covered Back Deck",
+      "sh": "7:00 PM",
+      "v": "DIN",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-14",
+      "b": "Pecos & The Rooftops",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/pecos-the-rooftops-charleston-south-carolina-11-14-2026/event/2D006523A949ED67",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-03-23",
+      "b": "Alaska Thunderf*ck",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/alaska-thunderfck-the-revolution-tour-charleston-south-carolina-03-23-2027/event/2D00652AAF12336A",
+      "flag": "Genuinely ambiguous: Alaska Thunderfuck (RuPaul's Drag Race alum) is billed here as \"The Revolution Tour\"; her shows sometimes include original live-performed songs but the MF listing gives no further description confirming a live-music component vs. a straight drag/comedy revue. Included per the genuinely-ambiguous rule rather than guessed at.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-04-03",
+      "b": "Brandy Clark",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/brandy-clark-take-flight-world-tour-charleston-south-carolina-04-03-2027/event/2D00652E96DD99C9",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-17",
+      "b": "Rocket Man: The Music of Elton",
+      "o": "Michael Sobie with the North Charleston POPS! Orchestra",
+      "s": "Performing Arts Center",
+      "dr": "6:30 PM",
+      "sh": "7:30 PM",
+      "v": "NCC",
+      "u": "https://www.ticketmaster.com/event/2D006324005CB54F",
+      "flag": "North Charleston POPS! series: full orchestra performing Elton John repertoire. Same category as the existing flagged 'Sonic Live in Concert' entry (orchestra-backed but non-classical repertoire) — flagging per that same precedent rather than applying a hard classical/orchestral exclusion.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-18",
+      "b": "Poho Family Jam",
+      "o": "ft. Oleg Terentiev, Corey Stephens, Danny Circharo, Bill Jarrett, Ethan Hamlin, Jamal Hall, and special guests",
+      "s": "Main Stage",
+      "dr": "8:00 PM",
+      "sh": "9:30 PM",
+      "p": 10,
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/3rx750ek91",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-01",
+      "b": "Captain's Crew",
+      "o": "feat. Russell Clarke (Sax), Ward Buckheister (Trombone/Guitar), Ryan Whitney (Drums), Matt Thompson (Bass) — pre-Andy Frasco show",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 10,
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/captains-crew/",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-05",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-11",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-12",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-18",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-19",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-22",
+      "b": "The Jesse Williams Band",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 10,
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/om9o16k4jg",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-26",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Main Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-31",
+      "b": "Adam Knight's Buried Alive",
+      "o": "Chilling Thrilling Sounds of the Haunted House (Phish tribute)",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 15,
+      "dop": 20,
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/1g9glppox8",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-31",
+      "b": "Wolf Mask",
+      "o": "Slasher Disco: The Second Cut, presented by Cygoodies",
+      "s": "Main Stage",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
+      "p": 15,
+      "dop": 20,
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/1o91d31y9e/preview",
+      "flag": "Billed as a themed 'Slasher Disco' Halloween night, but confirmed via the venue's own event page to be a live band (4-piece, named members) performing, not a DJ set.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-01",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-02",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-06",
+      "b": "The Garcia Project",
+      "o": "Recreating complete JGB shows from 1976–1995",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 30,
+      "dop": 35,
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/o69ny7o3x3",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-07",
+      "b": "Quattlefest",
+      "o": "Jeff Caldwell, Sean Bing, Jonathan Lovett, Jeremy Wolf and guests (PQ's 50th Birthday)",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 10,
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/27x03g7nxd",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-08",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-09",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-15",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-16",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-22",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-23",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-29",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-11-30",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Main Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-07",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-14",
+      "b": "The Headstrings Collective – Monday Muse",
+      "s": "Main Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 0,
+      "v": "PH",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-03-13",
+      "b": "Robert Jon & The Wreck",
+      "s": "Main Stage",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 30,
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/lwxzgmmrjp/preview",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-24",
+      "b": "Cole Davis",
+      "sh": "9:00 PM",
+      "v": "TC",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-27",
+      "b": "Kevin Church",
+      "sh": "8:00 PM",
+      "v": "TC",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-29",
+      "b": "Kevin Church",
+      "sh": "8:00 PM",
+      "v": "TC",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-30",
+      "b": "Carroll Brown",
+      "sh": "7:30 PM",
+      "v": "TC",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-31",
+      "b": "Chris Tidestrom",
+      "sh": "9:00 PM",
+      "v": "TC",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-01-01",
+      "b": "Chris Tidestrom",
+      "sh": "9:00 PM",
+      "v": "TC",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2027-01-07",
+      "b": "Kyle Herring",
+      "sh": "8:00 PM",
+      "v": "TC",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-20",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-21",
+      "b": "Southern Stomp",
+      "sh": "8:00 PM",
+      "v": "US",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-22",
+      "b": "East Bay Band",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-23",
+      "b": "Clay Barker",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-18",
+      "b": "FlashMob",
+      "o": "Charleston's Top 40 Party Band",
+      "s": "Inside Stage",
+      "dr": "—",
+      "sh": "9:30 PM",
+      "p": 10,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85158",
+      "flag": "$10, or FREE with a Winyah 9/18 ticket. Occupies the exact date/stage/time slot previously held by 'Macelyn Batten' in stored data, who no longer appears anywhere on the venue's site — see open_questions.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-03",
+      "b": "80s Beach Party w/ Weird Science",
+      "o": "Weird Science",
+      "s": "NÜTRL Beach Stage",
+      "dr": "—",
+      "sh": "6:00 PM",
+      "p": 15,
+      "dop": 20,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85169",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-19",
+      "b": "Fo Daniels",
+      "s": "Inside Stage",
+      "dr": "—",
+      "sh": "9:00 PM",
+      "p": 15,
+      "dop": 20,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85160",
+      "flag": "Headliner date, distinct from Fo Daniels' earlier stored appearances as an opener for Moon Taxi in Sept; not a duplicate (different date).",
+      "added": "2026-09-17"
     }
   ]
 }
