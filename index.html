@@ -435,8 +435,15 @@
        so a button that fits stays beside the heading and only the overflow drops
        to its own line, instead of the whole .section-title-links group dropping
        together even when one of its buttons would've fit. */
-    .section-title-row{gap:8px;}
+    .section-title-row{gap:6px;}
     .section-title-links{display:contents;}
+    /* Narrower than the desktop 168px, and less horizontal padding on all three
+       pill types, so "All Shows" + the venue filter + "Back to top" all fit on one
+       row at typical mobile widths instead of the last one wrapping alone --
+       longer toggle labels ("3 venues selected", a long venue name) still just
+       ellipsize, per the toggle's existing design. */
+    .venue-filter-toggle{width:112px;}
+    .back-to-top-link, .jump-next-link, .venue-filter-toggle{padding:5px 9px;}
     .b2-title{font-size:31px;}
     .b2-frame{padding:12px 18px;}
     .nav-chip-row{justify-content:center;gap:6px;}
