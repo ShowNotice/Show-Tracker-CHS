@@ -563,6 +563,27 @@ One-off investigation (network allowlist for `travelerofcharleston.com` added sa
 - **`ticketmaster.com` itself (not just AXS) was blocked at the network egress-proxy level this run** for direct event-page fetches — distinct from the documented AXS/price bot-block. Didn't block data collection (venue sites and previously-stored Ticketmaster URLs covered what was needed) but worth knowing if a future run needs to fetch a fresh Ticketmaster page directly.
 - **Two low-confidence single-field corrections applied and flagged rather than silently trusted:** Tommy Condon's 2026-10-18 8:00 PM slot ("Kevin Church" → "Chris Tidestrom") and The Dinghy's 2026-11-14 7:00 PM slot ("Eddie Bush" → "HALF BAD") both came solely from a `livemusiccharleston.com` re-fetch with no independent venue-site data to arbitrate — applied as corrections (the aggregator is currently the *only* source for these two venues) but each show now carries a `flag` noting the swap is unverified.
 
+### beatgig.com investigated 2026-09-17 — confirmed same underlying data as livemusiccharleston.com, not independent
+
+One-off investigation (network allowlist for `beatgig.com` and `backend.beatgig.com` added same day by the user). Resolves the "possible non-independence" flag raised in the 2026-09-17 weekly-refresh PR (#78) for CHA/SNOB.
+
+- **`beatgig.com` itself is a Next.js frontend; the real API lives at `backend.beatgig.com/api/v1/graphql`** (found by fetching `beatgig.com`'s own JS bundles and grepping for `beatgig.com` URLs — same technique as the `livemusiccharleston.com` investigation). Undocumented, reverse-engineered from bundle internals, not an official public API — treat as fragile and liable to change without notice.
+- **Working (unauthenticated, read-only) query, found by trial and error against the live schema** (the bundle's own query text used a `venue(slug: ...)` root field that no longer exists on the live schema — schema had drifted from what's in the shipped bundle):
+  ```graphql
+  query T($start: DateTime!, $offset: Int!, $limit: Int!, $slugs: [String!]!) {
+    calendarBookings(start: $start, limit: $limit, offset: $offset, organizationSlugs: $slugs) {
+      canFetchMore
+      bookings: calendarBookings {
+        bandConfiguration artistCategory publicEventDescription artistName
+        venueSlug venueName startTime bookingType id
+      }
+    }
+  }
+  ```
+  `organizationSlugs` takes the same venue slug embedded in the venue's own site (`data-beatgig-venue-slug="..."`, visible in the page source of any venue using the widget). Paginate via `offset`/`limit` while `canFetchMore` is true. `startTime` is UTC.
+- **Confirmed identical to `livemusiccharleston.com`'s data for both CHA and SNOB** — same event counts (37 for CHA, 7 for SNOB), same date ranges, and the handful of "extra" BeatGig events not yet in `shows.json` are the exact same non-music items (Green Market Night, Trivia, DJ nights, National Drink a Beer/Lager Day, block-party listings) the earlier fetch already correctly excluded. `bookingType` distinguishes `internal` (booked directly through BeatGig) from `external` (synced in from elsewhere) — the `external_booking_` ID prefix matches `livemusiccharleston.com`'s own event IDs exactly, confirming these two sites share the same backend rather than being independently-curated sources.
+- **Net effect: no changes to `shows.json`** — CHA and SNOB were already fully in sync via `livemusiccharleston.com`. Worth keeping this query documented anyway: it's one hop closer to the actual source (the venue's own embedded widget, not a third-party aggregator site), so if `livemusiccharleston.com` ever goes stale or dark, this is a ready-made fallback for any venue using a BeatGig calendar widget (confirmed so far: CHA, SNOB, and the now-untracked DIN/RSG).
+
 ## Repo notes
 
 - `cowork-task-instructions.md` was rewritten from scratch in an earlier session.
