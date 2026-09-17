@@ -630,7 +630,8 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/27x0gp189d/preview",
-      "p": 18
+      "p": 18,
+      "dop": 20
     },
     {
       "d": "2026-09-17",
@@ -698,7 +699,8 @@
       "sh": "8:30 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/nvjqo72pxo/preview",
-      "p": 30
+      "p": 30,
+      "dop": 35
     },
     {
       "d": "2026-09-18",
@@ -4426,6 +4428,36 @@
       "v": "CMH",
       "u": "https://www.ticketmaster.com/the-rocky-horror-picture-show-w-charleston-south-carolina-10-25-2026/event/2D00652BC68A8314",
       "flag": "Presented with CofC Center Stage: a film screening of Rocky Horror with a live costumed shadowcast performing alongside the movie, not a standard live band set. Included per the same film/live-performance hybrid carve-out as the existing Hedwig 25th Anniversary Movie Tour entry.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-07",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "v": "PH",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 10,
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-14",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "v": "PH",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 10,
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-21",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "v": "PH",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 10,
       "added": "2026-09-17"
     }
   ]
