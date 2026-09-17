@@ -3603,19 +3603,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-09-19",
-      "b": "Pop-Up Market",
-      "o": "Layton Meacham",
-      "dr": "11:00 AM",
-      "sh": "12:30 PM",
-      "p": 0,
-      "s": "Back Lot",
-      "v": "PH",
-      "u": "https://charlestonpourhouse.com/event/pop-up-market/",
-      "flag": "Hybrid: vendor market event with live music explicitly mentioned (music 12:30–3:30pm on the deck)",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-10-13",
       "b": "Haunt Me",
       "dr": "8:00 PM",
@@ -3637,18 +3624,6 @@
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/feast-for-us-brunch/",
       "flag": "Hybrid: yoga + brunch event with live music explicitly mentioned (members of the Jerry Tripsters performing a brunch set); $130 price is a real brunch-ticket price, not a scraping error",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-17",
-      "b": "The Poho Night Market",
-      "dr": "5:00 PM",
-      "sh": "5:00 PM",
-      "p": 0,
-      "s": "Back Lot",
-      "v": "PH",
-      "u": "https://charlestonpourhouse.com/event/the-poho-night-market/",
-      "flag": "Hybrid: vendor market event with live music explicitly mentioned on the deck",
       "added": "2026-09-01"
     },
     {
