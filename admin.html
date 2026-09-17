@@ -139,6 +139,33 @@ function fmtDate(ms){
   return new Date(ms).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
 }
 
+function fmtDateTime(ms){
+  if(!ms) return '—';
+  return new Date(ms).toLocaleString('en-US', {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'});
+}
+
+// Whether Resend is reaching our webhook endpoint at all, and processing what it sends
+// cleanly -- a separate question from whether any one reader's mail client actually
+// loaded the open-tracking pixel (that shows up as Resend's own per-email Insights
+// panel never reaching an "Opened" step, which this can't see or explain). This is
+// about catching our own endpoint being unreachable, unregistered, or misconfigured.
+function webhookHealthHtml(wh){
+  const staleMs = wh.lastReceivedAt ? Date.now() - wh.lastReceivedAt : null;
+  // Digest sends are weekly (see project notes); no webhook call in over ~10 days
+  // means something upstream of us stopped calling in, not just a quiet week.
+  const stale = staleMs === null || staleMs > 10 * 86400000;
+  const secretLine = wh.secretConfigured
+    ? 'secret configured'
+    : '<span class="error" style="display:inline;padding:0;">secret NOT configured — signatures aren\'t being verified</span>';
+  const lastLine = wh.lastReceivedAt
+    ? `last event received ${fmtDateTime(wh.lastReceivedAt)} (${escapeHtml(wh.lastEventType || 'unknown type')}, ${wh.lastSignatureValid === false ? 'invalid signature' : wh.lastSignatureValid === true ? 'signature verified' : 'unverified'})`
+    : '<span class="error" style="display:inline;padding:0;">no webhook calls received yet</span>';
+  const sigFailLine = wh.sigFailures.week > 0
+    ? ` &middot; <span class="error" style="display:inline;padding:0;">${wh.sigFailures.week} signature failure(s) this week</span>`
+    : '';
+  return `<p class="muted" style="font-size:11px;margin:4px 0 0;">Webhook: ${secretLine} &middot; ${lastLine}${sigFailLine}${stale && wh.lastReceivedAt ? ' &middot; <span class="error" style="display:inline;padding:0;">stale — check the endpoint is still registered in Resend</span>' : ''}</p>`;
+}
+
 // Cloudflare's clientCountryName field is actually an ISO 3166-1 alpha-2 code (e.g.
 // "US"), not a name despite what it's called -- Intl.DisplayNames turns that into
 // something readable ("United States") without needing a hand-maintained lookup table.
@@ -250,7 +277,8 @@ function renderStats(data){
     { label: 'Delivered', w: d.delivered },
     { label: 'Opened', w: d.opened },
     { label: 'Clicked', w: d.clicked }
-  ], 'digest') + `<p class="muted" style="font-size:11px;margin:8px 0 0;">All-time open rate ${pct(d.opened.all, d.delivered.all)} &middot; click rate ${pct(d.clicked.all, d.delivered.all)}</p>`;
+  ], 'digest') + `<p class="muted" style="font-size:11px;margin:8px 0 0;">All-time open rate ${pct(d.opened.all, d.delivered.all)} &middot; click rate ${pct(d.clicked.all, d.delivered.all)}</p>`
+    + webhookHealthHtml(data.webhookHealth);
 
   const subsWindowHtml = windowTableHtml([
     { label: 'New subscribers', w: data.subscribers.window },
