@@ -630,7 +630,8 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/27x0gp189d/preview",
-      "p": 18
+      "p": 18,
+      "dop": 20
     },
     {
       "d": "2026-09-17",
@@ -698,7 +699,8 @@
       "sh": "8:30 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/nvjqo72pxo/preview",
-      "p": 30
+      "p": 30,
+      "dop": 35
     },
     {
       "d": "2026-09-18",
@@ -795,7 +797,7 @@
       "d": "2026-09-25",
       "b": "Limbo at The Refinery presents: Jed Harrelson",
       "dr": "see ticket link",
-      "sh": "see ticket link",
+      "sh": "4:00 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14899363"
     },
@@ -830,7 +832,8 @@
       "sh": "4:15 PM",
       "p": 85.57,
       "v": "REF",
-      "u": "https://www.ticketweb.com/event/20-years-of-home-team-the-refinery-tickets/14213844"
+      "u": "https://www.ticketweb.com/event/20-years-of-home-team-the-refinery-tickets/14213844",
+      "flag": "charlestonlivemusic.com JSON-LD lists startDate as 12:15 PM, conflicting with existing price-verified doors 3:00 PM / show 4:15 PM. Left times unchanged; CLM figure may reflect an earlier gates/market-opening time for the all-day anniversary event rather than the main-stage schedule. Needs manual review."
     },
     {
       "d": "2026-09-26",
@@ -935,10 +938,11 @@
       "d": "2026-10-01",
       "b": "Ashley McBryde — Into The Wild Tour",
       "o": "Colton Bowlin",
-      "dr": "see ticket link",
+      "dr": "3:30 PM",
       "sh": "7:30 PM",
       "v": "REF",
-      "u": "https://www.ticketweb.com/event/ashley-mcbryde-the-refinery-tickets/14910213"
+      "u": "https://www.ticketweb.com/event/ashley-mcbryde-the-refinery-tickets/14910213",
+      "flag": "Doors time inferred from charlestonlivemusic.com startDate (3:30 PM), which is exactly 4 hrs ahead of the confirmed 7:30 PM show time; not explicitly labeled as doors, so treat with some caution."
     },
     {
       "d": "2026-09-27",
@@ -947,7 +951,10 @@
       "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
-      "u": "https://the-windjammer.com/event/susto-stringband-on-the-nutrl-beach-stage/"
+      "u": "https://the-windjammer.com/event/susto-stringband-on-the-nutrl-beach-stage/",
+      "o": "Macelyn Batten",
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-10-02",
@@ -1252,11 +1259,12 @@
     {
       "d": "2026-10-16",
       "b": "Trampled by Turtles",
-      "dr": "see ticket link",
+      "dr": "3:30 PM",
       "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/trampled-by-turtles-the-refinery-tickets/14856503",
-      "o": "The Last Revel"
+      "o": "The Last Revel",
+      "flag": "Doors time inferred from charlestonlivemusic.com startDate (3:30 PM), 4 hrs ahead of the confirmed 7:30 PM show time, by analogy with the Ashley McBryde pattern."
     },
     {
       "d": "2026-10-17",
@@ -1559,11 +1567,12 @@
     {
       "d": "2026-11-08",
       "b": "Judah & The Lion",
-      "dr": "see ticket link",
+      "dr": "2:30 PM",
       "sh": "see ticket link",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/judah-the-lion-the-refinery-tickets/14191714",
-      "o": "Breakfield and Band of Silver"
+      "o": "Breakfield and Band of Silver",
+      "flag": "Doors time inferred from charlestonlivemusic.com startDate (2:30 PM) by analogy with the ~4hr doors-to-show pattern seen at other full-production Refinery shows; no confirmed headline show time found anywhere."
     },
     {
       "d": "2026-11-09",
@@ -1594,7 +1603,7 @@
       "d": "2026-11-11",
       "b": "Limbo at The Refinery presents: Jesse Roper",
       "dr": "see ticket link",
-      "sh": "see ticket link",
+      "sh": "3:00 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14973523"
     },
@@ -1732,10 +1741,11 @@
     {
       "d": "2026-12-02",
       "b": "Beartooth",
-      "dr": "see ticket link",
+      "dr": "1:30 PM",
       "sh": "see ticket link",
       "v": "REF",
-      "u": "https://www.ticketweb.com/event/beartooth-the-refinery-tickets/14914313"
+      "u": "https://www.ticketweb.com/event/beartooth-the-refinery-tickets/14914313",
+      "flag": "Doors time inferred from charlestonlivemusic.com startDate (1:30 PM) by analogy with other full-production shows; actual headline show time not confirmed anywhere."
     },
     {
       "d": "2026-12-03",
@@ -2314,7 +2324,7 @@
       "dr": "7:00 PM",
       "sh": "8:00 PM",
       "v": "NCC",
-      "u": "https://www.northcharlestoncoliseumpac.com/events/detail/becky-robinson",
+      "u": "https://www.ticketmaster.com/event/2D0064AEF308660A",
       "added": "2026-09-01"
     },
     {
@@ -2342,7 +2352,7 @@
       "b": "MercyMe",
       "o": "Jeremy Camp, Tim Timmons, Sam Wesley",
       "s": "Coliseum",
-      "dr": "6:00 PM",
+      "dr": "5:30 PM",
       "sh": "7:00 PM",
       "v": "NCC",
       "u": "https://www.ticketmaster.com/event/2D0064A43243C7AB",
@@ -2868,7 +2878,8 @@
       "sh": "—",
       "v": "RA",
       "flag": "Venue copy lists bikes, booze, oysters, games, live music, burn barrels, vendors, tattoos, and the prison bus with no band/act named — genuinely ambiguous whether this is a live-music show; included per the ambiguous-case rule rather than excluded",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "u": "http://www.theroyalamerican.com/schedule/14-annual-biker-oyster-roast-12-13-26"
     },
     {
       "d": "2026-12-19",
@@ -2892,11 +2903,12 @@
     {
       "d": "2026-09-02",
       "b": "Sheer Terror",
-      "o": "South Held Social Club",
-      "dr": "—",
-      "sh": "—",
+      "o": "South Held Social Club, D.I.E., Exaggerators",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
       "v": "TR",
-      "u": "https://www.songkick.com/concerts/43381177-sheer-terror-at-tin-roof-charleston"
+      "u": "https://tockify.com/tinroofschedule/detail/1780/1788390000000",
+      "p": 20
     },
     {
       "d": "2026-09-21",
@@ -4401,6 +4413,57 @@
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14298294",
       "added": "2026-09-01"
+    },
+    {
+      "d": "2026-09-25",
+      "b": "Keith Hille & The Backyard Saints",
+      "v": "WJ",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "10:00 PM",
+      "p": 10,
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85175",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-25",
+      "b": "The Rocky Horror Picture Show w/ Live Shadowcast",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/the-rocky-horror-picture-show-w-charleston-south-carolina-10-25-2026/event/2D00652BC68A8314",
+      "flag": "Presented with CofC Center Stage: a film screening of Rocky Horror with a live costumed shadowcast performing alongside the movie, not a standard live band set. Included per the same film/live-performance hybrid carve-out as the existing Hedwig 25th Anniversary Movie Tour entry.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-07",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "v": "PH",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 10,
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-14",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "v": "PH",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 10,
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-21",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "v": "PH",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 10,
+      "added": "2026-09-17"
     }
   ]
 }
