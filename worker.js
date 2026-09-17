@@ -825,9 +825,37 @@ function upcomingShows(shows) {
     .sort((a, b) => a.d.localeCompare(b.d));
 }
 
-function fmtShortDate(iso) {
+// Matches the site's own fmtDayDate()/fmtDate() exactly (full weekday + month), used
+// for the digest's day-group headers -- now the only place a date renders, since cards
+// no longer repeat it (see groupByDayHtml below).
+function fmtDayHeadDate(iso, endIso) {
   const d = new Date(iso + 'T12:00:00');
-  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  let s = d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+  if (endIso) {
+    const e = new Date(endIso + 'T12:00:00');
+    s += ' – ' + e.toLocaleDateString('en-US', { month: 'long', day: 'numeric' });
+  }
+  return s;
+}
+
+// Splits "9:30 PM" into a full-size numeric part plus a smaller inline AM/PM suffix,
+// same trick the site's own formatTimeValue() uses (see index.html) -- without it, the
+// full string at the time-block's display size wraps mid-value ("9:30" / "PM" on
+// separate lines) in the narrow 64px column.
+function formatTimeValueEmail(t, ampmFontSize) {
+  const m = String(t).match(/^(\d{1,2}:\d{2})\s*([AP]M)$/i);
+  return m ? `${m[1]}<span style="font-size:${ampmFontSize}px; margin-left:1px;">${m[2].toUpperCase()}</span>` : escapeHtml(t);
+}
+
+function timeToMinutesEmail(t) {
+  const m = String(t).match(/^(\d{1,2}):(\d{2})\s*([AP]M)$/i);
+  if (!m) return 0;
+  let hours = parseInt(m[1], 10);
+  const minutes = parseInt(m[2], 10);
+  const ampm = m[3].toUpperCase();
+  if (ampm === 'PM' && hours !== 12) hours += 12;
+  if (ampm === 'AM' && hours === 12) hours = 0;
+  return hours * 60 + minutes;
 }
 
 function escapeHtml(str) {
@@ -879,12 +907,16 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
     const showKnown = !isUnknownTime(s.sh);
     const doorsKnown = !isUnknownTime(s.dr);
 
+    // Bebas Neue matches the site's own .time-value font; white-space:nowrap plus the
+    // smaller inline AM/PM suffix from formatTimeValueEmail() (mirroring the site's
+    // .ampm span) is what keeps "9:30 PM" on one line instead of wrapping after "9:30"
+    // in this narrow 64px column.
     let timeBlockInner;
     if (!showKnown && !doorsKnown) {
-      timeBlockInner = `<div style="font-family:Georgia, 'Times New Roman', serif; font-size:15px; color:#f0a83c; line-height:1.1;">Time</div><div style="font-size:9px; color:#9599ad; letter-spacing:1px; margin-top:2px;">TBD</div>`;
+      timeBlockInner = `<div style="font-family:'Bebas Neue', 'Arial Narrow', Arial, sans-serif; font-size:15px; letter-spacing:0.02em; color:#f0a83c; line-height:1.1; white-space:nowrap;">Time</div><div style="font-size:9px; color:#9599ad; letter-spacing:1px; margin-top:2px;">TBD</div>`;
     } else {
-      const showLine = showKnown ? `<div style="font-family:Georgia, 'Times New Roman', serif; font-size:17px; color:#f0a83c; line-height:1.1;">${escapeHtml(s.sh)}</div><div style="font-size:9px; color:#9599ad; letter-spacing:1px; margin-top:2px;">SHOW</div>` : '';
-      const doorsLine = doorsKnown ? `<div style="font-family:Georgia, 'Times New Roman', serif; font-size:14px; color:#eee9db; line-height:1.1; margin-top:${showKnown ? '6px' : '0'};">${escapeHtml(s.dr)}</div><div style="font-size:9px; color:#9599ad; letter-spacing:1px; margin-top:2px;">DOORS</div>` : '';
+      const showLine = showKnown ? `<div style="font-family:'Bebas Neue', 'Arial Narrow', Arial, sans-serif; font-size:19px; letter-spacing:0.02em; color:#f0a83c; line-height:1.1; white-space:nowrap;">${formatTimeValueEmail(s.sh, 13)}</div><div style="font-size:9px; color:#9599ad; letter-spacing:1px; margin-top:2px;">SHOW</div>` : '';
+      const doorsLine = doorsKnown ? `<div style="font-family:'Bebas Neue', 'Arial Narrow', Arial, sans-serif; font-size:16px; letter-spacing:0.02em; color:#eee9db; line-height:1.1; white-space:nowrap; margin-top:${showKnown ? '6px' : '0'};">${formatTimeValueEmail(s.dr, 12)}</div><div style="font-size:9px; color:#9599ad; letter-spacing:1px; margin-top:2px;">DOORS</div>` : '';
       timeBlockInner = showLine + doorsLine;
     }
 
@@ -944,10 +976,9 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
             </td>
             <td style="padding:10px 14px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-                <td style="font-size:13px; font-weight:bold; color:#c9cddb; letter-spacing:0.5px;">${fmtShortDate(s.d)}</td>
-                <td align="right">${starLinkHtml(s)}</td>
+                <td style="font-size:15px; font-weight:bold; color:#f0a83c;">${escapeHtml(s.b)}</td>
+                <td align="right" valign="top">${starLinkHtml(s)}</td>
               </tr></table>
-              <div style="font-size:15px; font-weight:bold; color:#f0a83c; margin-top:2px;">${escapeHtml(s.b)}</div>
               ${openerLine}
               ${venueStageTable}
             </td>
@@ -956,9 +987,39 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
       </td></tr>`;
   }
 
-  const myShowsRowsHtml = myShowsUpcoming.map(s => showRowHtml(s, false)).join('');
-  const recentlyAddedRowsHtml = recentlyAddedShows.map(s => showRowHtml(s, false)).join('');
-  const otherRowsHtml = otherShows.map(s => showRowHtml(s, false)).join('');
+  // Groups a section's shows by day and renders one day-head bar per group instead of
+  // repeating the date on every card -- mirrors the site's own groupByDayHTML() (see
+  // index.html), including the venue-then-time sort within a day, just with an
+  // email-safe (table-based) day-head in place of the site's sticky .day-head div.
+  function groupByDayHtml(list) {
+    const groups = {};
+    list.forEach(s => {
+      const key = s.d + (s.e ? '_' + s.e : '');
+      if (!groups[key]) groups[key] = { d: s.d, e: s.e, items: [] };
+      groups[key].items.push(s);
+    });
+    const sortedGroups = Object.values(groups).sort((a, b) => a.d.localeCompare(b.d));
+    sortedGroups.forEach(g => {
+      g.items.sort((a, b) => {
+        const venueA = (venues[a.v] && venues[a.v].name) || a.v;
+        const venueB = (venues[b.v] && venues[b.v].name) || b.v;
+        if (venueA !== venueB) return venueA.localeCompare(venueB);
+        return timeToMinutesEmail(a.sh) - timeToMinutesEmail(b.sh);
+      });
+    });
+    return sortedGroups.map(g => {
+      const dayHeadHtml = `
+        <tr><td style="padding:8px 0 8px 10px; margin-bottom:8px; border-left:4px solid #f0a83c; background-color:#161923;">
+          <div style="font-family:'Bebas Neue', 'Arial Narrow', Arial, sans-serif; font-size:18px; letter-spacing:0.04em; color:#eee9db;">${escapeHtml(fmtDayHeadDate(g.d, g.e))}</div>
+        </td></tr>
+        <tr><td style="height:8px; line-height:8px; font-size:1px;">&nbsp;</td></tr>`;
+      return dayHeadHtml + g.items.map(s => showRowHtml(s, false)).join('');
+    }).join('');
+  }
+
+  const myShowsRowsHtml = groupByDayHtml(myShowsUpcoming);
+  const recentlyAddedRowsHtml = groupByDayHtml(recentlyAddedShows);
+  const otherRowsHtml = groupByDayHtml(otherShows);
 
   const myShowsSectionHtml = myShowsUpcoming.length ? `
     <tr><td style="padding:16px 24px 10px 24px;">

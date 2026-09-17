@@ -98,47 +98,12 @@
       "color": "#c9a23a",
       "address": "970 Morrison Dr, Charleston, SC 29403"
     },
-    "TMPC": {
-      "name": "Tattooed Moose (Park Circle)",
-      "site": "https://www.tattooedmoose.com/",
-      "type": "venue",
-      "color": "#d9738f",
-      "address": "4845 Chateau Ave, North Charleston, SC 29405"
-    },
-    "TMJI": {
-      "name": "Tattooed Moose (Johns Island)",
-      "site": "https://www.tattooedmoose.com/",
-      "type": "venue",
-      "color": "#7a9cd9",
-      "address": "3328 Maybank Hwy, Johns Island, SC 29455"
-    },
     "US": {
       "name": "Uptown Social",
       "site": "https://www.uptownsocialchs.com/entertainment/",
       "type": "venue",
       "color": "#e0a83c",
       "address": "587 King St, Charleston, SC 29403"
-    },
-    "TC": {
-      "name": "Tommy Condon's",
-      "site": "https://tommycondons.com/charleston-downtown-tommy-condon-s-calendar",
-      "type": "venue",
-      "color": "#3ca67a",
-      "address": "160 Church St, Charleston, SC 29401"
-    },
-    "DIN": {
-      "name": "Dinghy",
-      "site": "https://www.dinghyiop.com/the-music",
-      "type": "venue",
-      "color": "#4a9ec1",
-      "address": "8 J C Long Blvd, Isle of Palms, SC 29451"
-    },
-    "RSG": {
-      "name": "Rita's Seaside Grille",
-      "site": "https://ritasseasidegrille.com/folly-beach-folly-beach-ritas-seaside-grille-live-music",
-      "type": "venue",
-      "color": "#e08a4a",
-      "address": "2 Center St, Folly Beach, SC 29439"
     },
     "CHA": {
       "name": "Commonhouse Aleworks",
@@ -3121,22 +3086,6 @@
     },
     {
       "d": "2026-09-12",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-12",
-      "b": "Paul Stone Project",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMJI",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-12",
       "b": "Dan’s Tramp Stamp & the Money Bags",
       "sh": "6:00 PM",
       "v": "CHA",
@@ -3144,38 +3093,9 @@
     },
     {
       "d": "2026-09-12",
-      "b": "Gene Butler",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-12",
-      "b": "Eddie Bush",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-12",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-12",
-      "b": "Bender Funk",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-12",
-      "b": "Kevin Church",
-      "sh": "9:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3195,48 +3115,9 @@
     },
     {
       "d": "2026-09-13",
-      "b": "Chris Odom",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-13",
-      "b": "Reso Phonic",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMPC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-13",
-      "b": "The Honeymeads",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMJI",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-13",
-      "b": "Thomas Champagne",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-13",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-13",
-      "b": "Mel Washington",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
       "added": "2026-09-01"
     },
     {
@@ -3248,54 +3129,10 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-09-13",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-14",
-      "b": "Sufferin' Moses",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-14",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-15",
-      "b": "Krystal Halvorson",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-15",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-09-15",
       "b": "Connor Sage",
       "sh": "7:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-15",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3307,31 +3144,9 @@
     },
     {
       "d": "2026-09-16",
-      "b": "David Sink solo instrumental",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-16",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-16",
       "b": "Ben Somerville",
       "sh": "7:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-16",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3350,38 +3165,9 @@
     },
     {
       "d": "2026-09-17",
-      "b": "Super Reggae Man",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-17",
-      "b": "Fowl Play",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-17",
       "b": "Of The Heart",
       "sh": "7:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-17",
-      "b": "Christian Carroll",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-17",
-      "b": "Chris Tidestrom",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3393,14 +3179,6 @@
     },
     {
       "d": "2026-09-18",
-      "b": "Ray Wag",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-18",
       "b": "Moonlight Ale: Halfway to St Paddys",
       "sh": "6:00 PM",
       "v": "CHA",
@@ -3408,46 +3186,9 @@
     },
     {
       "d": "2026-09-18",
-      "b": "Green Thieves",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-18",
-      "b": "Eddie Bush",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-18",
-      "b": "Dan and the Donuts",
-      "s": "Outdoor Main Stage",
-      "sh": "8:00 PM",
-      "v": "TMJI",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-18",
       "b": "Cooper Greer",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-18",
-      "b": "Christian Carroll",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-18",
-      "b": "Cole Davis",
-      "sh": "9:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3460,100 +3201,9 @@
     },
     {
       "d": "2026-09-19",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
-      "b": "John PIcard",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMPC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
-      "b": "Brandon Lamar Simmons",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMJI",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
-      "b": "Krystal Halvorson",
-      "sh": "4:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
-      "b": "Wild Current",
-      "sh": "4:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
-      "b": "Sean Ryan Smith",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
-      "b": "40 Years Too Late",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
-      "b": "Christian Carroll",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-19",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-20",
-      "b": "David Perry",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-20",
-      "b": "Dave Grunstra",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMPC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-20",
-      "b": "YAPPY HOUR at tattooed moose Johns island.",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMJI",
       "added": "2026-09-01"
     },
     {
@@ -3565,68 +3215,9 @@
     },
     {
       "d": "2026-09-20",
-      "b": "Lola Grace",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-20",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-20",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-20",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-21",
-      "b": "Sufferin' Moses",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-21",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-22",
-      "b": "Easy Honey",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-22",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-22",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3638,31 +3229,9 @@
     },
     {
       "d": "2026-09-23",
-      "b": "Kenley Young",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-23",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-23",
       "b": "Ben Somerville",
       "sh": "7:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-23",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3674,38 +3243,9 @@
     },
     {
       "d": "2026-09-24",
-      "b": "Derek Cribb",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-24",
-      "b": "Sean Ryan Smith",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-24",
       "b": "Of The Heart",
       "sh": "7:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-24",
-      "b": "Kyle Herring",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-24",
-      "b": "Christian Carroll",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3717,40 +3257,9 @@
     },
     {
       "d": "2026-09-25",
-      "b": "Ryan Frankett",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-25",
-      "b": "George Alan Fox",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-25",
       "b": "Molly Durnin",
       "sh": "7:00 PM",
       "v": "CHA",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-25",
-      "b": "Chewbacky",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-25",
-      "b": "Johnny Holliday",
-      "s": "Outdoor Main Stage",
-      "sh": "8:00 PM",
-      "v": "TMJI",
       "added": "2026-09-01"
     },
     {
@@ -3761,63 +3270,10 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-09-25",
-      "b": "Chris Tidestrom",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-26",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-26",
-      "b": "Weigh Station",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMPC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-26",
-      "b": "Sufferin' Moses",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMJI",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-26",
-      "b": "Lady Jane",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-26",
-      "b": "Modern Mammals",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-09-26",
       "b": "Tyler Hammond",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-26",
-      "b": "Chris Tidestrom",
-      "sh": "9:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3830,22 +3286,6 @@
     },
     {
       "d": "2026-09-27",
-      "b": "David Perry",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-27",
-      "b": "JUST GROOVE",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMPC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-27",
       "b": "Tyler Hammond",
       "sh": "5:00 PM",
       "v": "US",
@@ -3853,68 +3293,9 @@
     },
     {
       "d": "2026-09-27",
-      "b": "Jack Triebold",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-27",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-27",
-      "b": "Mel Washington",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-27",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-28",
-      "b": "Sufferin' Moses",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-28",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-29",
-      "b": "Krystal Halvorson",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-29",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-29",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3926,31 +3307,9 @@
     },
     {
       "d": "2026-09-30",
-      "b": "Weigh Station",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-30",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-30",
       "b": "Ben Somerville",
       "sh": "7:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-09-30",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -3962,24 +3321,9 @@
     },
     {
       "d": "2026-10-01",
-      "b": "Ryan Frankett",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-01",
       "b": "Of The Heart",
       "sh": "7:00 PM",
       "v": "SNOB",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-01",
-      "b": "Chris Tidestrom",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -4006,40 +3350,9 @@
     },
     {
       "d": "2026-10-02",
-      "b": "The Someday Maybes",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-02",
       "b": "Take Your Shoes Off",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-02",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-03",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-03",
-      "b": "Unity Gain",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMJI",
       "added": "2026-09-01"
     },
     {
@@ -4051,32 +3364,9 @@
     },
     {
       "d": "2026-10-03",
-      "b": "40 Years Too Late",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-03",
       "b": "Take Your Shoes Off",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-03",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-04",
-      "b": "Leisure McCorkle",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
       "added": "2026-09-01"
     },
     {
@@ -4084,44 +3374,6 @@
       "b": "FlashMob",
       "sh": "5:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-04",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-04",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-05",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-06",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-06",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -4133,39 +3385,9 @@
     },
     {
       "d": "2026-10-07",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-07",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-07",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-08",
-      "b": "Chewbacky",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-08",
-      "b": "Kyle Herring",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -4177,47 +3399,9 @@
     },
     {
       "d": "2026-10-09",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-09",
       "b": "Justin Holt",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-09",
-      "b": "Bender Funk",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-09",
-      "b": "David Sink solo instrumental",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-10",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-10",
-      "b": "Red Right Return",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
       "added": "2026-09-01"
     },
     {
@@ -4236,62 +3420,9 @@
     },
     {
       "d": "2026-10-11",
-      "b": "Rosy Bones",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-11",
       "b": "Grayson Little",
       "sh": "5:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-11",
-      "b": "Mel Washington",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-11",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-12",
-      "b": "Sufferin' Moses",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-12",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-13",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-13",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -4299,21 +3430,6 @@
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-14",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-14",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -4328,21 +3444,6 @@
       "b": "Colleen Lloy",
       "sh": "5:30 PM",
       "v": "CHA",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-15",
-      "b": "Sean Ryan Smith",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-15",
-      "b": "Chris Tidestrom",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -4361,32 +3462,9 @@
     },
     {
       "d": "2026-10-16",
-      "b": "Cooper River Band",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-16",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-16",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-17",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
       "added": "2026-09-01"
     },
     {
@@ -4398,32 +3476,9 @@
     },
     {
       "d": "2026-10-17",
-      "b": "Eddie Bush",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-17",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-17",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-18",
-      "b": "Phillip Chastain",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
       "added": "2026-09-01"
     },
     {
@@ -4434,82 +3489,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-10-18",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-18",
-      "b": "Chris Tidestrom",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01",
-      "flag": "Replaced 'Kevin Church' per livemusiccharleston.com re-fetch (unverified — Tommy Condon's own site has no independent listing to confirm; this venue's feed shows a recurring pattern of same-time double-bookings, so this could be a genuine lineup change or an aggregator quirk)."
-    },
-    {
-      "d": "2026-10-19",
-      "b": "Sufferin' Moses",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-19",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-20",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-20",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-21",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-21",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-22",
-      "b": "Chewbacky",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-22",
-      "b": "Kyle Herring",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-10-23",
       "b": "Molly Durnin",
       "sh": "7:00 PM",
@@ -4517,231 +3496,10 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-10-23",
-      "b": "Cooper River Band",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-24",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-24",
-      "b": "Forty Mile Detour",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-25",
-      "b": "Carissa Rowe",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-25",
-      "b": "Mel Washington",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-25",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-26",
-      "b": "Sufferin' Moses",
-      "sh": "6:00 PM",
-      "v": "RSG",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-26",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-27",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-27",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-28",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-28",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-29",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-29",
-      "b": "Chris Tidestrom",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-10-30",
       "b": "Dan’s Tramp Stamp & the Money Bags",
       "sh": "7:00 PM",
       "v": "CHA",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-30",
-      "b": "Chewbacky",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-30",
-      "b": "Cole Davis",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-31",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-31",
-      "b": "High 5",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-31",
-      "b": "Cole Davis",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-01",
-      "b": "Brandon Lamar Simmons",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-01",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-01",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-02",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-03",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-03",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-04",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-04",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-05",
-      "b": "Sean Ryan Smith",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-05",
-      "b": "Kyle Herring",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -4760,124 +3518,10 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-11-06",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-06",
-      "b": "Krystal Halvorson",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-06",
-      "b": "Wild Current",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-07",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-07",
-      "b": "Unity Gain",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMJI",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-07",
-      "b": "Red Right Return",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-07",
-      "b": "HOOKED",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-11-08",
       "b": "The Blue Plantation Band",
       "sh": "12:00 PM",
       "v": "CHA",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-08",
-      "b": "Billee Seasharp",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-08",
-      "b": "Mel Washington",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-08",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-09",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-10",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-10",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-11",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-11",
-      "b": "Kevin Church",
-      "sh": "7:30 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -4888,140 +3532,10 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-11-12",
-      "b": "Ryan Frankett",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-12",
-      "b": "Chris Tidestrom",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-13",
-      "b": "Cooper River Band",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-13",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-14",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-14",
-      "b": "HALF BAD",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01",
-      "flag": "Replaced 'Eddie Bush' per livemusiccharleston.com re-fetch (unverified — sourced solely from the cross-check aggregator, likely a genuine lineup change since the venue's first scrape)."
-    },
-    {
-      "d": "2026-11-14",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-15",
-      "b": "Brandon Lamar Simmons",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-15",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-15",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-16",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-17",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-17",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-18",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-18",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-11-19",
       "b": "Colleen Lloy",
       "sh": "5:30 PM",
       "v": "CHA",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-19",
-      "b": "Chewbacky",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-19",
-      "b": "Kyle Herring",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -5032,129 +3546,10 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-11-20",
-      "b": "Cooper River Band",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-21",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-21",
-      "b": "The Someday Maybes",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-22",
-      "b": "Brandon Lamar Simmons",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-22",
-      "b": "Mel Washington",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-22",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-23",
-      "b": "Derek Cribb",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-24",
-      "b": "Jeff Bateman",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-24",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-25",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-26",
-      "b": "Chris Tidestrom",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-11-27",
       "b": "Molly Durnin",
       "sh": "7:00 PM",
       "v": "CHA",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-27",
-      "b": "Chris Tidestrom",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-28",
-      "b": "Chris Tidestrom",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-29",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-01",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-03",
-      "b": "Kyle Herring",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -5173,68 +3568,11 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-12-04",
-      "b": "Moonlight Ale",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-12-05",
       "b": "Annual Holiday Hootenanny",
       "sh": "11:00 AM",
       "v": "CHA",
       "flag": "Ambiguous: 'Hootenanny' traditionally implies live folk music, but source provided no description confirming a booked act",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-05",
-      "b": "Unity Gain",
-      "s": "Outdoor Main Stage",
-      "sh": "3:00 PM",
-      "v": "TMJI",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-05",
-      "b": "Bender Funk",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-06",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-08",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-09",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-10",
-      "b": "Chris Tidestrom",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-11",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
       "added": "2026-09-01"
     },
     {
@@ -5245,13 +3583,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-12-12",
-      "b": "Kyle Herring",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-12-13",
       "b": "The Blue Plantation Band",
       "sh": "12:00 PM",
@@ -5259,81 +3590,10 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-12-13",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-15",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-16",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-12-17",
       "b": "Colleen Lloy",
       "sh": "5:30 PM",
       "v": "CHA",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-17",
-      "b": "Kyle Herring",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-20",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-22",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-23",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-25",
-      "b": "Chris Tidestrom",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-26",
-      "b": "Chris Tidestrom",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-31",
-      "b": "Early New Year’s Eve gig at Tattooed Moose Johns island",
-      "s": "Outdoor Main Stage",
-      "sh": "6:00 PM",
-      "v": "TMJI",
       "added": "2026-09-01"
     },
     {
@@ -5629,70 +3889,6 @@
       "sh": "8:00 PM",
       "v": "CMH",
       "u": "https://www.ticketmaster.com/jump-americas-van-halen-experience-charleston-south-carolina-02-27-2027/event/2D00652E943F8FDB",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-11-25",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-11-27",
-      "b": "Southbound",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-11-28",
-      "b": "Gracious Day",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-11-29",
-      "b": "Brandon Lamar Simmons",
-      "s": "Covered Back Deck",
-      "sh": "3:00 PM",
-      "v": "DIN",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-11-29",
-      "b": "Dave Landeo",
-      "s": "Covered Back Deck",
-      "sh": "6:30 PM",
-      "v": "DIN",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-12-02",
-      "b": "The Almost Every Wednesday Band",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-12-03",
-      "b": "40 Years Too Late",
-      "s": "Covered Back Deck",
-      "sh": "6:00 PM",
-      "v": "DIN",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-12-04",
-      "b": "Chewbacky",
-      "s": "Covered Back Deck",
-      "sh": "7:00 PM",
-      "v": "DIN",
       "added": "2026-09-17"
     },
     {
@@ -6011,55 +4207,6 @@
       "p": 30,
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/lwxzgmmrjp/preview",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-10-24",
-      "b": "Cole Davis",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-12-27",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-12-29",
-      "b": "Kevin Church",
-      "sh": "8:00 PM",
-      "v": "TC",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-12-30",
-      "b": "Carroll Brown",
-      "sh": "7:30 PM",
-      "v": "TC",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2026-12-31",
-      "b": "Chris Tidestrom",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2027-01-01",
-      "b": "Chris Tidestrom",
-      "sh": "9:00 PM",
-      "v": "TC",
-      "added": "2026-09-17"
-    },
-    {
-      "d": "2027-01-07",
-      "b": "Kyle Herring",
-      "sh": "8:00 PM",
-      "v": "TC",
       "added": "2026-09-17"
     },
     {
