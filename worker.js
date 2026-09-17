@@ -1,4 +1,4 @@
-// Lowcountry Show Tracker — backend Worker
+// Lowcountry Show Notice — backend Worker
 // Handles: passwordless email-link sign-in, and per-user My Shows/Favorite Artists
 // storage in KV.
 //
@@ -485,7 +485,7 @@ async function handleResendWebhook(request, env) {
 }
 
 async function sendMagicLinkEmail(email, link, env, resendApiKey) {
-  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Tracker <shows@gigalertchs.com>';
+  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Notice <shows@shownotice.com>';
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
@@ -631,7 +631,7 @@ async function handleUnsubscribe(request, env, headers) {
       `<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
       <body style="margin:0; padding:0; background-color:#0d0f16; font-family:Arial, Helvetica, sans-serif; color:#eee9db;">
       <div style="max-width:480px; margin:60px auto; text-align:center; padding:24px;">
-        <div style="font-size:15px; line-height:1.5; margin-bottom:20px;">Unsubscribe <strong>${escapeHtml(maskEmail(email))}</strong> from the Lowcountry Show Tracker digest?</div>
+        <div style="font-size:15px; line-height:1.5; margin-bottom:20px;">Unsubscribe <strong>${escapeHtml(maskEmail(email))}</strong> from the Lowcountry Show Notice digest?</div>
         <a href="${confirmUrl}" style="display:inline-block; padding:12px 28px; font-size:14px; font-weight:bold; color:#12141c; background-color:#f0a83c; border-radius:6px; text-decoration:none;">Yes, unsubscribe</a>
       </div>
       </body></html>`,
@@ -642,7 +642,7 @@ async function handleUnsubscribe(request, env, headers) {
   await markUnsubscribed(email, env);
 
   return new Response(
-    `<p>You've been unsubscribed from the Lowcountry Show Tracker digest. Your My Shows list and Favorite Artists are untouched — you just won't get the periodic email anymore. You can re-subscribe anytime by signing in again.</p>`,
+    `<p>You've been unsubscribed from the Lowcountry Show Notice digest. Your My Shows list and Favorite Artists are untouched — you just won't get the periodic email anymore. You can re-subscribe anytime by signing in again.</p>`,
     { status: 200, headers: htmlHeaders }
   );
 }
@@ -990,7 +990,13 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
     <tr><td style="padding:24px; text-align:center; color:#9599ad; font-size:13px;">Nothing new on the calendar this week.</td></tr>` : '';
 
   return `<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bebas Neue matches the site's own title-banner font (index.html loads the same
+     family from Google Fonts). Clients that render arbitrary web fonts in email (Apple
+     Mail, iOS/macOS Mail, and some Gmail contexts) pick this up; everything else falls
+     back to the condensed sans stack below, which reads far closer to Bebas Neue's
+     tall/narrow character than the previous Georgia serif choice did. -->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"></head>
 <body style="margin:0; padding:0; background-color:#0d0f16; font-family:Arial, Helvetica, sans-serif;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0d0f16;">
 <tr><td align="center" style="padding:24px 12px;">
@@ -1004,12 +1010,12 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
         <tr><td style="padding:4px;">
           <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border:1px solid #8a672a;">
             <tr><td style="padding:12px 22px; text-align:center;">
-              <div style="font-family:Georgia, 'Times New Roman', serif; letter-spacing:2px; color:#f0a83c; font-size:22px; font-weight:bold;">LOWCOUNTRY SHOW TRACKER</div>
+              <div style="font-family:'Bebas Neue', 'Arial Narrow', Arial, sans-serif; letter-spacing:2px; color:#f0a83c; font-size:26px; font-weight:bold;">LOWCOUNTRY SHOW NOTICE</div>
             </td></tr>
           </table>
         </td></tr>
       </table>
-      <div style="color:#9599ad; font-size:13px; margin-top:10px;">Live music across Charleston</div>
+      <div style="color:#9599ad; font-size:13px; font-style:italic; margin-top:10px;">Any music is better than no music. Go see a show!</div>
     </td></tr>
     <tr><td style="padding:24px 24px 8px 24px; font-size:14px; color:#eee9db; line-height:1.5;">
       Hey there — here's what's new on the tracker this week.
@@ -1028,7 +1034,7 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
     </td></tr>
     <tr><td style="padding:20px 24px 28px 24px; text-align:center; border-top:1px solid #2c3040;">
       <div style="font-size:11px; color:#9599ad; line-height:1.6;">
-        You're getting this because you signed up for Lowcountry Show Tracker updates.<br>
+        You're getting this because you signed up for Lowcountry Show Notice updates.<br>
         <a href="${unsubscribeLink}" style="color:#9599ad; text-decoration:underline;">Unsubscribe</a>
         &nbsp;·&nbsp;
         <a href="${siteUrl}" style="color:#9599ad; text-decoration:underline;">Manage preferences</a>
@@ -1041,7 +1047,7 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
 }
 
 async function sendDigestEmail(email, html, env, resendApiKey) {
-  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Tracker <shows@gigalertchs.com>';
+  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Notice <shows@shownotice.com>';
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { 'Authorization': `Bearer ${resendApiKey}`, 'Content-Type': 'application/json' },
@@ -1321,11 +1327,11 @@ function buildConflictReportHTML(conflicts) {
 }
 
 async function sendConflictReportEmail(toEmail, html, env, resendApiKey) {
-  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Tracker <shows@gigalertchs.com>';
+  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Notice <shows@shownotice.com>';
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { 'Authorization': `Bearer ${resendApiKey}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ from, to: toEmail, subject: 'Show Tracker: research review needed', html })
+    body: JSON.stringify({ from, to: toEmail, subject: 'Show Notice: research review needed', html })
   });
   if (!res.ok) {
     const errBody = await res.text().catch(() => '');
@@ -1422,7 +1428,7 @@ function buildVenueSuggestionEmailHTML({ submitterEmail, venueName, notes }) {
 }
 
 async function sendVenueSuggestionEmail(toEmail, venueName, html, env, resendApiKey) {
-  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Tracker <shows@gigalertchs.com>';
+  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Notice <shows@shownotice.com>';
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { 'Authorization': `Bearer ${resendApiKey}`, 'Content-Type': 'application/json' },
@@ -1521,7 +1527,7 @@ function buildContactEmailHTML({ email, message }) {
 }
 
 async function sendContactEmail(toEmail, html, env, resendApiKey) {
-  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Tracker <shows@gigalertchs.com>';
+  const from = env.RESEND_FROM_ADDRESS || 'Lowcountry Show Notice <shows@shownotice.com>';
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: { 'Authorization': `Bearer ${resendApiKey}`, 'Content-Type': 'application/json' },
