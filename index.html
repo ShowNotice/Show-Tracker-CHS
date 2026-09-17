@@ -1089,10 +1089,10 @@ function renderAccountUI(){
   const noSpamNote = document.getElementById('no-spam-note');
   if(btn){
     if(SESSION_TOKEN && SESSION_EMAIL){
-      // Only the actual actionable word ("Sign out") is underlined -- the rest of the
-      // line is just status text, not a link, and underlining all of it made the whole
-      // line read as clickable when only that part actually is.
-      btn.innerHTML = `Signed in as ${escapeHtml(SESSION_EMAIL)} ·&nbsp;<span class="signin-action">Sign out</span>`;
+      // Just "Sign out" once signed in -- spelling out "Signed in as <email>" here
+      // too read as busy/cluttered right next to one of the most-viewed parts of
+      // the page. The email itself isn't needed to act on this control.
+      btn.innerHTML = `<span class="signin-action">Sign out</span>`;
       btn.onclick = signOut;
       if(signInSection) signInSection.style.display = 'none';
       // Irrelevant once already signed in -- this was a reassurance about giving out
