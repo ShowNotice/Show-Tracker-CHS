@@ -421,11 +421,23 @@ async function verifyResendWebhookSignature(rawBody, headers, secret) {
   const svixSignature = headers.get('svix-signature');
   if (!svixId || !svixTimestamp || !svixSignature) return false;
 
-  const secretBytes = base64ToBytes(secret.replace(/^whsec_/, ''));
-  const signedContent = `${svixId}.${svixTimestamp}.${rawBody}`;
-  const key = await crypto.subtle.importKey('raw', secretBytes, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
-  const sigBuffer = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(signedContent));
-  const expectedSig = bytesToBase64(new Uint8Array(sigBuffer));
+  let expectedSig;
+  try {
+    const secretBytes = base64ToBytes(secret.replace(/^whsec_/, ''));
+    const signedContent = `${svixId}.${svixTimestamp}.${rawBody}`;
+    const key = await crypto.subtle.importKey('raw', secretBytes, { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+    const sigBuffer = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(signedContent));
+    expectedSig = bytesToBase64(new Uint8Array(sigBuffer));
+  } catch (err) {
+    // A malformed RESEND_WEBHOOK_SECRET (bad base64, wrong byte length for HMAC import,
+    // etc.) previously threw here uncaught -- the outer fetch() handler turned that into
+    // a raw 500, Resend retried the same failing delivery repeatedly, and because the
+    // throw happened before incrementCounter() runs, digest delivered/opened/clicked
+    // stats went silently uncounted for every event this hit. Fail closed (treat as an
+    // invalid signature) instead of crashing the request, and log the real cause.
+    console.error('verifyResendWebhookSignature: signature computation failed:', err);
+    return false;
+  }
 
   const candidates = svixSignature.split(' ').map(part => part.split(',')[1]).filter(Boolean);
   return candidates.some(sig => timingSafeEqual(sig, expectedSig));
