@@ -453,13 +453,30 @@ async function incrementCounter(env, key) {
   await env.SHOW_TRACKER_KV.put(key, String(next));
 }
 
+// One KV key holding the most recent webhook call's outcome (any event type, not just
+// digest-tagged ones) -- lets the admin panel show "is Resend even reaching us at all"
+// independent of the per-day delivered/opened/clicked counters, since a webhook that's
+// never being hit and one that's being hit but rejected both otherwise look identical
+// (everything stays at zero).
+async function recordWebhookHealth(env, info) {
+  await env.SHOW_TRACKER_KV.put('webhook-health:last', JSON.stringify(info));
+}
+
 async function handleResendWebhook(request, env) {
   const rawBody = await request.text();
+  const today = new Date().toISOString().slice(0, 10);
 
   const secret = await getResendWebhookSecret(env);
   if (secret) {
     const valid = await verifyResendWebhookSignature(rawBody, request.headers, secret);
-    if (!valid) return new Response('Invalid signature', { status: 401 });
+    if (!valid) {
+      await recordWebhookHealth(env, { receivedAt: Date.now(), eventType: null, sigValid: false });
+      // Reuses digestStatsWindow's generic `digest-stats:{type}:{date}` bucketing (see
+      // below) under the type name 'sigfail', purely to get week/month/year/all rollup
+      // for free instead of writing a second aggregator.
+      await incrementCounter(env, `digest-stats:sigfail:${today}`);
+      return new Response('Invalid signature', { status: 401 });
+    }
   }
 
   let payload;
@@ -469,13 +486,17 @@ async function handleResendWebhook(request, env) {
     return new Response('Bad payload', { status: 400 });
   }
 
+  // sigValid is null (not false) when RESEND_WEBHOOK_SECRET isn't configured at all --
+  // distinct from an actual failed check, so the admin panel can tell "no secret set up
+  // yet" apart from "secret is wrong."
+  await recordWebhookHealth(env, { receivedAt: Date.now(), eventType: payload.type || null, sigValid: secret ? true : null });
+
   const tags = (payload.data && payload.data.tags) || [];
   const isDigest = tags.some(t => t.name === 'type' && t.value === 'digest');
   if (isDigest) {
     // Bucketed by day (not one running total) so handleAdminStats can sum a
     // week/month/year/all window over these, the same as it does for subscribers/
     // suggestions/unsubscribes -- see windowCounts()/digestStatsWindow().
-    const today = new Date().toISOString().slice(0, 10);
     if (payload.type === 'email.delivered') await incrementCounter(env, `digest-stats:delivered:${today}`);
     else if (payload.type === 'email.opened') await incrementCounter(env, `digest-stats:opened:${today}`);
     else if (payload.type === 'email.clicked') await incrementCounter(env, `digest-stats:clicked:${today}`);
@@ -1716,12 +1737,16 @@ async function handleAdminStats(request, env, headers) {
   const contactMessages = contactRows.filter(Boolean).map(raw => JSON.parse(raw));
   contactMessages.sort((a, b) => (b.submittedAt || 0) - (a.submittedAt || 0));
 
-  const [digestDelivered, digestOpened, digestClicked, cloudflareStats] = await Promise.all([
+  const [digestDelivered, digestOpened, digestClicked, sigFailures, lastWebhookRaw, webhookSecretConfigured, cloudflareStats] = await Promise.all([
     digestStatsWindow(env, 'delivered'),
     digestStatsWindow(env, 'opened'),
     digestStatsWindow(env, 'clicked'),
+    digestStatsWindow(env, 'sigfail'),
+    env.SHOW_TRACKER_KV.get('webhook-health:last'),
+    getResendWebhookSecret(env).then(s => !!s),
     fetchCloudflareZoneAnalytics(env).catch(err => ({ error: err.message }))
   ]);
+  const lastWebhook = lastWebhookRaw ? JSON.parse(lastWebhookRaw) : null;
 
   return json({
     ok: true,
@@ -1742,6 +1767,13 @@ async function handleAdminStats(request, env, headers) {
       delivered: digestDelivered,
       opened: digestOpened,
       clicked: digestClicked
+    },
+    webhookHealth: {
+      secretConfigured: webhookSecretConfigured,
+      lastReceivedAt: lastWebhook ? lastWebhook.receivedAt : null,
+      lastEventType: lastWebhook ? lastWebhook.eventType : null,
+      lastSignatureValid: lastWebhook ? lastWebhook.sigValid : null,
+      sigFailures
     },
     cloudflareStats,
     suggestions: {
