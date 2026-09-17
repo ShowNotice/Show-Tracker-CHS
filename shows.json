@@ -1562,7 +1562,8 @@
       "dr": "see ticket link",
       "sh": "see ticket link",
       "v": "REF",
-      "u": "https://www.ticketweb.com/event/judah-the-lion-the-refinery-tickets/14191714"
+      "u": "https://www.ticketweb.com/event/judah-the-lion-the-refinery-tickets/14191714",
+      "o": "Breakfield and Band of Silver"
     },
     {
       "d": "2026-11-09",
@@ -4405,6 +4406,25 @@
       "p": 15,
       "v": "TR",
       "u": "https://tockify.com/tinroofschedule/detail/1817/1793401200000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-08",
+      "b": "Limbo at The Refinery presents: Dani Rucker",
+      "o": "Emma Grace Burton",
+      "dr": "see ticket link",
+      "sh": "4:00 PM",
+      "v": "REF",
+      "u": "https://www.ticketweb.com/event/dani-rucker-the-refinery-tickets/14316044",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-12-10",
+      "b": "Limbo at The Refinery presents: Caleb Lee Hutchinson",
+      "dr": "see ticket link",
+      "sh": "3:00 PM",
+      "v": "REF",
+      "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14298294",
       "added": "2026-09-17"
     }
   ]
