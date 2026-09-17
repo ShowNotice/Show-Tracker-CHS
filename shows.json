@@ -797,7 +797,7 @@
       "d": "2026-09-25",
       "b": "Limbo at The Refinery presents: Jed Harrelson",
       "dr": "see ticket link",
-      "sh": "4:00 PM",
+      "sh": "see ticket link",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14899363"
     },
@@ -938,11 +938,10 @@
       "d": "2026-10-01",
       "b": "Ashley McBryde — Into The Wild Tour",
       "o": "Colton Bowlin",
-      "dr": "3:30 PM",
+      "dr": "see ticket link",
       "sh": "7:30 PM",
       "v": "REF",
-      "u": "https://www.ticketweb.com/event/ashley-mcbryde-the-refinery-tickets/14910213",
-      "flag": "Doors time inferred from charlestonlivemusic.com startDate (3:30 PM), which is exactly 4 hrs ahead of the confirmed 7:30 PM show time; not explicitly labeled as doors, so treat with some caution."
+      "u": "https://www.ticketweb.com/event/ashley-mcbryde-the-refinery-tickets/14910213"
     },
     {
       "d": "2026-09-27",
@@ -1259,12 +1258,11 @@
     {
       "d": "2026-10-16",
       "b": "Trampled by Turtles",
-      "dr": "3:30 PM",
+      "dr": "6:00 PM",
       "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/trampled-by-turtles-the-refinery-tickets/14856503",
-      "o": "The Last Revel",
-      "flag": "Doors time inferred from charlestonlivemusic.com startDate (3:30 PM), 4 hrs ahead of the confirmed 7:30 PM show time, by analogy with the Ashley McBryde pattern."
+      "o": "The Last Revel"
     },
     {
       "d": "2026-10-17",
@@ -1567,12 +1565,12 @@
     {
       "d": "2026-11-08",
       "b": "Judah & The Lion",
-      "dr": "2:30 PM",
-      "sh": "see ticket link",
+      "dr": "see ticket link",
+      "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/judah-the-lion-the-refinery-tickets/14191714",
       "o": "Breakfield and Band of Silver",
-      "flag": "Doors time inferred from charlestonlivemusic.com startDate (2:30 PM) by analogy with the ~4hr doors-to-show pattern seen at other full-production Refinery shows; no confirmed headline show time found anywhere."
+      "flag": "Show time confirmed via charlestonlivemusic.com JSON-LD (read as literal Eastern local time, ignoring its incorrect +00:00/UTC label -- see project notes on the charlestonlivemusic.com timezone-mislabeling issue). Doors time not available from any source."
     },
     {
       "d": "2026-11-09",
@@ -1603,7 +1601,7 @@
       "d": "2026-11-11",
       "b": "Limbo at The Refinery presents: Jesse Roper",
       "dr": "see ticket link",
-      "sh": "3:00 PM",
+      "sh": "see ticket link",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14973523"
     },
@@ -1741,11 +1739,10 @@
     {
       "d": "2026-12-02",
       "b": "Beartooth",
-      "dr": "1:30 PM",
+      "dr": "see ticket link",
       "sh": "see ticket link",
       "v": "REF",
-      "u": "https://www.ticketweb.com/event/beartooth-the-refinery-tickets/14914313",
-      "flag": "Doors time inferred from charlestonlivemusic.com startDate (1:30 PM) by analogy with other full-production shows; actual headline show time not confirmed anywhere."
+      "u": "https://www.ticketweb.com/event/beartooth-the-refinery-tickets/14914313"
     },
     {
       "d": "2026-12-03",
@@ -4399,8 +4396,8 @@
       "d": "2026-10-08",
       "b": "Limbo at The Refinery presents: Dani Rucker",
       "o": "Emma Grace Burton",
-      "dr": "see ticket link",
-      "sh": "4:00 PM",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/dani-rucker-the-refinery-tickets/14316044",
       "added": "2026-09-01"
@@ -4412,7 +4409,8 @@
       "sh": "3:00 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14298294",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "flag": "Existing sh (3:00 PM) traced to charlestonlivemusic.com, whose JSON-LD for this event returns a placeholder epoch date (1970-01-01), not a real time -- this figure is unverified and may be wrong (see Dani Rucker precedent, corrected 2026-09-17). Needs independent confirmation."
     },
     {
       "d": "2026-09-25",
