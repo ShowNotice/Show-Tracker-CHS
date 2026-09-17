@@ -2900,18 +2900,23 @@
     {
       "d": "2026-09-21",
       "b": "Major Moment",
-      "dr": "—",
-      "sh": "6:00 PM",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
       "v": "TR",
-      "u": "https://www.bandsintown.com/e/1039863228-major-moment-at-tin-roof"
+      "u": "https://tockify.com/tinroofschedule/detail/1804/1790028000000",
+      "o": "Tales of an Old Soul, More TBD",
+      "p": 15,
+      "dop": 20
     },
     {
       "d": "2026-10-08",
-      "b": "stop.drop.rewind",
-      "dr": "—",
-      "sh": "7:30 PM",
+      "b": "Stop.Drop.Rewind",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
       "v": "TR",
-      "u": "https://www.bandsintown.com/e/1039339215-stop.drop.rewind-at-tin-roof"
+      "u": "https://tockify.com/tinroofschedule/detail/1825/1791500400000",
+      "o": "Code Echo, Thoroughfare",
+      "p": 10
     },
     {
       "d": "2026-10-28",
@@ -4274,6 +4279,132 @@
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85160",
       "flag": "Headliner date, distinct from Fo Daniels' earlier stored appearances as an opener for Moon Taxi in Sept; not a duplicate (different date).",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-18",
+      "b": "Punk Pixies for PSAF: a Benefit Show",
+      "o": "Angel Gray, Skunk Mother, Poster Grrrl",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1807/1789772400000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-19",
+      "b": "Metal Raven",
+      "o": "Firenest, Carne Con Papas, Diabeetus",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1803/1789858800000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-20",
+      "b": "She Returns From War",
+      "o": "Kristina Murray",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1822/1789945200000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-24",
+      "b": "Anything Can Happen",
+      "sh": "7:30 PM",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1814/1790292600000",
+      "flag": "Recurring themed night at Tin Roof (a past instance featured a specific booked act billed as \"[Band] (Anything Can Happen)\"); this date's own feed entry gives no artist/door/price detail, so it's genuinely unclear whether a specific act is booked yet.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-25",
+      "b": "Hard Rock Showcase",
+      "o": "Unattended Children, Saddle Breaker, AS-33",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 15,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1824/1790379000000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-26",
+      "b": "Newgrounds Death Rugby",
+      "o": "Blankstate, Never Any Ordinary",
+      "dr": "7:00 PM",
+      "sh": "7:30 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1799/1790463600000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-28",
+      "b": "Lemon Squares",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
+      "p": 5,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1816/1790640000000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-09-30",
+      "b": "Acoustic Open Mic Night",
+      "sh": "7:30 PM",
+      "p": 0,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1815/1790811000000",
+      "flag": "Recurring open-mic night -- live-music format (acoustic performers), not a comedy open mic, but no single named headliner; included per the live-music carve-out.",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-16",
+      "b": "Say Uncle",
+      "o": "Sooflay, Kook",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1818/1792193400000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-21",
+      "b": "Phantom",
+      "o": "Interceptor",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 10,
+      "dop": 13,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1821/1792625400000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-27",
+      "b": "Pentagram String Band",
+      "sh": "7:00 PM",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1781/1793142000000",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-30",
+      "b": "Halloween Bash",
+      "o": "Wargod, Yottabyte, M30, Sunset Black",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 15,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1817/1793401200000",
       "added": "2026-09-17"
     }
   ]
