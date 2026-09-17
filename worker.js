@@ -944,7 +944,7 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
             </td>
             <td style="padding:10px 14px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-                <td style="font-size:11px; color:#9599ad; letter-spacing:0.5px;">${fmtShortDate(s.d)}</td>
+                <td style="font-size:13px; font-weight:bold; color:#c9cddb; letter-spacing:0.5px;">${fmtShortDate(s.d)}</td>
                 <td align="right">${starLinkHtml(s)}</td>
               </tr></table>
               <div style="font-size:15px; font-weight:bold; color:#f0a83c; margin-top:2px;">${escapeHtml(s.b)}</div>
@@ -1020,8 +1020,8 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
     <tr><td style="padding:24px 24px 8px 24px; font-size:14px; color:#eee9db; line-height:1.5;">
       Hey there — here's what's new on the tracker this week.
     </td></tr>
-    ${myShowsSectionHtml}
     ${recentlyAddedSectionHtml}
+    ${myShowsSectionHtml}
     ${signInCtaHtml}
     ${otherSectionHtml}
     ${emptyStateHtml}
