@@ -2871,7 +2871,8 @@
       "sh": "—",
       "v": "RA",
       "flag": "Venue copy lists bikes, booze, oysters, games, live music, burn barrels, vendors, tattoos, and the prison bus with no band/act named — genuinely ambiguous whether this is a live-music show; included per the ambiguous-case rule rather than excluded",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "u": "http://www.theroyalamerican.com/schedule/14-annual-biker-oyster-roast-12-13-26"
     },
     {
       "d": "2026-12-19",
@@ -4415,6 +4416,16 @@
       "sh": "10:00 PM",
       "p": 10,
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85175",
+      "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-25",
+      "b": "The Rocky Horror Picture Show w/ Live Shadowcast",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/the-rocky-horror-picture-show-w-charleston-south-carolina-10-25-2026/event/2D00652BC68A8314",
+      "flag": "Presented with CofC Center Stage: a film screening of Rocky Horror with a live costumed shadowcast performing alongside the movie, not a standard live band set. Included per the same film/live-performance hybrid carve-out as the existing Hedwig 25th Anniversary Movie Tour entry.",
       "added": "2026-09-17"
     }
   ]
