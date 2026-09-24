@@ -515,8 +515,14 @@ async function handleResendWebhook(request, env) {
   // yet" apart from "secret is wrong."
   await recordWebhookHealth(env, { receivedAt: Date.now(), eventType: payload.type || null, sigValid: secret ? true : null });
 
-  const tags = (payload.data && payload.data.tags) || [];
-  const isDigest = tags.some(t => t.name === 'type' && t.value === 'digest');
+  // Resend's webhook payloads carry tags as an object map ({ type: 'digest' }), unlike
+  // the [{ name, value }] array the send API takes -- calling .some() on the object
+  // threw on every webhook delivery (a 500 after recordWebhookHealth, before any
+  // counter below ran). Accept either shape.
+  const tags = (payload.data && payload.data.tags) || {};
+  const isDigest = Array.isArray(tags)
+    ? tags.some(t => t && t.name === 'type' && t.value === 'digest')
+    : tags.type === 'digest';
   if (isDigest) {
     // Bucketed by day (not one running total) so handleAdminStats can sum a
     // week/month/year/all window over these, the same as it does for subscribers/
