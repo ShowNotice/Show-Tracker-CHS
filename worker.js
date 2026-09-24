@@ -104,12 +104,36 @@ export default {
     }
   },
 
-  // Entry point the Cron Trigger calls once it's set up (not yet configured as of this
-  // version — this just makes the code ready for when it is).
+  // Entry point the Cron Trigger calls (configured in wrangler.toml: one weekly trigger,
+  // Thursdays 1pm ET). A same-calendar-day guard sits in front of the real send —
+  // subscribers got two identical digests on 2026-09-24 (7:07am and 1pm ET). This is the
+  // second known instance of an extra real scheduled() fire at a time that doesn't match
+  // the single declared trigger (see "The Wednesday-3pm-digest mystery" in
+  // project-notes-consolidated.md, 2026-09-17 — that investigation confirmed via Workers
+  // Observability logs it really was the Cron Trigger path firing, not a second declared
+  // trigger or a manual call, and never found a root cause beyond "Cloudflare's own cron
+  // dispatcher occasionally fires a stale/phantom entry"). Rather than wait for that
+  // platform-level mystery to resolve itself, this guard makes any extra same-day fire a
+  // safe no-op regardless of cause.
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(sendDigestToAllSubscribers(env));
+    ctx.waitUntil(sendDigestIfNotAlreadySentToday(env));
   }
 };
+
+async function sendDigestIfNotAlreadySentToday(env) {
+  const todayKey = `digest-sent:${new Date().toISOString().slice(0, 10)}`;
+  const alreadySent = await env.SHOW_TRACKER_KV.get(todayKey);
+  if (alreadySent) {
+    console.log(`Digest already sent today (${todayKey}) — skipping this Cron Trigger fire.`);
+    return;
+  }
+  // Marked before the send completes, not after -- a slow/erroring send shouldn't leave
+  // the door open for a second concurrent Cron Trigger fire to also start sending while
+  // the first is still in flight. A real failure is visible in Cloudflare's own Worker
+  // logs regardless; this key only ever needs to answer "did a send already start today."
+  await env.SHOW_TRACKER_KV.put(todayKey, String(Date.now()), { expirationTtl: 2 * 24 * 60 * 60 });
+  await sendDigestToAllSubscribers(env);
+}
 
 function corsHeaders() {
   return {
