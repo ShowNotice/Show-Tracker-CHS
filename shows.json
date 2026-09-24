@@ -1,5 +1,5 @@
 {
-  "dataUpdatedAt": "2026-09-17",
+  "dataUpdatedAt": "2026-09-24",
   "venues": {
     "PH": {
       "name": "Charleston Pour House",
@@ -832,8 +832,7 @@
       "sh": "4:15 PM",
       "p": 85.57,
       "v": "REF",
-      "u": "https://www.ticketweb.com/event/20-years-of-home-team-the-refinery-tickets/14213844",
-      "flag": "charlestonlivemusic.com JSON-LD lists startDate as 12:15 PM, conflicting with existing price-verified doors 3:00 PM / show 4:15 PM. Left times unchanged; CLM figure may reflect an earlier gates/market-opening time for the all-day anniversary event rather than the main-stage schedule. Needs manual review."
+      "u": "https://www.ticketweb.com/event/20-years-of-home-team-the-refinery-tickets/14213844"
     },
     {
       "d": "2026-09-26",
@@ -1362,7 +1361,9 @@
       "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
-      "u": "https://the-windjammer.com/event/ax/"
+      "u": "https://the-windjammer.com/event/ax/",
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-10-23",
@@ -1402,7 +1403,9 @@
       "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
-      "u": "https://the-windjammer.com/event/tophouse-on-the-nutrl-beach-stage/"
+      "u": "https://the-windjammer.com/event/tophouse-on-the-nutrl-beach-stage/",
+      "p": 25,
+      "dop": 30
     },
     {
       "d": "2026-10-25",
@@ -1740,7 +1743,7 @@
       "d": "2026-12-02",
       "b": "Beartooth",
       "dr": "see ticket link",
-      "sh": "see ticket link",
+      "sh": "6:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/beartooth-the-refinery-tickets/14914313"
     },
@@ -2132,7 +2135,8 @@
       "dr": "7:30 PM",
       "sh": "8:00 PM",
       "v": "MF",
-      "u": "https://www.ticketmaster.com/high-june-charleston-south-carolina-10-09-2026/event/2D00650C964E800F"
+      "u": "https://www.ticketmaster.com/high-june-charleston-south-carolina-10-09-2026/event/2D00650C964E800F",
+      "o": "Cadalay"
     },
     {
       "d": "2026-10-10",
@@ -2185,7 +2189,8 @@
       "dr": "7:00 PM",
       "sh": "8:00 PM",
       "v": "MF",
-      "u": "https://www.ticketmaster.com/drew-sidora-charleston-south-carolina-05-29-2026/event/2D006462D5933FD6"
+      "u": "https://www.ticketmaster.com/drew-sidora-charleston-south-carolina-05-29-2026/event/2D006462D5933FD6",
+      "flag": "No longer found anywhere on musicfarm.com/calendar/ (2026-09-24 check) — the 10/17 slot is now occupied by a different, excluded (DJ dance party) event. Likely cancelled, postponed, or moved off-venue; no replacement date found. Needs manual follow-up — left in place rather than guessing."
     },
     {
       "d": "2026-10-20",
@@ -2315,16 +2320,6 @@
       "u": "https://charlestonjazz.com/performance/charleston-jazz-festival/"
     },
     {
-      "d": "2026-09-24",
-      "b": "Becky Robinson — The Beasts In Me Tour",
-      "s": "Performing Arts Center",
-      "dr": "7:00 PM",
-      "sh": "8:00 PM",
-      "v": "NCC",
-      "u": "https://www.ticketmaster.com/event/2D0064AEF308660A",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-09-26",
       "b": "Travis Tritt",
       "o": "Tyler Reese Tritt",
@@ -2363,16 +2358,6 @@
       "sh": "7:30 PM",
       "v": "NCC",
       "u": "https://www.ticketmaster.com/event/2D0064D0F7556BD8"
-    },
-    {
-      "d": "2026-10-28",
-      "b": "Sonic Live in Concert",
-      "s": "Performing Arts Center",
-      "dr": "6:30 PM",
-      "sh": "7:30 PM",
-      "v": "NCC",
-      "u": "https://www.ticketmaster.com/north-charleston-performing-arts-center-tickets-north-charleston/venue/369120",
-      "flag": "Ambiguous: billed as a full symphony orchestra performing video-game music; not listed under the venue's own Concerts or POPS! categories. May fall under the classical/orchestral exclusion despite non-classical repertoire — flagging rather than removing."
     },
     {
       "d": "2026-11-07",
@@ -2934,7 +2919,8 @@
       "dr": "—",
       "sh": "8:00 PM",
       "v": "TR",
-      "u": "https://www.bandsintown.com/e/1040117990-infinitefreefall-at-tin-roof"
+      "u": "https://www.bandsintown.com/e/1040117990-infinitefreefall-at-tin-roof",
+      "flag": "The Tin Roof ICS feed currently lists a different event for this date (\"Episodic Memory\", bare listing, no door/show/price). Could be an opener not captured previously, a rebook, or a cancellation — not changed pending manual review."
     },
     {
       "d": "2026-11-19",
@@ -2987,7 +2973,8 @@
       "sh": "8:00 PM",
       "v": "MF",
       "u": "https://www.ticketmaster.com/winter-solstice-ball-18-charleston-south-carolina-11-20-2026/event/2D0064F5C0781CA1",
-      "added": "2026-09-04"
+      "added": "2026-09-04",
+      "flag": "Hybrid event: venue's own event-page description confirms a live string trio performs early in the evening (\"blending Vitamin String Quartet elegance with Bridgerton/booktok drama\") before DJ ALX takes over; included per the hybrid-event exception rule."
     },
     {
       "d": "2026-09-06",
@@ -3910,18 +3897,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-10-17",
-      "b": "Rocket Man: The Music of Elton",
-      "o": "Michael Sobie with the North Charleston POPS! Orchestra",
-      "s": "Performing Arts Center",
-      "dr": "6:30 PM",
-      "sh": "7:30 PM",
-      "v": "NCC",
-      "u": "https://www.ticketmaster.com/event/2D006324005CB54F",
-      "flag": "North Charleston POPS! series: full orchestra performing Elton John repertoire. Same category as the existing flagged 'Sonic Live in Concert' entry (orchestra-backed but non-classical repertoire) — flagging per that same precedent rather than applying a hard classical/orchestral exclusion.",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-09-18",
       "b": "Poho Family Jam",
       "o": "ft. Oleg Terentiev, Corey Stephens, Danny Circharo, Bill Jarrett, Ethan Hamlin, Jamal Hall, and special guests",
@@ -4379,7 +4354,8 @@
       "sh": "7:00 PM",
       "v": "TR",
       "u": "https://tockify.com/tinroofschedule/detail/1781/1793142000000",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "o": "Doom Scroll"
     },
     {
       "d": "2026-10-30",
@@ -4421,7 +4397,8 @@
       "sh": "10:00 PM",
       "p": 10,
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85175",
-      "added": "2026-09-17"
+      "added": "2026-09-17",
+      "flag": "the-windjammer.com's own events list and this event's own page currently read \"Keith Hille & The Brickyard Saints\" (not \"Backyard\"), while the URL slug and our stored data say \"Backyard.\" Kept as \"Backyard\" (matches the URL slug) but the venue's own site is internally inconsistent — needs a human sanity-check."
     },
     {
       "d": "2026-10-25",
@@ -4462,6 +4439,369 @@
       "sh": "6:30 PM",
       "p": 10,
       "added": "2026-09-17"
+    },
+    {
+      "d": "2026-10-04",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "u": "",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-25",
+      "b": "Motown Throwdown",
+      "s": "Deck Stage",
+      "dr": "11:00 AM",
+      "sh": "1:30 PM",
+      "p": 5,
+      "v": "PH",
+      "u": "",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-28",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "p": 10,
+      "v": "PH",
+      "u": "",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2027-01-29",
+      "b": "Nashville Nights Band",
+      "dr": "7:30 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/nashville-nights-band-charleston-south-carolina-01-29-2027/event/2D006532EA1B6293",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2027-04-29",
+      "b": "Graham Barham",
+      "dr": "7:30 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/graham-barham-club-country-tour-charleston-south-carolina-04-29-2027/event/2D006531A1D8F8B9",
+      "flag": "Billed on Ticketmaster as \"Club Country Tour.\"",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-11-23",
+      "b": "Hunxho",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/hunxho-2night-only-tour-charleston-south-carolina-11-23-2026/event/2D00653694FF7305",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-11-28",
+      "b": "Charlton Singleton's Holiday Spectacular",
+      "o": "Quiana Parler",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/charlton-singletons-holiday-spectacular-charleston-south-carolina-11-28-2026/event/2D006532EEC57BC5",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2027-01-17",
+      "b": "Sons of Cream",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/sons-of-cream-charleston-south-carolina-01-17-2027/event/2D00652EC8BB4FD1",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2027-04-07",
+      "b": "40 Fingers",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/40-fingers-charleston-south-carolina-04-07-2027/event/2D00652EC6B34A90",
+      "flag": "CMH's own site tags this 'classical/jazz' (Italian guitar quartet reinterpreting rock/pop/film music) but it is not orchestral/classical programming; included as a genuine touring music act.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2027-05-06",
+      "b": "Leonid & Friends — Tribute to the Music of Chicago",
+      "dr": "6:30 PM",
+      "sh": "7:30 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/leonid-friends-charleston-south-carolina-05-06-2027/event/2D00652EC3FF427A",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-12-11",
+      "b": "Allman Betts Family Revival — A Decade of Revival (10th Anniversary)",
+      "o": "Robert Randolph, Judith Hill, Luther Dickinson, Jimmy Hall, Steel Beans, Larry McCray, Cody Dickinson, Alex Orbison, Abby Stachschmidt",
+      "sh": "7:30 PM",
+      "v": "GC",
+      "u": "https://gaillardcenter.org/events/allman-betts-family-revival-2026/",
+      "flag": "Secondary source only — gaillardcenter.org itself is now CAPTCHA-blocked (same SiteGround sg-captcha wall as Firefly Distillery/New Realm Brewing), previously undocumented for this venue. Verify doors time and price once the venue's own site is reachable again.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-12-20",
+      "b": "Leslie Odom, Jr. — The Christmas Tour 2026",
+      "sh": "7:00 PM",
+      "v": "GC",
+      "u": "https://gaillardcenter.org/events/leslie-odom-jr/",
+      "flag": "Secondary source only — gaillardcenter.org itself is now CAPTCHA-blocked. Verify doors time and price once reachable.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-09-26",
+      "b": "Banquet",
+      "s": "Inside Stage",
+      "dr": "9:30 PM",
+      "sh": "10:00 PM",
+      "p": 10,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85186",
+      "flag": "$10 at door, or free with a same-night Five Way Friday ticket (Five Way Friday plays the NÜTRL Beach Stage earlier the same evening).",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-30",
+      "b": "The Midnight City: Nightmare Before Midnight",
+      "s": "NÜTRL Beach Stage",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "p": 30,
+      "dop": 35,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85174",
+      "flag": "Halloweekend costume show per venue site.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-31",
+      "b": "The Reckoning: Grateful Dead Tribute",
+      "s": "NÜTRL Beach Stage",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "p": 15,
+      "dop": 20,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85161",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-11-14",
+      "b": "John Morgan",
+      "o": "Chris Ryan",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "10:00 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85178",
+      "flag": "No price on venue site as of 2026-09-24 — tickets go on sale 2026-09-25; re-check price next run.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-11-20",
+      "b": "Jeremy's Ten: The Pearl Jam Tribute",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "10:00 PM",
+      "p": 15,
+      "dop": 20,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85182",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-03",
+      "b": "Paprika",
+      "o": "Doctor Primate, Erin Indigo, Sorry Eliiot",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1827/1791072000000",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-05",
+      "b": "Carson Bull and The Cousins",
+      "o": "Scotty Chapman Band",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1835/1791243000000",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-09",
+      "b": "Sam Morrow",
+      "o": "Macelyn Batten",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1826/1791586800000",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-13",
+      "b": "Pterocat",
+      "o": "2 Slices",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1836/1791934200000",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-15",
+      "b": "Lee Wilder",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1832/1792107000000",
+      "flag": "Bare listing — no door/show/price text published yet.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-19",
+      "b": "Lemon Squares",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
+      "p": 5,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1838/1792454400000",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-22",
+      "b": "The Folly Lama",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 5,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1830/1792711800000",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-24",
+      "b": "Never Any Ordinary",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1833/1792884600000",
+      "flag": "Band's own 10-year anniversary show (\"Never Any Ordinary 10 year party!\"); no door/show/price published in the feed yet.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-25",
+      "b": "Nick Sweat & The Phantom Headlights",
+      "o": "The Water Kickers, Don Merckle",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "p": 5,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1839/1792965600000",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-26",
+      "b": "Daikaiju",
+      "o": "The Inhibitors",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 12,
+      "dop": 15,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1831/1793057400000",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-29",
+      "b": "Anything Can Happen",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1843/1793316600000",
+      "flag": "Same recurring bare-title themed-night pattern seen previously at this venue — genuinely unclear whether a specific act is booked.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-24",
+      "b": "Clay Barker",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-25",
+      "b": "FlashMob",
+      "sh": "5:00 PM",
+      "v": "US",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-27",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-28",
+      "b": "Southern Stomp",
+      "sh": "8:00 PM",
+      "v": "US",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-29",
+      "b": "Five Door Sedan",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-30",
+      "b": "FlashMob",
+      "sh": "9:00 PM",
+      "v": "US",
+      "flag": "FlashMob normally plays an earlier 5:00 PM slot at this venue; this Halloween-week booking is at 9:00 PM instead — confirmed correct per source, not a typo.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-09-26",
+      "b": "Kendell: Live At Commonhouse",
+      "sh": "12:00 PM",
+      "v": "CHA",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-09-28",
+      "b": "Noah Jones",
+      "sh": "7:00 PM",
+      "v": "SNOB",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-09-29",
+      "b": "Connor Sage",
+      "sh": "7:00 PM",
+      "v": "SNOB",
+      "flag": "Same date/time/stage as \"Matt Vajdic\" below (both Main Stage, 7:00 PM) per two separate source booking IDs — could be a co-bill or a scheduling data error. Both kept pending manual confirmation with the venue.",
+      "added": "2026-09-24"
+    },
+    {
+      "d": "2026-09-29",
+      "b": "Matt Vajdic",
+      "sh": "7:00 PM",
+      "v": "SNOB",
+      "flag": "Same date/time/stage as \"Connor Sage\" above — see that entry's flag.",
+      "added": "2026-09-24"
     }
   ]
 }
