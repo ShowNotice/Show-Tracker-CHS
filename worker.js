@@ -105,33 +105,68 @@ export default {
   },
 
   // Entry point the Cron Trigger calls (configured in wrangler.toml: one weekly trigger,
-  // Thursdays 1pm ET). A same-calendar-day guard sits in front of the real send —
-  // subscribers got two identical digests on 2026-09-24 (7:07am and 1pm ET). This is the
-  // second known instance of an extra real scheduled() fire at a time that doesn't match
-  // the single declared trigger (see "The Wednesday-3pm-digest mystery" in
-  // project-notes-consolidated.md, 2026-09-17 — that investigation confirmed via Workers
-  // Observability logs it really was the Cron Trigger path firing, not a second declared
-  // trigger or a manual call, and never found a root cause beyond "Cloudflare's own cron
-  // dispatcher occasionally fires a stale/phantom entry"). Rather than wait for that
-  // platform-level mystery to resolve itself, this guard makes any extra same-day fire a
-  // safe no-op regardless of cause.
+  // Thursdays 1pm ET). Guarded twice before the real send, because this handler has
+  // fired at times that don't match the single declared trigger at least twice: Wed
+  // 2026-09-16 3pm ET (see "The Wednesday-3pm-digest mystery" in
+  // project-notes-consolidated.md) and Thu 2026-09-24 7:07am ET, both producing a
+  // second digest that week. Root cause is still unconfirmed (Cloudflare-side), so the
+  // guards make an off-schedule or repeat fire a no-op regardless of cause — see
+  // sendDigestIfDue().
   async scheduled(event, env, ctx) {
-    ctx.waitUntil(sendDigestIfNotAlreadySentToday(env));
+    ctx.waitUntil(sendDigestIfDue(event, env));
   }
 };
 
-async function sendDigestIfNotAlreadySentToday(env) {
-  const todayKey = `digest-sent:${new Date().toISOString().slice(0, 10)}`;
-  const alreadySent = await env.SHOW_TRACKER_KV.get(todayKey);
-  if (alreadySent) {
-    console.log(`Digest already sent today (${todayKey}) — skipping this Cron Trigger fire.`);
+// Must match the one entry in wrangler.toml's [triggers] crons — the deploy workflow
+// fails the build if they drift apart, since a mismatch would make the check below
+// silently skip every real send.
+const DIGEST_CRON = '0 17 * * thu';
+const DIGEST_MIN_INTERVAL_MS = 6 * 24 * 60 * 60 * 1000;
+
+// True when `date` (UTC) is a time the simple 5-field cron `cron` would fire. Supports
+// only what DIGEST_CRON uses: a number or '*' per field, with day-of-week as a number
+// (0-6, Sunday=0) or a three-letter name.
+function cronMatchesTime(cron, date) {
+  const [minute, hour, dom, month, dow] = cron.trim().split(/\s+/);
+  const days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+  const dowNum = days.includes(String(dow).toLowerCase()) ? days.indexOf(dow.toLowerCase()) : dow;
+  const fieldOk = (field, value) => field === '*' || Number(field) === value;
+  return fieldOk(minute, date.getUTCMinutes()) &&
+    fieldOk(hour, date.getUTCHours()) &&
+    fieldOk(dom, date.getUTCDate()) &&
+    fieldOk(month, date.getUTCMonth() + 1) &&
+    fieldOk(dowNum, date.getUTCDay());
+}
+
+async function sendDigestIfDue(event, env) {
+  const scheduledAt = new Date(event.scheduledTime);
+  // Logged on every fire so the next off-schedule one shows exactly which cron string
+  // and scheduled time Cloudflare handed us — the piece of evidence both past
+  // investigations were missing.
+  console.log(`scheduled() fired: cron="${event.cron}" scheduledTime=${scheduledAt.toISOString()}`);
+
+  // Guard 1: only the declared weekly slot sends. A stale/phantom trigger (e.g. the old
+  // Wednesday 19:00 UTC schedule, which the 2026-09-16 extra fire matched exactly) is
+  // rejected here instead of getting to send first and win the dedupe below. Checked
+  // against scheduledTime rather than event.cron, so a formatting difference in how
+  // Cloudflare echoes the cron string back can't block the real send.
+  if (!cronMatchesTime(DIGEST_CRON, scheduledAt)) {
+    console.warn(`Off-schedule Cron Trigger fire (expected "${DIGEST_CRON}") — not sending.`);
+    return;
+  }
+
+  // Guard 2: at most one digest per week, for a duplicate fire of the right slot. The
+  // earlier same-UTC-date key (digest-sent:<date>) couldn't catch an extra fire on a
+  // different day, like the Wednesday one.
+  const lastSent = Number(await env.SHOW_TRACKER_KV.get('digest-last-sent')) || 0;
+  if (Date.now() - lastSent < DIGEST_MIN_INTERVAL_MS) {
+    console.log(`Digest already sent at ${new Date(lastSent).toISOString()} — skipping this fire.`);
     return;
   }
   // Marked before the send completes, not after -- a slow/erroring send shouldn't leave
-  // the door open for a second concurrent Cron Trigger fire to also start sending while
-  // the first is still in flight. A real failure is visible in Cloudflare's own Worker
-  // logs regardless; this key only ever needs to answer "did a send already start today."
-  await env.SHOW_TRACKER_KV.put(todayKey, String(Date.now()), { expirationTtl: 2 * 24 * 60 * 60 });
+  // the door open for a second concurrent fire to also start sending while the first
+  // is still in flight. A real failure is visible in Cloudflare's own Worker logs.
+  await env.SHOW_TRACKER_KV.put('digest-last-sent', String(Date.now()), { expirationTtl: 8 * 24 * 60 * 60 });
   await sendDigestToAllSubscribers(env);
 }
 

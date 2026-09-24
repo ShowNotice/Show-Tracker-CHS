@@ -40,6 +40,21 @@ jobs:
             }
           "
 
+      # worker.js only sends the digest when a fire's scheduledTime matches its own
+      # DIGEST_CRON constant (the guard against off-schedule Cron Trigger fires), so a
+      # schedule change made in wrangler.toml alone would silently stop every digest.
+      - name: Check DIGEST_CRON in worker.js matches wrangler.toml's cron
+        run: |
+          node -e "
+            const fs = require('fs');
+            const code = fs.readFileSync('worker.js', 'utf8').match(/const DIGEST_CRON = '([^']+)'/);
+            const toml = fs.readFileSync('wrangler.toml', 'utf8').match(/^crons\\s*=\\s*\\[\\s*\"([^\"]+)\"\\s*\\]/m);
+            if (!code || !toml || code[1] !== toml[1]) {
+              console.error('DIGEST_CRON (' + (code && code[1]) + ') does not match wrangler.toml crons (' + (toml && toml[1]) + ')');
+              process.exit(1);
+            }
+          "
+
       - name: Validate config (surfaces the real error if the deploy fails)
         run: npx --yes wrangler@4 deploy --dry-run
         env:
