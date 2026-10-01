@@ -1,5 +1,5 @@
 {
-  "dataUpdatedAt": "2026-09-24",
+  "dataUpdatedAt": "2026-10-01",
   "venues": {
     "PH": {
       "name": "Charleston Pour House",
@@ -2920,7 +2920,9 @@
       "sh": "8:00 PM",
       "v": "TR",
       "u": "https://www.bandsintown.com/e/1040117990-infinitefreefall-at-tin-roof",
-      "flag": "The Tin Roof ICS feed currently lists a different event for this date (\"Episodic Memory\", bare listing, no door/show/price). Could be an opener not captured previously, a rebook, or a cancellation — not changed pending manual review."
+      "flag": "Resolved 2026-10-01: Tin Roof ICS now lists \"Episodic Memory / Infinitefreefall / DJ Search Urchin. $10 21+\" for this date, so Infinitefreefall is one of three acts on a single bill rather than a replaced booking. Billing order on the feed puts Episodic Memory first; headliner order and show time (feed has no door/show text, only a 7:30 PM calendar start) not independently confirmed — 8:00 PM show time retained from the earlier Bandsintown listing.",
+      "o": "Episodic Memory, DJ Search Urchin",
+      "p": 10
     },
     {
       "d": "2026-11-19",
@@ -3330,10 +3332,11 @@
     },
     {
       "d": "2026-10-01",
-      "b": "The Regulars",
+      "b": "Hit or Miss",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "flag": "Corrected 2026-10-01: livemusiccharleston.com (the venue's own stated source) now lists \"Hit or Miss\" (Full Band, Main Stage, 9:00 PM) for this slot; the previously stored \"The Regulars\" no longer appears anywhere in the feed. Same date/time, different act — worth a manual look in case the booking was swapped."
     },
     {
       "d": "2026-10-02",
@@ -4382,11 +4385,11 @@
       "d": "2026-12-10",
       "b": "Limbo at The Refinery presents: Caleb Lee Hutchinson",
       "dr": "see ticket link",
-      "sh": "3:00 PM",
+      "sh": "see ticket link",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14298294",
       "added": "2026-09-01",
-      "flag": "Existing sh (3:00 PM) traced to charlestonlivemusic.com, whose JSON-LD for this event returns a placeholder epoch date (1970-01-01), not a real time -- this figure is unverified and may be wrong (see Dani Rucker precedent, corrected 2026-09-17). Needs independent confirmation."
+      "flag": "Show time cleared 2026-10-01: the previously stored 3:00 PM traced to charlestonlivemusic.com, whose JSON-LD for this event is still the 1970-01-01 placeholder (no real time ever entered), so there is no usable time from any source. Re-check once the ticketweb listing or a real JSON-LD value appears."
     },
     {
       "d": "2026-09-25",
@@ -4802,6 +4805,189 @@
       "v": "SNOB",
       "flag": "Same date/time/stage as \"Connor Sage\" above — see that entry's flag.",
       "added": "2026-09-24"
+    },
+    {
+      "d": "2026-10-31",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-01",
+      "b": "FlashMob",
+      "sh": "5:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-05",
+      "b": "The Midnight City Band",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-06",
+      "b": "Candy Shop",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-07",
+      "b": "Candy Shop",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-08",
+      "b": "FlashMob",
+      "sh": "5:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-12",
+      "b": "The Midnight City Band",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-13",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-14",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-15",
+      "b": "FlashMob",
+      "sh": "5:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-19",
+      "b": "The Midnight City Band",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-20",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-21",
+      "b": "FlashMob",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-27",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-11-28",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-10-01",
+      "b": "HIGH 5",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "9:00 PM",
+      "p": 10,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85195",
+      "flag": "$10, or free with a Lily Rose (beach stage) ticket per the venue page. Doors time only; no separate show time published, so show time set equal to the listed 9:00 PM start.",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-10-02",
+      "b": "The Novatones",
+      "s": "Inside Stage",
+      "dr": "9:30 PM",
+      "sh": "10:00 PM",
+      "p": 10,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85196",
+      "flag": "$10, or free with a Saxsquatch (beach stage) ticket per the venue page.",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-10-03",
+      "b": "Old Soul",
+      "s": "Inside Stage",
+      "dr": "9:30 PM",
+      "sh": "9:30 PM",
+      "p": 10,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85197",
+      "flag": "$10, or free with a 80s Beach Party w/ Weird Science (beach stage) ticket per the venue page. Doors time only; no separate show time published, so show time set equal to the listed 9:30 PM start.",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-10-09",
+      "b": "Bad Medicine: The Iconic Bon Jovi Experience",
+      "s": "NÜTRL Beach Stage",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "p": 15,
+      "dop": 20,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85193",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-12-04",
+      "b": "The Broken Hearts: Tom Petty & The Heartbreakers Tribute",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "9:30 PM",
+      "p": 15,
+      "dop": 20,
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85191",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2027-03-05",
+      "b": "Daughtry",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/daughtry-20-years-unplugged-tour-charleston-south-carolina-03-05-2027/event/2D006539D1384242",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-10-28",
+      "b": "CeCe Winans — COME WORSHIP! North Charleston!",
+      "dr": "5:30 PM",
+      "sh": "7:00 PM",
+      "v": "NCC",
+      "u": "https://www.ticketmaster.com/cece-winans-come-worship-tour-north-charleston-south-carolina-10-28-2026/event/2D006454B193A854",
+      "added": "2026-10-01"
     }
   ]
 }
