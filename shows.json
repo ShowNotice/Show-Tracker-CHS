@@ -4966,6 +4966,14 @@
       "u": "https://posh.vip/e/loose-ends-open-air-halloween",
       "flag": "Included at the owner's direction 2026-10-01. Listed on therefinerychs.com under Events; the posh.vip ticket page could not be fetched from this environment, so lineup, times and price are unconfirmed.",
       "added": "2026-10-01"
+    },
+    {
+      "d": "2026-10-03",
+      "b": "Palmetto Knights",
+      "sh": "12:00 PM",
+      "v": "NRB",
+      "flag": "Sourced from livemusiccharleston.com (slug newrealmbrewingcharleston), listed there as \"Palmetto Knights - RofR\", Full Band, Main Stage, noon start. No ticket link, price or description; \"RofR\" suffix unexplained. New Realm's own site is unreachable, so this is not cross-checked.",
+      "added": "2026-10-01"
     }
   ]
 }
