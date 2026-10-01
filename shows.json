@@ -3335,8 +3335,7 @@
       "b": "Hit or Miss",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01",
-      "flag": "Corrected 2026-10-01: livemusiccharleston.com (the venue's own stated source) now lists \"Hit or Miss\" (Full Band, Main Stage, 9:00 PM) for this slot; the previously stored \"The Regulars\" no longer appears anywhere in the feed. Same date/time, different act — worth a manual look in case the booking was swapped."
+      "added": "2026-09-01"
     },
     {
       "d": "2026-10-02",
@@ -3924,16 +3923,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-10-05",
-      "b": "The Headstrings Collective – Monday Muse",
-      "s": "Deck Stage",
-      "dr": "5:00 PM",
-      "sh": "6:00 PM",
-      "p": 0,
-      "v": "PH",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-10-11",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -3944,32 +3933,12 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-10-12",
-      "b": "The Headstrings Collective – Monday Muse",
-      "s": "Deck Stage",
-      "dr": "5:00 PM",
-      "sh": "6:00 PM",
-      "p": 0,
-      "v": "PH",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-10-18",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
       "dr": "11:00 AM",
       "sh": "1:30 PM",
       "p": 5,
-      "v": "PH",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-19",
-      "b": "The Headstrings Collective – Monday Muse",
-      "s": "Deck Stage",
-      "dr": "5:00 PM",
-      "sh": "6:00 PM",
-      "p": 0,
       "v": "PH",
       "added": "2026-09-01"
     },
@@ -4384,12 +4353,11 @@
     {
       "d": "2026-12-10",
       "b": "Limbo at The Refinery presents: Caleb Lee Hutchinson",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14298294",
-      "added": "2026-09-01",
-      "flag": "Show time cleared 2026-10-01: the previously stored 3:00 PM traced to charlestonlivemusic.com, whose JSON-LD for this event is still the 1970-01-01 placeholder (no real time ever entered), so there is no usable time from any source. Re-check once the ticketweb listing or a real JSON-LD value appears."
+      "added": "2026-09-01"
     },
     {
       "d": "2026-09-25",
@@ -4811,105 +4779,105 @@
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-01",
       "b": "FlashMob",
       "sh": "5:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-05",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-06",
       "b": "Candy Shop",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-07",
       "b": "Candy Shop",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-08",
       "b": "FlashMob",
       "sh": "5:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-12",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-13",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-14",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-15",
       "b": "FlashMob",
       "sh": "5:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-19",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-20",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-21",
       "b": "FlashMob",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-27",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-11-28",
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-01"
+      "added": "2026-09-01"
     },
     {
       "d": "2026-10-01",
@@ -4987,6 +4955,16 @@
       "sh": "7:00 PM",
       "v": "NCC",
       "u": "https://www.ticketmaster.com/cece-winans-come-worship-tour-north-charleston-south-carolina-10-28-2026/event/2D006454B193A854",
+      "added": "2026-10-01"
+    },
+    {
+      "d": "2026-10-30",
+      "b": "Open Air Halloween",
+      "dr": "see ticket link",
+      "sh": "see ticket link",
+      "v": "REF",
+      "u": "https://posh.vip/e/loose-ends-open-air-halloween",
+      "flag": "Included at the owner's direction 2026-10-01. Listed on therefinerychs.com under Events; the posh.vip ticket page could not be fetched from this environment, so lineup, times and price are unconfirmed.",
       "added": "2026-10-01"
     }
   ]
