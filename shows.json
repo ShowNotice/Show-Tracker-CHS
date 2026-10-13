@@ -1,5 +1,5 @@
 {
-  "dataUpdatedAt": "2026-10-08",
+  "dataUpdatedAt": "2026-10-13",
   "venues": {
     "PH": {
       "name": "Charleston Pour House",
@@ -118,6 +118,13 @@
       "type": "venue",
       "color": "#6ac9a0",
       "address": "192 E Bay St, Charleston, SC 29401"
+    },
+    "CHR": {
+      "name": "Charleston Harbor Resort & Marina",
+      "site": "https://www.charlestonharborresort.com/",
+      "type": "venue",
+      "color": "#c95a8a",
+      "address": "20 Patriots Point Rd, Mount Pleasant, SC 29464"
     }
   },
   "shows": [
@@ -5467,6 +5474,66 @@
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14367984",
       "added": "2026-10-08"
+    },
+    {
+      "d": "2026-12-12",
+      "b": "Sol Driven Train",
+      "o": "Oysters on the Point",
+      "sh": "2:00 PM",
+      "v": "CHR",
+      "u": "https://linktr.ee/chsharborevents",
+      "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Holy City Sinner lists 2–6 PM for this date.",
+      "added": "2026-10-13"
+    },
+    {
+      "d": "2027-01-09",
+      "b": "The Reckoning",
+      "o": "Oysters on the Point",
+      "sh": "2:00 PM",
+      "v": "CHR",
+      "u": "https://linktr.ee/chsharborevents",
+      "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Holy City Sinner lists 2–6 PM for this date.",
+      "added": "2026-10-13"
+    },
+    {
+      "d": "2027-01-23",
+      "b": "Dallas Baker & Friends",
+      "o": "Oysters on the Point",
+      "sh": "2:00 PM",
+      "v": "CHR",
+      "u": "https://linktr.ee/chsharborevents",
+      "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Holy City Sinner lists 2–6 PM for this date. Holy City Sinner lists this as Jan 22 (a Friday); the venue's own post says Jan 23 (Saturday), which is used here.",
+      "added": "2026-10-13"
+    },
+    {
+      "d": "2027-02-06",
+      "b": "Solid Country Gold",
+      "o": "Oysters on the Point",
+      "sh": "see ticket link",
+      "v": "CHR",
+      "u": "https://linktr.ee/chsharborevents",
+      "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
+      "added": "2026-10-13"
+    },
+    {
+      "d": "2027-02-20",
+      "b": "Thomas Champagne & Friends",
+      "o": "Oysters on the Point",
+      "sh": "see ticket link",
+      "v": "CHR",
+      "u": "https://linktr.ee/chsharborevents",
+      "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
+      "added": "2026-10-13"
+    },
+    {
+      "d": "2027-03-06",
+      "b": "The Green Thieves",
+      "o": "Oysters on the Point",
+      "sh": "see ticket link",
+      "v": "CHR",
+      "u": "https://linktr.ee/chsharborevents",
+      "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
+      "added": "2026-10-13"
     }
   ]
 }
