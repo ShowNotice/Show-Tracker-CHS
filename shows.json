@@ -1,5 +1,5 @@
 {
-  "dataUpdatedAt": "2026-10-01",
+  "dataUpdatedAt": "2026-10-08",
   "venues": {
     "PH": {
       "name": "Charleston Pour House",
@@ -3572,11 +3572,11 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-12-05",
+      "d": "2026-12-12",
       "b": "Annual Holiday Hootenanny",
       "sh": "11:00 AM",
       "v": "CHA",
-      "flag": "Ambiguous: 'Hootenanny' traditionally implies live folk music, but source provided no description confirming a booked act",
+      "flag": "Ambiguous: 'Hootenanny' traditionally implies live folk music, but source provided no description confirming a booked act | Date corrected 2026-12-05 -> 2026-12-12 per livemusiccharleston.com (2026-10-08).",
       "added": "2026-09-01"
     },
     {
@@ -4966,6 +4966,507 @@
       "u": "https://posh.vip/e/loose-ends-open-air-halloween",
       "flag": "Included at the owner's direction 2026-10-01. Listed on therefinerychs.com under Events; the posh.vip ticket page could not be fetched from this environment, so lineup, times and price are unconfirmed.",
       "added": "2026-10-01"
+    },
+    {
+      "d": "2026-10-08",
+      "b": "Of The Heart",
+      "sh": "7:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-09",
+      "b": "Maralin Russell: Live at Commonhouse",
+      "sh": "6:00 PM",
+      "v": "CHA",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-11",
+      "b": "Lighthouse  Band",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-12",
+      "b": "Noah Jones",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-13",
+      "b": "Connor Sage",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08",
+      "flag": "Same date/time/stage as \"Matt Vajdic\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+    },
+    {
+      "d": "2026-10-13",
+      "b": "Matt Vajdic",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08",
+      "flag": "Same date/time/stage as \"Connor Sage\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+    },
+    {
+      "d": "2026-10-14",
+      "b": "Ben Somerville",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-15",
+      "b": "Of The Heart",
+      "sh": "7:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-18",
+      "b": "Lighthouse  Band",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-19",
+      "b": "Noah Jones",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-20",
+      "b": "Connor Sage",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08",
+      "flag": "Same date/time/stage as \"Matt Vajdic\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+    },
+    {
+      "d": "2026-10-20",
+      "b": "Matt Vajdic",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08",
+      "flag": "Same date/time/stage as \"Connor Sage\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+    },
+    {
+      "d": "2026-10-21",
+      "b": "Ben Somerville",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-22",
+      "b": "Of The Heart",
+      "sh": "7:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-25",
+      "b": "Lighthouse  Band",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-26",
+      "b": "Noah Jones",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-27",
+      "b": "Connor Sage",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08",
+      "flag": "Same date/time/stage as \"Matt Vajdic\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+    },
+    {
+      "d": "2026-10-27",
+      "b": "Matt Vajdic",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08",
+      "flag": "Same date/time/stage as \"Connor Sage\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+    },
+    {
+      "d": "2026-10-28",
+      "b": "Ben Somerville",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-29",
+      "b": "Of The Heart",
+      "sh": "7:00 PM",
+      "v": "SNOB",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-03",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-04",
+      "b": "Southern Stomp",
+      "sh": "8:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-05",
+      "b": "Backseat Company : Live At Commonhouse",
+      "sh": "6:00 PM",
+      "v": "CHA",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-07",
+      "b": "Albert and The Smoking Section: Live at Commonhouse",
+      "sh": "6:00 PM",
+      "v": "CHA",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-10",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-11",
+      "b": "Southern Stomp",
+      "sh": "8:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-17",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-18",
+      "b": "Southern Stomp",
+      "sh": "8:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-21",
+      "b": "Palmetto Knights - RofR",
+      "sh": "12:00 PM",
+      "v": "NRB",
+      "dr": "—",
+      "u": "",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-21",
+      "b": "Rockabillaque Presents Dan & the Donuts",
+      "sh": "6:00 PM",
+      "v": "CHA",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-24",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-12-01",
+      "b": "Grayson Little",
+      "sh": "9:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-12-02",
+      "b": "Southern Stomp",
+      "sh": "8:00 PM",
+      "v": "US",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-12-05",
+      "b": "Shore Club: Live at Commonhouse",
+      "sh": "6:00 PM",
+      "v": "CHA",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2027-02-27",
+      "b": "Stefanie Potter & The Ceramic Hearts: Live at Commonhouse",
+      "sh": "6:00 PM",
+      "v": "CHA",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-11",
+      "b": "New Dirty Shoes",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/new-dirty-shoes-2-2-2/",
+      "p": 5,
+      "s": "Deck Stage",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-13",
+      "b": "Kanika Moore & The Brown Eyed Bois",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/kanika-moore-the-brown-eyed-bois-8/2026-10-13/",
+      "p": 10,
+      "s": "Deck Stage",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-20",
+      "b": "Kanika Moore & The Brown Eyed Bois",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/kanika-moore-the-brown-eyed-bois-8/2026-10-20/",
+      "p": 10,
+      "s": "Deck Stage",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-27",
+      "b": "Kanika Moore & The Brown Eyed Bois",
+      "dr": "5:00 PM",
+      "sh": "6:00 PM",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/kanika-moore-the-brown-eyed-bois-8/2026-10-27/",
+      "p": 10,
+      "s": "Deck Stage",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-15",
+      "b": "Step Dog",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/step-dog/",
+      "p": 7,
+      "s": "Deck Stage",
+      "dop": 10,
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-08",
+      "b": "Dallas Baker and The Pluff Daddy's",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "9:30 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85203",
+      "p": 10,
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-09",
+      "b": "Reverse Cowgirl",
+      "s": "Inside Stage",
+      "dr": "9:30 PM",
+      "sh": "10:00 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85209",
+      "p": 10,
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-16",
+      "b": "FlashMob",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "9:30 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85202",
+      "p": 10,
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-06",
+      "b": "The Nashville Nights Band: 90s Country Experience",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "9:30 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85208",
+      "p": 15,
+      "dop": 20,
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-18",
+      "b": "SUSTO Residency (Debut + & I'm Fine Today)",
+      "o": "Johnny Delaware",
+      "dr": "8:00 PM",
+      "sh": "—",
+      "p": 20,
+      "v": "RA",
+      "u": "http://www.theroyalamerican.com/schedule/susto-residency-night-one",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-12-17",
+      "b": "SUSTO Residency (Ever Since I Lost My Mind + Holiday Songs)",
+      "o": "Brock Butler (Perpetual Groove), Cannon Rogers",
+      "dr": "8:00 PM",
+      "sh": "—",
+      "p": 20,
+      "v": "RA",
+      "u": "http://www.theroyalamerican.com/schedule/susto-residency-night-two",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2027-01-14",
+      "b": "SUSTO Residency (Time In The Sun + My Entire Life)",
+      "o": "Judy Blank, Andrew Scotchie, Red McAdam",
+      "dr": "8:00 PM",
+      "sh": "—",
+      "p": 20,
+      "v": "RA",
+      "u": "http://www.theroyalamerican.com/schedule/susto-residency-night-three",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2027-02-18",
+      "b": "SUSTO Residency (Stringband: Volumes 1 + 2)",
+      "o": "Holler Choir",
+      "dr": "8:00 PM",
+      "sh": "—",
+      "p": 20,
+      "v": "RA",
+      "u": "http://www.theroyalamerican.com/schedule/susto-residency-night-four",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-10",
+      "b": "Runaway Gin",
+      "dr": "7:30 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/runaway-gin-charleston-south-carolina-11-10-2026/event/2D006546A651B0A1",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-12-19",
+      "b": "MF Heavy Rock Night",
+      "o": "Virgil Kain, Decadence, Marytree, Body In Mind",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/mf-heavy-rock-night-toys-for-charleston-south-carolina-12-19-2026/event/2D00653E8EBE734D",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2027-02-01",
+      "b": "Chelsea Cutler",
+      "o": "Lamb",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/chelsea-cutler-is-this-the-end-charleston-south-carolina-02-01-2027/event/2D00653E8D0F6ADA",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2027-03-25",
+      "b": "Dylan Gossett",
+      "o": "Leon Majcen",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/dylan-gossett-the-ramblin-tour-2027-charleston-south-carolina-03-25-2027/event/2D00653EE555C1C0",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-31",
+      "b": "Halloween Rock Show and Costume Contest",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1844/1793487600000",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-01",
+      "b": "PONS",
+      "o": "Orange Doors, Motorcycle Jackson, Blimps",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "p": 10,
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1846/1793577600000",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-08",
+      "b": "Halloween Cover Show!",
+      "sh": "5:00 PM",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1849/1794175200000",
+      "flag": "Feed lists only a title and a 5:00 PM start (no door/show text); specific acts unnamed.",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-13",
+      "b": "The Defilers",
+      "o": "Bo Stevens",
+      "sh": "7:30 PM",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1850/1794616200000",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-14",
+      "b": "Enlightened Iguanas",
+      "sh": "7:30 PM",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1851/1794702600000",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-11-22",
+      "b": "The Queers",
+      "sh": "7:30 PM",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1852/1795393800000",
+      "added": "2026-10-08"
+    },
+    {
+      "d": "2026-10-22",
+      "b": "Limbo at The Refinery presents: Macelyn Batten",
+      "dr": "see ticket link",
+      "sh": "see ticket link",
+      "v": "REF",
+      "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14367984",
+      "added": "2026-10-08"
     }
   ]
 }
