@@ -17,8 +17,9 @@ const DEFAULT_WORKER_BASE_URL = 'https://api.chs.shownotice.com';
 const DEFAULT_SITE_URL = 'https://chs.shownotice.com/';
 const ALLOWED_ORIGIN = 'https://chs.shownotice.com';
 
-// Real show ids (`showId()` below) are `venue|date|band-slug` — comfortably under 150
-// chars even for the longest real band/event names currently in shows.json (~85 chars).
+// Real show ids (`showId()` below) are permanent ids like `ph-20261121-interstellar-echoes`
+// (at most ~60 chars), or the legacy `venue|date|band-slug` form (~85 chars at most) —
+// both comfortably under 150.
 // Bounding both the length of an id and how many a user can accumulate keeps
 // /api/star-show (which takes the id straight from an unauthenticated-by-anything-but-
 // a-token query string) from being usable to grow one user's KV record without bound.
@@ -886,8 +887,20 @@ async function handleSaveUserData(request, env, headers) {
 // itself generated when the subscriber favorited/starred a show — if one side's version
 // of this function ever changes, the other needs the same change, or matching will
 // quietly diverge.
+// Every show in shows.json has a permanent `id` (added 2026-10-15) that never changes,
+// even when its date or name is corrected. Stars saved before then use the legacy
+// venue|date|band form; the site migrates them when a user visits, and
+// normalizeShowIds() translates any still stored here. Must match legacyShowId() in
+// index.html.
 function showId(s) {
+  return s.id || legacyShowId(s);
+}
+function legacyShowId(s) {
   return [s.v, s.d, s.b].join('|').toLowerCase().replace(/\s+/g, '_');
+}
+function normalizeShowIds(ids, shows) {
+  const legacy = new Map(shows.filter(s => s.id).map(s => [legacyShowId(s), s.id]));
+  return ids.map(id => legacy.get(id) || id);
 }
 function isUnknownTime(t) {
   return !t || /see ticket link|tba|^—$/i.test(t.trim());
@@ -959,6 +972,7 @@ function escapeHtml(str) {
 // a future test path) can omit it and the star link is simply left off each card.
 function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl, myShowIds = [], starToken = null }) {
   const upcoming = upcomingShows(shows);
+  myShowIds = normalizeShowIds(myShowIds, shows);
 
   // "Added This Week" — genuinely new shows (the "added" field, stamped when a show
   // is first added to the data), not shows-happening-this-week. This is deliberately
@@ -1716,7 +1730,10 @@ async function handleAdminStats(request, env, headers) {
   try {
     const showData = await fetchShowData(env);
     venueNames = showData.venues || {};
-    upcomingShows(showData.shows || []).forEach(s => upcomingShowById.set(showId(s), s));
+    upcomingShows(showData.shows || []).forEach(s => {
+      upcomingShowById.set(showId(s), s);
+      upcomingShowById.set(legacyShowId(s), s); // stars saved before permanent ids
+    });
   } catch (err) {
     console.error('handleAdminStats: fetchShowData failed:', err);
   }
@@ -1767,8 +1784,9 @@ async function handleAdminStats(request, env, headers) {
       favoriteEvents.push({ artist: norm, addedAt: data.favoritesAddedAt[artist] });
     });
     myShows.forEach(id => {
-      if (!upcomingShowById.has(id)) return; // past show, or one no longer in the catalog
-      showEvents.push({ id, addedAt: data.myShowsAddedAt[id] });
+      const s = upcomingShowById.get(id);
+      if (!s) return; // past show, or one no longer in the catalog
+      showEvents.push({ id: showId(s), addedAt: data.myShowsAddedAt[id] });
     });
   }));
 

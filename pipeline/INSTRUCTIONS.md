@@ -50,11 +50,13 @@ stored prompt (last revised that day), then updated for the items marked "2026-1
 
 ## Standing decisions (owner, 2026-10-01)
 
-- A show the venue has cancelled is removed from shows.json (e.g. the Pour House Monday Muse dates of 2026-10-05, 10-12 and 10-19). Changed 2026-10-15 (owner): a show that is no longer on the venue's own site/source is also removed, with or without a cancellation notice. Safeguards: (1) only when that venue's fetch fully succeeded this run — never on a failed, blocked, rate-limited or partial fetch; (2) only for dates inside the range the source actually covers (e.g. don't remove a Windjammer show dated after the last event on its 20-event list); (3) first rule out a rename, typo or move — the same act on another date is a date correction, and a misspelled title (e.g. Pour House's "Tuak" for TAUK) is the same show; (4) never for CHR (manual entry) or rows the owner entered or confirmed directly. List every removal in the PR description with the reason.
+- A show the venue has cancelled is removed from shows.json (e.g. the Pour House Monday Muse dates of 2026-10-05, 10-12 and 10-19). Changed 2026-10-15 (owner): a show that is no longer on the venue's own site/source is also removed, with or without a cancellation notice. Safeguards: (1) only when that venue's fetch fully succeeded this run — never on a failed, blocked, rate-limited or partial fetch; (2) only for dates inside the range the source actually covers (e.g. don't remove a Windjammer show dated after the last event on its 20-event list); (3) first rule out a rename, typo or move — the same act on another date is a date correction, and a misspelled title (e.g. Pour House's "Tuak" for TAUK) is the same show; (4) never for CHR (manual entry) or rows with a `confirmed` date. List every removal in the PR description with the reason.
 - YALL Fest (Charleston Music Hall, 2026-11-14) is excluded; do not re-raise it.
 - Refinery events listed under its Events section that have a ticket link are included even when the lineup is unknown (e.g. "Open Air Halloween," 2026-10-30) — add them with the times left out and a flag if details can't be fetched.
-- Owner confirmations (2026-10-15) — authoritative over any source; don't re-add the removed rows. SNOB: Connor Sage plays 10/21, not 10/20 (no Connor Sage row on 10/20); Krystal Halvorson is 10/28, and Ben Somerville is not playing 10/21 or 10/28. Uptown Social 10/16 is Moody Bridge, 9–11 PM; Grayson Little is not playing. Commonhouse has no show on 11/05; Backseat Company is 12/11. Pour House Monday Muse on 11/02 is off.
-- Recheck this run: SNOB 10/27 lists both Connor Sage and Matt Vajdic at 6:00 PM, and the venue's website also showed both on 2026-10-15. Both rows stay flagged. In the PR description, say what livemusiccharleston.com/BeatGig show for that night now, and don't merge over it if both are still listed.
+- **Owner decisions live in the data (since 2026-10-15):**
+  - `pipeline/do_not_add.json` lists shows the owner has said aren't happening. The fetch report holds them back, and the checker rejects them if they reappear. Never add one, and never edit that file.
+  - A show with a `confirmed` date was entered or confirmed by the owner. Don't remove or edit it because a source disagrees or no longer lists it; note the disagreement in the PR description instead. The checker flags any removal of a confirmed row for review.
+- Recheck this run: SNOB 10/27 lists both Connor Sage and Matt Vajdic at 6:00 PM, and the venue's website also showed both on 2026-10-15. Both rows stay flagged. In the PR description, say what livemusiccharleston.com/BeatGig show for that night now, and don't merge over it if both are still listed. (One-off: this line can be deleted after 2026-10-27.)
 
 ## Per-venue fetch strategy
 
@@ -214,11 +216,12 @@ These carry over owner decisions that were previously recorded only in the notes
 
 ## Validation before committing (non-negotiable)
 
-- After editing, run `python3 scripts/format_shows.py` (canonical formatting), then `python3 scripts/assign_ids.py` if it exists (gives new shows their permanent id), then `git show origin/main:shows.json > /tmp/base.json && python3 scripts/validate_shows.py shows.json --base /tmp/base.json`.
+- After editing, run `python3 scripts/format_shows.py` (canonical formatting), then `python3 scripts/assign_ids.py` (gives every new show its permanent `id`), then `git show origin/main:shows.json > /tmp/base.json && python3 scripts/validate_shows.py shows.json --base /tmp/base.json`.
 - Exit code 1 means the file is invalid: fix it; if you can't, don't commit — explain in the PR description instead.
 - Exit code 2 means a review rule fired (big diff, mass removals, a big date move, an odd price): open the PR but don't merge it, and say at the top of the description which rule fired and why.
 - The same check runs on GitHub as "Validate shows.json". Don't merge unless it's green.
 - The checker also prints every upcoming show that carries a `flag` (the open questions). Copy that list into the PR description under "Flagged upcoming shows". Resolve any flag this run's data settles: update the row and delete the flag. Leave the rest for the owner's weekly review.
+- Never change an existing show's `id`, even when you correct its date, venue or name — users' starred shows point at it. A show that moved to a new date keeps its row and id: edit `d`, don't delete and re-add.
 - Unknown times, prices, links and notes are left out, never written as "—", "TBA", "see ticket link", null or "" (see docs/SHOWS_SCHEMA.md).
 
 ## When NOT to auto-merge (even if validation passes)

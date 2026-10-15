@@ -14,6 +14,7 @@ Exit code 0 = pass, 1 = errors, 2 = review items only.
 import argparse
 import datetime
 import json
+import os
 import re
 import sys
 from collections import Counter, defaultdict
@@ -26,7 +27,7 @@ ID = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 SHOW_KEYS = {
     "id": str, "d": str, "e": str, "b": str, "v": str, "o": str, "s": str,
     "dr": str, "sh": str, "p": (int, float), "dop": (int, float), "u": str,
-    "added": str, "flag": str, "soldOut": bool, "lowTix": bool,
+    "added": str, "flag": str, "soldOut": bool, "lowTix": bool, "confirmed": str,
 }
 VENUE_KEYS = {"name": str, "site": str, "type": str, "color": str, "address": str}
 VENUE_TYPES = {"venue", "festival"}
@@ -50,6 +51,30 @@ def valid_date(v):
         return True
     except ValueError:
         return False
+
+
+def load_do_not_add(path=None):
+    path = path or os.path.join(os.path.dirname(__file__), "..", "pipeline", "do_not_add.json")
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)["entries"]
+
+
+def same_name(a, b):
+    n = lambda s: re.sub(r"[^a-z0-9]", "", s.lower())
+    return n(a).startswith(n(b)) or n(b).startswith(n(a))
+
+
+def blocked_keys(data, entries=None):
+    """Shows in the file that match an owner do-not-add entry."""
+    entries = load_do_not_add() if entries is None else entries
+    out = []
+    for s in data.get("shows", []):
+        for e in entries:
+            if s.get("v") == e["v"] and s.get("d") == e["d"] and same_name(s.get("b", ""), e["b"]):
+                out.append(key(s))
+    return out
 
 
 def check_file(raw):
@@ -98,10 +123,10 @@ def check_file(raw):
                 errors.append(f"{where}: {k} must not be true/false")
             elif not isinstance(val, SHOW_KEYS[k]):
                 errors.append(f"{where}: {k} has the wrong type ({type(val).__name__})")
-        for k in ("d", "b", "v"):
+        for k in ("id", "d", "b", "v"):
             if not s.get(k):
                 errors.append(f"{where}: missing {k}")
-        for k in ("d", "e", "added"):
+        for k in ("d", "e", "added", "confirmed"):
             if k in s and not valid_date(s[k]):
                 errors.append(f"{where}: {k} is not a YYYY-MM-DD date")
         if "e" in s and valid_date(s.get("d")) and valid_date(s["e"]) and s["e"] < s["d"]:
@@ -130,6 +155,8 @@ def check_file(raw):
             ids[s["id"]] += 1
         seen[key(s)] += 1
 
+    for k in blocked_keys(data):
+        errors.append(f"{k} is on pipeline/do_not_add.json (the owner said it isn't happening)")
     for k, n in seen.items():
         if n > 1:
             errors.append(f"duplicate (venue, date, band) {k} appears {n} times")
@@ -161,6 +188,10 @@ def review_items(new, base, today):
     moved_new = {key(s) for _, s in moved}
     added = [k for k in added if k not in moved_new]
     removed = [k for k in removed if k not in moved_old]
+
+    for k in removed:
+        if old_by_key[k].get("confirmed"):
+            items.append(f"{k}: removed, but the owner confirmed it on {old_by_key[k]['confirmed']}")
 
     total = len(added) + len(changed) + len(moved)
     if total >= BIG_DIFF:

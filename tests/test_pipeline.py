@@ -151,6 +151,16 @@ class Compare(unittest.TestCase):
         self.assertEqual([r["b"] for r in c["missing"]], ["Old Show"])
         self.assertEqual(c["date_changes"], [])
 
+    def test_do_not_add_and_confirmed(self):
+        rows = [{"d": "2026-11-20", "b": "Kept", "v": "PH", "confirmed": "2026-10-15"}]
+        evs = [common.event("PH", "2026-11-21", "Grayson Little", "t"), common.event("PH", "2026-11-22", "Other", "t")]
+        dna = [{"v": "PH", "d": "2026-11-21", "b": "Grayson Little", "reason": "not playing"}]
+        c = compare(rows, "PH", evs, True, "2026-10-15", do_not_add=dna)
+        self.assertEqual([e["title"] for e in c["new"]], ["Other"])
+        self.assertEqual(c["skipped_new"][0]["skip"], "owner: not playing")
+        self.assertEqual(c["missing"], [])
+        self.assertEqual([r["b"] for r in c["confirmed_unlisted"]], ["Kept"])
+
     def test_partial_source_never_reports_missing(self):
         c = compare(self.ROWS, "PH", [common.event("PH", "2026-11-21", "Brand New", "t")], False, "2026-10-15")
         self.assertEqual(c["missing"], [])
