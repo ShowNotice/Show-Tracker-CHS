@@ -2683,14 +2683,6 @@
       "u": "https://gaillardcenter.org/seat-selector?performance=56195"
     },
     {
-      "id": "gc-20261025-ghostbusters-in-concert",
-      "d": "2026-10-25",
-      "b": "Ghostbusters in Concert",
-      "sh": "6:00 PM",
-      "v": "GC",
-      "u": "https://gaillardcenter.org/seat-selector?performance=55169"
-    },
-    {
       "id": "gc-20261122-an-evening-with-renee-elise-goldsberry",
       "d": "2026-11-22",
       "b": "An Evening with Renée Elise Goldsberry",
@@ -6435,20 +6427,20 @@
       "id": "rfp-20270417-high-water-festival",
       "d": "2027-04-17",
       "b": "High Water Festival",
-      "o": "Saturday: Jack Johnson, Death Cab for Cutie, The Revivalists, Mat Kearney, Ole 60, Hazlett, GoldFord, Mo Lowda & the Humble, Penelope Road, Angela Autumn",
+      "o": "Saturday: Jack Johnson, Death Cab for Cutie, The Revivalists, Ole 60, Mat Kearney, GoldFord, Hazlett, Mo Lowda & the Humble, Penelope Road, Angela Autumn",
       "v": "RFP",
       "u": "https://highwaterfest.frontgatetickets.com/event/442grwzrmvp6p6eg",
-      "flag": "Lineup from multi-outlet press coverage of the 2026-10-13 announcement (JamBase, Relix, Post and Courier, Bandsintown, mxdwn), which agree on the day split. The official highwaterfest.com/lineup shows the lineup only as a poster image that couldn't be read from this environment on 2026-10-15. Entered at the owner's request. The Head and the Heart is also on the 2027 lineup, but press coverage disagrees on the day (Bandsintown: Saturday; Relix: Sunday), so it's listed on neither day yet.",
+      "flag": "Lineup, day split and billing order from the official poster on highwaterfest.com/lineup (read 2026-10-15). Presented by and benefiting Rock N Roll Rescue.",
       "added": "2026-10-15"
     },
     {
       "id": "rfp-20270418-high-water-festival",
       "d": "2027-04-18",
       "b": "High Water Festival",
-      "o": "Sunday: Mt. Joy, Rainbow Kitten Surprise, Finn Wolfhard, Ax and the Hatchetmen, Congress the Band, West 22nd, Marlon Funaki, Alyssa Grace, Susannah Joffe",
+      "o": "Sunday: Mt. Joy, Rainbow Kitten Surprise, The Head and the Heart, Congress the Band, Finn Wolfhard, West 22nd, Alyssa Grace, Marlon Funaki, Ax and the Hatchetmen, Susannah Joffe",
       "v": "RFP",
       "u": "https://highwaterfest.frontgatetickets.com/event/442grwzrmvp6p6eg",
-      "flag": "Lineup from multi-outlet press coverage of the 2026-10-13 announcement (JamBase, Relix, Post and Courier, Bandsintown, mxdwn), which agree on the day split. The official highwaterfest.com/lineup shows the lineup only as a poster image that couldn't be read from this environment on 2026-10-15. Entered at the owner's request. The Head and the Heart is also on the 2027 lineup, but press coverage disagrees on the day (Bandsintown: Saturday; Relix: Sunday), so it's listed on neither day yet.",
+      "flag": "Lineup, day split and billing order from the official poster on highwaterfest.com/lineup (read 2026-10-15). Presented by and benefiting Rock N Roll Rescue.",
       "added": "2026-10-15"
     }
   ]

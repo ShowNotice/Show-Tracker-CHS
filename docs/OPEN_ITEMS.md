@@ -11,21 +11,13 @@ that may still apply but weren't re-checked are listed at the bottom.
   "Validate shows.json / validate" status check. Until then the check reports a
   problem but can't physically block a merge; the routine is told not to merge
   unless it's green.
-- **Allow `cdn.prod.website-files.com`** in the environment's network settings if you
-  want the High Water Festival poster read automatically (it settles The Head and the
-  Heart's day).
 
 ## Data questions
 
 - **SNOB 2026-10-27:** Connor Sage and Matt Vajdic are both listed at 6:00 PM, on the
   venue's site too. Both rows are kept and flagged, and the 2026-10-22 run rechecks them.
-- **Film screenings with a live orchestra:** in or out? "Ghostbusters in Concert"
-  (Gaillard 10/25) is in the data; "Sonic Live in Concert" (Coliseum 10/28) was left out.
-  Owner decision pending (see "Hybrid events" in pipeline/INSTRUCTIONS.md).
 - **Flagged upcoming shows:** `scripts/validate_shows.py` lists them (50 on 2026-10-15),
   and the weekly PR now carries the list. Some are open questions, others just notes.
-- **High Water Festival 2027:** the day split comes from press coverage, and The Head
-  and the Heart's day is unconfirmed.
 - **Refinery show times:** the venue's site doesn't publish them, and the backup source
   has had bad data, so many Refinery rows have no time.
 - **Charleston Music Hall prices:** these come from Ticketmaster, which blocks our fetches.
