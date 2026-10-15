@@ -215,6 +215,14 @@ def main():
     shows = data["shows"]
     print(f"OK: {len(shows)} shows across {len(data['venues'])} venues; format and schema checks passed.")
 
+    flagged = sorted((s for s in shows if s.get("flag") and (s.get("e") or s["d"]) >= args.today),
+                     key=lambda s: (s["d"], s["v"]))
+    if flagged:
+        print(f"\nFlagged upcoming shows ({len(flagged)}) — open questions to resolve or carry forward:")
+        for s in flagged:
+            note = s["flag"] if len(s["flag"]) <= 160 else s["flag"][:157] + "..."
+            print(f"- {s['d']} {s['v']} {s['b']}: {note}")
+
     if args.base:
         base_raw = open(args.base, encoding="utf-8").read()
         base = json.loads(base_raw)
