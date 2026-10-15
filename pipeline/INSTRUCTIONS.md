@@ -12,9 +12,34 @@ The format of `shows.json` is defined in `docs/SHOWS_SCHEMA.md`, and
 _History: the rules below were carried over verbatim on 2026-10-15 from the routine's
 stored prompt (last revised that day), then updated for the items marked "2026-10-15"._
 
+## Start here: run the fetchers (added 2026-10-15)
+
+1. `python3 -m pipeline.run`. This takes a few minutes and writes `pipeline/out/report.md`.
+2. Treat the report as the starting point for every venue it covers (PH, MF, CMH, NCC, TR, RA, WJ, FD, GC, C1S, US, CHA, SNOB, NRB). For each venue it lists:
+   - shows the source has that shows.json doesn't
+   - date changes
+   - field updates (times, prices, stage, sold-out/low-tix)
+   - rows the source no longer lists
+   - listings it skipped as out of scope, with the reason
+3. **You still make every judgment call:**
+   - Apply the exclusion rules below.
+   - Review the "Not added — looks out of scope" list, which can contain real music shows.
+   - Check conflicts.
+   - Apply the removal safeguards.
+   - Read a show's own page when the report's data looks wrong.
+
+   The fetchers report what a page says; they don't decide what belongs on the site.
+4. **When a venue's section says "Source failed":** don't add or remove that venue's rows from the report. Note the failure in the PR description. Use the venue's fallback below if it has one, and don't retry a bot challenge.
+5. **Venues without a fetcher** are handled by hand, as described in their sections below: REF, CJF, RFP and CHR. So are the routine's standing rechecks.
+6. **When the report and a venue section disagree:**
+   - The report reflects what the page said this run.
+   - The venue section explains how to interpret it.
+   - When a parser looks broken (for example, zero events from a venue that normally has dozens), say so in the PR description and don't make removals for that venue.
+7. Don't edit `pipeline/` code in a routine run. Describe a broken parser in the PR description instead.
+
 ## What this task does, every run
 
-- Fetch every tracked venue's own calendar/schedule page (see the fetch-strategy table below).
+- Fetch every tracked venue's own calendar/schedule page: run the fetchers above, then the by-hand venues (see the per-venue sections below).
 - Diff the results against the current shows.json in the repo.
 - Add genuinely new shows; backfill missing fields (time, price, opener, stage) on existing shows; correct dates where the venue's own site disagrees with the data. Remove a show when the venue has cancelled it or it is no longer on the venue's own site/source (see "Standing decisions").
 - Apply every rule below without exception.

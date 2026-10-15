@@ -1,0 +1,179 @@
+[
+ {
+  "id": "booking_01KA9Y11P823C96K3P2E9JH2XK",
+  "name": null,
+  "start": "2026-10-15T21:30:00Z",
+  "end": "2026-10-16T00:30:00.000Z",
+  "stage": "Main Stage",
+  "venue": {
+   "id": "a5a2d1e4-a386-11ee-acc0-83552a108256",
+   "name": "Commonhouse Aleworks",
+   "slug": "commonhousealeworks",
+   "city": "North Charleston",
+   "image": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1780670981/market-sites/commonhouse-aleworks.jpg"
+  },
+  "artist": {
+   "name": "Colleen Lloy",
+   "slug": "colleenlloy",
+   "configuration": "Solo",
+   "genres": [
+    "rock",
+    "folk",
+    "indie rock",
+    "americana",
+    "country",
+    "country pop",
+    "classic rock"
+   ],
+   "bio": "COLLEEN LLOY: http//www.colleenlloy.com\nMEDIA INFORMATION\n_______________________________________________________________________\n\nCOLLEEN LLOY is an international recording artist who launched a European tour with her Voyage Air Guitar endorsement, a suitcase and the determination to forge across Europe on a solo tour from Italy, Austria, UK and Western Ireland to Northern Ireland. She has cuts playing on the radio in Europe.  No matter where you may have heard this lady, you can bet she has a voice you will never forget.\n\nLLOY is a native Sacramentan whose first professional recording was a song \u201cSooner or Later\u201d and was the number 2 song on an album for a charity, \u201cMADD\u201d (Mother\u2019s Against Drunk Drivers). Critic Mick Martin wrote: \u201cThe most impressive of these is Colleen Lloy whose \u201cSooner or Later\u201d is an absolute knockout. If this fine singer isn\u2019t signed by a major label, there\u2019s no justice in the music world.\u201d This recording brought attention to City Kidd\u2019s manager who asked Lloy to join the Band City Kidd and played with the original members now known as Tesla.\n\nLLOY, an award-winning singer/songwriter fell in love with the musical city and decided to move to Nashville, TN to pursue her singing and songwriting career in 1999. Like many artists, she has a story of courage and stamina where she quit her job, sold everything she owned and on a wing and a prayer moved to Nashville. It did not take long for the industry to realize this lady has major chemistry and charisma on and off stage. Coined the \u201cchameleon\u201d by many, she proves she has an unusual style of singing able to cover any type of music with ease.\n\n\u2022 Decatur Celebration- \"The best description of Colleen Lloy is a chameleon.\"\n\u2022 Sacramento critic, Mick Martin writes: \"The most impressive of these is Colleen Lloy whose \"Sooner or Later\" is an absolute knockout. If this fine singer isn\u2019t signed by a major label, there\u2019s no justice in the music world.\"\n\u2022 Nashville Music Guide Critic Brad Fisher gives Lloy\u2019s \"Life Challenges\" CD a five star rating and writes: \"This ten-song CD is an emotional roller coaster that runs the gambit of love. The tunes were either written or co-written by Lloy who has a beautiful set of pipes which she shows off on this album.\"\n\nLLOY believes in giving back to society and participates in one charity after another such as Payitforward Festival raising money for the Tennessee Children's Home and various local charities, American Red Cross, Susan G. Komen for the Cure, to name a few.  She is also a keen advocate of our U.S Military and has written a song called \u201cYou\u2019re Gonna Fly\u201d, \u201cMissing You\u201d and \"Lay My Brother Down\" for the soldiers and has made this song available to all soldiers free of charge.  Her main focus on her career is helping the Veterans and our men and women serving in the military. LLOY is actively working with chapters of the Veteran's Memorial Foundation, Operation Stand Down, Yellow Ribbon Foundation and Carrytheload.org.\n\nLLOY has literally played all over the U.S. and abroad and returned from two month European tour starting in Italy benefitting the USO. She is a frequent guest at the nationally known Bluebird Caf\u00e9, has done television on the show \u201cNashville\u201d and radio broadcasts and has opened up for artists like Billy Dean, Paul Overstreet, John Berry, Lee Greenwood, George Jones, Billy Ray Cyrus, Tanya Tucker, John Anderson and many others.  LLOY had the rare privilege of interviewing Mr. B.B. King for a proposed television show which she indicates is the highlight of her music career thus far. Lloy recently returned from Maui performing with Mick Fleetwood. In May of 2020, LLOY went into the studio with Josh Paul (Daughtrey) and Chris Henderson and Greg Upchurch (3 Doors Down) to record some songs for her pending album.\n\nLLOY mainly resides in Charleston, South Carolina since the end of 2020 but maintains her home in Murfreesboro, Tennessee outside of Nashville. The ocean and salt air drew her to the beautiful town.\n\nIn any event, whether you see her on a big stage, or a small quiet room tucked away in her favorite clubs, we are quite sure you have not heard the last from COLLEEN LLOY.\n\n",
+   "image_url": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1734662913/beatgig-live/ac3azbyc99bqjmydvhts.png",
+   "youtube_videos": [
+    "https://www.youtube.com/watch?v=hkmCf-aV4DQ",
+    "https://www.youtube.com/watch?v=p0scCpN84EM",
+    "https://www.youtube.com/watch?v=hsLyyD6XPVA",
+    "https://www.youtube.com/watch?v=5QHFRNDdcEM"
+   ],
+   "spotify_link": "https://open.spotify.com/artist/4krHxc8TaA9Od8c6oB0EOa",
+   "links": {
+    "spotify": "https://open.spotify.com/artist/4krHxc8TaA9Od8c6oB0EOa",
+    "youtube": "https://www.youtube.com/@ColleenLloy",
+    "soundcloud": "https://soundcloud.com/colleen-lloy",
+    "instagram": "https://www.instagram.com/colleenlloy/?hl=en"
+   },
+   "dusk_url": "https://dusk.fm/@colleenlloy"
+  },
+  "image_url": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1734662913/beatgig-live/ac3azbyc99bqjmydvhts.png",
+  "category": "Rock",
+  "is_live_music": true,
+  "description": null,
+  "ticket_link": null,
+  "ticket_link_url": null,
+  "ticket_text": null,
+  "ticket_link_title": null
+ },
+ {
+  "id": "booking_01KZYP3THCHSVAXB48G5ZX3BEJ",
+  "name": null,
+  "start": "2026-10-15T23:00:00Z",
+  "end": "2026-10-16T03:00:00.000Z",
+  "stage": "Rooftop",
+  "venue": {
+   "id": "c6068fa7-c5a0-11ec-8331-3bc6785867dd",
+   "name": "Uptown Social",
+   "slug": "uptownsocial",
+   "city": "Charleston",
+   "image": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1780671022/market-sites/uptown-social.jpg"
+  },
+  "artist": {
+   "name": "Dj Boogi",
+   "slug": "djboogi",
+   "configuration": "DJ",
+   "genres": [
+    "dj",
+    "top 40",
+    "house",
+    "r&b",
+    "hiphop",
+    "pop"
+   ],
+   "bio": "Dj Boogi, a Professional Dj and Producer, whos uncontrollable motivation, respect, and Love for music is breaking into not only the elite Hip-Hop/EDM scene, but also creating music with the worlds top dj's & producers. Dj Boogi defines his motto = \"Music is Life...\" Truely living his life through his passions. In his words \"Not Faking The FUNK!!!\". Always trying to put the spotlight where it belongs. To Dj Boogi it's more than JUST a JOB or WORK, it's a way of living. He is one of the most entertaining dj's on the West Coast and East Coast and now is slowly being heard around the world as a prominent PRODUCER, while continuing to provide one of the best musical experiences of your life\u2026",
+   "image_url": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1697011464/beatgig-live/tzgecvg80copz2vlpccw.png",
+   "youtube_videos": [
+    "https://youtu.be/aM2zrFpMyaE",
+    "https://youtu.be/EhZ0jON2tnU"
+   ],
+   "spotify_link": null,
+   "links": {
+    "instagram": "https://www.instagram.com/djboogi"
+   },
+   "dusk_url": "https://dusk.fm/@djboogi"
+  },
+  "image_url": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1697011464/beatgig-live/tzgecvg80copz2vlpccw.png",
+  "category": "DJ",
+  "is_live_music": true,
+  "description": null,
+  "ticket_link": null,
+  "ticket_link_url": null,
+  "ticket_text": null,
+  "ticket_link_title": null
+ },
+ {
+  "id": "booking_01M090T8W10HX79Y1Y9GAD8SVF",
+  "name": null,
+  "start": "2026-10-16T02:00:00Z",
+  "end": "2026-10-16T06:00:00.000Z",
+  "stage": "Main Stage",
+  "venue": {
+   "id": "c6068fa7-c5a0-11ec-8331-3bc6785867dd",
+   "name": "Uptown Social",
+   "slug": "uptownsocial",
+   "city": "Charleston",
+   "image": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1780671022/market-sites/uptown-social.jpg"
+  },
+  "artist": {
+   "name": "Hi Ed",
+   "slug": "hied",
+   "configuration": "DJ",
+   "genres": [
+    "dj",
+    "open format",
+    "house",
+    "edm",
+    "edm (remixes & mashups)"
+   ],
+   "bio": "Hi Ed, a 24 year old Electronic Music DJ/Producer from Virginia, best describes his sound and shows as \"vibrant\" yet \"energetic.\" Though his music may seem relaxing and \"chill,\" his live shows are full of energy. Through specific/unique track selection and his ability to work a crowd, the young talent has proven to thrive in any setting he is placed in. Though an Electronic Music Artist/DJ, Hi Ed incorporates many different genres throughout the show that keeps the crowd moving and engaged. He has spent the last 4 years traveling up and down the East Coast playing for different venues and events both as an open format DJ, and as an Artist.",
+   "image_url": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1709755304/beatgig-live/brrhmqrczpdey8bygaka.jpg",
+   "youtube_videos": [],
+   "spotify_link": null,
+   "links": {
+    "soundcloud": "https://soundcloud.com/user-911607540",
+    "instagram": "https://www.instagram.com/hi__ed/"
+   },
+   "dusk_url": "https://dusk.fm/@hied"
+  },
+  "image_url": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1709755304/beatgig-live/brrhmqrczpdey8bygaka.jpg",
+  "category": "DJ",
+  "is_live_music": true,
+  "description": null,
+  "ticket_link": null,
+  "ticket_link_url": null,
+  "ticket_text": null,
+  "ticket_link_title": null
+ },
+ {
+  "id": "booking_01KJDW4A2H5FG005FAM5WV4CSC",
+  "name": null,
+  "start": "2026-10-15T22:00:00Z",
+  "end": "2026-10-16T01:00:00.000Z",
+  "stage": "Covered Back Deck",
+  "venue": {
+   "id": "org_01KJAVYKB6381GVYZN2ZMBF2FE",
+   "name": "The Dinghy",
+   "slug": "thedinghy",
+   "city": "Isle of Palms",
+   "image": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1780671073/market-sites/thedinghy.jpg"
+  },
+  "artist": {
+   "name": "Sean Ryan Smith",
+   "slug": "seanryansmith",
+   "configuration": "Solo",
+   "genres": [
+    "country"
+   ],
+   "bio": null,
+   "image_url": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1721329067/beatgig-live/a9iauzuirhxunc7i5cke.jpg",
+   "youtube_videos": [],
+   "spotify_link": null,
+   "links": null,
+   "dusk_url": "https://dusk.fm/@seanryansmith"
+  },
+  "image_url": "https://res.cloudinary.com/dn29xlaeh/image/upload/v1721329067/beatgig-live/a9iauzuirhxunc7i5cke.jpg",
+  "category": "Country",
+  "is_live_music": true,
+  "description": null,
+  "ticket_link": null,
+  "ticket_link_url": null,
+  "ticket_text": null,
+  "ticket_link_title": null
+ }
+]
