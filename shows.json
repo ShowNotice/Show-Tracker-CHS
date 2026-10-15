@@ -588,9 +588,7 @@
       "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/judah-the-lion-the-refinery-tickets/14191714",
-      "o": "Breakfield and Band of Silver",
-      "flag": "Show time confirmed via charlestonlivemusic.com JSON-LD (read as literal Eastern local time, ignoring its incorrect +00:00/UTC label -- see project notes on the charlestonlivemusic.com timezone-mislabeling issue). Doors time not available from any source.",
-      "flagged": "2026-09-17"
+      "o": "Breakfield and Band of Silver"
     },
     {
       "id": "cmh-20261109-jim-henson-s-labyrinth-in-concert-40th-a",
@@ -659,9 +657,7 @@
       "u": "https://charlestonpourhouse.com/event/tuak-lespecial/2026-11-13/",
       "p": 30,
       "dop": 35,
-      "s": "Main Stage",
-      "flag": "First night of a two-night stand with Nov 14; $50 2-night package also offered",
-      "flagged": "2026-09-13"
+      "s": "Main Stage"
     },
     {
       "id": "cmh-20261113-paula-cole",
@@ -818,9 +814,7 @@
       "u": "https://charlestonpourhouse.com/event/moe-phreys/2026-12-04/",
       "p": 30,
       "dop": 35,
-      "s": "Main Stage",
-      "flag": "First night of a two-night stand with Dec 5; $56 2-night package also offered. \"moe.phrey's\" is the venue's own name for this collective (not a mistranscription of \"Al Schnier\" as earlier suspected) — confirmed directly on the event page.",
-      "flagged": "2026-09-13"
+      "s": "Main Stage"
     },
     {
       "id": "cmh-20261205-2026-holiday-swing-tommy-brown-jr-the-ch",
@@ -840,9 +834,7 @@
       "u": "https://charlestonpourhouse.com/event/moe-phreys/2026-12-05/",
       "p": 30,
       "dop": 35,
-      "s": "Main Stage",
-      "flag": "Second night of a two-night stand with Dec 4; $56 2-night package also offered. \"moe.phrey's\" is the venue's own name for this collective (not a mistranscription of \"Al Schnier\" as earlier suspected) — confirmed directly on the event page.",
-      "flagged": "2026-09-13"
+      "s": "Main Stage"
     },
     {
       "id": "cmh-20261211-the-charleston-christmas-special",
@@ -1201,8 +1193,6 @@
       "sh": "8:00 PM",
       "v": "MF",
       "u": "https://www.ticketmaster.com/kurt-vile-the-violators-charleston-south-carolina-11-21-2026/event/2D006483BC428747",
-      "flag": "SOLD OUT as of this pull",
-      "flagged": "2026-09-01",
       "soldOut": true
     },
     {
@@ -1514,8 +1504,6 @@
       "b": "14th Annual Royal American Biker Oyster Roast",
       "dr": "1:00 PM",
       "v": "RA",
-      "flag": "Venue copy lists bikes, booze, oysters, games, live music, burn barrels, vendors, tattoos, and the prison bus with no band/act named — genuinely ambiguous whether this is a live-music show; included per the ambiguous-case rule rather than excluded",
-      "flagged": "2026-09-08",
       "added": "2026-09-01",
       "u": "http://www.theroyalamerican.com/schedule/14-annual-biker-oyster-roast-12-13-26"
     },
@@ -1602,8 +1590,6 @@
       "dr": "9:00 PM",
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/fancy-as-fuck-12-18-26",
-      "flag": "Venue lists only \"With special performances…\" with no named act -- genuinely ambiguous whether this is a live-music show; included per that rule rather than excluded",
-      "flagged": "2026-09-04",
       "added": "2026-09-04"
     },
     {
@@ -1708,8 +1694,6 @@
       "b": "First Friday BBQ & Bluegrass Celebration",
       "sh": "6:00 PM",
       "v": "CHA",
-      "flag": "Recurring monthly BBQ + live bluegrass event, not a single named act",
-      "flagged": "2026-09-12",
       "added": "2026-09-01"
     },
     {
@@ -1766,8 +1750,6 @@
       "b": "First Friday BBQ & Bluegrass Celebration",
       "sh": "6:00 PM",
       "v": "CHA",
-      "flag": "Recurring monthly BBQ + live bluegrass event, not a single named act",
-      "flagged": "2026-09-12",
       "added": "2026-09-01"
     },
     {
@@ -1776,8 +1758,6 @@
       "b": "Annual Holiday Hootenanny",
       "sh": "11:00 AM",
       "v": "CHA",
-      "flag": "Ambiguous: 'Hootenanny' traditionally implies live folk music, but source provided no description confirming a booked act | Date corrected 2026-12-05 -> 2026-12-12 per livemusiccharleston.com (2026-10-08).",
-      "flagged": "2026-09-12",
       "added": "2026-09-01"
     },
     {
@@ -1827,8 +1807,6 @@
       "s": "Deck Stage",
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/feast-for-us-brunch/",
-      "flag": "Hybrid: yoga + brunch event with live music explicitly mentioned (members of the Jerry Tripsters performing a brunch set); $130 price is a real brunch-ticket price, not a scraping error",
-      "flagged": "2026-09-13",
       "added": "2026-09-01"
     },
     {
@@ -1866,8 +1844,6 @@
       "s": "Deck Stage",
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/a-feast-for-us/",
-      "flag": "Hybrid: intimate chef's-table dinner event with live improvised music explicitly mentioned (Ron Wiltrout, Kebbi Williams, Jonathan Lovett); $225 is a real fine-dining ticket price, not a scraping error",
-      "flagged": "2026-09-13",
       "added": "2026-09-01"
     },
     {
@@ -1905,8 +1881,6 @@
       "s": "Deck Stage",
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/natlie-brooke/",
-      "flag": "Billed by the venue as a pre-show for that night's TAUK + lespecial main-stage show",
-      "flagged": "2026-09-13",
       "added": "2026-09-01"
     },
     {
@@ -1921,8 +1895,6 @@
       "s": "Main Stage",
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/tuak-lespecial-2026-11-14/",
-      "flag": "Second night of a two-night stand with Nov 13; $50 2-night package also offered",
-      "flagged": "2026-09-13",
       "added": "2026-09-01"
     },
     {
@@ -1987,8 +1959,6 @@
       "sh": "7:00 PM",
       "v": "CMH",
       "u": "https://www.ticketmaster.com/john-cameron-mitchell-hedwig-25th-anniversary-charleston-south-carolina-10-26-2026/event/2D0064C1C3837E13",
-      "flag": "Genuinely ambiguous: billed as a film-screening tour with John Cameron Mitchell performing/appearing live (Hedwig and the Angry Inch songs); unclear from venue listing whether it includes a full live band set vs. screening + live intro/Q&A. Flagging rather than excluding or firmly including.",
-      "flagged": "2026-09-17",
       "added": "2026-09-01"
     },
     {
@@ -2040,8 +2010,6 @@
       "sh": "8:00 PM",
       "v": "CMH",
       "u": "https://www.ticketmaster.com/alan-walker-charleston-south-carolina-01-31-2027/event/2D00652A8DB594F9",
-      "flag": "Touring EDM producer/live act performing a ticketed concert set, not a club DJ night/dance party — included as a genuine touring music act.",
-      "flagged": "2026-09-17",
       "added": "2026-09-01"
     },
     {
@@ -2083,8 +2051,6 @@
       "sh": "8:00 PM",
       "v": "MF",
       "u": "https://www.ticketmaster.com/alaska-thunderfck-the-revolution-tour-charleston-south-carolina-03-23-2027/event/2D00652AAF12336A",
-      "flag": "Genuinely ambiguous: Alaska Thunderfuck (RuPaul's Drag Race alum) is billed here as \"The Revolution Tour\"; her shows sometimes include original live-performed songs but the MF listing gives no further description confirming a live-music component vs. a straight drag/comedy revue. Included per the genuinely-ambiguous rule rather than guessed at.",
-      "flagged": "2026-09-17",
       "added": "2026-09-01"
     },
     {
@@ -2168,8 +2134,6 @@
       "dop": 20,
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/1o91d31y9e/preview",
-      "flag": "Billed as a themed 'Slasher Disco' Halloween night, but confirmed via the venue's own event page to be a live band (4-piece, named members) performing, not a DJ set.",
-      "flagged": "2026-09-17",
       "added": "2026-09-01"
     },
     {
@@ -2366,8 +2330,6 @@
       "dop": 20,
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85160",
-      "flag": "Headliner date, distinct from Fo Daniels' earlier stored appearances as an opener for Moon Taxi in Sept; not a duplicate (different date).",
-      "flagged": "2026-09-17",
       "added": "2026-09-01"
     },
     {
@@ -2435,8 +2397,6 @@
       "sh": "7:00 PM",
       "v": "CMH",
       "u": "https://www.ticketmaster.com/the-rocky-horror-picture-show-w-charleston-south-carolina-10-25-2026/event/2D00652BC68A8314",
-      "flag": "Presented with CofC Center Stage: a film screening of Rocky Horror with a live costumed shadowcast performing alongside the movie, not a standard live band set. Included per the same film/live-performance hybrid carve-out as the existing Hedwig 25th Anniversary Movie Tour entry.",
-      "flagged": "2026-09-17",
       "added": "2026-09-17"
     },
     {
