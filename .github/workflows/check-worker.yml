@@ -1,0 +1,22 @@
+name: Check worker.js
+
+# Runs the deploy workflow's sanity checks on pull requests, so a broken worker.js is
+# caught before it reaches main rather than when the deploy runs after the merge.
+on:
+  pull_request:
+    paths:
+      - 'worker.js'
+      - 'wrangler.toml'
+      - 'scripts/check_worker.js'
+      - '.github/workflows/check-worker.yml'
+      - '.github/workflows/deploy-worker.yml'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sanity-check worker.js
+        run: |
+          node --check worker.js
+          node scripts/check_worker.js
