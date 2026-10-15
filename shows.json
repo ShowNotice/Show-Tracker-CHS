@@ -129,6 +129,7 @@
   },
   "shows": [
     {
+      "id": "ph-20260829-tounds",
       "d": "2026-08-29",
       "b": "Tounds",
       "o": "MIDS",
@@ -139,6 +140,7 @@
       "u": "https://aftontickets.com/event/buyticket/3px8evpnx1"
     },
     {
+      "id": "ph-20260829-same-as-it-ever-was-talking-heads-tribut",
       "d": "2026-08-29",
       "b": "Same As It Ever Was (Talking Heads Tribute)",
       "s": "Main Stage",
@@ -148,6 +150,7 @@
       "u": "https://aftontickets.com/event/buyticket/1qjwvdm197/preview"
     },
     {
+      "id": "c1s-20260829-goo-goo-dolls",
       "d": "2026-08-29",
       "b": "Goo Goo Dolls",
       "o": "Neon Trees",
@@ -156,6 +159,7 @@
       "u": "https://bit.ly/GooGooDollsCHS2026"
     },
     {
+      "id": "wj-20260829-darren-deese",
       "d": "2026-08-29",
       "b": "Darren Deese",
       "s": "Inside Stage",
@@ -164,6 +168,7 @@
       "u": "https://the-windjammer.com/event/darren-deess-on-the-inside-stage-3/"
     },
     {
+      "id": "wj-20260828-the-hang-on-hazelnut-isle-sister-hazel-v",
       "d": "2026-08-28",
       "e": "2026-08-30",
       "b": "The Hang on Hazelnut Isle (Sister Hazel VIP Weekend)",
@@ -172,6 +177,7 @@
       "o": "Fri–Sun, various times"
     },
     {
+      "id": "ph-20260830-motown-throwdown",
       "d": "2026-08-30",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -180,6 +186,7 @@
       "v": "PH"
     },
     {
+      "id": "ph-20260830-tray-wellington-band",
       "d": "2026-08-30",
       "b": "Tray Wellington Band",
       "s": "Deck Stage",
@@ -189,6 +196,7 @@
       "u": "https://aftontickets.com/event/buyticket/qpxvv3zlxe"
     },
     {
+      "id": "wj-20260830-sister-hazel",
       "d": "2026-08-30",
       "b": "Sister Hazel",
       "s": "NÜTRL Beach Stage",
@@ -197,6 +205,7 @@
       "u": "https://whollyticket.com/e/saturdayHang2026"
     },
     {
+      "id": "wj-20260830-mark-bryan-friends-feat-the-b-wrights",
       "d": "2026-08-30",
       "b": "Mark Bryan & Friends feat. The B. Wrights",
       "s": "NÜTRL Beach Stage",
@@ -205,6 +214,7 @@
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85078"
     },
     {
+      "id": "ph-20260831-monday-mash-ups",
       "d": "2026-08-31",
       "b": "Monday Mash-Ups",
       "s": "Deck Stage",
@@ -213,6 +223,7 @@
       "v": "PH"
     },
     {
+      "id": "cmh-20260831-gin-blossoms",
       "d": "2026-08-31",
       "b": "Gin Blossoms",
       "o": "Pernikoff Brothers",
@@ -222,6 +233,7 @@
       "u": "https://www.ticketmaster.com/gin-blossoms-charleston-south-carolina-08-31-2026/event/2D00649EA67A42D8"
     },
     {
+      "id": "ph-20260901-domocile",
       "d": "2026-09-01",
       "b": "Domocile",
       "o": "pre-Disco Biscuits show",
@@ -233,6 +245,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260901-the-disco-biscuits",
       "d": "2026-09-01",
       "b": "The Disco Biscuits",
       "s": "Main Stage",
@@ -243,6 +256,7 @@
       "p": 50
     },
     {
+      "id": "ph-20260902-the-reckoning-grateful-dead-tribute",
       "d": "2026-09-02",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -252,6 +266,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260902-the-disco-biscuits",
       "d": "2026-09-02",
       "b": "The Disco Biscuits",
       "s": "Main Stage",
@@ -262,6 +277,7 @@
       "p": 50
     },
     {
+      "id": "ref-20260902-the-war-and-treaty",
       "d": "2026-09-02",
       "b": "The War And Treaty",
       "o": "Emily Curtis",
@@ -270,6 +286,7 @@
       "u": "https://www.ticketweb.com/event/the-war-and-treaty-the-refinery-tickets/14846923"
     },
     {
+      "id": "cmh-20260902-rio-da-yung-og",
       "d": "2026-09-02",
       "b": "Rio Da Yung Og",
       "dr": "7:00 PM",
@@ -278,6 +295,7 @@
       "u": "https://www.ticketmaster.com/rio-da-yung-og-charleston-south-carolina-09-04-2026/event/2D0064A234BA58D9"
     },
     {
+      "id": "ph-20260903-songs-from-the-road-band",
       "d": "2026-09-03",
       "b": "Songs from the Road Band",
       "s": "Deck Stage",
@@ -288,6 +306,7 @@
       "p": 15
     },
     {
+      "id": "ph-20260904-henry-s-pocket",
       "d": "2026-09-04",
       "b": "Henry's Pocket",
       "o": "ft. members of Marcus King Band, Flannel Church, Runaway Gin",
@@ -299,6 +318,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260904-wolph",
       "d": "2026-09-04",
       "b": "Wolph",
       "s": "Main Stage",
@@ -309,6 +329,7 @@
       "p": 13
     },
     {
+      "id": "wj-20260904-moon-taxi",
       "d": "2026-09-04",
       "b": "Moon Taxi",
       "s": "NÜTRL Beach Stage",
@@ -319,6 +340,7 @@
       "p": 40
     },
     {
+      "id": "ph-20260905-cordovas",
       "d": "2026-09-05",
       "b": "Cordovas",
       "o": "The Band Honey",
@@ -330,6 +352,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260905-interstellar-echoes-pink-floyd-tribute",
       "d": "2026-09-05",
       "b": "Interstellar Echoes (Pink Floyd Tribute)",
       "s": "Main Stage",
@@ -340,6 +363,7 @@
       "p": 20
     },
     {
+      "id": "ref-20260905-the-movement-and-pepper",
       "d": "2026-09-05",
       "b": "The Movement and Pepper",
       "o": "Kash'd Out",
@@ -348,6 +372,7 @@
       "u": "https://www.ticketweb.com/event/the-movement-pepper-the-refinery-tickets/14795373"
     },
     {
+      "id": "wj-20260905-moon-taxi",
       "d": "2026-09-05",
       "b": "Moon Taxi",
       "s": "NÜTRL Beach Stage",
@@ -358,6 +383,7 @@
       "p": 40
     },
     {
+      "id": "wj-20260905-tanner-beane-dirty-power",
       "d": "2026-09-05",
       "b": "Tanner Beane & Dirty Power",
       "s": "Inside Stage",
@@ -367,6 +393,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260906-motown-throwdown",
       "d": "2026-09-06",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -376,6 +403,7 @@
       "p": 5
     },
     {
+      "id": "ref-20260906-collie-buddz",
       "d": "2026-09-06",
       "b": "Collie Buddz",
       "sh": "7:30 PM",
@@ -383,6 +411,7 @@
       "u": "https://www.ticketweb.com/event/collie-buddz-the-refinery-tickets/14763473"
     },
     {
+      "id": "wj-20260906-moon-taxi",
       "d": "2026-09-06",
       "b": "Moon Taxi",
       "s": "NÜTRL Beach Stage",
@@ -393,6 +422,7 @@
       "p": 40
     },
     {
+      "id": "c1s-20260906-hayley-williams",
       "d": "2026-09-06",
       "b": "Hayley Williams",
       "o": "Magdalena Bay, Rico Nasty",
@@ -401,6 +431,7 @@
       "u": "https://www.ticketmaster.com/event/2D0064A6C6692807"
     },
     {
+      "id": "ph-20260908-okapi-dream",
       "d": "2026-09-08",
       "b": "Okapi Dream",
       "s": "Deck Stage",
@@ -410,6 +441,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260909-the-reckoning-grateful-dead-tribute",
       "d": "2026-09-09",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -419,6 +451,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260910-james-justin-co",
       "d": "2026-09-10",
       "b": "James Justin & Co.",
       "s": "Deck Stage",
@@ -429,6 +462,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260911-dr-bacon",
       "d": "2026-09-11",
       "b": "Dr. Bacon",
       "s": "Deck Stage",
@@ -439,6 +473,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260911-runaway-gin-phish-tribute",
       "d": "2026-09-11",
       "b": "Runaway Gin (Phish Tribute)",
       "s": "Main Stage",
@@ -449,6 +484,7 @@
       "p": 15
     },
     {
+      "id": "ref-20260911-collective-soul",
       "d": "2026-09-11",
       "b": "Collective Soul",
       "o": "Alan Price & The Modern Day",
@@ -457,6 +493,7 @@
       "u": "https://www.ticketweb.com/event/collective-soul-the-refinery-tickets/14914033"
     },
     {
+      "id": "cmh-20260911-the-rat-pack-sinatra-martin-davis-jr-mon",
       "d": "2026-09-11",
       "b": "The Rat Pack (Sinatra/Martin/Davis Jr./Monroe Tribute)",
       "dr": "7:00 PM",
@@ -465,6 +502,7 @@
       "u": "https://www.ticketmaster.com/the-rat-pack-charleston-south-carolina-09-11-2026/event/2D0064C2A3648FC7"
     },
     {
+      "id": "ph-20260912-robert-lester-folsom",
       "d": "2026-09-12",
       "b": "Robert Lester Folsom",
       "o": "Oscar Lindsey",
@@ -476,6 +514,7 @@
       "p": 25
     },
     {
+      "id": "ph-20260912-cosmic-charlie-grateful-dead-tribute",
       "d": "2026-09-12",
       "b": "Cosmic Charlie (Grateful Dead Tribute)",
       "s": "Main Stage",
@@ -486,6 +525,7 @@
       "p": 20
     },
     {
+      "id": "ref-20260912-6th-annual-drifter-fest-bert-griggs-memo",
       "d": "2026-09-12",
       "b": "6th Annual Drifter Fest: Bert Griggs Memorial Jam",
       "sh": "6:00 PM",
@@ -493,6 +533,7 @@
       "u": "https://www.ticketweb.com/event/the-6th-annual-drifter-fest-the-refinery-tickets/14921673"
     },
     {
+      "id": "cmh-20260912-stayin-alive-one-night-of-the-bee-gees",
       "d": "2026-09-12",
       "b": "Stayin' Alive – One Night of the Bee Gees",
       "dr": "6:30 PM",
@@ -501,6 +542,7 @@
       "u": "https://www.ticketmaster.com/stayin-alive-one-night-of-the-charleston-south-carolina-09-12-2026/event/2D006366A465BC78"
     },
     {
+      "id": "wj-20260912-the-yacht-club",
       "d": "2026-09-12",
       "b": "The Yacht Club",
       "s": "NÜTRL Beach Stage",
@@ -509,6 +551,7 @@
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85065"
     },
     {
+      "id": "rfp-20260912-low-tide-festival",
       "d": "2026-09-12",
       "b": "Low Tide Festival",
       "o": "Sidepiece, TOKiMONSTA, Nikita, The Wicked, 9B49, Name Unknown, Monzy",
@@ -519,6 +562,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20260917-reverse-cowgirl",
       "d": "2026-09-17",
       "b": "Reverse Cowgirl",
       "s": "Inside Stage",
@@ -529,6 +573,7 @@
       "p": 10
     },
     {
+      "id": "wj-20260918-macelyn-batten",
       "d": "2026-09-18",
       "b": "Macelyn Batten",
       "s": "Inside Stage",
@@ -537,6 +582,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20260919-purple-magnolia",
       "d": "2026-09-19",
       "b": "Purple Magnolia",
       "s": "Inside Stage",
@@ -546,6 +592,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20260913-motown-throwdown",
       "d": "2026-09-13",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -555,6 +602,7 @@
       "p": 5
     },
     {
+      "id": "cmh-20260914-little-feat",
       "d": "2026-09-14",
       "b": "Little Feat",
       "o": "Shovels & Rope",
@@ -564,6 +612,7 @@
       "u": "https://www.ticketmaster.com/little-feat-the-last-farewell-tour-charleston-south-carolina-09-14-2026/event/2D006470D906716B"
     },
     {
+      "id": "ph-20260915-okapi-dream",
       "d": "2026-09-15",
       "b": "Okapi Dream",
       "s": "Deck Stage",
@@ -573,6 +622,7 @@
       "p": 10
     },
     {
+      "id": "cmh-20260915-little-feat",
       "d": "2026-09-15",
       "b": "Little Feat",
       "o": "Shovels & Rope",
@@ -582,6 +632,7 @@
       "u": "https://www.ticketmaster.com/little-feat-the-last-farewell-tour-charleston-south-carolina-09-15-2026/event/2D006470D9D27492"
     },
     {
+      "id": "ph-20260916-the-reckoning-grateful-dead-tribute",
       "d": "2026-09-16",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -591,6 +642,7 @@
       "p": 10
     },
     {
+      "id": "cmh-20260916-the-mars-volta",
       "d": "2026-09-16",
       "b": "The Mars Volta",
       "o": "Kianí Medina",
@@ -600,6 +652,7 @@
       "u": "https://www.ticketmaster.com/the-mars-volta-charleston-south-carolina-09-16-2026/event/2D006483BCB989DD"
     },
     {
+      "id": "ph-20260917-goodnight-texas",
       "d": "2026-09-17",
       "b": "Goodnight, Texas",
       "o": "Jarrod Dickenson & Ari Z",
@@ -612,6 +665,7 @@
       "dop": 20
     },
     {
+      "id": "cmh-20260917-asleep-at-the-wheel",
       "d": "2026-09-17",
       "b": "Asleep At the Wheel",
       "dr": "7:00 PM",
@@ -620,6 +674,7 @@
       "u": "https://www.ticketmaster.com/asleep-at-the-wheel-charleston-south-carolina-09-17-2026/event/2D0064BC9B06E405"
     },
     {
+      "id": "c1s-20260917-zac-brown-band-love-fear",
       "d": "2026-09-17",
       "b": "Zac Brown Band — Love & Fear",
       "o": "Brothers Osborne",
@@ -628,6 +683,7 @@
       "u": "https://go.seated.com/tour-events/37058618-abd2-4e67-a3c8-5ee96c93f65e"
     },
     {
+      "id": "wj-20260913-the-swimming-pool-q-s",
       "d": "2026-09-13",
       "b": "The Swimming Pool Q's",
       "s": "Inside Stage",
@@ -637,6 +693,7 @@
       "p": 0
     },
     {
+      "id": "ph-20260918-restless-natives-allman-brothers-tribute",
       "d": "2026-09-18",
       "b": "Restless Natives (Allman Brothers Tribute)",
       "s": "Deck Stage",
@@ -647,6 +704,7 @@
       "p": 15
     },
     {
+      "id": "wj-20260917-winyah",
       "d": "2026-09-17",
       "b": "Winyah",
       "o": "Old Mervs",
@@ -657,6 +715,7 @@
       "p": 25
     },
     {
+      "id": "ph-20260919-restless-natives-allman-brothers-tribute",
       "d": "2026-09-19",
       "b": "Restless Natives (Allman Brothers Tribute)",
       "s": "Deck Stage",
@@ -667,6 +726,7 @@
       "p": 15
     },
     {
+      "id": "ph-20260919-north-mississippi-allstars",
       "d": "2026-09-19",
       "b": "North Mississippi Allstars",
       "s": "Main Stage",
@@ -678,6 +738,7 @@
       "dop": 35
     },
     {
+      "id": "wj-20260918-winyah",
       "d": "2026-09-18",
       "b": "Winyah",
       "o": "Old Mervs",
@@ -688,6 +749,7 @@
       "p": 25
     },
     {
+      "id": "c1s-20260920-james-taylor-and-his-all-star-band",
       "d": "2026-09-20",
       "b": "James Taylor and His All-Star Band",
       "sh": "7:00 PM",
@@ -695,6 +757,7 @@
       "u": "https://www.ticketmaster.com/event/2D006425D468B556"
     },
     {
+      "id": "ph-20260920-motown-throwdown",
       "d": "2026-09-20",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -704,6 +767,7 @@
       "p": 5
     },
     {
+      "id": "ph-20260922-okapi-dream",
       "d": "2026-09-22",
       "b": "Okapi Dream",
       "s": "Deck Stage",
@@ -714,6 +778,7 @@
       "o": "w/ Special Guest MJT"
     },
     {
+      "id": "cmh-20260922-switchfoot",
       "d": "2026-09-22",
       "b": "Switchfoot",
       "o": "Anberlin",
@@ -723,6 +788,7 @@
       "u": "https://www.ticketmaster.com/switchfoot-with-special-guest-anberlin-forever-charleston-south-carolina-09-22-2026/event/2D0064A5AF7B7BF7"
     },
     {
+      "id": "ph-20260923-the-reckoning-grateful-dead-tribute",
       "d": "2026-09-23",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -732,6 +798,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260924-dallas-baker-friends-4th-annual-aloha-sh",
       "d": "2026-09-24",
       "b": "Dallas Baker & Friends — 4th Annual Aloha Shirt Party",
       "o": "Jeff Nark, Nick Radford, Rob Lowe, David Vaughan & more",
@@ -743,6 +810,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260924-an-evening-with-jerry-joseph",
       "d": "2026-09-24",
       "b": "An Evening with Jerry Joseph",
       "s": "Main Stage",
@@ -753,6 +821,7 @@
       "p": 20
     },
     {
+      "id": "ph-20260925-the-grass-is-dead-bluegrass-grateful-dea",
       "d": "2026-09-25",
       "b": "The Grass is Dead (Bluegrass Grateful Dead Tribute)",
       "s": "Main Stage",
@@ -764,12 +833,14 @@
       "dop": 20
     },
     {
+      "id": "ref-20260925-limbo-at-the-refinery-presents-jed-harre",
       "d": "2026-09-25",
       "b": "Limbo at The Refinery presents: Jed Harrelson",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14899363"
     },
     {
+      "id": "ph-20260926-colby-t-helms-the-virginia-creepers",
       "d": "2026-09-26",
       "b": "Colby T. Helms & The Virginia Creepers",
       "s": "Deck Stage",
@@ -781,6 +852,7 @@
       "dop": 20
     },
     {
+      "id": "ph-20260926-4th-annual-holy-city-homegrown-festival",
       "d": "2026-09-26",
       "b": "4th Annual Holy City Homegrown Festival",
       "o": "Tyler Boone, Acid Hawk, Finnegan Bell, Hickory",
@@ -793,6 +865,7 @@
       "dop": 20
     },
     {
+      "id": "ref-20260926-20-years-of-home-team-bbq-anniversary-li",
       "d": "2026-09-26",
       "b": "20 Years of Home Team BBQ (anniversary live-music party)",
       "o": "Paul Cauthen, SCAM Allstars, WERI Workhorses of the Entertainment/Recreation Industry, Mac Leaphart & Reid Stone",
@@ -803,6 +876,7 @@
       "u": "https://www.ticketweb.com/event/20-years-of-home-team-the-refinery-tickets/14213844"
     },
     {
+      "id": "cmh-20260926-charlton-singleton-friends-presents-new",
       "d": "2026-09-26",
       "b": "Charlton Singleton & Friends Presents: New Jack Swing",
       "dr": "7:00 PM",
@@ -811,6 +885,7 @@
       "u": "https://www.ticketmaster.com/charlton-singletons-new-jack-swing-charleston-south-carolina-09-26-2026/event/2D0064E79D689A8F"
     },
     {
+      "id": "wj-20260919-george-birge",
       "d": "2026-09-19",
       "b": "George Birge",
       "s": "NÜTRL Beach Stage",
@@ -819,6 +894,7 @@
       "u": "https://the-windjammer.com/event/george-birge-on-the-nutrl-beach-stage/"
     },
     {
+      "id": "ph-20260927-motown-throwdown",
       "d": "2026-09-27",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -828,6 +904,7 @@
       "p": 5
     },
     {
+      "id": "ph-20260927-reverend-horton-heat",
       "d": "2026-09-27",
       "b": "Reverend Horton Heat",
       "s": "Main Stage",
@@ -839,6 +916,7 @@
       "dop": 35
     },
     {
+      "id": "wj-20260926-five-way-friday",
       "d": "2026-09-26",
       "b": "Five Way Friday",
       "s": "NÜTRL Beach Stage",
@@ -847,6 +925,7 @@
       "u": "https://the-windjammer.com/event/five-way-friday-on-the-nutrl-beach-stage/"
     },
     {
+      "id": "ph-20260929-okapi-dream",
       "d": "2026-09-29",
       "b": "Okapi Dream",
       "s": "Deck Stage",
@@ -856,6 +935,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260930-the-reckoning-grateful-dead-tribute",
       "d": "2026-09-30",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -865,6 +945,7 @@
       "p": 10
     },
     {
+      "id": "ph-20260930-andy-frasco-the-u-n",
       "d": "2026-09-30",
       "b": "Andy Frasco & the U.N.",
       "s": "Main Stage",
@@ -876,6 +957,7 @@
       "dop": 40
     },
     {
+      "id": "cmh-20260930-bayside",
       "d": "2026-09-30",
       "b": "Bayside",
       "o": "Driveways, Grave Secrets",
@@ -885,6 +967,7 @@
       "u": "https://www.ticketmaster.com/bayside-charleston-south-carolina-09-30-2026/event/2D0064D7972082AB"
     },
     {
+      "id": "ph-20261001-andy-frasco-the-u-n",
       "d": "2026-10-01",
       "b": "Andy Frasco & the U.N.",
       "s": "Main Stage",
@@ -896,6 +979,7 @@
       "dop": 40
     },
     {
+      "id": "ref-20261001-ashley-mcbryde-into-the-wild-tour",
       "d": "2026-10-01",
       "b": "Ashley McBryde — Into The Wild Tour",
       "o": "Colton Bowlin",
@@ -904,6 +988,7 @@
       "u": "https://www.ticketweb.com/event/ashley-mcbryde-the-refinery-tickets/14910213"
     },
     {
+      "id": "wj-20260927-susto-stringband",
       "d": "2026-09-27",
       "b": "SUSTO Stringband",
       "s": "NÜTRL Beach Stage",
@@ -915,6 +1000,7 @@
       "dop": 30
     },
     {
+      "id": "ph-20261002-nether-hour",
       "d": "2026-10-02",
       "b": "Nether Hour",
       "s": "Deck Stage",
@@ -926,6 +1012,7 @@
       "dop": 25
     },
     {
+      "id": "ph-20261002-five-door-sedan",
       "d": "2026-10-02",
       "b": "Five Door Sedan",
       "o": "Winterteeth, Channel Bluff",
@@ -938,6 +1025,7 @@
       "dop": 20
     },
     {
+      "id": "cmh-20261002-lalah-hathaway",
       "d": "2026-10-02",
       "b": "Lalah Hathaway",
       "dr": "7:00 PM",
@@ -946,6 +1034,7 @@
       "u": "https://www.ticketmaster.com/lalah-hathaway-charleston-south-carolina-10-02-2026/event/2D0064D0E041E7CF"
     },
     {
+      "id": "wj-20261001-lily-rose",
       "d": "2026-10-01",
       "b": "Lily Rose",
       "s": "NÜTRL Beach Stage",
@@ -956,6 +1045,7 @@
       "dop": 30
     },
     {
+      "id": "ph-20261003-poho-family-cluster-pluck",
       "d": "2026-10-03",
       "b": "PoHo Family Cluster Pluck",
       "o": "Shadowgrass, Suns of Stars, North State Grass, Barrier Island Bluegrass",
@@ -967,6 +1057,7 @@
       "p": 15
     },
     {
+      "id": "ph-20261003-an-evening-with-shadowgrass",
       "d": "2026-10-03",
       "b": "An Evening with Shadowgrass",
       "s": "Main Stage",
@@ -978,6 +1069,7 @@
       "dop": 25
     },
     {
+      "id": "cmh-20261003-the-fab-four-beatles-tribute",
       "d": "2026-10-03",
       "b": "The Fab Four (Beatles Tribute)",
       "dr": "6:30 PM",
@@ -986,6 +1078,7 @@
       "u": "https://www.ticketmaster.com/the-fab-four-tribute-to-the-charleston-south-carolina-10-03-2026/event/2D006472D31489EC"
     },
     {
+      "id": "ph-20261004-poho-family-cluster-pluck",
       "d": "2026-10-04",
       "b": "PoHo Family Cluster Pluck",
       "o": "Shadowgrass, Suns of Stars",
@@ -997,6 +1090,7 @@
       "p": 10
     },
     {
+      "id": "ph-20261004-an-evening-with-shadowgrass",
       "d": "2026-10-04",
       "b": "An Evening with Shadowgrass",
       "s": "Main Stage",
@@ -1008,6 +1102,7 @@
       "dop": 25
     },
     {
+      "id": "wj-20261002-saxsquatch",
       "d": "2026-10-02",
       "b": "Saxsquatch",
       "s": "NÜTRL Beach Stage",
@@ -1018,6 +1113,7 @@
       "dop": 30
     },
     {
+      "id": "ph-20261006-steely-dead-grateful-dead-steely-dan",
       "d": "2026-10-06",
       "b": "Steely Dead (Grateful Dead × Steely Dan)",
       "s": "Deck Stage",
@@ -1028,6 +1124,7 @@
       "p": 20
     },
     {
+      "id": "ph-20261008-holy-roller",
       "d": "2026-10-08",
       "b": "Holy Roller",
       "s": "Deck Stage",
@@ -1039,6 +1136,7 @@
       "dop": 12
     },
     {
+      "id": "ph-20261008-high-step-society-eliot-lipp",
       "d": "2026-10-08",
       "b": "High Step Society + Eliot Lipp",
       "s": "Main Stage",
@@ -1050,6 +1148,7 @@
       "dop": 20
     },
     {
+      "id": "cmh-20261008-on-the-border-the-ultimate-eagles-tribut",
       "d": "2026-10-08",
       "b": "On the Border — The Ultimate Eagles Tribute",
       "dr": "7:00 PM",
@@ -1058,6 +1157,7 @@
       "u": "https://www.ticketmaster.com/on-the-border-the-ultimate-eagles-charleston-south-carolina-10-08-2026/event/2D0064D1CD79EB91"
     },
     {
+      "id": "wj-20261004-the-expendables",
       "d": "2026-10-04",
       "b": "The Expendables",
       "o": "Matt & Zack",
@@ -1069,6 +1169,7 @@
       "dop": 30
     },
     {
+      "id": "rfp-20261009-riverfront-revival",
       "d": "2026-10-09",
       "e": "2026-10-10",
       "b": "Riverfront Revival",
@@ -1079,6 +1180,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261009-squeaky-feet",
       "d": "2026-10-09",
       "b": "Squeaky Feet",
       "s": "Deck Stage",
@@ -1090,6 +1192,7 @@
       "dop": 12
     },
     {
+      "id": "ph-20261009-the-502-s",
       "d": "2026-10-09",
       "b": "The 502's",
       "s": "Main Stage",
@@ -1101,6 +1204,7 @@
       "dop": 35
     },
     {
+      "id": "ph-20261010-freddie-mcclendon",
       "d": "2026-10-10",
       "b": "Freddie McClendon",
       "s": "Deck Stage",
@@ -1112,6 +1216,7 @@
       "dop": 17
     },
     {
+      "id": "ph-20261010-stop-light-observations",
       "d": "2026-10-10",
       "b": "Stop Light Observations",
       "o": "The Right Ratio",
@@ -1124,6 +1229,7 @@
       "dop": 40
     },
     {
+      "id": "cmh-20261010-the-black-jacket-symphony-presents-def-l",
       "d": "2026-10-10",
       "b": "The Black Jacket Symphony Presents Def Leppard's 'Hysteria'",
       "dr": "6:30 PM",
@@ -1132,6 +1238,7 @@
       "u": "https://www.ticketmaster.com/the-black-jacket-symphony-presents-def-charleston-south-carolina-10-10-2026/event/2D00649D8DF6F20E"
     },
     {
+      "id": "wj-20261008-the-california-honeydrops",
       "d": "2026-10-08",
       "b": "The California Honeydrops",
       "s": "NÜTRL Beach Stage",
@@ -1142,6 +1249,7 @@
       "dop": 40
     },
     {
+      "id": "ph-20261011-joshua-ray-walker-ain-t-dead-yet-tour",
       "d": "2026-10-11",
       "b": "Joshua Ray Walker — 'Ain't Dead Yet' Tour",
       "o": "Cecilia Castleman",
@@ -1154,6 +1262,7 @@
       "dop": 25
     },
     {
+      "id": "cmh-20261011-thundercat",
       "d": "2026-10-11",
       "b": "Thundercat",
       "o": "TiaCorine",
@@ -1163,6 +1272,7 @@
       "u": "https://www.ticketmaster.com/thundercat-distracted-af-tour-charleston-south-carolina-10-11-2026/event/2D0064E8B0B8E302"
     },
     {
+      "id": "cmh-20261012-cannons",
       "d": "2026-10-12",
       "b": "Cannons",
       "o": "Caroline Kingsbury",
@@ -1172,6 +1282,7 @@
       "u": "https://www.ticketmaster.com/cannons-the-everything-glows-tour-charleston-south-carolina-10-12-2026/event/2D0064A8C4FA496E"
     },
     {
+      "id": "cmh-20261013-all-them-witches",
       "d": "2026-10-13",
       "b": "All Them Witches",
       "o": "Emma Ruth Rundle",
@@ -1181,6 +1292,7 @@
       "u": "https://www.ticketmaster.com/all-them-witches-charleston-south-carolina-10-13-2026/event/2D006491A248FC65"
     },
     {
+      "id": "cmh-20261014-scott-bradlee-s-postmodern-jukebox",
       "d": "2026-10-14",
       "b": "Scott Bradlee's Postmodern Jukebox",
       "dr": "7:00 PM",
@@ -1189,6 +1301,7 @@
       "u": "https://www.ticketmaster.com/scott-bradlees-postmodern-jukebox-the-future-charleston-south-carolina-10-14-2026/event/2D00649EAB31599C"
     },
     {
+      "id": "ph-20261016-maggie-rose-half-moon-tour-2026",
       "d": "2026-10-16",
       "b": "Maggie Rose — Half Moon Tour 2026",
       "o": "MP Gannon",
@@ -1201,6 +1314,7 @@
       "dop": 30
     },
     {
+      "id": "cmh-20261016-the-marshall-tucker-band",
       "d": "2026-10-16",
       "b": "The Marshall Tucker Band",
       "dr": "7:00 PM",
@@ -1209,6 +1323,7 @@
       "u": "https://www.ticketmaster.com/the-marshall-tucker-band-charleston-south-carolina-10-16-2026/event/2D0064F594BC8FC2"
     },
     {
+      "id": "ref-20261016-trampled-by-turtles",
       "d": "2026-10-16",
       "b": "Trampled by Turtles",
       "dr": "6:00 PM",
@@ -1218,12 +1333,14 @@
       "o": "The Last Revel"
     },
     {
+      "id": "cmh-20261017-what-a-wonderful-world-bruce-harris-the",
       "d": "2026-10-17",
       "b": "What a Wonderful World — Bruce Harris + The Charleston Jazz Orchestra",
       "v": "CMH",
       "u": "https://charlestonjazz.com/event/2026-what-a-wonderful-world-5pm/"
     },
     {
+      "id": "wj-20261010-14th-annual-ccc-cornhole-tournament-live",
       "d": "2026-10-10",
       "b": "14th Annual CCC Cornhole Tournament & Live Music",
       "o": "Palmetalhead + others",
@@ -1235,6 +1352,7 @@
       "dop": 20
     },
     {
+      "id": "c1s-20261017-the-red-clay-strays-grateful-tour",
       "d": "2026-10-17",
       "b": "The Red Clay Strays — Grateful Tour",
       "o": "The Revivalists, Haley Reinhart",
@@ -1243,6 +1361,7 @@
       "u": "https://www.ticketmaster.com/the-red-clay-strays-charleston-south-carolina-10-17-2026/event/2D006494D38D6295"
     },
     {
+      "id": "cmh-20261018-the-living-tombstone",
       "d": "2026-10-18",
       "b": "The Living Tombstone",
       "dr": "7:00 PM",
@@ -1253,6 +1372,7 @@
       "lowTix": true
     },
     {
+      "id": "cmh-20261019-paul-bielatowicz-s-nosferatu-undead-live",
       "d": "2026-10-19",
       "b": "Paul Bielatowicz's Nosferatu Undead (live scored film)",
       "dr": "6:30 PM",
@@ -1261,6 +1381,7 @@
       "u": "https://www.ticketmaster.com/paul-bielatowiczs-nosferatu-undead-charleston-south-carolina-10-19-2026/event/2D0064E8967D99D2"
     },
     {
+      "id": "ph-20261022-lamp",
       "d": "2026-10-22",
       "b": "LaMP",
       "s": "Main Stage",
@@ -1272,6 +1393,7 @@
       "dop": 30
     },
     {
+      "id": "cmh-20261023-the-hip-abduction",
       "d": "2026-10-23",
       "b": "The Hip Abduction",
       "o": "Sensamotion, Coyote Island",
@@ -1281,6 +1403,7 @@
       "u": "https://www.ticketmaster.com/the-hip-abduction-charleston-south-carolina-10-23-2026/event/2D00646C925CB637"
     },
     {
+      "id": "ph-20261023-the-greyboy-allstars",
       "d": "2026-10-23",
       "b": "The Greyboy Allstars",
       "s": "Main Stage",
@@ -1292,6 +1415,7 @@
       "dop": 40
     },
     {
+      "id": "ph-20261023-hotel-hugo",
       "d": "2026-10-23",
       "b": "Hotel Hugo",
       "o": "Sawyer Norman, Nick Matthews",
@@ -1305,6 +1429,7 @@
       "dop": 15
     },
     {
+      "id": "wj-20261017-ax-and-the-hatchetmen",
       "d": "2026-10-17",
       "b": "Ax and The Hatchetmen",
       "o": "The Hails",
@@ -1316,6 +1441,7 @@
       "dop": 30
     },
     {
+      "id": "c1s-20261023-johnny-blue-skies-the-dark-clouds-mutiny",
       "d": "2026-10-23",
       "b": "Johnny Blue Skies & the Dark Clouds — Mutiny for the Masses 2026",
       "sh": "8:00 PM",
@@ -1323,6 +1449,7 @@
       "u": "https://www.ticketmaster.com/event/2D00647E1505F51D"
     },
     {
+      "id": "ph-20261024-karina-rykman",
       "d": "2026-10-24",
       "b": "Karina Rykman",
       "dr": "8:00 PM",
@@ -1335,6 +1462,7 @@
       "s": "Main Stage"
     },
     {
+      "id": "ph-20261024-tenmileride",
       "d": "2026-10-24",
       "b": "TenMileRide",
       "s": "Deck Stage",
@@ -1346,6 +1474,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20261023-tophouse",
       "d": "2026-10-23",
       "b": "TopHouse",
       "s": "NÜTRL Beach Stage",
@@ -1356,6 +1485,7 @@
       "dop": 30
     },
     {
+      "id": "ph-20261025-porch-light",
       "d": "2026-10-25",
       "b": "Porch Light",
       "o": "Hotel Fiction",
@@ -1368,6 +1498,7 @@
       "dop": 22
     },
     {
+      "id": "ph-20261016-be-weir-now",
       "d": "2026-10-16",
       "b": "Be Weir Now",
       "o": "A Bobby Weir Birthday Celebration",
@@ -1381,6 +1512,7 @@
       "dop": 20
     },
     {
+      "id": "ph-20261029-jacoozy",
       "d": "2026-10-29",
       "b": "Jacoozy",
       "s": "Deck Stage",
@@ -1393,6 +1525,7 @@
       "dop": 18
     },
     {
+      "id": "ph-20261030-neal-francis",
       "d": "2026-10-30",
       "b": "Neal Francis",
       "o": "Sam Fribush Organ Trio",
@@ -1405,6 +1538,7 @@
       "s": "Main Stage"
     },
     {
+      "id": "cmh-20261101-hawthorne-heights",
       "d": "2026-11-01",
       "b": "Hawthorne Heights",
       "o": "letlive., Creeper",
@@ -1414,6 +1548,7 @@
       "u": "https://www.ticketmaster.com/hawthorne-heights-20th-anniversary-of-if-charleston-south-carolina-11-01-2026/event/2D00646E1DC57994"
     },
     {
+      "id": "ph-20261101-doom-gong",
       "d": "2026-11-01",
       "b": "Doom Gong",
       "dr": "7:30 PM",
@@ -1425,6 +1560,7 @@
       "s": "Main Stage"
     },
     {
+      "id": "cmh-20261104-mountain-grass-unit-appalachian-smoke-to",
       "d": "2026-11-04",
       "b": "Mountain Grass Unit — Appalachian Smoke Tour",
       "dr": "7:00 PM",
@@ -1433,6 +1569,7 @@
       "u": "https://www.ticketmaster.com/mountain-grass-unit-appalachian-smoke-tour-charleston-south-carolina-11-04-2026/event/2D0064C8F435A68E"
     },
     {
+      "id": "ph-20261105-tommy-prine",
       "d": "2026-11-05",
       "b": "Tommy Prine",
       "dr": "7:30 PM",
@@ -1445,6 +1582,7 @@
       "o": "Delaney Ramsdell"
     },
     {
+      "id": "cmh-20261105-bitch-cabal-feat-wednesday-mannequin-pus",
       "d": "2026-11-05",
       "b": "Bitch Cabal feat. Wednesday & Mannequin Pussy",
       "o": "Snooper",
@@ -1454,6 +1592,7 @@
       "u": "https://www.ticketmaster.com/bitch-cabal-feat-wednesday-mannequin-pussy-charleston-south-carolina-11-05-2026/event/2D0064D0DC63D961"
     },
     {
+      "id": "wj-20261024-josh-meloy",
       "d": "2026-10-24",
       "b": "Josh Meloy",
       "s": "NÜTRL Beach Stage",
@@ -1462,6 +1601,7 @@
       "u": "https://the-windjammer.com/event/joshmeloy26oct/"
     },
     {
+      "id": "cmh-20261106-honestav",
       "d": "2026-11-06",
       "b": "honestav",
       "o": "Untitled",
@@ -1471,6 +1611,7 @@
       "u": "https://www.ticketmaster.com/honestav-the-sweet-american-boy-tour-charleston-south-carolina-11-06-2026/event/2D0064C99AE943FF"
     },
     {
+      "id": "ph-20261107-satsang",
       "d": "2026-11-07",
       "b": "Satsang",
       "dr": "8:00 PM",
@@ -1482,6 +1623,7 @@
       "s": "Main Stage"
     },
     {
+      "id": "wj-20261105-drake-milligan",
       "d": "2026-11-05",
       "b": "Drake Milligan",
       "s": "Inside Stage",
@@ -1492,6 +1634,7 @@
       "dop": 30
     },
     {
+      "id": "ph-20261108-sunsquabi",
       "d": "2026-11-08",
       "b": "SunSquabi",
       "dr": "7:30 PM",
@@ -1503,6 +1646,7 @@
       "s": "Main Stage"
     },
     {
+      "id": "cmh-20261108-tab-benoit-soul-of-the-swamp-tour",
       "d": "2026-11-08",
       "b": "Tab Benoit — Soul of the Swamp Tour",
       "o": "Jesse Dayton",
@@ -1512,6 +1656,7 @@
       "u": "https://www.ticketmaster.com/tab-benoit-soul-of-the-swamp-charleston-south-carolina-11-08-2026/event/2D006490D562E16F"
     },
     {
+      "id": "ref-20261108-judah-the-lion",
       "d": "2026-11-08",
       "b": "Judah & The Lion",
       "sh": "7:30 PM",
@@ -1521,6 +1666,7 @@
       "flag": "Show time confirmed via charlestonlivemusic.com JSON-LD (read as literal Eastern local time, ignoring its incorrect +00:00/UTC label -- see project notes on the charlestonlivemusic.com timezone-mislabeling issue). Doors time not available from any source."
     },
     {
+      "id": "cmh-20261109-jim-henson-s-labyrinth-in-concert-40th-a",
       "d": "2026-11-09",
       "b": "Jim Henson's Labyrinth: In Concert (40th Anniversary)",
       "dr": "7:00 PM",
@@ -1529,6 +1675,7 @@
       "u": "https://www.ticketmaster.com/jim-hensons-labyrinth-in-concert-40th-charleston-south-carolina-11-09-2026/event/2D006429F183F5A2"
     },
     {
+      "id": "cmh-20261110-ub40",
       "d": "2026-11-10",
       "b": "UB40",
       "dr": "7:00 PM",
@@ -1537,6 +1684,7 @@
       "u": "https://www.ticketmaster.com/ub40-charleston-south-carolina-11-10-2026/event/2D006436AB06BF4A"
     },
     {
+      "id": "cmh-20261111-hot-mulligan",
       "d": "2026-11-11",
       "b": "Hot Mulligan",
       "o": "One Step Closer, Riley!, Wakelee",
@@ -1546,12 +1694,14 @@
       "u": "https://www.ticketmaster.com/hot-mulligan-north-american-fall-tour-charleston-south-carolina-11-11-2026/event/2D0064CC95D4C2B8"
     },
     {
+      "id": "ref-20261111-limbo-at-the-refinery-presents-jesse-rop",
       "d": "2026-11-11",
       "b": "Limbo at The Refinery presents: Jesse Roper",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14973523"
     },
     {
+      "id": "cmh-20261112-spyro-gyra",
       "d": "2026-11-12",
       "b": "Spyro Gyra",
       "dr": "7:00 PM",
@@ -1560,6 +1710,7 @@
       "u": "https://www.ticketmaster.com/spyro-gyra-charleston-south-carolina-11-12-2026/event/2D0064E7B302D1EA"
     },
     {
+      "id": "ph-20261112-bearly-dead-grateful-dead-tribute",
       "d": "2026-11-12",
       "b": "Bearly Dead (Grateful Dead Tribute)",
       "dr": "7:30 PM",
@@ -1571,6 +1722,7 @@
       "s": "Main Stage"
     },
     {
+      "id": "ph-20261113-tauk",
       "d": "2026-11-13",
       "b": "TAUK",
       "o": "lespecial",
@@ -1584,6 +1736,7 @@
       "flag": "First night of a two-night stand with Nov 14; $50 2-night package also offered"
     },
     {
+      "id": "cmh-20261113-paula-cole",
       "d": "2026-11-13",
       "b": "Paula Cole",
       "o": "Rett Madison",
@@ -1593,6 +1746,7 @@
       "u": "https://www.ticketmaster.com/paula-cole-this-fire-30-charleston-south-carolina-11-13-2026/event/2D00649DCACE3B86"
     },
     {
+      "id": "ph-20261114-the-fretliners",
       "d": "2026-11-14",
       "b": "The Fretliners",
       "dr": "5:00 PM",
@@ -1604,6 +1758,7 @@
       "s": "Deck Stage"
     },
     {
+      "id": "ph-20261115-deer-tick",
       "d": "2026-11-15",
       "b": "Deer Tick",
       "dr": "7:30 PM",
@@ -1616,6 +1771,7 @@
       "o": "Dug"
     },
     {
+      "id": "cmh-20261119-big-head-todd-the-monsters-night-1",
       "d": "2026-11-19",
       "b": "Big Head Todd & the Monsters (Night 1)",
       "dr": "7:00 PM",
@@ -1624,6 +1780,7 @@
       "u": "https://www.ticketmaster.com/big-head-todd-the-monsters-winter-charleston-south-carolina-11-19-2026/event/2D006479DD73B364"
     },
     {
+      "id": "wj-20261107-nightrain-the-guns-n-roses-experience",
       "d": "2026-11-07",
       "b": "Nightrain: The Guns N' Roses Experience",
       "s": "Inside Stage",
@@ -1634,6 +1791,7 @@
       "dop": 20
     },
     {
+      "id": "wj-20261119-hunter-flynn-back-to-my-roots-tour",
       "d": "2026-11-19",
       "b": "Hunter Flynn — Back To My Roots Tour",
       "s": "Inside Stage",
@@ -1645,6 +1803,7 @@
       "dop": 25
     },
     {
+      "id": "cmh-20261120-big-head-todd-the-monsters-night-2",
       "d": "2026-11-20",
       "b": "Big Head Todd & the Monsters (Night 2)",
       "dr": "7:00 PM",
@@ -1654,6 +1813,7 @@
       "lowTix": true
     },
     {
+      "id": "ph-20261121-magnolia-boulevard",
       "d": "2026-11-21",
       "b": "Magnolia Boulevard",
       "dr": "5:00 PM",
@@ -1665,6 +1825,7 @@
       "s": "Deck Stage"
     },
     {
+      "id": "cmh-20261125-band-of-horses-night-1",
       "d": "2026-11-25",
       "b": "Band of Horses (Night 1)",
       "dr": "7:00 PM",
@@ -1673,6 +1834,7 @@
       "u": "https://www.ticketmaster.com/an-evening-with-band-of-horses-charleston-south-carolina-11-25-2026/event/2D0064A8B9CAF99F"
     },
     {
+      "id": "cmh-20261127-band-of-horses-night-2",
       "d": "2026-11-27",
       "b": "Band of Horses (Night 2)",
       "dr": "7:00 PM",
@@ -1681,6 +1843,7 @@
       "u": "https://www.ticketmaster.com/an-evening-with-band-of-horses-charleston-south-carolina-11-27-2026/event/2D0064A8BA75FB42"
     },
     {
+      "id": "ref-20261202-beartooth",
       "d": "2026-12-02",
       "b": "Beartooth",
       "sh": "6:30 PM",
@@ -1688,6 +1851,7 @@
       "u": "https://www.ticketweb.com/event/beartooth-the-refinery-tickets/14914313"
     },
     {
+      "id": "wj-20261203-filmore",
       "d": "2026-12-03",
       "b": "FILMORE",
       "s": "Inside Stage",
@@ -1698,6 +1862,7 @@
       "dop": 20
     },
     {
+      "id": "cmh-20261203-tommy-emmanuel-cgp-living-in-the-light-t",
       "d": "2026-12-03",
       "b": "Tommy Emmanuel, CGP — Living In The Light Tour",
       "dr": "7:00 PM",
@@ -1706,6 +1871,7 @@
       "u": "https://www.ticketmaster.com/tommy-emmanuel-cpg-living-in-the-charleston-south-carolina-12-03-2026/event/2D00649EA0C22797"
     },
     {
+      "id": "cmh-20261204-winter-nights-with-matteo-bocelli",
       "d": "2026-12-04",
       "b": "Winter Nights with Matteo Bocelli",
       "dr": "7:00 PM",
@@ -1714,6 +1880,7 @@
       "u": "https://www.ticketmaster.com/winter-nights-with-matteo-bocelli-charleston-south-carolina-12-04-2026/event/2D00651190686D6A"
     },
     {
+      "id": "ph-20261204-moe-phrey-s",
       "d": "2026-12-04",
       "b": "moe.phrey's",
       "o": "Ryan Stasik & Scotty Zwang (Umphrey's McGee), Al Schnier & Nate Wilson (moe.), Kanika Moore",
@@ -1727,12 +1894,14 @@
       "flag": "First night of a two-night stand with Dec 5; $56 2-night package also offered. \"moe.phrey's\" is the venue's own name for this collective (not a mistranscription of \"Al Schnier\" as earlier suspected) — confirmed directly on the event page."
     },
     {
+      "id": "cmh-20261205-2026-holiday-swing-tommy-brown-jr-the-ch",
       "d": "2026-12-05",
       "b": "2026 Holiday Swing — Tommy Brown Jr. + The Charleston Jazz Orchestra",
       "v": "CMH",
       "u": "https://charlestonjazz.com/event/2026-holiday-swing-5pm/"
     },
     {
+      "id": "ph-20261205-moe-phrey-s",
       "d": "2026-12-05",
       "b": "moe.phrey's",
       "o": "Ryan Stasik & Scotty Zwang (Umphrey's McGee), Al Schnier & Nate Wilson (moe.), Kanika Moore",
@@ -1746,6 +1915,7 @@
       "flag": "Second night of a two-night stand with Dec 4; $56 2-night package also offered. \"moe.phrey's\" is the venue's own name for this collective (not a mistranscription of \"Al Schnier\" as earlier suspected) — confirmed directly on the event page."
     },
     {
+      "id": "cmh-20261211-the-charleston-christmas-special",
       "d": "2026-12-11",
       "b": "The Charleston Christmas Special",
       "dr": "6:00 PM",
@@ -1754,6 +1924,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-11-2026/event/2D00638B91ECB572"
     },
     {
+      "id": "cmh-20261212-the-charleston-christmas-special-matinee",
       "d": "2026-12-12",
       "b": "The Charleston Christmas Special (matinee)",
       "dr": "1:00 PM",
@@ -1762,6 +1933,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-12-2026/event/2D00638B9259B8D6"
     },
     {
+      "id": "cmh-20261212-the-charleston-christmas-special-evening",
       "d": "2026-12-12",
       "b": "The Charleston Christmas Special (evening)",
       "dr": "6:00 PM",
@@ -1770,6 +1942,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-12-2026/event/2D00638B92A6BB20"
     },
     {
+      "id": "cmh-20261213-the-charleston-christmas-special",
       "d": "2026-12-13",
       "b": "The Charleston Christmas Special",
       "dr": "2:00 PM",
@@ -1778,6 +1951,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-13-2026/event/2D00638B92D7BC80"
     },
     {
+      "id": "cmh-20261215-the-charleston-christmas-special",
       "d": "2026-12-15",
       "b": "The Charleston Christmas Special",
       "dr": "6:00 PM",
@@ -1786,6 +1960,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-15-2026/event/2D00638B93B2C0F7"
     },
     {
+      "id": "cmh-20261216-the-charleston-christmas-special-kids-fr",
       "d": "2026-12-16",
       "b": "The Charleston Christmas Special — Kids Free Night",
       "dr": "6:00 PM",
@@ -1794,6 +1969,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-kids-free-charleston-south-carolina-12-16-2026/event/2D00638B9546C880"
     },
     {
+      "id": "cmh-20261217-the-charleston-christmas-special",
       "d": "2026-12-17",
       "b": "The Charleston Christmas Special",
       "dr": "6:00 PM",
@@ -1802,6 +1978,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-17-2026/event/2D00638B957CC95C"
     },
     {
+      "id": "cmh-20261218-the-charleston-christmas-special",
       "d": "2026-12-18",
       "b": "The Charleston Christmas Special",
       "dr": "6:00 PM",
@@ -1810,6 +1987,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-18-2026/event/2D00638B95BACA4B"
     },
     {
+      "id": "cmh-20261219-the-charleston-christmas-special-matinee",
       "d": "2026-12-19",
       "b": "The Charleston Christmas Special (matinee)",
       "dr": "1:00 PM",
@@ -1818,6 +1996,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-19-2026/event/2D00638B95F6CB26"
     },
     {
+      "id": "cmh-20261219-the-charleston-christmas-special-evening",
       "d": "2026-12-19",
       "b": "The Charleston Christmas Special (evening)",
       "dr": "6:00 PM",
@@ -1826,6 +2005,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-19-2026/event/2D00638B962BCBE0"
     },
     {
+      "id": "cmh-20261220-the-charleston-christmas-special",
       "d": "2026-12-20",
       "b": "The Charleston Christmas Special",
       "dr": "2:00 PM",
@@ -1834,6 +2014,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-20-2026/event/2D00638B96BCCE6A"
     },
     {
+      "id": "cmh-20261221-the-charleston-christmas-special",
       "d": "2026-12-21",
       "b": "The Charleston Christmas Special",
       "dr": "6:00 PM",
@@ -1842,6 +2023,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-21-2026/event/2D00638B96ECCF19"
     },
     {
+      "id": "cmh-20261222-the-charleston-christmas-special",
       "d": "2026-12-22",
       "b": "The Charleston Christmas Special",
       "dr": "6:00 PM",
@@ -1850,6 +2032,7 @@
       "u": "https://www.ticketmaster.com/the-charleston-christmas-special-charleston-south-carolina-12-22-2026/event/2D00638B96FACF44"
     },
     {
+      "id": "cmh-20261229-blue-dogs",
       "d": "2026-12-29",
       "b": "Blue Dogs",
       "dr": "7:00 PM",
@@ -1858,6 +2041,7 @@
       "u": "https://www.ticketmaster.com/the-blue-dogs-charleston-south-carolina-12-29-2026/event/2D0064B90BC59310"
     },
     {
+      "id": "cmh-20261231-futurebirds",
       "d": "2026-12-31",
       "b": "Futurebirds",
       "dr": "8:00 PM",
@@ -1866,6 +2050,7 @@
       "u": "https://www.ticketmaster.com/futurebirds-far-out-country-tour-charleston-south-carolina-12-31-2026/event/2D006512A719A062"
     },
     {
+      "id": "cmh-20270108-electric-avenue-the-80-s-mtv-experience",
       "d": "2027-01-08",
       "b": "Electric Avenue — The 80's MTV Experience",
       "dr": "7:00 PM",
@@ -1874,6 +2059,7 @@
       "u": "https://www.ticketmaster.com/electric-avenue-the-80s-mtv-experience-charleston-south-carolina-01-08-2027/event/2D006503A093862A"
     },
     {
+      "id": "ph-20270110-carbon-leaf",
       "d": "2027-01-10",
       "b": "Carbon Leaf",
       "dr": "7:30 PM",
@@ -1884,6 +2070,7 @@
       "dop": 30
     },
     {
+      "id": "cmh-20270116-the-black-jacket-symphony-presents-micha",
       "d": "2027-01-16",
       "b": "The Black Jacket Symphony Presents Michael Jackson's 'Thriller'",
       "dr": "6:30 PM",
@@ -1892,6 +2079,7 @@
       "u": "https://www.ticketmaster.com/the-black-jacket-symphony-presents-michael-charleston-south-carolina-01-16-2027/event/2D0065139B009FB1"
     },
     {
+      "id": "cmh-20270120-leo-kottke",
       "d": "2027-01-20",
       "b": "Leo Kottke",
       "dr": "7:00 PM",
@@ -1900,6 +2088,7 @@
       "u": "https://www.ticketmaster.com/leo-kottke-charleston-south-carolina-01-21-2026/event/2D006342EF7FA811"
     },
     {
+      "id": "cmh-20270219-three-dog-night-new-date",
       "d": "2027-02-19",
       "b": "Three Dog Night (New Date)",
       "o": "Jay Psaros",
@@ -1909,6 +2098,7 @@
       "u": "https://www.ticketmaster.com/three-dog-night-charleston-south-carolina-08-22-2026/event/2D00648889FE8567"
     },
     {
+      "id": "cmh-20270225-michelle-branch",
       "d": "2027-02-25",
       "b": "Michelle Branch",
       "dr": "7:00 PM",
@@ -1917,6 +2107,7 @@
       "u": "https://www.ticketmaster.com/michelle-branch-everywhere-and-back-again-charleston-south-carolina-02-25-2027/event/2D00650C90A56F93"
     },
     {
+      "id": "cmh-20270505-leonid-friends-tribute-to-the-music-of-c",
       "d": "2027-05-05",
       "b": "Leonid & Friends — Tribute to the Music of Chicago",
       "dr": "6:30 PM",
@@ -1925,6 +2116,7 @@
       "u": "https://www.ticketmaster.com/leonid-friends-tribute-to-the-music-charleston-south-carolina-05-05-2027/event/2D0064DEEAA4F15A"
     },
     {
+      "id": "mf-20260829-the-midnight-city",
       "d": "2026-08-29",
       "b": "The Midnight City",
       "dr": "7:00 PM",
@@ -1933,6 +2125,7 @@
       "u": "https://www.axs.com/events/the-midnight-city-tickets"
     },
     {
+      "id": "mf-20260903-the-aquabats",
       "d": "2026-09-03",
       "b": "The Aquabats!",
       "o": "Crazy and the Brains, Sullvn",
@@ -1942,6 +2135,7 @@
       "u": "https://www.ticketmaster.com/the-aquabats-charleston-south-carolina-09-03-2026/event/2D006483E40F443D"
     },
     {
+      "id": "mf-20260905-xavier-wulf",
       "d": "2026-09-05",
       "b": "Xavier Wulf",
       "dr": "7:00 PM",
@@ -1950,6 +2144,7 @@
       "u": "https://www.ticketmaster.com/xavier-wulf-presents-the-cool-world-charleston-south-carolina-09-05-2026/event/2D0064F1B84B157F"
     },
     {
+      "id": "mf-20260909-cheekface",
       "d": "2026-09-09",
       "b": "Cheekface",
       "o": "Catbite",
@@ -1959,6 +2154,7 @@
       "u": "https://www.ticketmaster.com/cheekface-w-special-guest-catbite-charleston-south-carolina-09-09-2026/event/2D006474E99EDB46"
     },
     {
+      "id": "mf-20260910-los-mirlos",
       "d": "2026-09-10",
       "b": "Los Mirlos",
       "dr": "7:30 PM",
@@ -1967,6 +2163,7 @@
       "u": "https://www.ticketmaster.com/los-mirlos-charleston-south-carolina-09-10-2026/event/2D0064F5D02A4DE3"
     },
     {
+      "id": "mf-20260911-the-bouncing-souls",
       "d": "2026-09-11",
       "b": "The Bouncing Souls",
       "o": "The Suicide Machines, Strike Anywhere, Human Issue",
@@ -1977,6 +2174,7 @@
       "lowTix": true
     },
     {
+      "id": "mf-20260913-kota-the-friend",
       "d": "2026-09-13",
       "b": "Kota the Friend",
       "dr": "7:00 PM",
@@ -1985,6 +2183,7 @@
       "u": "https://www.ticketmaster.com/kota-the-friend-charleston-south-carolina-09-13-2026/event/2D0064E891BB8D6E"
     },
     {
+      "id": "mf-20260916-the-browning",
       "d": "2026-09-16",
       "b": "The Browning",
       "o": "Deadlands, Extortionist, Blind Equation",
@@ -1994,6 +2193,7 @@
       "u": "https://www.ticketmaster.com/the-browning-charleston-south-carolina-09-16-2026/event/2D0064A8A84FB41B"
     },
     {
+      "id": "mf-20260917-cortney-lacorte",
       "d": "2026-09-17",
       "b": "Cortney LaCorte",
       "o": "Includes a signed copy + meet & greet",
@@ -2004,6 +2204,7 @@
       "lowTix": true
     },
     {
+      "id": "mf-20260918-jet",
       "d": "2026-09-18",
       "b": "JET",
       "o": "The Retrograde",
@@ -2013,6 +2214,7 @@
       "u": "https://www.ticketmaster.com/jet-down-the-moonlit-mile-revue-charleston-south-carolina-09-18-2026/event/2D006472CB636950"
     },
     {
+      "id": "mf-20261003-infinity-song",
       "d": "2026-10-03",
       "b": "Infinity Song",
       "dr": "7:30 PM",
@@ -2021,6 +2223,7 @@
       "u": "https://www.ticketmaster.com/infinity-song-world-tour-ii-continues-charleston-south-carolina-03-30-2026/event/2D00638BDCD4CC96"
     },
     {
+      "id": "mf-20261004-he-is-legend",
       "d": "2026-10-04",
       "b": "He Is Legend",
       "o": "In Angles, Excide",
@@ -2030,6 +2233,7 @@
       "u": "https://www.ticketmaster.com/he-is-legend-time-travel-tour-charleston-south-carolina-10-04-2026/event/2D00650A97E684E1"
     },
     {
+      "id": "mf-20261006-joey-cash",
       "d": "2026-10-06",
       "b": "Joey Cash",
       "dr": "7:30 PM",
@@ -2038,6 +2242,7 @@
       "u": "https://www.ticketmaster.com/joey-cash-charleston-south-carolina-10-06-2026/event/2D006518ED78F096"
     },
     {
+      "id": "mf-20261007-willow-avalon",
       "d": "2026-10-07",
       "b": "Willow Avalon",
       "o": "Clover County, KADY ZADORA",
@@ -2047,6 +2252,7 @@
       "u": "https://www.ticketmaster.com/willow-avalon-pink-pocket-pistol-tour-charleston-south-carolina-10-07-2026/event/2D006496FC9BE843"
     },
     {
+      "id": "mf-20261008-russian-circles",
       "d": "2026-10-08",
       "b": "Russian Circles",
       "dr": "7:30 PM",
@@ -2056,6 +2262,7 @@
       "o": "Pelican"
     },
     {
+      "id": "mf-20261009-high-june",
       "d": "2026-10-09",
       "b": "High June",
       "dr": "7:30 PM",
@@ -2065,6 +2272,7 @@
       "o": "Cadalay"
     },
     {
+      "id": "mf-20261010-balthvs",
       "d": "2026-10-10",
       "b": "BALTHVS",
       "dr": "7:00 PM",
@@ -2073,6 +2281,7 @@
       "u": "https://www.ticketmaster.com/balthvs-charleston-south-carolina-10-10-2026/event/2D0064F8B6CFFD3D"
     },
     {
+      "id": "mf-20261011-oct-on-company-time",
       "d": "2026-10-11",
       "b": "OCT (On Company Time)",
       "o": "Lewky",
@@ -2082,6 +2291,7 @@
       "u": "https://www.ticketmaster.com/oct-on-company-time-charleston-south-carolina-10-11-2026/event/2D00648FAF60234E"
     },
     {
+      "id": "mf-20261014-nevertel",
       "d": "2026-10-14",
       "b": "Nevertel",
       "o": "Rivals, Ocean Sleeper",
@@ -2091,6 +2301,7 @@
       "u": "https://www.ticketmaster.com/nevertel-charleston-south-carolina-10-14-2026/event/2D0064BCA6821C14"
     },
     {
+      "id": "mf-20261015-sunn-o",
       "d": "2026-10-15",
       "b": "sunn O)))",
       "o": "Shane Parish",
@@ -2100,6 +2311,7 @@
       "u": "https://www.ticketmaster.com/sunn-o-charleston-south-carolina-10-15-2026/event/2D0064E9C3CA4FF9"
     },
     {
+      "id": "mf-20261016-eddie-9v",
       "d": "2026-10-16",
       "b": "Eddie 9V",
       "o": "Eddie Bush",
@@ -2109,6 +2321,7 @@
       "u": "https://www.ticketmaster.com/eddie-9v-charleston-south-carolina-10-16-2026/event/2D0064FDACE5E611"
     },
     {
+      "id": "mf-20261020-scene-queen",
       "d": "2026-10-20",
       "b": "Scene Queen",
       "o": "Bailey Spinn, WARGASM",
@@ -2118,6 +2331,7 @@
       "u": "https://www.ticketmaster.com/scene-queen-metalicious-charleston-south-carolina-10-20-2026/event/2D0064C3B911A737"
     },
     {
+      "id": "mf-20261021-alana-springsteen",
       "d": "2026-10-21",
       "b": "Alana Springsteen",
       "o": "Kyle Schuesler",
@@ -2127,6 +2341,7 @@
       "u": "https://www.ticketmaster.com/alana-springsteen-i-hope-this-helps-charleston-south-carolina-10-21-2026/event/2D00649EF5FEBE51"
     },
     {
+      "id": "mf-20261022-blake-whiten",
       "d": "2026-10-22",
       "b": "Blake Whiten",
       "o": "Slater Nalley",
@@ -2137,6 +2352,7 @@
       "lowTix": true
     },
     {
+      "id": "mf-20261029-hex-appeal-all-killer-no-filler",
       "d": "2026-10-29",
       "b": "Hex Appeal: All Killer No Filler",
       "o": "Out on a Limb, Jerkweed",
@@ -2146,6 +2362,7 @@
       "u": "https://www.ticketmaster.com/hex-appeal-all-killer-no-filler-charleston-south-carolina-10-29-2026/event/2D0064F60FC28CDD"
     },
     {
+      "id": "mf-20261106-ajj",
       "d": "2026-11-06",
       "b": "AJJ",
       "o": "Greet Death",
@@ -2155,6 +2372,7 @@
       "u": "https://www.ticketmaster.com/ajj-charleston-south-carolina-11-06-2026/event/2D00650492997D2E"
     },
     {
+      "id": "mf-20261107-holywatr",
       "d": "2026-11-07",
       "b": "Holywatr",
       "dr": "7:30 PM",
@@ -2163,6 +2381,7 @@
       "u": "https://www.ticketmaster.com/holywatr-charleston-south-carolina-11-07-2026/event/2D0064C2A6D59FF0"
     },
     {
+      "id": "mf-20261112-wesghost",
       "d": "2026-11-12",
       "b": "WesGhost",
       "dr": "7:30 PM",
@@ -2171,6 +2390,7 @@
       "u": "https://www.ticketmaster.com/wesghost-if-its-not-forever-the-charleston-south-carolina-11-12-2026/event/2D0064C8BDF484C4"
     },
     {
+      "id": "mf-20261113-the-wrecks",
       "d": "2026-11-13",
       "b": "The Wrecks",
       "o": "Worry Club, Kid Sistr",
@@ -2180,6 +2400,7 @@
       "u": "https://www.ticketmaster.com/the-wrecks-finally-outside-tour-charleston-south-carolina-11-13-2026/event/2D0064D2A045DDC9"
     },
     {
+      "id": "mf-20261118-austin-snell",
       "d": "2026-11-18",
       "b": "Austin Snell",
       "dr": "7:00 PM",
@@ -2188,6 +2409,7 @@
       "u": "https://www.ticketmaster.com/austin-snell-charleston-south-carolina-11-14-2026/event/2D0065069D44A682"
     },
     {
+      "id": "mf-20261119-born-of-osiris-x-miss-may-i",
       "d": "2026-11-19",
       "b": "Born Of Osiris x Miss May I",
       "o": "Convictions, Downswing",
@@ -2197,6 +2419,7 @@
       "u": "https://www.ticketmaster.com/born-of-osiris-x-miss-may-charleston-south-carolina-11-19-2026/event/2D00650A953B7F5E"
     },
     {
+      "id": "mf-20261121-kurt-vile-the-violators",
       "d": "2026-11-21",
       "b": "Kurt Vile & the Violators",
       "o": "Twisted Teens",
@@ -2208,6 +2431,7 @@
       "soldOut": true
     },
     {
+      "id": "mf-20261122-the-bends",
       "d": "2026-11-22",
       "b": "The Bends",
       "o": "Foxtide",
@@ -2217,6 +2441,7 @@
       "u": "https://www.ticketmaster.com/the-bends-charleston-south-carolina-11-22-2026/event/2D0064B5D884F63D"
     },
     {
+      "id": "mf-20270130-jupiter-coyote",
       "d": "2027-01-30",
       "b": "Jupiter Coyote",
       "dr": "6:00 PM",
@@ -2226,6 +2451,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cjf-20270411-charleston-jazz-festival",
       "d": "2027-04-11",
       "e": "2027-04-20",
       "b": "Charleston Jazz Festival",
@@ -2234,6 +2460,7 @@
       "u": "https://charlestonjazz.com/performance/charleston-jazz-festival/"
     },
     {
+      "id": "ncc-20261114-travis-tritt",
       "d": "2026-11-14",
       "b": "Travis Tritt",
       "o": "Tyler Reese Tritt",
@@ -2245,6 +2472,7 @@
       "flag": "Rescheduled from 2026-09-26 per the venue's event page (same Ticketmaster event; earlier tickets valid)."
     },
     {
+      "id": "ncc-20261002-sugarland-ride-or-die-tour",
       "d": "2026-10-02",
       "b": "Sugarland — Ride or Die Tour",
       "s": "Coliseum",
@@ -2255,6 +2483,7 @@
       "o": "Payton Sullivan"
     },
     {
+      "id": "ncc-20261009-mercyme",
       "d": "2026-10-09",
       "b": "MercyMe",
       "o": "Jeremy Camp, Tim Timmons, Sam Wesley",
@@ -2266,6 +2495,7 @@
       "p": 25
     },
     {
+      "id": "ncc-20261027-rumours-of-fleetwood-mac-tribute",
       "d": "2026-10-27",
       "b": "Rumours of Fleetwood Mac (Tribute)",
       "s": "Performing Arts Center",
@@ -2275,6 +2505,7 @@
       "u": "https://www.ticketmaster.com/event/2D0064D0F7556BD8"
     },
     {
+      "id": "ncc-20261107-wynonna-judd-the-hard-truth-tour",
       "d": "2026-11-07",
       "b": "Wynonna Judd — The Hard Truth Tour",
       "s": "Performing Arts Center",
@@ -2284,6 +2515,7 @@
       "u": "https://www.ticketmaster.com/event/2D0064FCEEC7B5A3"
     },
     {
+      "id": "ncc-20261124-mannheim-steamroller",
       "d": "2026-11-24",
       "b": "Mannheim Steamroller",
       "s": "Performing Arts Center",
@@ -2293,6 +2525,7 @@
       "u": "https://www.ticketmaster.com/event/2D0064E611E9D772"
     },
     {
+      "id": "ncc-20261128-lindsey-stirling-the-snow-waltz-tour",
       "d": "2026-11-28",
       "b": "Lindsey Stirling — The Snow Waltz Tour",
       "s": "Performing Arts Center",
@@ -2302,6 +2535,7 @@
       "u": "https://www.ticketmaster.com/event/2D0065122A76372E"
     },
     {
+      "id": "ncc-20261202-a-motown-christmas",
       "d": "2026-12-02",
       "b": "A Motown Christmas",
       "s": "Performing Arts Center",
@@ -2311,6 +2545,7 @@
       "u": "https://www.ticketmaster.com/event/2D00646CAE94F131"
     },
     {
+      "id": "ncc-20261203-christmas-with-chris-tomlin",
       "d": "2026-12-03",
       "b": "Christmas with Chris Tomlin",
       "s": "Performing Arts Center",
@@ -2320,6 +2555,7 @@
       "u": "https://www.ticketmaster.com/event/2D0065182AFC5CFD"
     },
     {
+      "id": "ncc-20270311-joe-bonamassa",
       "d": "2027-03-11",
       "b": "Joe Bonamassa",
       "s": "Performing Arts Center",
@@ -2329,6 +2565,7 @@
       "u": "https://www.ticketmaster.com/event/2D0064D095D3B4DB"
     },
     {
+      "id": "ph-20260907-the-headstrings-collective",
       "d": "2026-09-07",
       "b": "The Headstrings Collective",
       "o": "Monday Muse",
@@ -2340,6 +2577,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20260919-piano-legends-charleston-jazz-orchestra",
       "d": "2026-09-19",
       "b": "Piano Legends — Charleston Jazz Orchestra",
       "v": "CMH",
@@ -2347,6 +2585,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20260904-baby-fat",
       "d": "2026-09-04",
       "b": "Baby Fat",
       "s": "Inside Stage",
@@ -2356,6 +2595,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20260906-reverse-cowgirl",
       "d": "2026-09-06",
       "b": "Reverse Cowgirl",
       "s": "Inside Stage",
@@ -2364,6 +2604,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "fd-20260906-needtobreathe-the-long-surrender-tour",
       "d": "2026-09-06",
       "b": "NEEDTOBREATHE — The Long Surrender Tour",
       "o": "Drew and Ellie Holcomb",
@@ -2372,6 +2613,7 @@
       "u": "https://fireflydistillery.com/event/live-at-firefly-with-needtobreathe-the-long-surrender-tour/"
     },
     {
+      "id": "fd-20260910-billy-currington-kip-moore",
       "d": "2026-09-10",
       "b": "Billy Currington & Kip Moore",
       "sh": "7:00 PM",
@@ -2379,6 +2621,7 @@
       "u": "https://fireflydistillery.com/event/live-at-firefly-with-billy-currington-kip-moore-live/"
     },
     {
+      "id": "fd-20260922-charley-crockett-age-of-the-ram-tour",
       "d": "2026-09-22",
       "b": "Charley Crockett — Age of the Ram Tour",
       "sh": "7:00 PM",
@@ -2386,6 +2629,7 @@
       "u": "https://fireflydistillery.com/event/live-at-firefly-with-charley-crockett/"
     },
     {
+      "id": "fd-20261002-turnpike-troubadours",
       "d": "2026-10-02",
       "b": "Turnpike Troubadours",
       "sh": "6:00 PM",
@@ -2393,11 +2637,13 @@
       "u": "https://fireflydistillery.com/event/live-at-firefly-with-turnpike-troubadours/"
     },
     {
+      "id": "nrb-20260919-oktoberfest-at-new-realm-live-music-all",
       "d": "2026-09-19",
       "b": "Oktoberfest at New Realm — Live Music All Day",
       "v": "NRB"
     },
     {
+      "id": "gc-20260904-lowcountry-jazz-festival-2026-the-all-wh",
       "d": "2026-09-04",
       "b": "Lowcountry Jazz Festival 2026: The All White Party",
       "sh": "7:00 PM",
@@ -2405,6 +2651,7 @@
       "u": "https://gaillardcenter.org/events/lowcountry-jazz-festival-2026-the-all-white-party/"
     },
     {
+      "id": "gc-20260905-lowcountry-jazz-festival-2026-day-one",
       "d": "2026-09-05",
       "b": "Lowcountry Jazz Festival 2026: Day One",
       "sh": "7:00 PM",
@@ -2412,6 +2659,7 @@
       "u": "https://gaillardcenter.org/seat-selector?performance=55886"
     },
     {
+      "id": "gc-20260906-lowcountry-jazz-festival-2026-day-two",
       "d": "2026-09-06",
       "b": "Lowcountry Jazz Festival 2026: Day Two",
       "sh": "7:00 PM",
@@ -2419,6 +2667,7 @@
       "u": "https://gaillardcenter.org/seat-selector?performance=55888"
     },
     {
+      "id": "gc-20261015-black-violin",
       "d": "2026-10-15",
       "b": "Black Violin",
       "sh": "7:30 PM",
@@ -2426,6 +2675,7 @@
       "u": "https://gaillardcenter.org/seat-selector?performance=55837"
     },
     {
+      "id": "gc-20261020-chucho-valdes-85th-birthday-celebration",
       "d": "2026-10-20",
       "b": "Chucho Valdés 85th Birthday Celebration",
       "sh": "7:30 PM",
@@ -2433,6 +2683,7 @@
       "u": "https://gaillardcenter.org/seat-selector?performance=56195"
     },
     {
+      "id": "gc-20261025-ghostbusters-in-concert",
       "d": "2026-10-25",
       "b": "Ghostbusters in Concert",
       "sh": "6:00 PM",
@@ -2440,6 +2691,7 @@
       "u": "https://gaillardcenter.org/seat-selector?performance=55169"
     },
     {
+      "id": "gc-20261122-an-evening-with-renee-elise-goldsberry",
       "d": "2026-11-22",
       "b": "An Evening with Renée Elise Goldsberry",
       "sh": "7:00 PM",
@@ -2447,6 +2699,7 @@
       "u": "https://gaillardcenter.org/seat-selector?performance=55828"
     },
     {
+      "id": "ra-20260905-never-really-over",
       "d": "2026-09-05",
       "b": "Never Really Over",
       "o": "Sunhouse, Erin Indigo",
@@ -2456,6 +2709,7 @@
       "u": "http://www.theroyalamerican.com/schedule/never-really-over-9-5-26"
     },
     {
+      "id": "ra-20260910-campbell-sons",
       "d": "2026-09-10",
       "b": "Campbell & Sons",
       "dr": "9:00 PM",
@@ -2464,6 +2718,7 @@
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-9-10-26"
     },
     {
+      "id": "ra-20260911-haunters",
       "d": "2026-09-11",
       "b": "Haunters",
       "o": "Windley, Sigourney's",
@@ -2473,6 +2728,7 @@
       "u": "http://www.theroyalamerican.com/schedule/haunters-9-11-26"
     },
     {
+      "id": "ra-20260912-jerkweed",
       "d": "2026-09-12",
       "b": "Jerkweed",
       "o": "Pocket Full Of Shells",
@@ -2482,6 +2738,7 @@
       "u": "http://www.theroyalamerican.com/schedule/jerkweed-9-12-26"
     },
     {
+      "id": "ra-20260917-campbell-sons",
       "d": "2026-09-17",
       "b": "Campbell & Sons",
       "dr": "9:00 PM",
@@ -2490,6 +2747,7 @@
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-9-17-26"
     },
     {
+      "id": "ra-20260918-dog-named-squid-album-release",
       "d": "2026-09-18",
       "b": "Dog Named Squid (Album Release)",
       "o": "The Boonies, Social Void",
@@ -2499,6 +2757,7 @@
       "u": "http://www.theroyalamerican.com/schedule/dog-namewd-squid-9-18-26"
     },
     {
+      "id": "ra-20260919-mommy-s-little-monster-social-distortion",
       "d": "2026-09-19",
       "b": "Mommy's Little Monster (Social Distortion Tribute)",
       "o": "Super Runaway, Modern Fires",
@@ -2508,6 +2767,7 @@
       "u": "http://www.theroyalamerican.com/schedule/mommys-little-monster-9-19-26"
     },
     {
+      "id": "ra-20260924-campbell-sons",
       "d": "2026-09-24",
       "b": "Campbell & Sons",
       "dr": "9:00 PM",
@@ -2516,6 +2776,7 @@
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-9-24-26"
     },
     {
+      "id": "ra-20260925-mindwater",
       "d": "2026-09-25",
       "b": "Mindwater",
       "o": "Impending Joy, Concept Rxch",
@@ -2525,6 +2786,7 @@
       "u": "http://www.theroyalamerican.com/schedule/mindwater-9-25-26"
     },
     {
+      "id": "ra-20260926-maraluso",
       "d": "2026-09-26",
       "b": "Maraluso",
       "o": "Visit Neptune, Stono River Project",
@@ -2534,6 +2796,7 @@
       "u": "http://www.theroyalamerican.com/schedule/maraluso-9-26-26"
     },
     {
+      "id": "ra-20261001-campbell-sons",
       "d": "2026-10-01",
       "b": "Campbell & Sons",
       "dr": "9:00 PM",
@@ -2542,6 +2805,7 @@
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-10-1-26"
     },
     {
+      "id": "ra-20261002-daddy-s-beemer",
       "d": "2026-10-02",
       "b": "Daddy's Beemer",
       "o": "Sunhouse",
@@ -2551,6 +2815,7 @@
       "u": "http://www.theroyalamerican.com/schedule/daddys-beemer-10-2-26"
     },
     {
+      "id": "ra-20261003-meredith-foster",
       "d": "2026-10-03",
       "b": "Meredith Foster",
       "o": "Macelyn Batten, Bennett Bost",
@@ -2560,6 +2825,7 @@
       "u": "http://www.theroyalamerican.com/schedule/meredith-foster-10-3-26"
     },
     {
+      "id": "ra-20261009-beau-monde",
       "d": "2026-10-09",
       "b": "Beau Monde",
       "o": "Gritty Flyright, Sidecar",
@@ -2569,6 +2835,7 @@
       "u": "http://www.theroyalamerican.com/schedule/beau-monde-10-9-26"
     },
     {
+      "id": "ra-20261016-nick-matthews",
       "d": "2026-10-16",
       "b": "Nick Matthews",
       "o": "Olympic Blvd, Kendall Wase",
@@ -2578,6 +2845,7 @@
       "u": "http://www.theroyalamerican.com/schedule/nick-matthews-10-16-26"
     },
     {
+      "id": "ra-20261017-campbell-sons-50th-anniversary-show",
       "d": "2026-10-17",
       "b": "Campbell & Sons — 50th Anniversary Show",
       "dr": "9:00 PM",
@@ -2586,6 +2854,7 @@
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-10-17-26"
     },
     {
+      "id": "ra-20261023-sounds-of-blackfox",
       "d": "2026-10-23",
       "b": "Sounds of BlackFox",
       "o": "Royal Tide, Gator Food",
@@ -2595,6 +2864,7 @@
       "u": "http://www.theroyalamerican.com/schedule/sounds-of-blackfox-10-23-26"
     },
     {
+      "id": "ra-20261024-nordista-freeze",
       "d": "2026-10-24",
       "b": "Nordista Freeze",
       "o": "Camisole",
@@ -2604,6 +2874,7 @@
       "u": "http://www.theroyalamerican.com/schedule/nordista-freeze-10-24-26"
     },
     {
+      "id": "ra-20261030-boogieman-vi-kick-off-party",
       "d": "2026-10-30",
       "b": "Boogieman VI Kick-Off Party",
       "o": "The Saint Cecilia",
@@ -2613,6 +2884,7 @@
       "u": "http://www.theroyalamerican.com/schedule/boogieman-kick-off-party-10-30-26"
     },
     {
+      "id": "ra-20261031-6th-annual-boogieman-halloween-festival",
       "d": "2026-10-31",
       "b": "6th Annual Boogieman Halloween Festival",
       "o": "15 bands across 2 stages",
@@ -2622,6 +2894,7 @@
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85050"
     },
     {
+      "id": "ra-20261106-the-smoaks",
       "d": "2026-11-06",
       "b": "The Smoaks",
       "o": "Nick Matthews",
@@ -2631,6 +2904,7 @@
       "u": "http://www.theroyalamerican.com/schedule/the-smoaks-11-6-26"
     },
     {
+      "id": "ra-20261107-tyrie",
       "d": "2026-11-07",
       "b": "Tyrie",
       "o": "Slim S.O.U.L., DJ DollaMenu, JT Rawww",
@@ -2640,6 +2914,7 @@
       "u": "http://www.theroyalamerican.com/schedule/tyrie-11-7-26"
     },
     {
+      "id": "ra-20261113-kenny-george-band",
       "d": "2026-11-13",
       "b": "Kenny George Band",
       "dr": "9:00 PM",
@@ -2648,6 +2923,7 @@
       "u": "http://www.theroyalamerican.com/schedule/kenny-george-band-11-13-26"
     },
     {
+      "id": "ra-20261114-the-head",
       "d": "2026-11-14",
       "b": "The Head",
       "o": "Emma Grace Burton, Lilly Hartle",
@@ -2657,6 +2933,7 @@
       "u": "http://www.theroyalamerican.com/schedule/the-head-11-14-26"
     },
     {
+      "id": "ra-20261120-hotel-hugo",
       "d": "2026-11-20",
       "b": "Hotel Hugo",
       "o": "Yesterday's Clothes",
@@ -2666,6 +2943,7 @@
       "u": "http://www.theroyalamerican.com/schedule/hotel-hugo-11-20-26"
     },
     {
+      "id": "ra-20261121-buko-boys",
       "d": "2026-11-21",
       "b": "Buko Boys",
       "o": "Winterteeth, Never Really Over",
@@ -2675,6 +2953,7 @@
       "u": "http://www.theroyalamerican.com/schedule/buko-boys-11-21-26"
     },
     {
+      "id": "ra-20261127-c-shreve-the-professor",
       "d": "2026-11-27",
       "b": "C. Shreve The Professor",
       "dr": "9:00 PM",
@@ -2683,6 +2962,7 @@
       "u": "http://www.theroyalamerican.com/schedule/c-shreve-the-professor-11-27-26"
     },
     {
+      "id": "ra-20261128-north-by-north",
       "d": "2026-11-28",
       "b": "North By North",
       "o": "Thoroughfare, Garter",
@@ -2692,6 +2972,7 @@
       "u": "http://www.theroyalamerican.com/schedule/north-by-north-11-28-26"
     },
     {
+      "id": "ra-20261204-the-defilers",
       "d": "2026-12-04",
       "b": "The Defilers",
       "o": "Jared Petteys",
@@ -2701,6 +2982,7 @@
       "u": "http://www.theroyalamerican.com/schedule/the-defilers-12-4-26"
     },
     {
+      "id": "ra-20261205-rap-a-lot-royal-finale",
       "d": "2026-12-05",
       "b": "Rap-A-Lot: Royal Finale",
       "o": "DC, THRY, ShogunRew, Mahatma Mook, JxShamar, Amaru tha God, DJ Ovets, Special Guests",
@@ -2710,6 +2992,7 @@
       "u": "http://www.theroyalamerican.com/schedule/rap-a-lot-12-5-26"
     },
     {
+      "id": "ra-20261211-carls",
       "d": "2026-12-11",
       "b": "CARLS",
       "o": "The Inhibitors",
@@ -2719,6 +3002,7 @@
       "u": "http://www.theroyalamerican.com/schedule/carls-12-11-26"
     },
     {
+      "id": "ra-20261213-14th-annual-royal-american-biker-oyster",
       "d": "2026-12-13",
       "b": "14th Annual Royal American Biker Oyster Roast",
       "dr": "1:00 PM",
@@ -2728,6 +3012,7 @@
       "u": "http://www.theroyalamerican.com/schedule/14-annual-biker-oyster-roast-12-13-26"
     },
     {
+      "id": "ra-20261219-campbell-brown-s-holiday-show",
       "d": "2026-12-19",
       "b": "Campbell Brown's Holiday Show",
       "dr": "9:00 PM",
@@ -2736,6 +3021,7 @@
       "u": "http://www.theroyalamerican.com/schedule/campbell-brown-holiday-show-12-19-26"
     },
     {
+      "id": "ra-20270129-north-by-north",
       "d": "2027-01-29",
       "b": "North By North",
       "o": "The Fiori, The Boonies",
@@ -2745,6 +3031,7 @@
       "u": "http://www.theroyalamerican.com/schedule/north-by-north-1-29-27"
     },
     {
+      "id": "tr-20260902-sheer-terror",
       "d": "2026-09-02",
       "b": "Sheer Terror",
       "o": "South Held Social Club, D.I.E., Exaggerators",
@@ -2755,6 +3042,7 @@
       "p": 20
     },
     {
+      "id": "tr-20260921-major-moment",
       "d": "2026-09-21",
       "b": "Major Moment",
       "dr": "6:00 PM",
@@ -2766,6 +3054,7 @@
       "dop": 20
     },
     {
+      "id": "tr-20261008-stop-drop-rewind",
       "d": "2026-10-08",
       "b": "Stop.Drop.Rewind",
       "dr": "7:00 PM",
@@ -2776,6 +3065,7 @@
       "p": 10
     },
     {
+      "id": "tr-20261028-infinitefreefall",
       "d": "2026-10-28",
       "b": "Infinitefreefall",
       "sh": "8:00 PM",
@@ -2786,6 +3076,7 @@
       "p": 10
     },
     {
+      "id": "wj-20260912-high-5",
       "d": "2026-09-12",
       "b": "High 5",
       "s": "Inside Stage",
@@ -2794,6 +3085,7 @@
       "u": "https://the-windjammer.com/event/high-5-on-the-inside-stage-9/"
     },
     {
+      "id": "wj-20261205-tobacco-road-wim-tapley-the-cannons",
       "d": "2026-12-05",
       "b": "Tobacco Road + Wim Tapley & The Cannons",
       "s": "Inside Stage",
@@ -2804,6 +3096,7 @@
       "dop": 25
     },
     {
+      "id": "ref-20260911-tfobv-drums",
       "d": "2026-09-11",
       "b": "TFOBV Drums",
       "sh": "6:00 PM",
@@ -2811,6 +3104,7 @@
       "u": "https://www.bandsintown.com/e/1039403028-tfobv-drums-at-the-refinery-charleston"
     },
     {
+      "id": "mf-20261120-winter-solstice-ball",
       "d": "2026-11-20",
       "b": "Winter Solstice Ball",
       "dr": "8:00 PM",
@@ -2821,6 +3115,7 @@
       "flag": "Hybrid event: venue's own event-page description confirms a live string trio performs early in the evening (\"blending Vitamin String Quartet elegance with Bridgerton/booktok drama\") before DJ ALX takes over; included per the hybrid-event exception rule."
     },
     {
+      "id": "ph-20260906-schur",
       "d": "2026-09-06",
       "b": "Schur",
       "o": "Fai Laci",
@@ -2833,6 +3128,7 @@
       "added": "2026-09-04"
     },
     {
+      "id": "ph-20260913-shelby-kemp-trio",
       "d": "2026-09-13",
       "b": "Shelby Kemp Trio",
       "dr": "6:30 PM",
@@ -2844,6 +3140,7 @@
       "added": "2026-09-04"
     },
     {
+      "id": "ph-20260914-the-headstrings-collective-monday-muse",
       "d": "2026-09-14",
       "b": "The Headstrings Collective – Monday Muse",
       "dr": "5:00 PM",
@@ -2855,6 +3152,7 @@
       "added": "2026-09-04"
     },
     {
+      "id": "ph-20260920-andy-thomas",
       "d": "2026-09-20",
       "b": "Andy Thomas",
       "o": "Macelyn Batten",
@@ -2868,6 +3166,7 @@
       "dop": 15
     },
     {
+      "id": "ph-20260921-the-headstrings-collective-monday-muse",
       "d": "2026-09-21",
       "b": "The Headstrings Collective – Monday Muse",
       "dr": "5:00 PM",
@@ -2879,6 +3178,7 @@
       "added": "2026-09-04"
     },
     {
+      "id": "ph-20260925-reedy-river-string-band",
       "d": "2026-09-25",
       "b": "Reedy River String Band",
       "dr": "5:00 PM",
@@ -2890,6 +3190,7 @@
       "added": "2026-09-04"
     },
     {
+      "id": "ph-20260928-the-headstrings-collective-monday-muse",
       "d": "2026-09-28",
       "b": "The Headstrings Collective – Monday Muse",
       "dr": "5:00 PM",
@@ -2901,6 +3202,7 @@
       "added": "2026-09-04"
     },
     {
+      "id": "ph-20261018-silverada",
       "d": "2026-10-18",
       "b": "Silverada",
       "o": "The Pink Stones",
@@ -2914,6 +3216,7 @@
       "dop": 25
     },
     {
+      "id": "fd-20261114-hudson-westbrook-the-hits-me-tour",
       "d": "2026-11-14",
       "b": "Hudson Westbrook — The Hits Me Tour",
       "v": "FD",
@@ -2921,6 +3224,7 @@
       "added": "2026-09-04"
     },
     {
+      "id": "ra-20261218-fancy-as-f-ck-our-15th-anniversary-party",
       "d": "2026-12-18",
       "b": "Fancy As F*ck: Our 15th Anniversary Party",
       "dr": "9:00 PM",
@@ -2930,6 +3234,7 @@
       "added": "2026-09-04"
     },
     {
+      "id": "cha-20260912-dans-tramp-stamp-the-money-bags",
       "d": "2026-09-12",
       "b": "Dan’s Tramp Stamp & the Money Bags",
       "sh": "6:00 PM",
@@ -2937,6 +3242,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260912-grayson-little",
       "d": "2026-09-12",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -2944,6 +3250,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20260913-bluegrass-harvest-farmers-market-w-the-b",
       "d": "2026-09-13",
       "b": "Bluegrass Harvest Farmers Market w/The Blue Plantation Band",
       "sh": "11:00 AM",
@@ -2952,6 +3259,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20260913-the-blue-plantation-band",
       "d": "2026-09-13",
       "b": "The Blue Plantation Band",
       "sh": "12:00 PM",
@@ -2959,6 +3267,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260913-lighthouse-band",
       "d": "2026-09-13",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
@@ -2966,6 +3275,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260913-flashmob",
       "d": "2026-09-13",
       "b": "FlashMob",
       "s": "Rooftop",
@@ -2974,6 +3284,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260915-connor-sage",
       "d": "2026-09-15",
       "b": "Connor Sage",
       "sh": "7:00 PM",
@@ -2981,6 +3292,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260915-five-door-sedan",
       "d": "2026-09-15",
       "b": "Five Door Sedan",
       "sh": "9:00 PM",
@@ -2988,6 +3300,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260916-ben-somerville",
       "d": "2026-09-16",
       "b": "Ben Somerville",
       "sh": "7:00 PM",
@@ -2995,6 +3308,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260916-southern-stomp",
       "d": "2026-09-16",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -3002,6 +3316,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20260917-colleen-lloy",
       "d": "2026-09-17",
       "b": "Colleen Lloy",
       "sh": "5:30 PM",
@@ -3009,6 +3324,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260917-of-the-heart",
       "d": "2026-09-17",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -3016,6 +3332,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260917-the-midnight-city-band",
       "d": "2026-09-17",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
@@ -3023,6 +3340,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20260918-moonlight-ale-halfway-to-st-paddys",
       "d": "2026-09-18",
       "b": "Moonlight Ale: Halfway to St Paddys",
       "sh": "6:00 PM",
@@ -3030,6 +3348,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260918-cooper-greer",
       "d": "2026-09-18",
       "b": "Cooper Greer",
       "sh": "9:00 PM",
@@ -3037,6 +3356,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20260919-battle-of-the-bands-competition",
       "d": "2026-09-19",
       "b": "Battle of the Bands Competition",
       "sh": "12:00 PM",
@@ -3045,6 +3365,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260919-grayson-little",
       "d": "2026-09-19",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -3052,6 +3373,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260920-flashmob",
       "d": "2026-09-20",
       "b": "FlashMob",
       "sh": "5:00 PM",
@@ -3059,6 +3381,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260920-lighthouse-band",
       "d": "2026-09-20",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
@@ -3066,6 +3389,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260922-grayson-little",
       "d": "2026-09-22",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -3073,6 +3397,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260923-ben-somerville",
       "d": "2026-09-23",
       "b": "Ben Somerville",
       "sh": "7:00 PM",
@@ -3080,6 +3405,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260923-southern-stomp",
       "d": "2026-09-23",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -3087,6 +3413,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260924-of-the-heart",
       "d": "2026-09-24",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -3094,6 +3421,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260924-the-midnight-city-band",
       "d": "2026-09-24",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
@@ -3101,6 +3429,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20260925-molly-durnin",
       "d": "2026-09-25",
       "b": "Molly Durnin",
       "sh": "7:00 PM",
@@ -3108,6 +3437,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260925-davis-the-love",
       "d": "2026-09-25",
       "b": "Davis & The Love",
       "sh": "9:00 PM",
@@ -3115,6 +3445,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260926-tyler-hammond",
       "d": "2026-09-26",
       "b": "Tyler Hammond",
       "sh": "9:00 PM",
@@ -3122,6 +3453,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20260927-guitar-center-student-showcase",
       "d": "2026-09-27",
       "b": "Guitar Center Student Showcase",
       "sh": "3:00 PM",
@@ -3130,6 +3462,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260927-tyler-hammond",
       "d": "2026-09-27",
       "b": "Tyler Hammond",
       "sh": "5:00 PM",
@@ -3137,6 +3470,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260927-lighthouse-band",
       "d": "2026-09-27",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
@@ -3144,6 +3478,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260929-grayson-little",
       "d": "2026-09-29",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -3151,6 +3486,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20260930-ben-somerville",
       "d": "2026-09-30",
       "b": "Ben Somerville",
       "sh": "7:00 PM",
@@ -3158,6 +3494,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20260930-southern-stomp",
       "d": "2026-09-30",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -3165,6 +3502,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "snob-20261001-of-the-heart",
       "d": "2026-10-01",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -3172,6 +3510,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261001-hit-or-miss",
       "d": "2026-10-01",
       "b": "Hit or Miss",
       "sh": "9:00 PM",
@@ -3179,6 +3518,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261002-rain-check",
       "d": "2026-10-02",
       "b": "Rain Check",
       "sh": "6:00 PM",
@@ -3186,6 +3526,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261002-first-friday-bbq-bluegrass-celebration",
       "d": "2026-10-02",
       "b": "First Friday BBQ & Bluegrass Celebration",
       "sh": "6:00 PM",
@@ -3194,6 +3535,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261002-take-your-shoes-off",
       "d": "2026-10-02",
       "b": "Take Your Shoes Off",
       "sh": "9:00 PM",
@@ -3201,6 +3543,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261003-doug-walters-live-at-commonhouse",
       "d": "2026-10-03",
       "b": "Doug Walters: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -3208,6 +3551,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261003-take-your-shoes-off",
       "d": "2026-10-03",
       "b": "Take Your Shoes Off",
       "sh": "9:00 PM",
@@ -3215,6 +3559,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261004-flashmob",
       "d": "2026-10-04",
       "b": "FlashMob",
       "sh": "5:00 PM",
@@ -3222,6 +3567,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261006-grayson-little",
       "d": "2026-10-06",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -3229,6 +3575,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261007-southern-stomp",
       "d": "2026-10-07",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -3236,6 +3583,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261008-the-midnight-city-band",
       "d": "2026-10-08",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
@@ -3243,6 +3591,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261009-justin-holt",
       "d": "2026-10-09",
       "b": "Justin Holt",
       "sh": "9:00 PM",
@@ -3250,6 +3599,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261010-justin-holt",
       "d": "2026-10-10",
       "b": "Justin Holt",
       "sh": "9:00 PM",
@@ -3257,6 +3607,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261011-the-blue-plantation-band",
       "d": "2026-10-11",
       "b": "The Blue Plantation Band",
       "sh": "12:00 PM",
@@ -3264,6 +3615,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261011-grayson-little",
       "d": "2026-10-11",
       "b": "Grayson Little",
       "sh": "5:00 PM",
@@ -3271,6 +3623,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261013-grayson-little",
       "d": "2026-10-13",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -3278,6 +3631,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261014-southern-stomp",
       "d": "2026-10-14",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -3285,6 +3639,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261015-colleen-lloy",
       "d": "2026-10-15",
       "b": "Colleen Lloy",
       "sh": "5:30 PM",
@@ -3292,6 +3647,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261016-kendell-live-at-commonhouse",
       "d": "2026-10-16",
       "b": "Kendell: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -3299,6 +3655,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261017-uncle-gary-s-band-live-at-commonhouse",
       "d": "2026-10-17",
       "b": "Uncle Gary's Band: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -3306,6 +3663,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261017-grayson-little",
       "d": "2026-10-17",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -3313,6 +3671,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261023-molly-durnin",
       "d": "2026-10-23",
       "b": "Molly Durnin",
       "sh": "7:00 PM",
@@ -3320,6 +3679,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261030-dans-tramp-stamp-the-money-bags",
       "d": "2026-10-30",
       "b": "Dan’s Tramp Stamp & the Money Bags",
       "sh": "7:00 PM",
@@ -3327,6 +3687,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261106-the-mud-minnows-first-friday-bbq-bluegra",
       "d": "2026-11-06",
       "b": "The Mud Minnows: First Friday BBQ & Bluegrass",
       "sh": "6:00 PM",
@@ -3334,6 +3695,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261106-first-friday-bbq-bluegrass-celebration",
       "d": "2026-11-06",
       "b": "First Friday BBQ & Bluegrass Celebration",
       "sh": "6:00 PM",
@@ -3342,6 +3704,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261108-the-blue-plantation-band",
       "d": "2026-11-08",
       "b": "The Blue Plantation Band",
       "sh": "12:00 PM",
@@ -3349,6 +3712,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261112-dallas-baker-and-friends",
       "d": "2026-11-12",
       "b": "Dallas Baker and Friends",
       "sh": "5:30 PM",
@@ -3356,6 +3720,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261119-colleen-lloy",
       "d": "2026-11-19",
       "b": "Colleen Lloy",
       "sh": "5:30 PM",
@@ -3363,6 +3728,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261120-dans-tramp-stamp-the-money-bags",
       "d": "2026-11-20",
       "b": "Dan’s Tramp Stamp & the Money Bags",
       "sh": "7:00 PM",
@@ -3370,6 +3736,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261127-molly-durnin",
       "d": "2026-11-27",
       "b": "Molly Durnin",
       "sh": "7:00 PM",
@@ -3377,6 +3744,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261204-southern-flavor-bluegrass",
       "d": "2026-12-04",
       "b": "Southern Flavor Bluegrass",
       "sh": "6:00 PM",
@@ -3384,6 +3752,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261204-first-friday-bbq-bluegrass-celebration",
       "d": "2026-12-04",
       "b": "First Friday BBQ & Bluegrass Celebration",
       "sh": "6:00 PM",
@@ -3392,6 +3761,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261212-annual-holiday-hootenanny",
       "d": "2026-12-12",
       "b": "Annual Holiday Hootenanny",
       "sh": "11:00 AM",
@@ -3400,6 +3770,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261212-dans-tramp-stamp-the-money-bags",
       "d": "2026-12-12",
       "b": "Dan’s Tramp Stamp & the Money Bags",
       "sh": "7:00 PM",
@@ -3407,6 +3778,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261213-the-blue-plantation-band",
       "d": "2026-12-13",
       "b": "The Blue Plantation Band",
       "sh": "12:00 PM",
@@ -3414,6 +3786,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cha-20261217-colleen-lloy",
       "d": "2026-12-17",
       "b": "Colleen Lloy",
       "sh": "5:30 PM",
@@ -3421,6 +3794,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261013-haunt-me",
       "d": "2026-10-13",
       "b": "Haunt Me",
       "dr": "8:00 PM",
@@ -3433,6 +3807,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261017-feast-for-us-brunch",
       "d": "2026-10-17",
       "b": "Feast For Us Brunch",
       "dr": "10:00 AM",
@@ -3445,6 +3820,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261017-jerry-tripsters",
       "d": "2026-10-17",
       "b": "Jerry Tripsters",
       "dr": "7:30 PM",
@@ -3457,6 +3833,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261030-sol-driven-train",
       "d": "2026-10-30",
       "b": "Sol Driven Train",
       "dr": "5:00 PM",
@@ -3468,6 +3845,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261102-a-feast-for-us",
       "d": "2026-11-02",
       "b": "A Feast For Us",
       "dr": "5:30 PM",
@@ -3480,6 +3858,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261105-eric-lindell",
       "d": "2026-11-05",
       "b": "Eric Lindell",
       "dr": "5:00 PM",
@@ -3491,6 +3870,7 @@
       "added": "2026-09-13"
     },
     {
+      "id": "ph-20261112-broken-compass-bluegrass",
       "d": "2026-11-12",
       "b": "Broken Compass Bluegrass",
       "dr": "5:00 PM",
@@ -3502,6 +3882,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261113-natalie-brooke",
       "d": "2026-11-13",
       "b": "Natalie Brooke",
       "dr": "5:00 PM",
@@ -3515,6 +3896,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261114-tauk",
       "d": "2026-11-14",
       "b": "TAUK",
       "o": "lespecial ft. special guest Kanika Moore",
@@ -3529,6 +3911,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261117-east-nash-grass",
       "d": "2026-11-17",
       "b": "East Nash Grass",
       "dr": "5:00 PM",
@@ -3541,6 +3924,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261119-she-returns-from-war",
       "d": "2026-11-19",
       "b": "She Returns From War",
       "o": "Maddie Medley, Big Guy & The Very Large Men",
@@ -3554,6 +3938,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261120-drivin-n-cryin",
       "d": "2026-11-20",
       "b": "Drivin' N Cryin'",
       "dr": "7:00 PM",
@@ -3566,6 +3951,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261206-joey-harkum",
       "d": "2026-12-06",
       "b": "Joey Harkum",
       "o": "Droze & the Drift (Acoustic)",
@@ -3579,6 +3965,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20261004-fred-armisen",
       "d": "2026-10-04",
       "b": "Fred Armisen",
       "dr": "6:00 PM",
@@ -3590,6 +3977,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20261026-john-cameron-mitchell-hedwig-25th-annive",
       "d": "2026-10-26",
       "b": "John Cameron Mitchell: Hedwig 25th Anniversary Movie Tour",
       "dr": "6:00 PM",
@@ -3600,6 +3988,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20261102-jake-shimabukuro",
       "d": "2026-11-02",
       "b": "Jake Shimabukuro",
       "dr": "7:00 PM",
@@ -3609,6 +3998,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20261124-slaughter-to-prevail",
       "d": "2026-11-24",
       "b": "Slaughter To Prevail",
       "o": "Rev3rent",
@@ -3619,6 +4009,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20270109-rumours-atl-a-fleetwood-mac-tribute",
       "d": "2027-01-09",
       "b": "Rumours ATL: A Fleetwood Mac Tribute",
       "dr": "7:00 PM",
@@ -3628,6 +4019,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20270122-a-tribute-to-taylor-simon-king-3-america",
       "d": "2027-01-22",
       "b": "A Tribute to Taylor Simon King: 3 American Troubadours",
       "dr": "7:00 PM",
@@ -3637,6 +4029,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20270131-alan-walker",
       "d": "2027-01-31",
       "b": "Alan Walker",
       "dr": "7:00 PM",
@@ -3647,6 +4040,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20270220-corey-kent",
       "d": "2027-02-20",
       "b": "Corey Kent",
       "o": "Tyler Nance",
@@ -3657,6 +4051,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "cmh-20270227-jump-america-s-van-halen-experience",
       "d": "2027-02-27",
       "b": "JUMP — America's Van Halen Experience",
       "dr": "7:00 PM",
@@ -3666,6 +4061,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "mf-20261114-pecos-the-rooftops",
       "d": "2026-11-14",
       "b": "Pecos & The Rooftops",
       "dr": "7:00 PM",
@@ -3675,6 +4071,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "mf-20270323-alaska-thunderf-ck",
       "d": "2027-03-23",
       "b": "Alaska Thunderf*ck",
       "dr": "7:00 PM",
@@ -3685,6 +4082,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "mf-20270403-brandy-clark",
       "d": "2027-04-03",
       "b": "Brandy Clark",
       "dr": "7:00 PM",
@@ -3694,6 +4092,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20260918-poho-family-jam",
       "d": "2026-09-18",
       "b": "Poho Family Jam",
       "o": "ft. Oleg Terentiev, Corey Stephens, Danny Circharo, Bill Jarrett, Ethan Hamlin, Jamal Hall, and special guests",
@@ -3706,6 +4105,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261001-captain-s-crew",
       "d": "2026-10-01",
       "b": "Captain's Crew",
       "o": "feat. Russell Clarke (Sax), Ward Buckheister (Trombone/Guitar), Ryan Whitney (Drums), Matt Thompson (Bass) — pre-Andy Frasco show",
@@ -3718,6 +4118,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261011-motown-throwdown",
       "d": "2026-10-11",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -3728,6 +4129,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261018-motown-throwdown",
       "d": "2026-10-18",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -3738,6 +4140,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261022-the-jesse-williams-band",
       "d": "2026-10-22",
       "b": "The Jesse Williams Band",
       "s": "Deck Stage",
@@ -3749,6 +4152,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261026-the-headstrings-collective-monday-muse",
       "d": "2026-10-26",
       "b": "The Headstrings Collective – Monday Muse",
       "s": "Main Stage",
@@ -3759,6 +4163,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261031-adam-knight-s-buried-alive",
       "d": "2026-10-31",
       "b": "Adam Knight's Buried Alive",
       "o": "Chilling Thrilling Sounds of the Haunted House (Phish tribute)",
@@ -3772,6 +4177,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261031-wolf-mask",
       "d": "2026-10-31",
       "b": "Wolf Mask",
       "o": "Slasher Disco: The Second Cut, presented by Cygoodies",
@@ -3786,6 +4192,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261101-motown-throwdown",
       "d": "2026-11-01",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -3796,6 +4203,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261106-the-garcia-project",
       "d": "2026-11-06",
       "b": "The Garcia Project",
       "o": "Recreating complete JGB shows from 1976–1995",
@@ -3809,6 +4217,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261107-quattlefest",
       "d": "2026-11-07",
       "b": "Quattlefest",
       "o": "Jeff Caldwell, Sean Bing, Jonathan Lovett, Jeremy Wolf and guests (PQ's 50th Birthday)",
@@ -3821,6 +4230,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261108-motown-throwdown",
       "d": "2026-11-08",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -3831,6 +4241,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261109-the-headstrings-collective-monday-muse",
       "d": "2026-11-09",
       "b": "The Headstrings Collective – Monday Muse",
       "s": "Deck Stage",
@@ -3841,6 +4252,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261115-motown-throwdown",
       "d": "2026-11-15",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -3851,6 +4263,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261116-the-headstrings-collective-monday-muse",
       "d": "2026-11-16",
       "b": "The Headstrings Collective – Monday Muse",
       "s": "Deck Stage",
@@ -3861,6 +4274,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261122-motown-throwdown",
       "d": "2026-11-22",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -3871,6 +4285,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261123-the-headstrings-collective-monday-muse",
       "d": "2026-11-23",
       "b": "The Headstrings Collective – Monday Muse",
       "s": "Deck Stage",
@@ -3881,6 +4296,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261129-motown-throwdown",
       "d": "2026-11-29",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -3891,6 +4307,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261130-the-headstrings-collective-monday-muse",
       "d": "2026-11-30",
       "b": "The Headstrings Collective – Monday Muse",
       "s": "Main Stage",
@@ -3901,6 +4318,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261207-the-headstrings-collective-monday-muse",
       "d": "2026-12-07",
       "b": "The Headstrings Collective – Monday Muse",
       "s": "Deck Stage",
@@ -3911,6 +4329,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20261214-the-headstrings-collective-monday-muse",
       "d": "2026-12-14",
       "b": "The Headstrings Collective – Monday Muse",
       "s": "Main Stage",
@@ -3921,6 +4340,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ph-20270313-robert-jon-the-wreck",
       "d": "2027-03-13",
       "b": "Robert Jon & The Wreck",
       "s": "Main Stage",
@@ -3932,6 +4352,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261020-grayson-little",
       "d": "2026-10-20",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -3939,6 +4360,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261021-southern-stomp",
       "d": "2026-10-21",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -3946,6 +4368,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261023-clay-barker",
       "d": "2026-10-23",
       "b": "Clay Barker",
       "sh": "9:00 PM",
@@ -3953,6 +4376,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20260918-flashmob",
       "d": "2026-09-18",
       "b": "FlashMob",
       "o": "Charleston's Top 40 Party Band",
@@ -3965,6 +4389,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20261003-80s-beach-party-w-weird-science",
       "d": "2026-10-03",
       "b": "80s Beach Party w/ Weird Science",
       "o": "Weird Science",
@@ -3977,6 +4402,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20261219-fo-daniels",
       "d": "2026-12-19",
       "b": "Fo Daniels",
       "s": "Inside Stage",
@@ -3989,6 +4415,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20260918-punk-pixies-for-psaf-a-benefit-show",
       "d": "2026-09-18",
       "b": "Punk Pixies for PSAF: a Benefit Show",
       "o": "Angel Gray, Skunk Mother, Poster Grrrl",
@@ -4000,6 +4427,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20260919-metal-raven",
       "d": "2026-09-19",
       "b": "Metal Raven",
       "o": "Firenest, Carne Con Papas, Diabeetus",
@@ -4011,6 +4439,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20260920-she-returns-from-war",
       "d": "2026-09-20",
       "b": "She Returns From War",
       "o": "Kristina Murray",
@@ -4022,6 +4451,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20260924-anything-can-happen",
       "d": "2026-09-24",
       "b": "Anything Can Happen",
       "sh": "7:30 PM",
@@ -4031,6 +4461,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20260925-hard-rock-showcase",
       "d": "2026-09-25",
       "b": "Hard Rock Showcase",
       "o": "Unattended Children, Saddle Breaker, AS-33",
@@ -4042,6 +4473,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20260926-newgrounds-death-rugby",
       "d": "2026-09-26",
       "b": "Newgrounds Death Rugby",
       "o": "Blankstate, Never Any Ordinary",
@@ -4053,6 +4485,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20260928-lemon-squares",
       "d": "2026-09-28",
       "b": "Lemon Squares",
       "dr": "8:00 PM",
@@ -4063,6 +4496,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20260930-acoustic-open-mic-night",
       "d": "2026-09-30",
       "b": "Acoustic Open Mic Night",
       "sh": "7:30 PM",
@@ -4073,6 +4507,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20261016-say-uncle",
       "d": "2026-10-16",
       "b": "Say Uncle",
       "o": "Sooflay, Kook",
@@ -4084,6 +4519,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20261021-phantom",
       "d": "2026-10-21",
       "b": "Phantom",
       "o": "Interceptor",
@@ -4096,6 +4532,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "tr-20261027-pentagram-string-band",
       "d": "2026-10-27",
       "b": "Pentagram String Band",
       "sh": "7:00 PM",
@@ -4105,6 +4542,7 @@
       "o": "Doom Scroll"
     },
     {
+      "id": "tr-20261030-halloween-bash",
       "d": "2026-10-30",
       "b": "Halloween Bash",
       "o": "Wargod, Yottabyte, M30, Sunset Black",
@@ -4116,6 +4554,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ref-20261008-limbo-at-the-refinery-presents-dani-ruck",
       "d": "2026-10-08",
       "b": "Limbo at The Refinery presents: Dani Rucker",
       "o": "Emma Grace Burton",
@@ -4126,6 +4565,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "ref-20261210-limbo-at-the-refinery-presents-caleb-lee",
       "d": "2026-12-10",
       "b": "Limbo at The Refinery presents: Caleb Lee Hutchinson",
       "dr": "7:00 PM",
@@ -4135,6 +4575,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20260925-keith-hille-the-backyard-saints",
       "d": "2026-09-25",
       "b": "Keith Hille & The Backyard Saints",
       "v": "WJ",
@@ -4147,6 +4588,7 @@
       "flag": "the-windjammer.com's own events list and this event's own page currently read \"Keith Hille & The Brickyard Saints\" (not \"Backyard\"), while the URL slug and our stored data say \"Backyard.\" Kept as \"Backyard\" (matches the URL slug) but the venue's own site is internally inconsistent — needs a human sanity-check."
     },
     {
+      "id": "cmh-20261025-the-rocky-horror-picture-show-w-live-sha",
       "d": "2026-10-25",
       "b": "The Rocky Horror Picture Show w/ Live Shadowcast",
       "dr": "6:00 PM",
@@ -4157,6 +4599,7 @@
       "added": "2026-09-17"
     },
     {
+      "id": "ph-20261007-the-reckoning-grateful-dead-tribute",
       "d": "2026-10-07",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "v": "PH",
@@ -4167,6 +4610,7 @@
       "added": "2026-09-17"
     },
     {
+      "id": "ph-20261014-the-reckoning-grateful-dead-tribute",
       "d": "2026-10-14",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "v": "PH",
@@ -4177,6 +4621,7 @@
       "added": "2026-09-17"
     },
     {
+      "id": "ph-20261021-the-reckoning-grateful-dead-tribute",
       "d": "2026-10-21",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "v": "PH",
@@ -4187,6 +4632,7 @@
       "added": "2026-09-17"
     },
     {
+      "id": "ph-20261004-motown-throwdown",
       "d": "2026-10-04",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -4197,6 +4643,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "ph-20261025-motown-throwdown",
       "d": "2026-10-25",
       "b": "Motown Throwdown",
       "s": "Deck Stage",
@@ -4207,6 +4654,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "ph-20261028-the-reckoning-grateful-dead-tribute",
       "d": "2026-10-28",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -4217,6 +4665,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "mf-20270129-nashville-nights-band",
       "d": "2027-01-29",
       "b": "Nashville Nights Band",
       "dr": "7:30 PM",
@@ -4226,6 +4675,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "mf-20270429-graham-barham",
       "d": "2027-04-29",
       "b": "Graham Barham",
       "dr": "7:30 PM",
@@ -4236,6 +4686,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "cmh-20261123-hunxho",
       "d": "2026-11-23",
       "b": "Hunxho",
       "dr": "7:00 PM",
@@ -4245,6 +4696,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "cmh-20261128-charlton-singleton-s-holiday-spectacular",
       "d": "2026-11-28",
       "b": "Charlton Singleton's Holiday Spectacular",
       "o": "Quiana Parler",
@@ -4255,6 +4707,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "cmh-20270117-sons-of-cream",
       "d": "2027-01-17",
       "b": "Sons of Cream",
       "dr": "7:00 PM",
@@ -4264,6 +4717,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "cmh-20270407-40-fingers",
       "d": "2027-04-07",
       "b": "40 Fingers",
       "dr": "7:00 PM",
@@ -4274,6 +4728,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "cmh-20270506-leonid-friends-tribute-to-the-music-of-c",
       "d": "2027-05-06",
       "b": "Leonid & Friends — Tribute to the Music of Chicago",
       "dr": "6:30 PM",
@@ -4283,6 +4738,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "gc-20261211-allman-betts-family-revival-a-decade-of",
       "d": "2026-12-11",
       "b": "Allman Betts Family Revival — A Decade of Revival (10th Anniversary)",
       "o": "Robert Randolph, Judith Hill, Luther Dickinson, Jimmy Hall, Steel Beans, Larry McCray, Cody Dickinson, Alex Orbison, Abby Stachschmidt",
@@ -4293,6 +4749,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "gc-20261220-leslie-odom-jr-the-christmas-tour-2026",
       "d": "2026-12-20",
       "b": "Leslie Odom, Jr. — The Christmas Tour 2026",
       "sh": "7:00 PM",
@@ -4302,6 +4759,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "wj-20260926-banquet",
       "d": "2026-09-26",
       "b": "Banquet",
       "s": "Inside Stage",
@@ -4314,6 +4772,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "wj-20261030-the-midnight-city-nightmare-before-midni",
       "d": "2026-10-30",
       "b": "The Midnight City: Nightmare Before Midnight",
       "s": "NÜTRL Beach Stage",
@@ -4327,6 +4786,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "wj-20261031-the-reckoning-grateful-dead-tribute",
       "d": "2026-10-31",
       "b": "The Reckoning: Grateful Dead Tribute",
       "s": "NÜTRL Beach Stage",
@@ -4339,6 +4799,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "wj-20261114-john-morgan",
       "d": "2026-11-14",
       "b": "John Morgan",
       "o": "Chris Ryan",
@@ -4351,6 +4812,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "wj-20261120-jeremy-s-ten-the-pearl-jam-tribute",
       "d": "2026-11-20",
       "b": "Jeremy's Ten: The Pearl Jam Tribute",
       "s": "Inside Stage",
@@ -4363,6 +4825,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261003-paprika",
       "d": "2026-10-03",
       "b": "Paprika",
       "o": "Doctor Primate, Erin Indigo, Sorry Eliiot",
@@ -4374,6 +4837,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261005-carson-bull-and-the-cousins",
       "d": "2026-10-05",
       "b": "Carson Bull and The Cousins",
       "o": "Scotty Chapman Band",
@@ -4385,6 +4849,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261009-sam-morrow",
       "d": "2026-10-09",
       "b": "Sam Morrow",
       "o": "Macelyn Batten",
@@ -4396,6 +4861,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261013-pterocat",
       "d": "2026-10-13",
       "b": "Pterocat",
       "o": "2 Slices",
@@ -4407,6 +4873,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261015-lee-wilder",
       "d": "2026-10-15",
       "b": "Lee Wilder",
       "v": "TR",
@@ -4418,6 +4885,7 @@
       "p": 10
     },
     {
+      "id": "tr-20261019-lemon-squares",
       "d": "2026-10-19",
       "b": "Lemon Squares",
       "dr": "8:00 PM",
@@ -4428,6 +4896,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261022-the-folly-lama",
       "d": "2026-10-22",
       "b": "The Folly Lama",
       "dr": "7:30 PM",
@@ -4438,6 +4907,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261024-never-any-ordinary",
       "d": "2026-10-24",
       "b": "Never Any Ordinary",
       "v": "TR",
@@ -4449,6 +4919,7 @@
       "p": 10
     },
     {
+      "id": "tr-20261025-nick-sweat-the-phantom-headlights",
       "d": "2026-10-25",
       "b": "Nick Sweat & The Phantom Headlights",
       "o": "The Water Kickers, Don Merckle",
@@ -4460,6 +4931,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261026-daikaiju",
       "d": "2026-10-26",
       "b": "Daikaiju",
       "o": "The Inhibitors",
@@ -4472,6 +4944,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "tr-20261029-anything-can-happen",
       "d": "2026-10-29",
       "b": "Anything Can Happen",
       "v": "TR",
@@ -4480,6 +4953,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "us-20261024-clay-barker",
       "d": "2026-10-24",
       "b": "Clay Barker",
       "sh": "9:00 PM",
@@ -4487,6 +4961,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "us-20261027-grayson-little",
       "d": "2026-10-27",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4494,6 +4969,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "us-20261028-southern-stomp",
       "d": "2026-10-28",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -4501,6 +4977,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "us-20261030-flashmob",
       "d": "2026-10-30",
       "b": "FlashMob",
       "sh": "9:00 PM",
@@ -4509,6 +4986,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "cha-20260926-kendell-live-at-commonhouse",
       "d": "2026-09-26",
       "b": "Kendell: Live At Commonhouse",
       "sh": "12:00 PM",
@@ -4516,6 +4994,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "snob-20260928-noah-jones",
       "d": "2026-09-28",
       "b": "Noah Jones",
       "sh": "7:00 PM",
@@ -4523,6 +5002,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "snob-20260929-connor-sage",
       "d": "2026-09-29",
       "b": "Connor Sage",
       "sh": "7:00 PM",
@@ -4531,6 +5011,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "snob-20260929-matt-vajdic",
       "d": "2026-09-29",
       "b": "Matt Vajdic",
       "sh": "7:00 PM",
@@ -4539,6 +5020,7 @@
       "added": "2026-09-24"
     },
     {
+      "id": "us-20261031-grayson-little",
       "d": "2026-10-31",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4546,6 +5028,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261105-the-midnight-city-band",
       "d": "2026-11-05",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
@@ -4553,6 +5036,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261106-candy-shop",
       "d": "2026-11-06",
       "b": "Candy Shop",
       "sh": "9:00 PM",
@@ -4560,6 +5044,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261107-candy-shop",
       "d": "2026-11-07",
       "b": "Candy Shop",
       "sh": "9:00 PM",
@@ -4567,6 +5052,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261112-the-midnight-city-band",
       "d": "2026-11-12",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
@@ -4574,6 +5060,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261113-grayson-little",
       "d": "2026-11-13",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4581,6 +5068,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261114-grayson-little",
       "d": "2026-11-14",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4588,6 +5076,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261119-the-midnight-city-band",
       "d": "2026-11-19",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
@@ -4595,6 +5084,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261120-grayson-little",
       "d": "2026-11-20",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4602,6 +5092,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261121-flashmob",
       "d": "2026-11-21",
       "b": "FlashMob",
       "sh": "9:00 PM",
@@ -4609,6 +5100,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261127-grayson-little",
       "d": "2026-11-27",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4616,6 +5108,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "us-20261128-grayson-little",
       "d": "2026-11-28",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4623,6 +5116,7 @@
       "added": "2026-09-01"
     },
     {
+      "id": "wj-20261001-high-5",
       "d": "2026-10-01",
       "b": "HIGH 5",
       "s": "Inside Stage",
@@ -4635,6 +5129,7 @@
       "added": "2026-10-01"
     },
     {
+      "id": "wj-20261002-the-novatones",
       "d": "2026-10-02",
       "b": "The Novatones",
       "s": "Inside Stage",
@@ -4647,6 +5142,7 @@
       "added": "2026-10-01"
     },
     {
+      "id": "wj-20261003-old-soul",
       "d": "2026-10-03",
       "b": "Old Soul",
       "s": "Inside Stage",
@@ -4659,6 +5155,7 @@
       "added": "2026-10-01"
     },
     {
+      "id": "wj-20261009-bad-medicine-the-iconic-bon-jovi-experie",
       "d": "2026-10-09",
       "b": "Bad Medicine: The Iconic Bon Jovi Experience",
       "s": "NÜTRL Beach Stage",
@@ -4671,6 +5168,7 @@
       "added": "2026-10-01"
     },
     {
+      "id": "wj-20261204-the-broken-hearts-tom-petty-the-heartbre",
       "d": "2026-12-04",
       "b": "The Broken Hearts: Tom Petty & The Heartbreakers Tribute",
       "s": "Inside Stage",
@@ -4683,6 +5181,7 @@
       "added": "2026-10-01"
     },
     {
+      "id": "cmh-20270305-daughtry",
       "d": "2027-03-05",
       "b": "Daughtry",
       "dr": "7:00 PM",
@@ -4692,6 +5191,7 @@
       "added": "2026-10-01"
     },
     {
+      "id": "ncc-20261028-cece-winans-come-worship-north-charlesto",
       "d": "2026-10-28",
       "b": "CeCe Winans — COME WORSHIP! North Charleston!",
       "dr": "5:30 PM",
@@ -4701,14 +5201,17 @@
       "added": "2026-10-01"
     },
     {
+      "id": "ref-20261030-open-air-halloween",
       "d": "2026-10-30",
       "b": "Open Air Halloween",
       "v": "REF",
       "u": "https://posh.vip/e/loose-ends-open-air-halloween",
       "flag": "Included at the owner's direction 2026-10-01. Listed on therefinerychs.com under Events; the posh.vip ticket page could not be fetched from this environment, so lineup, times and price are unconfirmed.",
-      "added": "2026-10-01"
+      "added": "2026-10-01",
+      "confirmed": "2026-10-01"
     },
     {
+      "id": "snob-20261008-of-the-heart",
       "d": "2026-10-08",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -4716,6 +5219,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "cha-20261009-maralin-russell-live-at-commonhouse",
       "d": "2026-10-09",
       "b": "Maralin Russell: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -4723,6 +5227,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261011-lighthouse-band",
       "d": "2026-10-11",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
@@ -4730,6 +5235,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261012-noah-jones",
       "d": "2026-10-12",
       "b": "Noah Jones",
       "sh": "6:00 PM",
@@ -4737,6 +5243,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261013-connor-sage",
       "d": "2026-10-13",
       "b": "Connor Sage",
       "sh": "6:00 PM",
@@ -4745,6 +5252,7 @@
       "flag": "Same date/time/stage as \"Matt Vajdic\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
     },
     {
+      "id": "snob-20261013-matt-vajdic",
       "d": "2026-10-13",
       "b": "Matt Vajdic",
       "sh": "6:00 PM",
@@ -4753,6 +5261,7 @@
       "flag": "Same date/time/stage as \"Connor Sage\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
     },
     {
+      "id": "snob-20261014-ben-somerville",
       "d": "2026-10-14",
       "b": "Ben Somerville",
       "sh": "6:00 PM",
@@ -4760,6 +5269,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261015-of-the-heart",
       "d": "2026-10-15",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -4767,6 +5277,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261018-lighthouse-band",
       "d": "2026-10-18",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
@@ -4774,6 +5285,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261019-noah-jones",
       "d": "2026-10-19",
       "b": "Noah Jones",
       "sh": "6:00 PM",
@@ -4781,6 +5293,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261020-matt-vajdic",
       "d": "2026-10-20",
       "b": "Matt Vajdic",
       "sh": "6:00 PM",
@@ -4788,6 +5301,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261022-of-the-heart",
       "d": "2026-10-22",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -4795,6 +5309,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261025-lighthouse-band",
       "d": "2026-10-25",
       "b": "Lighthouse  Band",
       "sh": "6:00 PM",
@@ -4802,6 +5317,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261026-noah-jones",
       "d": "2026-10-26",
       "b": "Noah Jones",
       "sh": "6:00 PM",
@@ -4809,6 +5325,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "snob-20261027-connor-sage",
       "d": "2026-10-27",
       "b": "Connor Sage",
       "sh": "6:00 PM",
@@ -4817,6 +5334,7 @@
       "flag": "Same 6:00 PM slot as \"Matt Vajdic\". Owner checked 2026-10-15: the venue's website lists both acts on 10/27. Kept both for now; recheck on the 2026-10-22 run."
     },
     {
+      "id": "snob-20261027-matt-vajdic",
       "d": "2026-10-27",
       "b": "Matt Vajdic",
       "sh": "6:00 PM",
@@ -4825,6 +5343,7 @@
       "flag": "Same 6:00 PM slot as \"Connor Sage\". Owner checked 2026-10-15: the venue's website lists both acts on 10/27. Kept both for now; recheck on the 2026-10-22 run."
     },
     {
+      "id": "snob-20261029-of-the-heart",
       "d": "2026-10-29",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -4832,6 +5351,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261103-grayson-little",
       "d": "2026-11-03",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4839,6 +5359,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261104-southern-stomp",
       "d": "2026-11-04",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -4846,6 +5367,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "cha-20261107-albert-and-the-smoking-section-live-at-c",
       "d": "2026-11-07",
       "b": "Albert and The Smoking Section: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -4853,6 +5375,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261110-grayson-little",
       "d": "2026-11-10",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4860,6 +5383,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261111-southern-stomp",
       "d": "2026-11-11",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -4867,6 +5391,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261117-grayson-little",
       "d": "2026-11-17",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4874,6 +5399,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261118-southern-stomp",
       "d": "2026-11-18",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -4881,6 +5407,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "nrb-20261121-palmetto-knights-rofr",
       "d": "2026-11-21",
       "b": "Palmetto Knights - RofR",
       "sh": "12:00 PM",
@@ -4888,6 +5415,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "cha-20261121-rockabillaque-presents-dan-the-donuts",
       "d": "2026-11-21",
       "b": "Rockabillaque Presents Dan & the Donuts",
       "sh": "6:00 PM",
@@ -4895,6 +5423,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261124-grayson-little",
       "d": "2026-11-24",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4902,6 +5431,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261201-grayson-little",
       "d": "2026-12-01",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4909,6 +5439,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "us-20261202-southern-stomp",
       "d": "2026-12-02",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
@@ -4916,6 +5447,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "cha-20261205-shore-club-live-at-commonhouse",
       "d": "2026-12-05",
       "b": "Shore Club: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -4923,6 +5455,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "cha-20270227-stefanie-potter-the-ceramic-hearts-live",
       "d": "2027-02-27",
       "b": "Stefanie Potter & The Ceramic Hearts: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -4930,6 +5463,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ph-20261011-new-dirty-shoes",
       "d": "2026-10-11",
       "b": "New Dirty Shoes",
       "dr": "5:00 PM",
@@ -4941,6 +5475,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ph-20261013-kanika-moore-the-brown-eyed-bois",
       "d": "2026-10-13",
       "b": "Kanika Moore & The Brown Eyed Bois",
       "dr": "5:00 PM",
@@ -4952,6 +5487,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ph-20261020-kanika-moore-the-brown-eyed-bois",
       "d": "2026-10-20",
       "b": "Kanika Moore & The Brown Eyed Bois",
       "dr": "5:00 PM",
@@ -4963,6 +5499,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ph-20261027-kanika-moore-the-brown-eyed-bois",
       "d": "2026-10-27",
       "b": "Kanika Moore & The Brown Eyed Bois",
       "dr": "5:00 PM",
@@ -4974,6 +5511,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ph-20261015-step-dog",
       "d": "2026-10-15",
       "b": "Step Dog",
       "dr": "5:00 PM",
@@ -4986,6 +5524,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "wj-20261008-dallas-baker-and-the-pluff-daddy-s",
       "d": "2026-10-08",
       "b": "Dallas Baker and The Pluff Daddy's",
       "s": "Inside Stage",
@@ -4997,6 +5536,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "wj-20261009-reverse-cowgirl",
       "d": "2026-10-09",
       "b": "Reverse Cowgirl",
       "s": "Inside Stage",
@@ -5008,6 +5548,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "wj-20261016-flashmob",
       "d": "2026-10-16",
       "b": "FlashMob",
       "s": "Inside Stage",
@@ -5019,6 +5560,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "wj-20261106-the-nashville-nights-band-90s-country-ex",
       "d": "2026-11-06",
       "b": "The Nashville Nights Band: 90s Country Experience",
       "s": "Inside Stage",
@@ -5031,6 +5573,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ra-20261118-susto-residency-debut-i-m-fine-today",
       "d": "2026-11-18",
       "b": "SUSTO Residency (Debut + & I'm Fine Today)",
       "o": "Johnny Delaware",
@@ -5041,6 +5584,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ra-20261217-susto-residency-ever-since-i-lost-my-min",
       "d": "2026-12-17",
       "b": "SUSTO Residency (Ever Since I Lost My Mind + Holiday Songs)",
       "o": "Brock Butler (Perpetual Groove), Cannon Rogers",
@@ -5051,6 +5595,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ra-20270114-susto-residency-time-in-the-sun-my-entir",
       "d": "2027-01-14",
       "b": "SUSTO Residency (Time In The Sun + My Entire Life)",
       "o": "Judy Blank, Andrew Scotchie, Red McAdam",
@@ -5061,6 +5606,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ra-20270218-susto-residency-stringband-volumes-1-2",
       "d": "2027-02-18",
       "b": "SUSTO Residency (Stringband: Volumes 1 + 2)",
       "o": "Holler Choir",
@@ -5071,6 +5617,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "mf-20261110-runaway-gin",
       "d": "2026-11-10",
       "b": "Runaway Gin",
       "dr": "7:30 PM",
@@ -5080,6 +5627,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "mf-20261219-mf-heavy-rock-night",
       "d": "2026-12-19",
       "b": "MF Heavy Rock Night",
       "o": "Virgil Kain, Decadence, Marytree, Body In Mind",
@@ -5090,6 +5638,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "cmh-20270201-chelsea-cutler",
       "d": "2027-02-01",
       "b": "Chelsea Cutler",
       "o": "Lamb",
@@ -5100,6 +5649,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "cmh-20270325-dylan-gossett",
       "d": "2027-03-25",
       "b": "Dylan Gossett",
       "o": "Leon Majcen",
@@ -5110,6 +5660,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "tr-20261031-halloween-rock-show-and-costume-contest",
       "d": "2026-10-31",
       "b": "Halloween Rock Show and Costume Contest",
       "dr": "7:00 PM",
@@ -5120,6 +5671,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "tr-20261101-pons",
       "d": "2026-11-01",
       "b": "PONS",
       "o": "Orange Doors, Motorcycle Jackson, Blimps",
@@ -5131,6 +5683,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "tr-20261108-halloween-cover-show",
       "d": "2026-11-08",
       "b": "Halloween Cover Show!",
       "sh": "5:00 PM",
@@ -5140,6 +5693,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "tr-20261113-the-defilers",
       "d": "2026-11-13",
       "b": "The Defilers",
       "o": "Bo Stevens",
@@ -5149,6 +5703,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "tr-20261114-enlightened-iguanas",
       "d": "2026-11-14",
       "b": "Enlightened Iguanas",
       "sh": "7:30 PM",
@@ -5157,6 +5712,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "tr-20261122-the-queers",
       "d": "2026-11-22",
       "b": "The Queers",
       "sh": "7:30 PM",
@@ -5165,6 +5721,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "ref-20261022-limbo-at-the-refinery-presents-macelyn-b",
       "d": "2026-10-22",
       "b": "Limbo at The Refinery presents: Macelyn Batten",
       "v": "REF",
@@ -5172,6 +5729,7 @@
       "added": "2026-10-08"
     },
     {
+      "id": "chr-20261212-sol-driven-train",
       "d": "2026-12-12",
       "b": "Sol Driven Train",
       "o": "Oysters on the Point",
@@ -5179,9 +5737,11 @@
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Holy City Sinner lists 2–6 PM for this date.",
-      "added": "2026-10-13"
+      "added": "2026-10-13",
+      "confirmed": "2026-10-13"
     },
     {
+      "id": "chr-20270109-the-reckoning",
       "d": "2027-01-09",
       "b": "The Reckoning",
       "o": "Oysters on the Point",
@@ -5189,9 +5749,11 @@
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Holy City Sinner lists 2–6 PM for this date.",
-      "added": "2026-10-13"
+      "added": "2026-10-13",
+      "confirmed": "2026-10-13"
     },
     {
+      "id": "chr-20270123-dallas-baker-friends",
       "d": "2027-01-23",
       "b": "Dallas Baker & Friends",
       "o": "Oysters on the Point",
@@ -5199,36 +5761,44 @@
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Holy City Sinner lists 2–6 PM for this date. Holy City Sinner lists this as Jan 22 (a Friday); the venue's own post says Jan 23 (Saturday), which is used here.",
-      "added": "2026-10-13"
+      "added": "2026-10-13",
+      "confirmed": "2026-10-13"
     },
     {
+      "id": "chr-20270206-solid-country-gold",
       "d": "2027-02-06",
       "b": "Solid Country Gold",
       "o": "Oysters on the Point",
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
-      "added": "2026-10-13"
+      "added": "2026-10-13",
+      "confirmed": "2026-10-13"
     },
     {
+      "id": "chr-20270220-thomas-champagne-friends",
       "d": "2027-02-20",
       "b": "Thomas Champagne & Friends",
       "o": "Oysters on the Point",
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
-      "added": "2026-10-13"
+      "added": "2026-10-13",
+      "confirmed": "2026-10-13"
     },
     {
+      "id": "chr-20270306-the-green-thieves",
       "d": "2027-03-06",
       "b": "The Green Thieves",
       "o": "Oysters on the Point",
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
-      "added": "2026-10-13"
+      "added": "2026-10-13",
+      "confirmed": "2026-10-13"
     },
     {
+      "id": "ph-20261108-photon",
       "d": "2026-11-08",
       "b": "Photon",
       "o": "ft. Members of Dopapod & Magic Beans (Pre-Sunsquabi)",
@@ -5241,6 +5811,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261110-catholics-x-ssighborggg",
       "d": "2026-11-10",
       "b": "Catholics x Ssighborggg",
       "o": "Paris Byars Club, Winterteeth",
@@ -5253,6 +5824,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261119-bit-brigade",
       "d": "2026-11-19",
       "b": "Bit Brigade",
       "o": "Performs \"The Legend of Zelda\" + \"Castlevania\" + \"Tetris\" live",
@@ -5265,6 +5837,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261104-the-reckoning-grateful-dead-tribute",
       "d": "2026-11-04",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5275,6 +5848,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261111-the-reckoning-grateful-dead-tribute",
       "d": "2026-11-11",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5285,6 +5859,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261118-the-reckoning-grateful-dead-tribute",
       "d": "2026-11-18",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5295,6 +5870,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "wj-20261017-high-society",
       "d": "2026-10-17",
       "b": "High Society",
       "s": "Inside Stage",
@@ -5306,6 +5882,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "wj-20261023-vynl",
       "d": "2026-10-23",
       "b": "VYNL",
       "s": "Inside Stage",
@@ -5317,6 +5894,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "wj-20261024-tanner-beane-dirty-power",
       "d": "2026-10-24",
       "b": "Tanner Beane & Dirty Power",
       "s": "Inside Stage",
@@ -5328,6 +5906,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "wj-20261121-nirvani-a-nirvana-tribute-experience",
       "d": "2026-11-21",
       "b": "Nirvani: A Nirvana Tribute Experience",
       "s": "Inside Stage",
@@ -5340,6 +5919,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "tr-20261107-434",
       "d": "2026-11-07",
       "b": "434",
       "sh": "7:30 PM",
@@ -5348,6 +5928,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ref-20270227-kameron-marlowe",
       "d": "2027-02-27",
       "b": "Kameron Marlowe",
       "v": "REF",
@@ -5356,13 +5937,16 @@
       "added": "2026-10-15"
     },
     {
+      "id": "us-20261016-moody-bridge",
       "d": "2026-10-16",
       "b": "Moody Bridge",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-10-15"
+      "added": "2026-10-15",
+      "confirmed": "2026-10-15"
     },
     {
+      "id": "us-20261031-the-regulars",
       "d": "2026-10-31",
       "b": "The Regulars",
       "sh": "2:00 PM",
@@ -5370,20 +5954,25 @@
       "added": "2026-10-15"
     },
     {
+      "id": "snob-20261021-connor-sage",
       "d": "2026-10-21",
       "b": "Connor Sage",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "added": "2026-10-15"
+      "added": "2026-10-15",
+      "confirmed": "2026-10-15"
     },
     {
+      "id": "snob-20261028-krystal-halvorson",
       "d": "2026-10-28",
       "b": "Krystal Halvorson",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "added": "2026-10-15"
+      "added": "2026-10-15",
+      "confirmed": "2026-10-15"
     },
     {
+      "id": "cha-20261113-the-folly-lama-live-at-commonhouse",
       "d": "2026-11-13",
       "b": "The Folly Lama: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -5391,13 +5980,16 @@
       "added": "2026-10-15"
     },
     {
+      "id": "cha-20261211-backseat-company-live-at-commonhouse",
       "d": "2026-12-11",
       "b": "Backseat Company : Live At Commonhouse",
       "sh": "6:00 PM",
       "v": "CHA",
-      "added": "2026-10-15"
+      "added": "2026-10-15",
+      "confirmed": "2026-10-15"
     },
     {
+      "id": "ph-20261121-interstellar-echoes",
       "d": "2026-11-21",
       "b": "Interstellar Echoes",
       "o": "A Tribute to Pink Floyd",
@@ -5410,6 +6002,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261125-the-reckoning-grateful-dead-tribute",
       "d": "2026-11-25",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5421,6 +6014,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261127-black-friday-dead",
       "d": "2026-11-27",
       "b": "Black Friday Dead",
       "o": "ft. Alan Brisendine, John Holenko, Marshall Hudson, John Kennedy, Jonathan Peace, Rex Wilkes",
@@ -5433,6 +6027,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261127-tan-sober-gentlemen",
       "d": "2026-11-27",
       "b": "Tan & Sober Gentlemen",
       "s": "Main Stage",
@@ -5446,6 +6041,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261128-thanks-dolly",
       "d": "2026-11-28",
       "b": "Thanks Dolly",
       "o": "All-star Thanksgiving weekend tribute to Dolly Parton ft. Lindsay Holler, Elise Testone, Cary Ann Hearst, Jordan Igoe, The Marshgrass Mamas, Jessica Daisi, Jenna Dez & more",
@@ -5459,6 +6055,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261202-the-reckoning-grateful-dead-tribute",
       "d": "2026-12-02",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5470,6 +6067,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261209-the-reckoning-grateful-dead-tribute",
       "d": "2026-12-09",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5481,6 +6079,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261210-hannah-wicklund",
       "d": "2026-12-10",
       "b": "Hannah Wicklund",
       "s": "Main Stage",
@@ -5493,6 +6092,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261213-creative-misfits",
       "d": "2026-12-13",
       "b": "Creative Misfits",
       "o": "Creative Misfits Live! — rock show benefiting HEART Inclusive Arts Community",
@@ -5505,6 +6105,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261216-the-reckoning-grateful-dead-tribute",
       "d": "2026-12-16",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5516,6 +6117,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261217-daniel-donato-s-cosmic-country",
       "d": "2026-12-17",
       "b": "Daniel Donato's Cosmic Country",
       "o": "w/ Larry Keel — \"Down One Horse\" Winter Tour, night 1 of 3",
@@ -5529,6 +6131,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261218-daniel-donato-s-cosmic-country",
       "d": "2026-12-18",
       "b": "Daniel Donato's Cosmic Country",
       "o": "w/ Kanika Moore — \"Down One Horse\" Winter Tour, night 2 of 3",
@@ -5542,6 +6145,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261219-daniel-donato-s-cosmic-country",
       "d": "2026-12-19",
       "b": "Daniel Donato's Cosmic Country",
       "o": "w/ Jon Stickley — \"Down One Horse\" Winter Tour, night 3 of 3",
@@ -5555,6 +6159,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261223-the-reckoning-grateful-dead-tribute",
       "d": "2026-12-23",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5566,6 +6171,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261230-the-reckoning-grateful-dead-tribute",
       "d": "2026-12-30",
       "b": "The Reckoning (Grateful Dead Tribute)",
       "s": "Deck Stage",
@@ -5577,6 +6183,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270115-liam-st-john",
       "d": "2027-01-15",
       "b": "Liam St. John",
       "o": "Unearth Tour",
@@ -5590,6 +6197,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270118-the-california-honeydrops",
       "d": "2027-01-18",
       "b": "The California Honeydrops",
       "s": "Main Stage",
@@ -5602,6 +6210,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270130-dangermuffin",
       "d": "2027-01-30",
       "b": "Dangermuffin",
       "s": "Main Stage",
@@ -5614,6 +6223,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270218-surfer-girl",
       "d": "2027-02-18",
       "b": "Surfer Girl",
       "o": "w/ South Summit & JOBY! — The Midnight Tour",
@@ -5627,6 +6237,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270326-yonder-mountain-string-band",
       "d": "2027-03-26",
       "b": "Yonder Mountain String Band",
       "o": "Night 1 of 2",
@@ -5639,6 +6250,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270327-yonder-mountain-string-band",
       "d": "2027-03-27",
       "b": "Yonder Mountain String Band",
       "o": "Night 2 of 2",
@@ -5651,6 +6263,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270424-sicard-hollow-suns-of-stars",
       "d": "2027-04-24",
       "b": "Sicard Hollow & Suns of Stars",
       "o": "4 alternating sets",
@@ -5664,6 +6277,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270513-moe",
       "d": "2027-05-13",
       "b": "moe.",
       "o": "No Hibernation Tour, night 1 of 4 ($180 4-night package also offered)",
@@ -5677,6 +6291,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270514-moe",
       "d": "2027-05-14",
       "b": "moe.",
       "o": "No Hibernation Tour, night 2 of 4 ($180 4-night package also offered)",
@@ -5690,6 +6305,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270515-moe",
       "d": "2027-05-15",
       "b": "moe.",
       "o": "No Hibernation Tour, night 3 of 4 ($180 4-night package also offered)",
@@ -5703,6 +6319,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20270516-moe",
       "d": "2027-05-16",
       "b": "moe.",
       "o": "No Hibernation Tour, night 4 of 4 ($180 4-night package also offered)",
@@ -5716,6 +6333,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "mf-20261104-songs-to-save-the-edisto-finale",
       "d": "2026-11-04",
       "b": "Songs to Save the Edisto Finale",
       "o": "Shovels & Rope, Mechanical River & more",
@@ -5726,6 +6344,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "mf-20261111-benny-the-butcher",
       "d": "2026-11-11",
       "b": "Benny The Butcher",
       "dr": "7:30 PM",
@@ -5735,6 +6354,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "mf-20270119-des-rocs",
       "d": "2027-01-19",
       "b": "Des Rocs",
       "dr": "7:30 PM",
@@ -5744,6 +6364,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ncc-20270128-kc-the-sunshine-band",
       "d": "2027-01-28",
       "b": "KC & The Sunshine Band",
       "s": "Performing Arts Center",
@@ -5754,6 +6375,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "cmh-20270221-mico",
       "d": "2027-02-21",
       "b": "MICO",
       "o": "Inbetween Tour",
@@ -5765,6 +6387,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "cmh-20270911-stayin-alive-one-night-of-the-bee-gees",
       "d": "2027-09-11",
       "b": "Stayin' Alive – One Night of the Bee Gees",
       "dr": "6:30 PM",
@@ -5774,6 +6397,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "ph-20261107-elise-testone-s-student-concert",
       "d": "2026-11-07",
       "b": "Elise Testone's Student Concert",
       "o": "All ages; presented by Elise Testone",
@@ -5783,9 +6407,11 @@
       "p": 10,
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/elise-testones-student-concert-2/",
-      "added": "2026-10-15"
+      "added": "2026-10-15",
+      "confirmed": "2026-10-15"
     },
     {
+      "id": "cha-20261114-2nd-annual-shakedown-jam",
       "d": "2026-11-14",
       "b": "2nd Annual Shakedown Jam",
       "o": "The Reckoning (Grateful Dead tunes), Robert Corbett's Just Groove — free Park Circle block party, 12–5 PM",
@@ -5793,9 +6419,11 @@
       "p": 0,
       "v": "CHA",
       "flag": "Hybrid: block party with vendors and kids' activities; live music explicitly billed. Included at the owner's request (2026-10-15).",
-      "added": "2026-10-15"
+      "added": "2026-10-15",
+      "confirmed": "2026-10-15"
     },
     {
+      "id": "fd-20270424-jason-isbell-and-the-400-unit-x-nathanie",
       "d": "2027-04-24",
       "b": "Jason Isbell and the 400 Unit x Nathaniel Rateliff",
       "v": "FD",
@@ -5804,6 +6432,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "rfp-20270417-high-water-festival",
       "d": "2027-04-17",
       "b": "High Water Festival",
       "o": "Saturday: Jack Johnson, Death Cab for Cutie, The Revivalists, Mat Kearney, Ole 60, Hazlett, GoldFord, Mo Lowda & the Humble, Penelope Road, Angela Autumn",
@@ -5813,6 +6442,7 @@
       "added": "2026-10-15"
     },
     {
+      "id": "rfp-20270418-high-water-festival",
       "d": "2027-04-18",
       "b": "High Water Festival",
       "o": "Sunday: Mt. Joy, Rainbow Kitten Surprise, Finn Wolfhard, Ax and the Hatchetmen, Congress the Band, West 22nd, Marlon Funaki, Alyssa Grace, Susannah Joffe",

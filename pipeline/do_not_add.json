@@ -1,0 +1,13 @@
+{
+  "about": "Shows the owner has said are not happening or don't belong on the site. The fetch report holds these back and scripts/validate_shows.py rejects them. Entries whose date has passed are harmless and can be deleted any time. Edit through a PR (the weekly routine never edits this file).",
+  "entries": [
+    {"v": "SNOB", "d": "2026-10-20", "b": "Connor Sage", "reason": "Owner 2026-10-15: plays 10/21, not 10/20"},
+    {"v": "SNOB", "d": "2026-10-21", "b": "Ben Somerville", "reason": "Owner 2026-10-15: Connor Sage plays 10/21"},
+    {"v": "SNOB", "d": "2026-10-28", "b": "Ben Somerville", "reason": "Owner 2026-10-15: Krystal Halvorson plays 10/28"},
+    {"v": "US", "d": "2026-10-16", "b": "Grayson Little", "reason": "Owner 2026-10-15: Moody Bridge plays 10/16"},
+    {"v": "CHA", "d": "2026-11-05", "b": "Backseat Company", "reason": "Owner 2026-10-15: no show 11/05; Backseat Company is 12/11"},
+    {"v": "PH", "d": "2026-11-02", "b": "The Headstrings Collective – Monday Muse", "reason": "Owner 2026-10-15: off"},
+    {"v": "CMH", "d": "2026-11-14", "b": "YALL Fest", "reason": "Owner 2026-10-01: excluded"},
+    {"v": "WJ", "d": "2027-01-01", "b": "The Piedmont Boys", "reason": "Owner 2026-10-15: remove (never on the venue's site)"}
+  ]
+}

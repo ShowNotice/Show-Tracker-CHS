@@ -32,8 +32,9 @@ that may still apply but weren't re-checked are listed at the bottom.
 
 ## Engineering
 
-- **Planned (in progress 2026-10-15):** deterministic per-venue fetchers under `pipeline/`,
-  and permanent show `id`s with a migration for users' starred shows.
+- **Legacy star ids:** users who never revisit the site keep old-format ids in their
+  account; the Worker translates them, so nothing breaks. `legacyShowId()` can be removed
+  once no stored star still uses the old format.
 - **No automated tests for the Worker** (`worker.js`); deploys are checked only for
   syntax, duplicate functions and cron/config agreement.
 - **The digest's "already sent" guard isn't atomic** (Cloudflare KV has no atomic

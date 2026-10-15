@@ -666,6 +666,7 @@ async function loadShowData(){
     VENUES = data.venues || {};
     DATA_UPDATED_AT = data.dataUpdatedAt || "";
     SHOWS = data.shows || [];
+    LEGACY_ID_MAP = new Map(SHOWS.filter(s => s.id).map(s => [legacyShowId(s), s.id]));
   }catch(e){
     console.error('Failed to load shows.json', e);
     document.getElementById('main-list').innerHTML =
@@ -686,8 +687,41 @@ function fmtDate(iso, endIso){
   }
   return s;
 }
+// Every show in shows.json has a permanent `id` (added 2026-10-15) that never changes,
+// even when its date or name is corrected. Older saved stars use the previous
+// venue|date|band form; legacyShowId() rebuilds that so migrateLegacyIds() can
+// translate them. Must match legacyShowId() in worker.js.
 function showId(s){
+  return s.id || legacyShowId(s);
+}
+function legacyShowId(s){
   return [s.v, s.d, s.b].join("|").toLowerCase().replace(/\s+/g,'_');
+}
+let LEGACY_ID_MAP = new Map(); // legacy id -> permanent id, built from SHOWS on load
+
+// Rewrites any legacy ids in the starred/auto-added sets to permanent ids. Returns true
+// if anything changed (callers then save, which also pushes to the server when signed in).
+function migrateLegacyIds(){
+  if(!LEGACY_ID_MAP.size) return false;
+  let changed = false;
+  const fix = set => {
+    const out = new Set();
+    set.forEach(k => {
+      const nk = LEGACY_ID_MAP.get(k) || k;
+      if(nk !== k) changed = true;
+      out.add(nk);
+    });
+    return out;
+  };
+  MY_SHOWS = fix(MY_SHOWS);
+  AUTO_ADDED_SHOWS = fix(AUTO_ADDED_SHOWS);
+  return changed;
+}
+async function saveMigratedIds(){
+  const wObj = {}; MY_SHOWS.forEach(k => wObj[k] = true);
+  const aObj = {}; AUTO_ADDED_SHOWS.forEach(k => aObj[k] = true);
+  await saveMap('my-shows', wObj);
+  await saveMap('auto-added-shows', aObj);
 }
 
 let MY_SHOWS = new Set();
@@ -734,6 +768,7 @@ async function refreshFromStorageAndRender(){
   FAVORITES = Object.keys(favObj);
   const autoObj = await getMap('auto-added-shows');
   AUTO_ADDED_SHOWS = new Set(Object.keys(autoObj));
+  if(migrateLegacyIds()) await saveMigratedIds();
   await render();
 }
 
@@ -1016,6 +1051,7 @@ async function syncWithServer(){
 
     MY_SHOWS = new Set(mergedWatch);
     FAVORITES = mergedFavs;
+    migrateLegacyIds(); // the server copy may still hold legacy ids; saved back below
     INITIALIZED = true; // we've now loaded state ourselves; render() shouldn't reload from storage
     // Also satisfies loadStorageOnce()'s own memoization guard (STORAGE_READY), not
     // just INITIALIZED -- without this, the first loadStorageOnce() call anywhere
@@ -1025,8 +1061,10 @@ async function syncWithServer(){
     // the same tick, before this promise resolves).
     STORAGE_READY = Promise.resolve();
 
-    const newWatchObj = {}; mergedWatch.forEach(id=>newWatchObj[id]=true);
+    const newWatchObj = {}; MY_SHOWS.forEach(id=>newWatchObj[id]=true); // post-migration ids
     localStorage.setItem('my-shows', JSON.stringify(newWatchObj));
+    const newAutoObj = {}; AUTO_ADDED_SHOWS.forEach(id=>newAutoObj[id]=true);
+    localStorage.setItem('auto-added-shows', JSON.stringify(newAutoObj));
     const newFavObj = {}; mergedFavs.forEach(f=>newFavObj[f]=true);
     localStorage.setItem('favorite-artists', JSON.stringify(newFavObj));
 
@@ -1332,6 +1370,7 @@ async function render(){
   if(!INITIALIZED){
     await loadStorageOnce();
   }
+  if(migrateLegacyIds()) await saveMigratedIds();
 
   const currentIds = new Set();
   // Same past-show cutoff the digest email uses: anything before today is dropped,

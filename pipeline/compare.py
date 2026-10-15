@@ -4,6 +4,8 @@ Nothing here edits shows.json — the routine reads the report, applies the judg
 rules in pipeline/INSTRUCTIONS.md, and makes the edits itself.
 """
 import difflib
+import json
+import os
 import re
 
 from .common import norm
@@ -37,11 +39,27 @@ def same_act(a, b):
     return difflib.SequenceMatcher(None, x[:24], y[:24]).ratio() >= 0.8
 
 
-def compare(shows, venue, events, complete, today):
+DO_NOT_ADD = os.path.join(os.path.dirname(__file__), "do_not_add.json")
+
+
+def load_do_not_add(path=DO_NOT_ADD):
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)["entries"]
+
+
+def compare(shows, venue, events, complete, today, do_not_add=None):
     rows = [s for s in shows if s["v"] == venue]
     upcoming = [e for e in events if e.get("date") and e["date"] >= today]
+    blocked = [b for b in (load_do_not_add() if do_not_add is None else do_not_add)
+               if b["v"] == venue and b["d"] >= today]
+    for e in upcoming:
+        b = next((b for b in blocked if b["d"] == e["date"] and same_act(b["b"], e["title"])), None)
+        if b and not e.get("skip"):
+            e["skip"] = "owner: " + b["reason"]
     matched_rows = set()
-    out = {"new": [], "skipped_new": [], "updates": [], "date_changes": [], "missing": []}
+    out = {"new": [], "skipped_new": [], "updates": [], "date_changes": [], "missing": [], "confirmed_unlisted": []}
 
     for e in upcoming:
         same = [i for i, s in enumerate(rows) if s["d"] == e["date"] and same_act(s["b"], e["title"])
@@ -82,7 +100,7 @@ def compare(shows, venue, events, complete, today):
                 continue
             if any(e["date"] == s["d"] and same_act(s["b"], e["title"]) for e in upcoming):
                 continue
-            out["missing"].append(s)
+            out["confirmed_unlisted" if s.get("confirmed") else "missing"].append(s)
     out["coverage"] = [min((e["date"] for e in upcoming), default=None), max((e["date"] for e in upcoming), default=None)]
     return out
 
@@ -117,6 +135,7 @@ def report_markdown(results, today):
                      f"{'complete listing' if r['complete'] else 'partial listing (never use for removals)'}.")
         for title, key in (("New (not in shows.json)", "new"), ("Date changes", "date_changes"),
                            ("Field updates", "updates"), ("In shows.json but not listed", "missing"),
+                           ("Not listed, but owner-confirmed — leave as is", "confirmed_unlisted"),
                            ("Not added — looks out of scope", "skipped_new")):
             items = c[key]
             if not items:

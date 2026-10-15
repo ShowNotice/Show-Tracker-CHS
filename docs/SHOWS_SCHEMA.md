@@ -34,7 +34,7 @@ Keyed by a short uppercase code (`PH`, `MF`, `CHR`, …).
 
 | Field | Required | Meaning |
 |---|---|---|
-| `id` | yes, from the stable-ID migration onward | Permanent identifier; never changes, even if the date or name is corrected. See below. |
+| `id` | yes | Permanent identifier; never changes, even if the date or name is corrected. See below. |
 | `d` | yes | Date, `YYYY-MM-DD` (first day for a multi-day event) |
 | `e` | no | End date for a multi-day event, `YYYY-MM-DD` |
 | `b` | yes | Headliner / event name |
@@ -50,6 +50,7 @@ Keyed by a short uppercase code (`PH`, `MF`, `CHR`, …).
 | `flag` | no | Internal note for an open question or judgment call; not shown on the site |
 | `soldOut` | no | `true` when sold out |
 | `lowTix` | no | `true` when the venue says tickets are low |
+| `confirmed` | no | Date the owner entered or confirmed this show, `YYYY-MM-DD`. The routine won't remove or edit it because a source disagrees; removing it needs review. |
 
 ### Unknown values: leave the field out
 
@@ -64,7 +65,7 @@ Prices are whole numbers unless the venue really charges cents (e.g. `29.5`). Wr
 
 ### Uniqueness
 
-No two shows may share the same (`v`, `d`, `b`). Every `id` must be unique.
+No two shows may share the same (`v`, `d`, `b`). Every `id` must be unique. No show may match an entry in `pipeline/do_not_add.json` (the owner's "not happening" list).
 
 ### Stable IDs
 
@@ -81,5 +82,6 @@ The PR's check fails until someone adds the `owner-approved` label.
 
 - 40 or more shows added or changed
 - More than 5 upcoming shows removed for one venue, or more than 25% of its upcoming shows
-- A show's date moved by more than 30 days (detected once shows have `id`s)
+- A show's date moved by more than 30 days
+- An owner-confirmed show removed
 - A new or changed price outside $5–$200 (free is fine)
