@@ -200,6 +200,21 @@ The owner reported that the Pour House website listed many shows that weren't on
 - **The "Subscribe to calendar" iCal feed** (`/events/?ical=1`) was checked and rejected: it only covers ~2.5 weeks and is itself robots-blocked.
 - **Routine updated:** its Pour House row now names the path-based list as the source, and its first run with the new method won't auto-merge.
 
+### 2026-10-15: all-venue coverage audit (follow-up to the Pour House gap)
+
+Each fetchable venue's own calendar was compared against `shows.json` to find any other source the routine wasn't reading in full.
+
+| Venue | Finding | Action |
+|---|---|---|
+| North Charleston Coliseum (NCC) | Same problem as Pour House. The list page renders only 12 events; a "Load More" endpoint (`/events/events_ajax/{offset}?…per_page=12…`, robots-allowed) has the rest, 80 through Apr 2027. | Added KC & The Sunshine Band (1/28/27). Moved Travis Tritt from 9/26 to 11/14: same Ticketmaster event, rescheduled per the venue. Routine now pages the endpoint. "Sonic Live in Concert" is a full orchestra, so excluded. |
+| Music Farm (MF) | Calendar lists everything, but 3 music shows had been missed. | Added Benny The Butcher 11/11, Songs to Save the Edisto Finale 11/4 (Shovels & Rope and others), Des Rocs 1/19/27. Routine told to go through every card, use the `tm_classifications-*` classes, and retry once on HTTP 429. |
+| Charleston Music Hall (CMH) | Calendar lists everything (to Sep 2027); 2 music shows missed. | Added MICO 2/21/27 and Stayin' Alive 9/11/27. Same routine note as MF. |
+| Windjammer (WJ) | The list shows only the next 20 events, and `/events/page/N/` returns the same 20. Nothing currently missing. | Routine told to also check `events-sitemap.xml` for recently changed event pages that aren't on the list. |
+| Tin Roof, Uptown Social, Commonhouse, SNOB, New Realm, Royal American, Refinery, Credit One | In sync. The only gaps are excluded items (trivia, markets, DJ nights, karaoke, comedy, pre-party sets) and Commonhouse's "2nd Annual Shakedown Jam" (11/14), which earlier runs already skipped as ambiguous. | None. |
+| Firefly, Gaillard | Not re-audited (standing CAPTCHA). | — |
+
+The Royal American's robots.txt lists AI crawler user-agents, but they share the `User-agent: *` group, which blocks only `/config`, `/search` and `/account`, so `/schedule` stays allowed.
+
 ### 2026-09-17 → 2026-09-24: routine auto-merge policy — tried, caused a real bug to ship, reverted
 
 Full story consolidated here; see the policy-change note under "Show data collection" above for the standing-rule summary.
