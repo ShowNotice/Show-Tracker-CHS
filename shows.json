@@ -2328,14 +2328,15 @@
       "u": "https://charlestonjazz.com/performance/charleston-jazz-festival/"
     },
     {
-      "d": "2026-09-26",
+      "d": "2026-11-14",
       "b": "Travis Tritt",
       "o": "Tyler Reese Tritt",
       "s": "Performing Arts Center",
       "dr": "6:30 PM",
       "sh": "7:30 PM",
       "v": "NCC",
-      "u": "https://www.ticketmaster.com/event/2D00645BB5186067"
+      "u": "https://www.ticketmaster.com/event/2D00645BB5186067",
+      "flag": "Rescheduled from 2026-09-26 per the venue's event page (same Ticketmaster event; earlier tickets valid)."
     },
     {
       "d": "2026-10-02",
@@ -5985,6 +5986,64 @@
       "dop": 55,
       "v": "PH",
       "u": "https://aftontickets.com/event/group/1qjwv6r97o/preview",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-04",
+      "b": "Songs to Save the Edisto Finale",
+      "o": "Shovels & Rope, Mechanical River & more",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://charleston.boldtypetickets.com/events/188463039/songs-to-save-the-edisto-finale",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-11",
+      "b": "Benny The Butcher",
+      "dr": "7:30 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/benny-the-butcher-charleston-south-carolina-11-11-2026/event/2D006548C5FF810C",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2027-01-19",
+      "b": "Des Rocs",
+      "dr": "7:30 PM",
+      "sh": "8:00 PM",
+      "v": "MF",
+      "u": "https://www.ticketmaster.com/des-rocs-charleston-south-carolina-01-19-2027/event/2D006548AD3714C6",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2027-01-28",
+      "b": "KC & The Sunshine Band",
+      "s": "Performing Arts Center",
+      "dr": "6:30 PM",
+      "sh": "7:30 PM",
+      "v": "NCC",
+      "u": "https://www.ticketmaster.com/event/2D006528D7DCA098",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2027-02-21",
+      "b": "MICO",
+      "o": "Inbetween Tour",
+      "dr": "7:00 PM",
+      "sh": "8:00 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/mico-inbetween-tour-charleston-south-carolina-02-21-2027/event/2D006548AF3C1E94",
+      "flag": "Listed as \"On Sale Soon\" on the venue calendar as of 2026-10-15.",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2027-09-11",
+      "b": "Stayin' Alive – One Night of the Bee Gees",
+      "dr": "6:30 PM",
+      "sh": "7:30 PM",
+      "v": "CMH",
+      "u": "https://www.ticketmaster.com/stayin-alive-one-night-of-the-charleston-south-carolina-09-11-2027/event/2D006541AB30119A",
       "added": "2026-10-15"
     }
   ]
