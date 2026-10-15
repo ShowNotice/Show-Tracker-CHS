@@ -3,6 +3,7 @@
   python3 -m pipeline.run                 # all sources
   python3 -m pipeline.run --venues PH,WJ  # just these
   python3 -m pipeline.run --all-details   # fetch event pages for every show, not just new ones
+  python3 -m pipeline.run --reuse         # re-compare the last run's candidates.json, no fetching
 
 Exit code 0 even when some sources fail; failures are listed in the report.
 """
@@ -24,6 +25,7 @@ def main(argv=None):
     ap.add_argument("--out", default="pipeline/out")
     ap.add_argument("--venues", help="comma-separated venue codes (default: all)")
     ap.add_argument("--all-details", action="store_true")
+    ap.add_argument("--reuse", action="store_true", help="compare the last run's candidates.json again")
     args = ap.parse_args(argv)
 
     today = datetime.date.today().isoformat()
@@ -44,6 +46,13 @@ def main(argv=None):
 
     jobs = [(v, f, d, False) for v, (f, d) in SOURCES.items() if not wanted or v in wanted]
     jobs += [(k, f, d, True) for k, (f, d) in CROSS_CHECKS.items() if not wanted]
+    if args.reuse:
+        saved = json.load(open(os.path.join(args.out, "candidates.json"), encoding="utf-8"))["events"]
+        complete = {"earformusic": False}
+
+        def from_saved(name):
+            return lambda http, wants: {"events": saved[name], "complete": complete.get(name, True)}
+        jobs = [(n, from_saved(n), d, c) for n, f, d, c in jobs if n in saved]
     for name, fetch, desc, is_cross in jobs:
         print(f"fetching {name} ({desc}) …", file=sys.stderr, flush=True)
         try:

@@ -33,7 +33,8 @@ def parse(raw):
         elif NOT_MUSIC.search(name):
             skip = "not music (title)"
         out.append(event(venue, start.date().isoformat(), name, "livemusiccharleston",
-                         show=local_time_str(start), stage=e.get("stage"),
+                         show=local_time_str(start),
+                         stage=None if (e.get("stage") or "").lower() in ("", "main stage") else e.get("stage"),
                          tags=[t for t in [conf] + list(artist.get("genres") or []) if t],
                          skip=skip, note=(e.get("description") or "")[:300]))
     return out

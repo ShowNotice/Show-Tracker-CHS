@@ -27,7 +27,12 @@ def parse_items(html, today=None):
         date = month_day(m.group(1), m.group(2), m.group(4), today)
         end = month_day(m.group(1), m.group(3), m.group(4), today) if m.group(3) else None
         hall = "Performing Arts Center" if "Performing Arts Center" in body else ("Coliseum" if "Coliseum" in body else None)
-        skip = "not music (title)" if NOT_MUSIC.search(title + " " + body[:300]) else None
+        hit = NOT_MUSIC.search(title + " " + body[:300])
+        skip = None
+        if hit:
+            word = hit.group(0)
+            skip = ("North Charleston POPS! production (orchestral exclusion)" if word.lower() == "pops"
+                    else f"not music ({word!r} in listing)")
         e = event(VENUE, date, title, "ncc-list", stage=hall, page=page, skip=skip)
         if end and end != date:
             e["end"] = end
@@ -49,6 +54,12 @@ def parse_detail(html):
     tix = links(html, r"https://www\.ticketmaster\.com/[^\"]+|https://www\.axs\.com/[^\"]+")
     if tix:
         info["url"] = tix[0]
+    i = body.find("Event Details")
+    desc = body[i:i + 700] if i >= 0 else ""
+    if re.search(r"\bcomedian|stand-up|comedy special|\bcomedy\b", desc, re.I):
+        info["skip"] = "comedy (detail page)"
+    elif re.search(r"\bBroadway\b|the musical\b|Tony Award|live on stage", desc, re.I):
+        info["skip"] = "Broadway/theatre (detail page)"
     resched = re.search(r"rescheduled to ([A-Z][a-z]+ \d{1,2})", body)
     if resched:
         info["note"] = "Rescheduled to " + resched.group(1)

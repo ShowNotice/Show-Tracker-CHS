@@ -4,7 +4,9 @@ one retry for rate limits and dropped connections, and bot-challenge detection.
 A bot challenge (CAPTCHA, Cloudflare "Just a moment…") raises Blocked. Callers must
 treat that as "this source is unavailable this run", never try to get past it.
 """
+import gzip
 import time
+import zlib
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -44,7 +46,7 @@ class Http:
         """Return the response body as text. Raises Blocked or FetchError."""
         host = urllib.parse.urlsplit(url).hostname or ""
         host = host[4:] if host.startswith("www.") else host
-        hdrs = {"User-Agent": USER_AGENT, "Accept-Encoding": "identity"}
+        hdrs = {"User-Agent": USER_AGENT, "Accept-Encoding": "gzip, deflate"}
         hdrs.update(headers or {})
         last_err = None
         for attempt in range(2):
@@ -53,12 +55,12 @@ class Http:
             req = urllib.request.Request(url, headers=hdrs)
             try:
                 with urllib.request.urlopen(req, timeout=self.timeout) as resp:
-                    body = resp.read().decode(resp.headers.get_content_charset() or "utf-8", "replace")
+                    body = _decode(resp.read(), resp.headers)
                     if resp.headers.get("sg-captcha") or "/.well-known/sgcaptcha/" in resp.geturl():
                         raise Blocked(f"{url}: SiteGround CAPTCHA")
                     return body
             except urllib.error.HTTPError as e:
-                body = e.read().decode("utf-8", "replace") if e.fp else ""
+                body = _decode(e.read(), e.headers) if e.fp else ""
                 if e.headers.get("cf-mitigated") or "Just a moment..." in body or e.headers.get("sg-captcha"):
                     raise Blocked(f"{url}: bot challenge (HTTP {e.code})")
                 last_err = f"HTTP {e.code}"
@@ -76,3 +78,17 @@ class Http:
                     self.sleep(10)
                     continue
         raise FetchError(f"{url}: {last_err}")
+
+
+def _decode(raw, headers):
+    """Bytes -> text, decompressing gzip/deflate. Some servers (e.g. the Coliseum's)
+    send gzip even when asked not to, so the gzip magic bytes are checked too."""
+    enc = (headers.get("Content-Encoding") or "").lower()
+    if enc == "gzip" or raw[:2] == b"\x1f\x8b":
+        raw = gzip.decompress(raw)
+    elif enc == "deflate":
+        try:
+            raw = zlib.decompress(raw)
+        except zlib.error:
+            raw = zlib.decompress(raw, -zlib.MAX_WBITS)
+    return raw.decode(headers.get_content_charset() or "utf-8", "replace")

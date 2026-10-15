@@ -8,6 +8,9 @@ import re
 
 from .common import norm
 
+# Skip reasons too routine to list one by one in the report (counted instead).
+ROUTINE_SKIPS = ("DJ", "recurring filler", "Stingrays")
+
 FIELD_MAP = {"doors": "dr", "show": "sh", "price": "p", "price_dos": "dop", "stage": "s", "url": "u"}
 
 
@@ -41,7 +44,10 @@ def compare(shows, venue, events, complete, today):
     out = {"new": [], "skipped_new": [], "updates": [], "date_changes": [], "missing": []}
 
     for e in upcoming:
-        hit = next((i for i, s in enumerate(rows) if s["d"] == e["date"] and same_act(s["b"], e["title"])), None)
+        same = [i for i, s in enumerate(rows) if s["d"] == e["date"] and same_act(s["b"], e["title"])
+                and i not in matched_rows]
+        # Two listings of one act on one date (matinee + evening): pair by show time.
+        hit = next((i for i in same if rows[i].get("sh") == e.get("show")), same[0] if same else None)
         if hit is None:
             # Same act on a different nearby date: a possible date change.
             near = [i for i, s in enumerate(rows) if s["d"] >= today and same_act(s["b"], e["title"])
@@ -61,7 +67,7 @@ def compare(shows, venue, events, complete, today):
             if ek in e and e[ek] != s.get(sk):
                 if sk == "u" and s.get(sk):
                     continue   # keep an existing link unless a person decides otherwise
-                if sk == "s" and s.get(sk) and norm(s[sk]).startswith(norm(e[ek])[:4]):
+                if sk == "s" and s.get(sk) and (norm(e[ek]) in norm(s[sk]) or norm(s[sk]) in norm(e[ek])):
                     continue
                 diffs[sk] = {"file": s.get(sk), "source": e[ek]}
         if e.get("status") in ("sold out", "low tix") and not s.get("soldOut" if e["status"] == "sold out" else "lowTix"):
@@ -116,6 +122,14 @@ def report_markdown(results, today):
             if not items:
                 continue
             lines += ["", f"**{title}** ({len(items)})"]
+            if key == "skipped_new":
+                routine = [it for it in items if any(r in it["skip"] for r in ROUTINE_SKIPS)]
+                items = [it for it in items if it not in routine]
+                counts = {}
+                for it in routine:
+                    counts[it["skip"]] = counts.get(it["skip"], 0) + 1
+                for reason, n in sorted(counts.items()):
+                    lines.append(f"- {n} × _{reason}_ (not listed individually)")
             for it in items:
                 if key in ("new", "skipped_new"):
                     lines.append(f"- {_ev(it)}" + (f" — _{it['skip']}_" if it.get("skip") else ""))

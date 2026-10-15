@@ -59,6 +59,9 @@ class Parsers(unittest.TestCase):
         self.assertTrue(evs)
         self.assertTrue(any(e.get("skip") for e in evs if "Stingrays" in e["title"]))
         d = ncc.parse_detail(fx("ncc_detail.html"))
+        self.assertNotIn("skip", d)   # KC & The Sunshine Band: a concert
+        self.assertEqual(ncc.parse_detail("<p>Event Details Actor and comedian Tom Segura is one of ...</p>")["skip"],
+                         "comedy (detail page)")
         self.assertEqual((d["doors"], d["show"]), ("6:30 PM", "7:30 PM"))
         self.assertIn("ticketmaster.com", d["url"])
 
@@ -105,6 +108,16 @@ class Parsers(unittest.TestCase):
                 self.assertTrue(e.get("skip"))
             if "jazz" in e["tags"]:
                 self.assertFalse(e.get("skip"))
+
+    def test_gaillard_uncategorized_is_kept(self):
+        blk = ('<div class="column small-12 performance-item" data-timestamp="1796511600" data-categories="">'
+               '<div class="performance-item__title"> Shakey Graves</div>'
+               '<div class="text-accent performance-item__time">7:30 PM</div>'
+               '<div class="text-accent performance-item__venue">Charleston Gaillard Center, 95 Calhoun St.</div>'
+               '<a href="https://gaillardcenter.org/events/shakey-graves/">Learn More</a></div>')
+        e = misc.parse_gaillard(blk)[0]
+        self.assertFalse(e.get("skip"))
+        self.assertEqual(e["tags"], ["uncategorized"])
 
     def test_creditone(self):
         evs = misc.parse_creditone(fx("creditone.html"))

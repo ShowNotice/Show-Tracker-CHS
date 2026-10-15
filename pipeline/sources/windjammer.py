@@ -13,6 +13,8 @@ RECENT_DAYS = 120
 
 
 def stage_of(title):
+    if re.search(r"n[uü]trl beach stage", title, re.I):
+        return "NÜTRL Beach Stage"
     if re.search(r"beach stage", title, re.I):
         return "Beach Stage"
     if re.search(r"inside stage", title, re.I):

@@ -38,11 +38,15 @@ def parse_gaillard(html):
             continue
         local = utc_to_local(datetime.datetime.fromtimestamp(int(ts.group(1)), datetime.timezone.utc))
         skip = None
-        if not set(cats) & GC_INCLUDE:
-            skip = "category: " + (", ".join(cats) or "none")
-        elif set(cats) & {"classical-cso"}:
+        if re.match(r"CSO\b|Charleston Symphony", title):
+            skip = "classical/CSO (title)"
+        elif not cats:
+            cats = ["uncategorized"]   # e.g. Shakey Graves — read the event page
+        elif not set(cats) & GC_INCLUDE and cats != ["uncategorized"]:
+            skip = "category: " + ", ".join(cats)
+        elif set(cats) & {"classical-cso"} and not skip:
             skip = "classical/CSO"
-        if "Gaillard" not in where:
+        if "Gaillard" not in where and "95 Calhoun" not in where:
             skip = skip or f"elsewhere ({where})"
         out.append(event("GC", local.date().isoformat(), title, "gaillard",
                          show=parse_time(tm) or local_time_str(local), page=page, url=page, tags=cats, skip=skip))
