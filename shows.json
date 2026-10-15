@@ -5991,6 +5991,28 @@
       "u": "https://www.ticketmaster.com/event/2D006530A18FD67A",
       "flag": "Sourced from promoter Ear For Music's events page (earformusic.com/events), because Firefly's own site is CAPTCHA-blocked. Its listed 6–10 PM is a site-wide placeholder, not a confirmed time.",
       "added": "2026-10-15"
+    },
+    {
+      "d": "2027-04-17",
+      "b": "High Water Festival",
+      "o": "Saturday: Jack Johnson, Death Cab for Cutie, The Revivalists, Mat Kearney, Ole 60, Hazlett, GoldFord, Mo Lowda & the Humble, Penelope Road, Angela Autumn",
+      "dr": "TBA",
+      "sh": "TBA",
+      "v": "RFP",
+      "u": "https://highwaterfest.frontgatetickets.com/event/442grwzrmvp6p6eg",
+      "flag": "Lineup from multi-outlet press coverage of the 2026-10-13 announcement (JamBase, Relix, Post and Courier, Bandsintown, mxdwn), which agree on the day split. The official highwaterfest.com/lineup shows the lineup only as a poster image that couldn't be read from this environment on 2026-10-15. Entered at the owner's request. The Head and the Heart is also on the 2027 lineup, but press coverage disagrees on the day (Bandsintown: Saturday; Relix: Sunday), so it's listed on neither day yet.",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2027-04-18",
+      "b": "High Water Festival",
+      "o": "Sunday: Mt. Joy, Rainbow Kitten Surprise, Finn Wolfhard, Ax and the Hatchetmen, Congress the Band, West 22nd, Marlon Funaki, Alyssa Grace, Susannah Joffe",
+      "dr": "TBA",
+      "sh": "TBA",
+      "v": "RFP",
+      "u": "https://highwaterfest.frontgatetickets.com/event/442grwzrmvp6p6eg",
+      "flag": "Lineup from multi-outlet press coverage of the 2026-10-13 announcement (JamBase, Relix, Post and Courier, Bandsintown, mxdwn), which agree on the day split. The official highwaterfest.com/lineup shows the lineup only as a poster image that couldn't be read from this environment on 2026-10-15. Entered at the owner's request. The Head and the Heart is also on the 2027 lineup, but press coverage disagrees on the day (Bandsintown: Saturday; Relix: Sunday), so it's listed on neither day yet.",
+      "added": "2026-10-15"
     }
   ]
 }
