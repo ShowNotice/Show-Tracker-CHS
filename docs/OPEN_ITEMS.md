@@ -19,8 +19,9 @@ that may still apply but weren't re-checked are listed at the bottom.
 - **SNOB 2026-10-27:** Connor Sage and Matt Vajdic are both listed at 6:00 PM, on the
   venue's site too. Both rows are kept and flagged, and the 2026-10-22 run rechecks them.
 - **Flagged upcoming shows:** `scripts/validate_shows.py` lists them (50 on 2026-10-15),
-  open longest first, and the weekly PR carries the list. 20 had been open more than 21
-  days on 2026-10-15. Some are open questions, others just notes that could be deleted.
+  open longest first, and the weekly PR carries the list. The 20 that had been open more
+  than 21 days were cleared by the owner on 2026-10-15 (PR #116; the shows stay, as
+  included). The weekly review check-in now lists any flag open more than 21 days.
   The `flagged` dates on existing flags were backfilled from git history: the first
   commit containing each flag's opening words.
 - **Refinery show times:** the venue's site doesn't publish them, and the backup source
