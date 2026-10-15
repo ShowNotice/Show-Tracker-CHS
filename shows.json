@@ -1816,18 +1816,6 @@
       "flag": "Second night of a two-night stand with Dec 4; $56 2-night package also offered. \"moe.phrey's\" is the venue's own name for this collective (not a mistranscription of \"Al Schnier\" as earlier suspected) — confirmed directly on the event page."
     },
     {
-      "d": "2026-12-13",
-      "b": "John Cowan Trio",
-      "dr": "7:00 PM",
-      "sh": "8:00 PM",
-      "v": "PH",
-      "u": "https://charlestonpourhouse.com/event/john-cowan-trio/",
-      "p": 30,
-      "dop": 35,
-      "s": "Main Stage",
-      "flag": "No longer on the Pour House list as of 2026-10-15 and its event page returns 404 — likely cancelled. Creative Misfits is now listed (Deck Stage) that night. Left in place pending owner confirmation."
-    },
-    {
       "d": "2026-12-11",
       "b": "The Charleston Christmas Special",
       "dr": "6:00 PM",
@@ -2189,16 +2177,6 @@
       "sh": "8:00 PM",
       "v": "MF",
       "u": "https://www.ticketmaster.com/eddie-9v-charleston-south-carolina-10-16-2026/event/2D0064FDACE5E611"
-    },
-    {
-      "d": "2026-10-17",
-      "b": "NEW DATE: Drew Sidora",
-      "o": "DJ Shae Balboa",
-      "dr": "7:00 PM",
-      "sh": "8:00 PM",
-      "v": "MF",
-      "u": "https://www.ticketmaster.com/drew-sidora-charleston-south-carolina-05-29-2026/event/2D006462D5933FD6",
-      "flag": "No longer found anywhere on musicfarm.com/calendar/ (2026-09-24 check) — the 10/17 slot is now occupied by a different, excluded (DJ dance party) event. Likely cancelled, postponed, or moved off-venue; no replacement date found. Needs manual follow-up — left in place rather than guessing."
     },
     {
       "d": "2026-10-20",
@@ -2934,14 +2912,6 @@
       "p": 10
     },
     {
-      "d": "2026-11-19",
-      "b": "Üga Büga",
-      "dr": "—",
-      "sh": "7:00 PM",
-      "v": "TR",
-      "u": "https://www.bandsintown.com/e/1039657467-uga-buga-at-tin-roof"
-    },
-    {
       "d": "2026-09-12",
       "b": "High 5",
       "s": "Inside Stage",
@@ -3460,13 +3430,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-10-15",
-      "b": "Five Door Sedan",
-      "sh": "9:00 PM",
-      "v": "US",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-10-16",
       "b": "Kendell: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -3484,13 +3447,6 @@
       "d": "2026-10-17",
       "b": "Grayson Little",
       "sh": "9:00 PM",
-      "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-10-18",
-      "b": "FlashMob",
-      "sh": "5:00 PM",
       "v": "US",
       "added": "2026-09-01"
     },
@@ -4153,13 +4109,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-10-22",
-      "b": "East Bay Band",
-      "sh": "9:00 PM",
-      "v": "US",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-10-23",
       "b": "Clay Barker",
       "sh": "9:00 PM",
@@ -4707,13 +4656,6 @@
       "added": "2026-09-24"
     },
     {
-      "d": "2026-10-25",
-      "b": "FlashMob",
-      "sh": "5:00 PM",
-      "v": "US",
-      "added": "2026-09-24"
-    },
-    {
       "d": "2026-10-27",
       "b": "Grayson Little",
       "sh": "9:00 PM",
@@ -4724,13 +4666,6 @@
       "d": "2026-10-28",
       "b": "Southern Stomp",
       "sh": "8:00 PM",
-      "v": "US",
-      "added": "2026-09-24"
-    },
-    {
-      "d": "2026-10-29",
-      "b": "Five Door Sedan",
-      "sh": "9:00 PM",
       "v": "US",
       "added": "2026-09-24"
     },
@@ -4780,13 +4715,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-11-01",
-      "b": "FlashMob",
-      "sh": "5:00 PM",
-      "v": "US",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-11-05",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
@@ -4808,13 +4736,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-11-08",
-      "b": "FlashMob",
-      "sh": "5:00 PM",
-      "v": "US",
-      "added": "2026-09-01"
-    },
-    {
       "d": "2026-11-12",
       "b": "The Midnight City Band",
       "sh": "9:00 PM",
@@ -4832,13 +4753,6 @@
       "d": "2026-11-14",
       "b": "Grayson Little",
       "sh": "9:00 PM",
-      "v": "US",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-15",
-      "b": "FlashMob",
-      "sh": "5:00 PM",
       "v": "US",
       "added": "2026-09-01"
     },
@@ -6044,6 +5958,18 @@
       "sh": "7:30 PM",
       "v": "CMH",
       "u": "https://www.ticketmaster.com/stayin-alive-one-night-of-the-charleston-south-carolina-09-11-2027/event/2D006541AB30119A",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-07",
+      "b": "Elise Testone's Student Concert",
+      "o": "All ages; presented by Elise Testone",
+      "s": "Deck Stage",
+      "dr": "11:30 AM",
+      "sh": "12:00 PM",
+      "p": 10,
+      "v": "PH",
+      "u": "https://charlestonpourhouse.com/event/elise-testones-student-concert-2/",
       "added": "2026-10-15"
     }
   ]
