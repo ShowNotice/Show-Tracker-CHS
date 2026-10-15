@@ -8,6 +8,9 @@
     {"v": "CHA", "d": "2026-11-05", "b": "Backseat Company", "reason": "Owner 2026-10-15: no show 11/05; Backseat Company is 12/11"},
     {"v": "PH", "d": "2026-11-02", "b": "The Headstrings Collective – Monday Muse", "reason": "Owner 2026-10-15: off"},
     {"v": "CMH", "d": "2026-11-14", "b": "YALL Fest", "reason": "Owner 2026-10-01: excluded"},
-    {"v": "WJ", "d": "2027-01-01", "b": "The Piedmont Boys", "reason": "Owner 2026-10-15: remove (never on the venue's site)"}
+    {"v": "WJ", "d": "2027-01-01", "b": "The Piedmont Boys", "reason": "Owner 2026-10-15: remove (never on the venue's site)"},
+    {"v": "GC", "d": "2026-10-25", "b": "Ghostbusters in Concert", "reason": "Owner 2026-10-15: film screenings with a live orchestra are out"},
+    {"v": "NCC", "d": "2026-10-28", "b": "Sonic Live in Concert", "reason": "Owner 2026-10-15: film/game music with a live orchestra is out"},
+    {"v": "CMH", "d": "2027-01-19", "b": "The Sixties Show", "reason": "Owner 2026-10-15: out"}
   ]
 }
