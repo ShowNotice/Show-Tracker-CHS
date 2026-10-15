@@ -176,6 +176,30 @@ User reported Karina Rykman (Pour House, Oct 24) shown on the Deck Stage when sh
 - **Spot-checked the rest of the dataset for the same error class:** cross-referenced every other Pour House show independently confirmed as Main Stage (via an earlier direct fetch of the venue's own combined listing, in the Nov 5 investigation above) against its `s` field in `shows.json` — all 16 others matched correctly. This looks like an isolated one-off, not a systemic pattern, though only that one batch was checked; a wrong `s` value elsewhere in the data can't be fully ruled out without checking every show's own event page individually.
 - **Process fix applied:** added a rule to the routine's own prompt: the `s` (stage) field must be confirmed against a show's own individual event page, never inferred from its position on the combined multi-stage `/shows/` listing — that combined page interleaves cards from all three stages, and skimming it top-to-bottom is exactly the kind of mistake that produces this class of error. Cites this incident by name so it isn't rediscovered from scratch.
 
+### 2026-10-15: 26 Pour House shows missing — routine never looked past ~6 weeks
+
+The owner reported that the Pour House website listed many shows that weren't on the site.
+
+- **Root cause:** a wrong assumption in the routine's instructions.
+  - `/shows/` only renders about 6 weeks of events.
+  - Its "next page" links carry a `?shortcode=` query string, which robots.txt blocks (`Disallow: /*?`). The instructions read that as "further pages are robots-blocked."
+  - The fallback, fetching individual `/event/...` pages, only works for shows whose URLs are already known. New far-out shows were never discovered.
+- **The fix:**
+  - The calendar plugin (The Events Calendar) also serves path-based list pages: `/events/list/`, `/events/list/page/2/`, and so on.
+  - These have no query string, so robots.txt allows them. Crawled at its `Crawl-delay: 3`, they returned 99 upcoming events across 9 pages, through May 2027.
+  - Of the 33 that weren't on the site, 26 were real shows and were added with times and prices from each show's own page.
+- **Where the details came from:** each show's event page has schema.org Event JSON-LD with a correctly offset `startDate` and `offers.price`. The description text gives doors times and advance/day-of prices.
+- **Not added:**
+  - Excluded under the rules: two markets, a kids' drum circle, a "CLOSED" day, and an oyster roast whose copy mentions no music.
+  - Left as an open question for the owner: Elise Testone's Student Concert (11/7, noon, all ages).
+- **Small inconsistencies:**
+  - Several descriptions carry the wrong year ("2026" on 2027 shows). One has the wrong weekday: Creative Misfits is "Friday, December 13," but 12/13/2026 is a Sunday.
+  - The list's own TAUK title is misspelled "Tuak."
+  - Tan & Sober Gentlemen's description says Deck Stage, while the list and JSON-LD say Main Stage. Main Stage was used, and the row is flagged.
+- **Likely cancelled:** John Cowan Trio (12/13) is gone from the list and its event page returns 404. It was flagged, not removed, pending the owner.
+- **The "Subscribe to calendar" iCal feed** (`/events/?ical=1`) was checked and rejected: it only covers ~2.5 weeks and is itself robots-blocked.
+- **Routine updated:** its Pour House row now names the path-based list as the source, and its first run with the new method won't auto-merge.
+
 ### 2026-09-17 → 2026-09-24: routine auto-merge policy — tried, caused a real bug to ship, reverted
 
 Full story consolidated here; see the policy-change note under "Show data collection" above for the standing-rule summary.
