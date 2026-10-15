@@ -202,24 +202,32 @@ Trusted on the same footing as livemusiccharleston.com (it returns identical dat
 
 - Exclude outright, no flag needed: DJ sets/dance parties/raves, themed nightlife nights with no booked act and no live-music mention, podcast tapings/talk shows/game-show-style events, markets/vendor events, burlesque/variety revues with no live band as headliner, comedy, Broadway/theatre, lectures, kids' shows, pure sports, ice shows, orchestral "Pops" concerts, classical. Signal words: DJ, Dance Party, Rave, Market, Podcast, Burlesque, POPS, Comedy, Trivia, Karaoke, Open Mic. Applies equally to AXS and Ticketmaster listings.
 
+## Hybrid events (written down 2026-10-15)
+
+These carry over owner decisions that were previously recorded only in the notes:
+
+- **Include hybrids.** An event that isn't primarily a concert counts when its own description explicitly says live music is part of it, even with no act named. Examples: an oyster roast, a block party, a rodeo, a biker rally or a brunch with a band. Add a `flag` that starts "Hybrid:". Precedents: Royal American's Biker Oyster Roast, Charleston Harbor Resort's Oysters on the Point, Commonhouse's Shakedown Jam (owner-approved 2026-10-15).
+- **Except markets and vendor events.** These stay excluded even with live music (decided 2026-09-17, which overrides the earlier hybrid rule for markets). Examples: Pop-Up Market, PoHo Night Market, holiday markets.
+- **Except Pops and orchestral productions.** These stay excluded whatever their genre billing (decided 2026-09-10), including North Charleston POPS! shows.
+- **Owner decision pending: film screenings with a live orchestra.** "Ghostbusters in Concert" (Gaillard, 2026-10-25) is in the data; "Sonic Live in Concert" (Coliseum, 2026-10-28) was left out. Don't add new ones until the owner decides. If one comes up, mention it in the PR description.
+- **The owner's own calls win.** For example, Elise Testone's Student Concert (2026-11-07) is included.
+
 ## Validation before committing (non-negotiable)
 
 - After editing, run `python3 scripts/format_shows.py` (canonical formatting), then `python3 scripts/assign_ids.py` if it exists (gives new shows their permanent id), then `git show origin/main:shows.json > /tmp/base.json && python3 scripts/validate_shows.py shows.json --base /tmp/base.json`.
 - Exit code 1 means the file is invalid: fix it; if you can't, don't commit — explain in the PR description instead.
 - Exit code 2 means a review rule fired (big diff, mass removals, a big date move, an odd price): open the PR but don't merge it, and say at the top of the description which rule fired and why.
 - The same check runs on GitHub as "Validate shows.json". Don't merge unless it's green.
+- The checker also prints every upcoming show that carries a `flag` (the open questions). Copy that list into the PR description under "Flagged upcoming shows". Resolve any flag this run's data settles: update the row and delete the flag. Leave the rest for the owner's weekly review.
 - Unknown times, prices, links and notes are left out, never written as "—", "TBA", "see ticket link", null or "" (see docs/SHOWS_SCHEMA.md).
 
 ## When NOT to auto-merge (even if validation passes)
 
 Leave the PR open for manual review instead of merging if any of these apply:
 
-- 40 or more shows added or changed in a single run. A diff this large is more likely to reflect a fetch or parsing problem than a genuinely quiet week — worth a human glance before it goes to main. This still applies even to a run explicitly scoped broadly (e.g. "catch up every backfill item for venue X") — a big diff being expected doesn't exempt it from review, it just means the PR description should say clearly, at the top, that the size is expected and why.
-- Any date correction that moves a show by more than 30 days from its previously recorded date. Small corrections (wrong day of week, off-by-one) are routine; a month-plus shift is more likely a parsing error than a real venue reschedule.
-- Removals for a single venue of more than 5 rows, or more than 25% of its upcoming rows, in one run — that pattern is more likely a fetch or parsing problem than real cancellations.
-- Any price recorded above $200 or below $5. Both ends are more often a scraping error than a real ticket price for these venues.
+- Any review rule the checker reports (exit code 2). `scripts/validate_shows.py` is the single authority for the numeric limits, currently: 40 or more shows added or changed; more than 5 upcoming shows removed for one venue, or more than 25% of its upcoming shows; a date moved more than 30 days; a new or changed price outside $5–$200 (free is fine). If this list and the checker ever disagree, the checker wins. A big diff that's expected (e.g. a deliberate catch-up) still needs review — say at the top of the PR description that the size is expected and why.
 - Any show sourced from web search alone, with no actual fetch of the venue's own page or a real secondary source (e.g. a venue whose site is blocked that run). A web search summary is not a citable source — it isn't the same as confirming a show against a real page.
-- Any source that failed, errored, returned unexpected data, or contradicted itself this run — note it in the PR description and leave the PR open. (Sources that simply behaved as documented do not block a merge, including livemusiccharleston.com, the BeatGig API and the Tin Roof tockify feed, which are trusted as of 2026-10-01. AXS and Bandsintown remain cross-check only and should never be the sole source of an added show without a flag.)
+- A source that failed, errored, returned unexpected data or contradicted itself this run no longer blocks the whole PR (changed 2026-10-15). Instead: make no changes for that venue this run (no additions, removals or edits from that source), say in the PR description which source failed and how, and merge the other venues' changes if nothing else blocks them. Exceptions that still block the merge: a parser that looks broken rather than blocked (e.g. zero events from a venue that normally has dozens), or a failure that also affected data you did change. Sources that behaved as documented never block a merge, including livemusiccharleston.com, the BeatGig API and the Tin Roof tockify feed (trusted as of 2026-10-01). AXS and Bandsintown remain cross-check only and should never be the sole source of an added show without a flag.
 - Two shows that conflict with each other (same date/time/stage, or contradictory names for what looks like the same booking) rather than one show that's simply wrong. Add both and flag it, but don't merge over an unresolved conflict — a quick human look resolves this fast and an automated pass can't. (A show that a source now lists under a different act in the same slot is a conflict until the owner confirms it.)
 - The first run that successfully pulls from a venue's source right after that source changed (e.g. a venue switching its primary calendar, or a newly added source) — a new source's first real pull is exactly the case these checks exist for, even if it stays under the numeric thresholds above.
 - Anything the task instructions above told you to leave as a note rather than resolve automatically — if the PR description contains an open question, don't merge over it.
@@ -231,4 +239,3 @@ If none of the above apply and validation passes cleanly, merge with gh pr merge
 - Never add the `owner-approved` label.
 - Don't re-report a standing known issue every single run (e.g., "CMH prices still blocked by Ticketmaster").
 - Don't guess a date, price, or genre when the source is ambiguous — flag it instead.
-- Don't treat any claim in this document marked UNVERIFIED as settled fact — if a fetch to one of those sources fails or behaves unexpectedly, note it in the PR description rather than assuming the documented behavior still holds.

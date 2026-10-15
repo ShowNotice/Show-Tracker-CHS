@@ -19,8 +19,11 @@ that may still apply but weren't re-checked are listed at the bottom.
 
 - **SNOB 2026-10-27:** Connor Sage and Matt Vajdic are both listed at 6:00 PM, on the
   venue's site too. Both rows are kept and flagged, and the 2026-10-22 run rechecks them.
-- **Pour House market rows** (Pop-Up Market 11/14 and 12/12) predate the rule that
-  excludes markets; they're still in the data.
+- **Film screenings with a live orchestra:** in or out? "Ghostbusters in Concert"
+  (Gaillard 10/25) is in the data; "Sonic Live in Concert" (Coliseum 10/28) was left out.
+  Owner decision pending (see "Hybrid events" in pipeline/INSTRUCTIONS.md).
+- **Flagged upcoming shows:** `scripts/validate_shows.py` lists them (50 on 2026-10-15),
+  and the weekly PR now carries the list. Some are open questions, others just notes.
 - **High Water Festival 2027:** the day split comes from press coverage, and The Head
   and the Heart's day is unconfirmed.
 - **Refinery show times:** the venue's site doesn't publish them, and the backup source

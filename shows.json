@@ -3516,19 +3516,6 @@
     },
     {
       "d": "2026-11-14",
-      "b": "Pop-Up Market",
-      "o": "Ward Buckheister (of Sol Driven Train)",
-      "dr": "11:00 AM",
-      "sh": "1:00 PM",
-      "p": 0,
-      "s": "Back Lot",
-      "v": "PH",
-      "u": "https://charlestonpourhouse.com/event/pop-up-market-2026-11-14/",
-      "flag": "Hybrid: vendor market event with live music explicitly mentioned (music 1–4pm on the deck)",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-14",
       "b": "TAUK",
       "o": "lespecial ft. special guest Kanika Moore",
       "dr": "8:00 PM",
@@ -3589,18 +3576,6 @@
       "s": "Main Stage",
       "v": "PH",
       "u": "https://charlestonpourhouse.com/event/joey-harkum/",
-      "added": "2026-09-01"
-    },
-    {
-      "d": "2026-12-12",
-      "b": "Pop-Up Market",
-      "dr": "11:00 AM",
-      "sh": "11:00 AM",
-      "p": 0,
-      "s": "Back Lot",
-      "v": "PH",
-      "u": "https://charlestonpourhouse.com/event/pop-up-market-2026-12-12/2026-12-12/",
-      "flag": "Hybrid: vendor market event with live music explicitly mentioned on the deck",
       "added": "2026-09-01"
     },
     {
@@ -5825,7 +5800,7 @@
       "b": "Jason Isbell and the 400 Unit x Nathaniel Rateliff",
       "v": "FD",
       "u": "https://www.ticketmaster.com/event/2D006530A18FD67A",
-      "flag": "Sourced from promoter Ear For Music's events page (earformusic.com/events), because Firefly's own site is CAPTCHA-blocked. Its listed 6–10 PM is a site-wide placeholder, not a confirmed time.",
+      "flag": "Listed on both fireflydistillery.com and Ear For Music (2026-10-15); neither publishes times yet.",
       "added": "2026-10-15"
     },
     {
