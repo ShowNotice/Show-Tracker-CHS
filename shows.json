@@ -1233,9 +1233,7 @@
       "dr": "6:30 PM",
       "sh": "7:30 PM",
       "v": "NCC",
-      "u": "https://www.ticketmaster.com/event/2D00645BB5186067",
-      "flag": "Rescheduled from 2026-09-26 per the venue's event page (same Ticketmaster event; earlier tickets valid).",
-      "flagged": "2026-10-15"
+      "u": "https://www.ticketmaster.com/event/2D00645BB5186067"
     },
     {
       "id": "ncc-20261027-rumours-of-fleetwood-mac-tribute",
@@ -1557,9 +1555,7 @@
       "sh": "8:00 PM",
       "v": "MF",
       "u": "https://www.ticketmaster.com/winter-solstice-ball-18-charleston-south-carolina-11-20-2026/event/2D0064F5C0781CA1",
-      "added": "2026-09-04",
-      "flag": "Hybrid event: venue's own event-page description confirms a live string trio performs early in the evening (\"blending Vitamin String Quartet elegance with Bridgerton/booktok drama\") before DJ ALX takes over; included per the hybrid-event exception rule.",
-      "flagged": "2026-09-24"
+      "added": "2026-09-04"
     },
     {
       "id": "ph-20261018-silverada",
@@ -2461,8 +2457,6 @@
       "sh": "8:00 PM",
       "v": "MF",
       "u": "https://www.ticketmaster.com/graham-barham-club-country-tour-charleston-south-carolina-04-29-2027/event/2D006531A1D8F8B9",
-      "flag": "Billed on Ticketmaster as \"Club Country Tour.\"",
-      "flagged": "2026-09-24",
       "added": "2026-09-24"
     },
     {
@@ -2504,8 +2498,6 @@
       "sh": "8:00 PM",
       "v": "CMH",
       "u": "https://www.ticketmaster.com/40-fingers-charleston-south-carolina-04-07-2027/event/2D00652EC6B34A90",
-      "flag": "CMH's own site tags this 'classical/jazz' (Italian guitar quartet reinterpreting rock/pop/film music) but it is not orchestral/classical programming; included as a genuine touring music act.",
-      "flagged": "2026-09-24",
       "added": "2026-09-24"
     },
     {
@@ -2552,8 +2544,6 @@
       "dop": 35,
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85174",
-      "flag": "Halloweekend costume show per venue site.",
-      "flagged": "2026-09-24",
       "added": "2026-09-24"
     },
     {
@@ -2719,8 +2709,6 @@
       "b": "FlashMob",
       "sh": "9:00 PM",
       "v": "US",
-      "flag": "FlashMob normally plays an earlier 5:00 PM slot at this venue; this Halloween-week booking is at 9:00 PM instead — confirmed correct per source, not a typo.",
-      "flagged": "2026-09-24",
       "added": "2026-09-24"
     },
     {
@@ -4047,8 +4035,6 @@
       "sh": "12:00 PM",
       "p": 0,
       "v": "CHA",
-      "flag": "Hybrid: block party with vendors and kids' activities; live music explicitly billed. Included at the owner's request (2026-10-15).",
-      "flagged": "2026-10-15",
       "added": "2026-10-15",
       "confirmed": "2026-10-15"
     },
@@ -4069,8 +4055,6 @@
       "o": "Saturday: Jack Johnson, Death Cab for Cutie, The Revivalists, Ole 60, Mat Kearney, GoldFord, Hazlett, Mo Lowda & the Humble, Penelope Road, Angela Autumn",
       "v": "RFP",
       "u": "https://highwaterfest.frontgatetickets.com/event/442grwzrmvp6p6eg",
-      "flag": "Lineup, day split and billing order from the official poster on highwaterfest.com/lineup (read 2026-10-15). Presented by and benefiting Rock N Roll Rescue.",
-      "flagged": "2026-10-15",
       "added": "2026-10-15"
     },
     {
@@ -4080,8 +4064,6 @@
       "o": "Sunday: Mt. Joy, Rainbow Kitten Surprise, The Head and the Heart, Congress the Band, Finn Wolfhard, West 22nd, Alyssa Grace, Marlon Funaki, Ax and the Hatchetmen, Susannah Joffe",
       "v": "RFP",
       "u": "https://highwaterfest.frontgatetickets.com/event/442grwzrmvp6p6eg",
-      "flag": "Lineup, day split and billing order from the official poster on highwaterfest.com/lineup (read 2026-10-15). Presented by and benefiting Rock N Roll Rescue.",
-      "flagged": "2026-10-15",
       "added": "2026-10-15"
     }
   ]
