@@ -151,7 +151,6 @@
       "d": "2026-08-29",
       "b": "Goo Goo Dolls",
       "o": "Neon Trees",
-      "dr": "—",
       "sh": "7:30 PM",
       "v": "C1S",
       "u": "https://bit.ly/GooGooDollsCHS2026"
@@ -160,7 +159,6 @@
       "d": "2026-08-29",
       "b": "Darren Deese",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:30 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/darren-deess-on-the-inside-stage-3/"
@@ -169,10 +167,9 @@
       "d": "2026-08-28",
       "e": "2026-08-30",
       "b": "The Hang on Hazelnut Isle (Sister Hazel VIP Weekend)",
-      "dr": "—",
-      "sh": "Fri–Sun, various",
       "v": "WJ",
-      "u": "https://whollyticket.com/e/Hang2026"
+      "u": "https://whollyticket.com/e/Hang2026",
+      "o": "Fri–Sun, various times"
     },
     {
       "d": "2026-08-30",
@@ -180,8 +177,7 @@
       "s": "Deck Stage",
       "dr": "11:00 AM",
       "sh": "1:30 PM",
-      "v": "PH",
-      "u": ""
+      "v": "PH"
     },
     {
       "d": "2026-08-30",
@@ -196,7 +192,6 @@
       "d": "2026-08-30",
       "b": "Sister Hazel",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/e/saturdayHang2026"
@@ -205,7 +200,6 @@
       "d": "2026-08-30",
       "b": "Mark Bryan & Friends feat. The B. Wrights",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85078"
@@ -216,8 +210,7 @@
       "s": "Deck Stage",
       "dr": "5:00 PM",
       "sh": "6:00 PM",
-      "v": "PH",
-      "u": ""
+      "v": "PH"
     },
     {
       "d": "2026-08-31",
@@ -237,7 +230,7 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/8qj4dvnljm",
-      "p": 10.0
+      "p": 10
     },
     {
       "d": "2026-09-01",
@@ -247,7 +240,7 @@
       "sh": "8:30 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/k3xde8od9w/preview",
-      "p": 50.0
+      "p": 50
     },
     {
       "d": "2026-09-02",
@@ -256,8 +249,7 @@
       "dr": "5:00 PM",
       "sh": "6:30 PM",
       "v": "PH",
-      "u": "",
-      "p": 10.0
+      "p": 10
     },
     {
       "d": "2026-09-02",
@@ -267,13 +259,12 @@
       "sh": "9:30 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/g3xlkz67j6",
-      "p": 50.0
+      "p": 50
     },
     {
       "d": "2026-09-02",
       "b": "The War And Treaty",
       "o": "Emily Curtis",
-      "dr": "see ticket link",
       "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/the-war-and-treaty-the-refinery-tickets/14846923"
@@ -294,7 +285,7 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/qpxvvr2lxe/preview",
-      "p": 15.0
+      "p": 15
     },
     {
       "d": "2026-09-04",
@@ -305,7 +296,7 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/57jmloz69v",
-      "p": 10.0
+      "p": 10
     },
     {
       "d": "2026-09-04",
@@ -315,13 +306,12 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/57jmloql9v",
-      "p": 13.0
+      "p": 13
     },
     {
       "d": "2026-09-04",
       "b": "Moon Taxi",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=84646",
@@ -337,7 +327,7 @@
       "sh": "6:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/z59r730kjq/preview",
-      "p": 10.0
+      "p": 10
     },
     {
       "d": "2026-09-05",
@@ -347,13 +337,12 @@
       "sh": "9:00 PM",
       "v": "PH",
       "u": "https://aftontickets.com/event/buyticket/gl9e7y76x5",
-      "p": 20.0
+      "p": 20
     },
     {
       "d": "2026-09-05",
       "b": "The Movement and Pepper",
       "o": "Kash'd Out",
-      "dr": "see ticket link",
       "sh": "7:00 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/the-movement-pepper-the-refinery-tickets/14795373"
@@ -362,7 +351,6 @@
       "d": "2026-09-05",
       "b": "Moon Taxi",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=84647",
@@ -373,7 +361,6 @@
       "d": "2026-09-05",
       "b": "Tanner Beane & Dirty Power",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:30 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85142",
@@ -386,13 +373,11 @@
       "dr": "11:00 AM",
       "sh": "1:30 PM",
       "v": "PH",
-      "u": "",
-      "p": 5.0
+      "p": 5
     },
     {
       "d": "2026-09-06",
       "b": "Collie Buddz",
-      "dr": "see ticket link",
       "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/collie-buddz-the-refinery-tickets/14763473"
@@ -401,7 +386,6 @@
       "d": "2026-09-06",
       "b": "Moon Taxi",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=84648",
@@ -412,7 +396,6 @@
       "d": "2026-09-06",
       "b": "Hayley Williams",
       "o": "Magdalena Bay, Rico Nasty",
-      "dr": "—",
       "sh": "7:00 PM",
       "v": "C1S",
       "u": "https://www.ticketmaster.com/event/2D0064A6C6692807"
@@ -424,7 +407,6 @@
       "dr": "5:00 PM",
       "sh": "6:00 PM",
       "v": "PH",
-      "u": "",
       "p": 10
     },
     {
@@ -434,7 +416,6 @@
       "dr": "5:00 PM",
       "sh": "6:30 PM",
       "v": "PH",
-      "u": "",
       "p": 10
     },
     {
@@ -471,7 +452,6 @@
       "d": "2026-09-11",
       "b": "Collective Soul",
       "o": "Alan Price & The Modern Day",
-      "dr": "see ticket link",
       "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/collective-soul-the-refinery-tickets/14914033"
@@ -508,7 +488,6 @@
     {
       "d": "2026-09-12",
       "b": "6th Annual Drifter Fest: Bert Griggs Memorial Jam",
-      "dr": "see ticket link",
       "sh": "6:00 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/the-6th-annual-drifter-fest-the-refinery-tickets/14921673"
@@ -525,7 +504,6 @@
       "d": "2026-09-12",
       "b": "The Yacht Club",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85065"
@@ -544,7 +522,6 @@
       "d": "2026-09-17",
       "b": "Reverse Cowgirl",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85157",
@@ -555,17 +532,14 @@
       "d": "2026-09-18",
       "b": "Macelyn Batten",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:30 PM",
       "v": "WJ",
-      "u": "",
       "added": "2026-09-01"
     },
     {
       "d": "2026-09-19",
       "b": "Purple Magnolia",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:30 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/purple-magnolia-on-the-inside-stage-3/",
@@ -578,7 +552,6 @@
       "dr": "11:00 AM",
       "sh": "1:30 PM",
       "v": "PH",
-      "u": "",
       "p": 5
     },
     {
@@ -597,7 +570,6 @@
       "dr": "5:00 PM",
       "sh": "6:00 PM",
       "v": "PH",
-      "u": "",
       "p": 10
     },
     {
@@ -616,7 +588,6 @@
       "dr": "5:00 PM",
       "sh": "6:30 PM",
       "v": "PH",
-      "u": "",
       "p": 10
     },
     {
@@ -652,7 +623,6 @@
       "d": "2026-09-17",
       "b": "Zac Brown Band — Love & Fear",
       "o": "Brothers Osborne",
-      "dr": "—",
       "sh": "7:00 PM",
       "v": "C1S",
       "u": "https://go.seated.com/tour-events/37058618-abd2-4e67-a3c8-5ee96c93f65e"
@@ -661,7 +631,6 @@
       "d": "2026-09-13",
       "b": "The Swimming Pool Q's",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "12:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/spq/",
@@ -682,7 +651,6 @@
       "b": "Winyah",
       "o": "Old Mervs",
       "s": "NÜTRL Beach Stage — Night 1",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85033",
@@ -714,7 +682,6 @@
       "b": "Winyah",
       "o": "Old Mervs",
       "s": "NÜTRL Beach Stage — Night 2",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85000",
@@ -723,7 +690,6 @@
     {
       "d": "2026-09-20",
       "b": "James Taylor and His All-Star Band",
-      "dr": "—",
       "sh": "7:00 PM",
       "v": "C1S",
       "u": "https://www.ticketmaster.com/event/2D006425D468B556"
@@ -735,7 +701,6 @@
       "dr": "11:00 AM",
       "sh": "1:30 PM",
       "v": "PH",
-      "u": "",
       "p": 5
     },
     {
@@ -745,7 +710,6 @@
       "dr": "5:00 PM",
       "sh": "6:00 PM",
       "v": "PH",
-      "u": "",
       "p": 15,
       "o": "w/ Special Guest MJT"
     },
@@ -765,7 +729,6 @@
       "dr": "5:00 PM",
       "sh": "6:30 PM",
       "v": "PH",
-      "u": "",
       "p": 10
     },
     {
@@ -803,8 +766,6 @@
     {
       "d": "2026-09-25",
       "b": "Limbo at The Refinery presents: Jed Harrelson",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14899363"
     },
@@ -853,7 +814,6 @@
       "d": "2026-09-19",
       "b": "George Birge",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/george-birge-on-the-nutrl-beach-stage/"
@@ -865,7 +825,6 @@
       "dr": "11:00 AM",
       "sh": "1:30 PM",
       "v": "PH",
-      "u": "",
       "p": 5
     },
     {
@@ -883,7 +842,6 @@
       "d": "2026-09-26",
       "b": "Five Way Friday",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/five-way-friday-on-the-nutrl-beach-stage/"
@@ -891,12 +849,10 @@
     {
       "d": "2026-09-29",
       "b": "Okapi Dream",
-      "o": null,
       "s": "Deck Stage",
       "dr": "5:00 PM",
       "sh": "6:00 PM",
       "v": "PH",
-      "u": "",
       "p": 10
     },
     {
@@ -906,7 +862,6 @@
       "dr": "5:00 PM",
       "sh": "6:30 PM",
       "v": "PH",
-      "u": "",
       "p": 10
     },
     {
@@ -944,7 +899,6 @@
       "d": "2026-10-01",
       "b": "Ashley McBryde — Into The Wild Tour",
       "o": "Colton Bowlin",
-      "dr": "see ticket link",
       "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/ashley-mcbryde-the-refinery-tickets/14910213"
@@ -953,7 +907,6 @@
       "d": "2026-09-27",
       "b": "SUSTO Stringband",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/susto-stringband-on-the-nutrl-beach-stage/",
@@ -996,7 +949,6 @@
       "d": "2026-10-01",
       "b": "Lily Rose",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85034",
@@ -1059,7 +1011,6 @@
       "d": "2026-10-02",
       "b": "Saxsquatch",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/e/Saxsquatch26win",
@@ -1111,7 +1062,6 @@
       "b": "The Expendables",
       "o": "Matt & Zack",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=84942",
@@ -1123,8 +1073,6 @@
       "e": "2026-10-10",
       "b": "Riverfront Revival",
       "o": "Gavin Adcock, BigXthaPlug, Charles Wesley Godwin, Darius Rucker, Old Dominion, Nelly, Chase Matthew, Trombone Shorty & Orleans Avenue, Daniel Donato's Cosmic Country, Austin Williams, Atlus, Dani Rucker, Gullah Collective, Karley Scott Collins, Saluda Shoals, Mel Washington, Whiskey Run, AC Scar",
-      "dr": "TBA",
-      "sh": "TBA",
       "v": "RFP",
       "u": "https://riverfrontrevival.frontgatetickets.com/",
       "flag": "2-day festival; Fri/Sat artist split per AXS is partial (10 of 17 acts), not independently confirmed on the official site",
@@ -1187,7 +1135,6 @@
       "d": "2026-10-08",
       "b": "The California Honeydrops",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/e/CaliforniaHdrops26win",
@@ -1273,8 +1220,6 @@
     {
       "d": "2026-10-17",
       "b": "What a Wonderful World — Bruce Harris + The Charleston Jazz Orchestra",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "CMH",
       "u": "https://charlestonjazz.com/event/2026-what-a-wonderful-world-5pm/"
     },
@@ -1293,7 +1238,6 @@
       "d": "2026-10-17",
       "b": "The Red Clay Strays — Grateful Tour",
       "o": "The Revivalists, Haley Reinhart",
-      "dr": "—",
       "sh": "7:00 PM",
       "v": "C1S",
       "u": "https://www.ticketmaster.com/the-red-clay-strays-charleston-south-carolina-10-17-2026/event/2D006494D38D6295"
@@ -1365,7 +1309,6 @@
       "b": "Ax and The Hatchetmen",
       "o": "The Hails",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/ax/",
@@ -1375,7 +1318,6 @@
     {
       "d": "2026-10-23",
       "b": "Johnny Blue Skies & the Dark Clouds — Mutiny for the Masses 2026",
-      "dr": "—",
       "sh": "8:00 PM",
       "v": "C1S",
       "u": "https://www.ticketmaster.com/event/2D00647E1505F51D"
@@ -1407,7 +1349,6 @@
       "d": "2026-10-23",
       "b": "TopHouse",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/tophouse-on-the-nutrl-beach-stage/",
@@ -1516,7 +1457,6 @@
       "d": "2026-10-24",
       "b": "Josh Meloy",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/joshmeloy26oct/"
@@ -1545,7 +1485,6 @@
       "d": "2026-11-05",
       "b": "Drake Milligan",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "8:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/drake-milligan-on-the-nutrl-beach-stage/",
@@ -1575,7 +1514,6 @@
     {
       "d": "2026-11-08",
       "b": "Judah & The Lion",
-      "dr": "see ticket link",
       "sh": "7:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/judah-the-lion-the-refinery-tickets/14191714",
@@ -1610,8 +1548,6 @@
     {
       "d": "2026-11-11",
       "b": "Limbo at The Refinery presents: Jesse Roper",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14973523"
     },
@@ -1691,7 +1627,6 @@
       "d": "2026-11-07",
       "b": "Nightrain: The Guns N' Roses Experience",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/nightrain-the-guns-n-roses-experience-on-the-nutrl-beach-stage/",
@@ -1702,7 +1637,6 @@
       "d": "2026-11-19",
       "b": "Hunter Flynn — Back To My Roots Tour",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "8:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/hunter-flynn-back-to-my-roots-tour-on-the-nutrl-beach-stage/",
@@ -1749,7 +1683,6 @@
     {
       "d": "2026-12-02",
       "b": "Beartooth",
-      "dr": "see ticket link",
       "sh": "6:30 PM",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/beartooth-the-refinery-tickets/14914313"
@@ -1758,7 +1691,6 @@
       "d": "2026-12-03",
       "b": "FILMORE",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "8:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/filmore-on-the-nutrl-beach-stage/",
@@ -1797,8 +1729,6 @@
     {
       "d": "2026-12-05",
       "b": "2026 Holiday Swing — Tommy Brown Jr. + The Charleston Jazz Orchestra",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "CMH",
       "u": "https://charlestonjazz.com/event/2026-holiday-swing-5pm/"
     },
@@ -2300,8 +2230,6 @@
       "e": "2027-04-20",
       "b": "Charleston Jazz Festival",
       "o": "Full artist lineup and per-venue schedule not yet announced (dates only, as of Aug 2026)",
-      "dr": "TBA",
-      "sh": "TBA",
       "v": "CJF",
       "u": "https://charlestonjazz.com/performance/charleston-jazz-festival/"
     },
@@ -2408,15 +2336,12 @@
       "dr": "5:00 PM",
       "sh": "6:00 PM",
       "v": "PH",
-      "u": "",
-      "p": 0.0,
+      "p": 0,
       "added": "2026-09-01"
     },
     {
       "d": "2026-09-19",
       "b": "Piano Legends — Charleston Jazz Orchestra",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "CMH",
       "u": "https://charlestonjazz.com/event/2026-piano-legends-5pm/",
       "added": "2026-09-01"
@@ -2425,7 +2350,6 @@
       "d": "2026-09-04",
       "b": "Baby Fat",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:30 PM",
       "v": "WJ",
       "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85147",
@@ -2435,17 +2359,14 @@
       "d": "2026-09-06",
       "b": "Reverse Cowgirl",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:00 PM",
       "v": "WJ",
-      "u": "",
       "added": "2026-09-01"
     },
     {
       "d": "2026-09-06",
       "b": "NEEDTOBREATHE — The Long Surrender Tour",
       "o": "Drew and Ellie Holcomb",
-      "dr": "—",
       "sh": "6:30 PM",
       "v": "FD",
       "u": "https://fireflydistillery.com/event/live-at-firefly-with-needtobreathe-the-long-surrender-tour/"
@@ -2453,7 +2374,6 @@
     {
       "d": "2026-09-10",
       "b": "Billy Currington & Kip Moore",
-      "dr": "—",
       "sh": "7:00 PM",
       "v": "FD",
       "u": "https://fireflydistillery.com/event/live-at-firefly-with-billy-currington-kip-moore-live/"
@@ -2461,7 +2381,6 @@
     {
       "d": "2026-09-22",
       "b": "Charley Crockett — Age of the Ram Tour",
-      "dr": "—",
       "sh": "7:00 PM",
       "v": "FD",
       "u": "https://fireflydistillery.com/event/live-at-firefly-with-charley-crockett/"
@@ -2469,7 +2388,6 @@
     {
       "d": "2026-10-02",
       "b": "Turnpike Troubadours",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "FD",
       "u": "https://fireflydistillery.com/event/live-at-firefly-with-turnpike-troubadours/"
@@ -2477,16 +2395,12 @@
     {
       "d": "2026-09-19",
       "b": "Oktoberfest at New Realm — Live Music All Day",
-      "dr": "—",
-      "sh": "—",
-      "v": "NRB",
-      "u": ""
+      "v": "NRB"
     },
     {
       "d": "2026-09-04",
       "b": "Lowcountry Jazz Festival 2026: The All White Party",
       "sh": "7:00 PM",
-      "dr": "—",
       "v": "GC",
       "u": "https://gaillardcenter.org/events/lowcountry-jazz-festival-2026-the-all-white-party/"
     },
@@ -2494,7 +2408,6 @@
       "d": "2026-09-05",
       "b": "Lowcountry Jazz Festival 2026: Day One",
       "sh": "7:00 PM",
-      "dr": "—",
       "v": "GC",
       "u": "https://gaillardcenter.org/seat-selector?performance=55886"
     },
@@ -2502,7 +2415,6 @@
       "d": "2026-09-06",
       "b": "Lowcountry Jazz Festival 2026: Day Two",
       "sh": "7:00 PM",
-      "dr": "—",
       "v": "GC",
       "u": "https://gaillardcenter.org/seat-selector?performance=55888"
     },
@@ -2510,7 +2422,6 @@
       "d": "2026-10-15",
       "b": "Black Violin",
       "sh": "7:30 PM",
-      "dr": "—",
       "v": "GC",
       "u": "https://gaillardcenter.org/seat-selector?performance=55837"
     },
@@ -2518,7 +2429,6 @@
       "d": "2026-10-20",
       "b": "Chucho Valdés 85th Birthday Celebration",
       "sh": "7:30 PM",
-      "dr": "—",
       "v": "GC",
       "u": "https://gaillardcenter.org/seat-selector?performance=56195"
     },
@@ -2526,7 +2436,6 @@
       "d": "2026-10-25",
       "b": "Ghostbusters in Concert",
       "sh": "6:00 PM",
-      "dr": "—",
       "v": "GC",
       "u": "https://gaillardcenter.org/seat-selector?performance=55169"
     },
@@ -2534,7 +2443,6 @@
       "d": "2026-11-22",
       "b": "An Evening with Renée Elise Goldsberry",
       "sh": "7:00 PM",
-      "dr": "—",
       "v": "GC",
       "u": "https://gaillardcenter.org/seat-selector?performance=55828"
     },
@@ -2543,8 +2451,7 @@
       "b": "Never Really Over",
       "o": "Sunhouse, Erin Indigo",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/never-really-over-9-5-26"
     },
@@ -2552,8 +2459,7 @@
       "d": "2026-09-10",
       "b": "Campbell & Sons",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 0.0,
+      "p": 0,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-9-10-26"
     },
@@ -2562,8 +2468,7 @@
       "b": "Haunters",
       "o": "Windley, Sigourney's",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/haunters-9-11-26"
     },
@@ -2572,8 +2477,7 @@
       "b": "Jerkweed",
       "o": "Pocket Full Of Shells",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/jerkweed-9-12-26"
     },
@@ -2581,8 +2485,7 @@
       "d": "2026-09-17",
       "b": "Campbell & Sons",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 0.0,
+      "p": 0,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-9-17-26"
     },
@@ -2591,8 +2494,7 @@
       "b": "Dog Named Squid (Album Release)",
       "o": "The Boonies, Social Void",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/dog-namewd-squid-9-18-26"
     },
@@ -2601,8 +2503,7 @@
       "b": "Mommy's Little Monster (Social Distortion Tribute)",
       "o": "Super Runaway, Modern Fires",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/mommys-little-monster-9-19-26"
     },
@@ -2610,8 +2511,7 @@
       "d": "2026-09-24",
       "b": "Campbell & Sons",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 0.0,
+      "p": 0,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-9-24-26"
     },
@@ -2620,8 +2520,7 @@
       "b": "Mindwater",
       "o": "Impending Joy, Concept Rxch",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/mindwater-9-25-26"
     },
@@ -2630,8 +2529,7 @@
       "b": "Maraluso",
       "o": "Visit Neptune, Stono River Project",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/maraluso-9-26-26"
     },
@@ -2639,8 +2537,7 @@
       "d": "2026-10-01",
       "b": "Campbell & Sons",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 0.0,
+      "p": 0,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-10-1-26"
     },
@@ -2649,8 +2546,7 @@
       "b": "Daddy's Beemer",
       "o": "Sunhouse",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/daddys-beemer-10-2-26"
     },
@@ -2659,8 +2555,7 @@
       "b": "Meredith Foster",
       "o": "Macelyn Batten, Bennett Bost",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/meredith-foster-10-3-26"
     },
@@ -2669,8 +2564,7 @@
       "b": "Beau Monde",
       "o": "Gritty Flyright, Sidecar",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/beau-monde-10-9-26"
     },
@@ -2679,8 +2573,7 @@
       "b": "Nick Matthews",
       "o": "Olympic Blvd, Kendall Wase",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/nick-matthews-10-16-26"
     },
@@ -2688,8 +2581,7 @@
       "d": "2026-10-17",
       "b": "Campbell & Sons — 50th Anniversary Show",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/campbell-and-sons-10-17-26"
     },
@@ -2698,8 +2590,7 @@
       "b": "Sounds of BlackFox",
       "o": "Royal Tide, Gator Food",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/sounds-of-blackfox-10-23-26"
     },
@@ -2708,8 +2599,7 @@
       "b": "Nordista Freeze",
       "o": "Camisole",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/nordista-freeze-10-24-26"
     },
@@ -2718,8 +2608,7 @@
       "b": "Boogieman VI Kick-Off Party",
       "o": "The Saint Cecilia",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/boogieman-kick-off-party-10-30-26"
     },
@@ -2737,8 +2626,7 @@
       "b": "The Smoaks",
       "o": "Nick Matthews",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/the-smoaks-11-6-26"
     },
@@ -2747,8 +2635,7 @@
       "b": "Tyrie",
       "o": "Slim S.O.U.L., DJ DollaMenu, JT Rawww",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/tyrie-11-7-26"
     },
@@ -2756,8 +2643,7 @@
       "d": "2026-11-13",
       "b": "Kenny George Band",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/kenny-george-band-11-13-26"
     },
@@ -2766,8 +2652,7 @@
       "b": "The Head",
       "o": "Emma Grace Burton, Lilly Hartle",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/the-head-11-14-26"
     },
@@ -2776,8 +2661,7 @@
       "b": "Hotel Hugo",
       "o": "Yesterday's Clothes",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/hotel-hugo-11-20-26"
     },
@@ -2786,8 +2670,7 @@
       "b": "Buko Boys",
       "o": "Winterteeth, Never Really Over",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/buko-boys-11-21-26"
     },
@@ -2795,8 +2678,7 @@
       "d": "2026-11-27",
       "b": "C. Shreve The Professor",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/c-shreve-the-professor-11-27-26"
     },
@@ -2805,8 +2687,7 @@
       "b": "North By North",
       "o": "Thoroughfare, Garter",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/north-by-north-11-28-26"
     },
@@ -2815,8 +2696,7 @@
       "b": "The Defilers",
       "o": "Jared Petteys",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/the-defilers-12-4-26"
     },
@@ -2825,8 +2705,7 @@
       "b": "Rap-A-Lot: Royal Finale",
       "o": "DC, THRY, ShogunRew, Mahatma Mook, JxShamar, Amaru tha God, DJ Ovets, Special Guests",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/rap-a-lot-12-5-26"
     },
@@ -2835,8 +2714,7 @@
       "b": "CARLS",
       "o": "The Inhibitors",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/carls-12-11-26"
     },
@@ -2844,7 +2722,6 @@
       "d": "2026-12-13",
       "b": "14th Annual Royal American Biker Oyster Roast",
       "dr": "1:00 PM",
-      "sh": "—",
       "v": "RA",
       "flag": "Venue copy lists bikes, booze, oysters, games, live music, burn barrels, vendors, tattoos, and the prison bus with no band/act named — genuinely ambiguous whether this is a live-music show; included per the ambiguous-case rule rather than excluded",
       "added": "2026-09-01",
@@ -2854,8 +2731,7 @@
       "d": "2026-12-19",
       "b": "Campbell Brown's Holiday Show",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/campbell-brown-holiday-show-12-19-26"
     },
@@ -2864,8 +2740,7 @@
       "b": "North By North",
       "o": "The Fiori, The Boonies",
       "dr": "9:00 PM",
-      "sh": "—",
-      "p": 10.0,
+      "p": 10,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/north-by-north-1-29-27"
     },
@@ -2903,7 +2778,6 @@
     {
       "d": "2026-10-28",
       "b": "Infinitefreefall",
-      "dr": "—",
       "sh": "8:00 PM",
       "v": "TR",
       "u": "https://www.bandsintown.com/e/1040117990-infinitefreefall-at-tin-roof",
@@ -2915,7 +2789,6 @@
       "d": "2026-09-12",
       "b": "High 5",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:30 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/high-5-on-the-inside-stage-9/"
@@ -2924,7 +2797,6 @@
       "d": "2026-12-05",
       "b": "Tobacco Road + Wim Tapley & The Cannons",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:00 PM",
       "v": "WJ",
       "u": "https://the-windjammer.com/event/tobacco-road-wim-tapley-the-cannons-on-the-nutrl-beach-stage/",
@@ -2932,17 +2804,8 @@
       "dop": 25
     },
     {
-      "d": "2027-01-01",
-      "b": "The Piedmont Boys",
-      "dr": "—",
-      "sh": "8:00 PM",
-      "v": "WJ",
-      "u": "https://www.bandsintown.com/e/1039867208-the-piedmont-boys-at-windjammer"
-    },
-    {
       "d": "2026-09-11",
       "b": "TFOBV Drums",
-      "dr": "—",
       "sh": "6:00 PM",
       "v": "REF",
       "u": "https://www.bandsintown.com/e/1039403028-tfobv-drums-at-the-refinery-charleston"
@@ -3061,7 +2924,6 @@
       "d": "2026-12-18",
       "b": "Fancy As F*ck: Our 15th Anniversary Party",
       "dr": "9:00 PM",
-      "sh": "—",
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/fancy-as-fuck-12-18-26",
       "flag": "Venue lists only \"With special performances…\" with no named act -- genuinely ambiguous whether this is a live-music show; included per that rule rather than excluded",
@@ -4120,7 +3982,6 @@
       "b": "FlashMob",
       "o": "Charleston's Top 40 Party Band",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:30 PM",
       "p": 10,
       "v": "WJ",
@@ -4133,7 +3994,6 @@
       "b": "80s Beach Party w/ Weird Science",
       "o": "Weird Science",
       "s": "NÜTRL Beach Stage",
-      "dr": "—",
       "sh": "6:00 PM",
       "p": 15,
       "dop": 20,
@@ -4145,7 +4005,6 @@
       "d": "2026-12-19",
       "b": "Fo Daniels",
       "s": "Inside Stage",
-      "dr": "—",
       "sh": "9:00 PM",
       "p": 15,
       "dop": 20,
@@ -4360,7 +4219,6 @@
       "sh": "1:30 PM",
       "p": 5,
       "v": "PH",
-      "u": "",
       "added": "2026-09-24"
     },
     {
@@ -4371,7 +4229,6 @@
       "sh": "1:30 PM",
       "p": 5,
       "v": "PH",
-      "u": "",
       "added": "2026-09-24"
     },
     {
@@ -4382,7 +4239,6 @@
       "sh": "6:30 PM",
       "p": 10,
       "v": "PH",
-      "u": "",
       "added": "2026-09-24"
     },
     {
@@ -4872,8 +4728,6 @@
     {
       "d": "2026-10-30",
       "b": "Open Air Halloween",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "REF",
       "u": "https://posh.vip/e/loose-ends-open-air-halloween",
       "flag": "Included at the owner's direction 2026-10-01. Listed on therefinerychs.com under Events; the posh.vip ticket page could not be fetched from this environment, so lineup, times and price are unconfirmed.",
@@ -5056,8 +4910,6 @@
       "b": "Palmetto Knights - RofR",
       "sh": "12:00 PM",
       "v": "NRB",
-      "dr": "—",
-      "u": "",
       "added": "2026-10-08"
     },
     {
@@ -5208,7 +5060,6 @@
       "b": "SUSTO Residency (Debut + & I'm Fine Today)",
       "o": "Johnny Delaware",
       "dr": "8:00 PM",
-      "sh": "—",
       "p": 20,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/susto-residency-night-one",
@@ -5219,7 +5070,6 @@
       "b": "SUSTO Residency (Ever Since I Lost My Mind + Holiday Songs)",
       "o": "Brock Butler (Perpetual Groove), Cannon Rogers",
       "dr": "8:00 PM",
-      "sh": "—",
       "p": 20,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/susto-residency-night-two",
@@ -5230,7 +5080,6 @@
       "b": "SUSTO Residency (Time In The Sun + My Entire Life)",
       "o": "Judy Blank, Andrew Scotchie, Red McAdam",
       "dr": "8:00 PM",
-      "sh": "—",
       "p": 20,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/susto-residency-night-three",
@@ -5241,7 +5090,6 @@
       "b": "SUSTO Residency (Stringband: Volumes 1 + 2)",
       "o": "Holler Choir",
       "dr": "8:00 PM",
-      "sh": "—",
       "p": 20,
       "v": "RA",
       "u": "http://www.theroyalamerican.com/schedule/susto-residency-night-four",
@@ -5344,8 +5192,6 @@
     {
       "d": "2026-10-22",
       "b": "Limbo at The Refinery presents: Macelyn Batten",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/limbo-at-the-refinery-presents-the-refinery-tickets/14367984",
       "added": "2026-10-08"
@@ -5384,7 +5230,6 @@
       "d": "2027-02-06",
       "b": "Solid Country Gold",
       "o": "Oysters on the Point",
-      "sh": "see ticket link",
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
@@ -5394,7 +5239,6 @@
       "d": "2027-02-20",
       "b": "Thomas Champagne & Friends",
       "o": "Oysters on the Point",
-      "sh": "see ticket link",
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
@@ -5404,7 +5248,6 @@
       "d": "2027-03-06",
       "b": "The Green Thieves",
       "o": "Oysters on the Point",
-      "sh": "see ticket link",
       "v": "CHR",
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
@@ -5453,7 +5296,6 @@
       "dr": "5:00 PM",
       "sh": "6:30 PM",
       "v": "PH",
-      "u": "",
       "p": 10,
       "added": "2026-10-15"
     },
@@ -5464,7 +5306,6 @@
       "dr": "5:00 PM",
       "sh": "6:30 PM",
       "v": "PH",
-      "u": "",
       "p": 10,
       "added": "2026-10-15"
     },
@@ -5475,7 +5316,6 @@
       "dr": "5:00 PM",
       "sh": "6:30 PM",
       "v": "PH",
-      "u": "",
       "p": 10,
       "added": "2026-10-15"
     },
@@ -5535,8 +5375,6 @@
     {
       "d": "2027-02-27",
       "b": "Kameron Marlowe",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "REF",
       "u": "https://www.ticketweb.com/event/kameron-marlowe-the-refinery-tickets/14374254",
       "flag": "Times not published on the venue page; not fetched from a secondary source this run.",
@@ -5985,8 +5823,6 @@
     {
       "d": "2027-04-24",
       "b": "Jason Isbell and the 400 Unit x Nathaniel Rateliff",
-      "dr": "see ticket link",
-      "sh": "see ticket link",
       "v": "FD",
       "u": "https://www.ticketmaster.com/event/2D006530A18FD67A",
       "flag": "Sourced from promoter Ear For Music's events page (earformusic.com/events), because Firefly's own site is CAPTCHA-blocked. Its listed 6–10 PM is a site-wide placeholder, not a confirmed time.",
@@ -5996,8 +5832,6 @@
       "d": "2027-04-17",
       "b": "High Water Festival",
       "o": "Saturday: Jack Johnson, Death Cab for Cutie, The Revivalists, Mat Kearney, Ole 60, Hazlett, GoldFord, Mo Lowda & the Humble, Penelope Road, Angela Autumn",
-      "dr": "TBA",
-      "sh": "TBA",
       "v": "RFP",
       "u": "https://highwaterfest.frontgatetickets.com/event/442grwzrmvp6p6eg",
       "flag": "Lineup from multi-outlet press coverage of the 2026-10-13 announcement (JamBase, Relix, Post and Courier, Bandsintown, mxdwn), which agree on the day split. The official highwaterfest.com/lineup shows the lineup only as a poster image that couldn't be read from this environment on 2026-10-15. Entered at the owner's request. The Head and the Heart is also on the 2027 lineup, but press coverage disagrees on the day (Bandsintown: Saturday; Relix: Sunday), so it's listed on neither day yet.",
@@ -6007,8 +5841,6 @@
       "d": "2027-04-18",
       "b": "High Water Festival",
       "o": "Sunday: Mt. Joy, Rainbow Kitten Surprise, Finn Wolfhard, Ax and the Hatchetmen, Congress the Band, West 22nd, Marlon Funaki, Alyssa Grace, Susannah Joffe",
-      "dr": "TBA",
-      "sh": "TBA",
       "v": "RFP",
       "u": "https://highwaterfest.frontgatetickets.com/event/442grwzrmvp6p6eg",
       "flag": "Lineup from multi-outlet press coverage of the 2026-10-13 announcement (JamBase, Relix, Post and Courier, Bandsintown, mxdwn), which agree on the day split. The official highwaterfest.com/lineup shows the lineup only as a poster image that couldn't be read from this environment on 2026-10-15. Entered at the owner's request. The Head and the Heart is also on the 2027 lineup, but press coverage disagrees on the day (Bandsintown: Saturday; Relix: Sunday), so it's listed on neither day yet.",

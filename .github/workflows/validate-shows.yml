@@ -1,0 +1,46 @@
+name: Validate shows.json
+
+# Runs on every pull request that touches the show data or the tools that check it.
+# The weekly routine merges only when this check passes. A person can approve a
+# change the review rules flag (big diff, mass removals, big date moves, odd prices)
+# by adding the "owner-approved" label to the PR; the check then re-runs and passes.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+    paths:
+      - 'shows.json'
+      - 'scripts/**'
+      - 'pipeline/**'
+      - '.github/workflows/validate-shows.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'shows.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Unit tests for the checker and fetchers
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Check shows.json (schema, format, duplicates, venue codes)
+        if: github.event_name == 'push'
+        run: python3 scripts/validate_shows.py shows.json
+
+      - name: Check shows.json against main (adds review rules)
+        if: github.event_name == 'pull_request'
+        env:
+          ALLOW_REVIEW: ${{ contains(github.event.pull_request.labels.*.name, 'owner-approved') }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          git show "origin/${BASE_REF}:shows.json" > /tmp/base-shows.json
+          if [ "$ALLOW_REVIEW" = "true" ]; then
+            python3 scripts/validate_shows.py shows.json --base /tmp/base-shows.json --allow-review
+          else
+            python3 scripts/validate_shows.py shows.json --base /tmp/base-shows.json
+          fi
