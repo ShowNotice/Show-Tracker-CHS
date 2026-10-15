@@ -196,7 +196,7 @@ The owner reported that the Pour House website listed many shows that weren't on
   - Several descriptions carry the wrong year ("2026" on 2027 shows). One has the wrong weekday: Creative Misfits is "Friday, December 13," but 12/13/2026 is a Sunday.
   - The list's own TAUK title is misspelled "Tuak."
   - Tan & Sober Gentlemen's description says Deck Stage, while the list and JSON-LD say Main Stage. Main Stage was used, and the row is flagged.
-- **Likely cancelled:** John Cowan Trio (12/13) is gone from the list and its event page returns 404. It was flagged, not removed, pending the owner.
+- **Likely cancelled:** John Cowan Trio (12/13) is gone from the list and its event page returns 404. It was flagged, not removed, pending the owner. It was removed later the same day under the new removal rule.
 - **The "Subscribe to calendar" iCal feed** (`/events/?ical=1`) was checked and rejected: it only covers ~2.5 weeks and is itself robots-blocked.
 - **Routine updated:** its Pour House row now names the path-based list as the source, and its first run with the new method won't auto-merge.
 
@@ -214,6 +214,20 @@ Each fetchable venue's own calendar was compared against `shows.json` to find an
 | Firefly, Gaillard | Not re-audited (standing CAPTCHA). | — |
 
 The Royal American's robots.txt lists AI crawler user-agents, but they share the `User-agent: *` group, which blocks only `/config`, `/search` and `/account`, so `/schedule` stays allowed.
+
+### 2026-10-15: removal rule applied to current data
+
+Applying the new rule against same-day fetches removed 11 rows:
+- **Pour House:** John Cowan Trio 12/13 (event page 404).
+- **Music Farm:** "NEW DATE: Drew Sidora" 10/17 (gone from the calendar).
+- **Tin Roof:** Üga Büga 11/19 (gone from the feed).
+- **Uptown Social:** Five Door Sedan 10/15 and 10/29, East Bay Band 10/22, and FlashMob 10/18, 10/25, 11/1, 11/8 and 11/15. livemusiccharleston.com now lists only DJs on those nights.
+
+Not removed:
+- **Pour House TAUK 11/13:** still listed, only misspelled ("Tuak").
+- **Pour House "Pop-Up Market" 12/12:** the slot is now listed as "Poho Holiday Market." It's a market, which the rules exclude anyway; left for the owner.
+
+Added at the owner's request: Elise Testone's Student Concert, Pour House Deck Stage, 11/7, doors 11:30 AM, show noon, $10.
 
 ### 2026-09-17 → 2026-09-24: routine auto-merge policy — tried, caused a real bug to ship, reverted
 
@@ -393,6 +407,13 @@ A scheduled Claude Code Routine ("Show Tracker Weekly Update") fetches each trac
 - **Source priority — venue's own site first, always.** Prefer the venue's own site over Songkick, Bandsintown, Ticketmaster search snippets, or any other aggregator, for both event completeness and price accuracy. Aggregators are a fallback only when a venue's own site is genuinely unreachable for automated fetching.
 - **Price sourcing priority:** venue's own site price > official ticketing platform (Ticketmaster/Afton/WhollyTicket/AXS-where-co-primary/SeatGeek-where-official) direct page > nothing. Never resale/aggregator prices (StubHub, VividSeats, TickPick, SeatGeek-as-resale-elsewhere, Gametime, viagogo, Eventworld, etc.) — these run 2–3x face value and would corrupt the dataset. If only a resale price is reachable, report "no reliable face-value price found" and leave the show unpriced.
 - **Advance vs. day-of price: always store the advance price** in `p` (see Data model above).
+- **Removal rule (owner, 2026-10-15): a show that's no longer on the venue's own site or source is removed**, whether or not there's a cancellation notice. This replaces the earlier "keep it and flag it" rule. The routine's safeguards:
+  - Only remove after a fully successful fetch of that venue.
+  - Only for dates inside the range the source covers.
+  - Rule out renames, typos and date moves first.
+  - Never touch CHR or rows the owner entered or confirmed.
+  - List every removal in the PR description.
+  - More than 5 removals, or 25% of a venue's upcoming rows, in one run blocks auto-merge.
 - **Never leave a show at "discovery-source" data quality.** Confirmed bug, now fixed as a standing rule: 13 Charleston Pour House shows had a Jambase link as their `u` field and `"see ticket link"` placeholders for `dr`/`sh`, with no opener, stage, or price — even though each had a real, fully detailed event page on charlestonpourhouse.com itself. After finding a show exists (by any means, aggregator included), the URL and full detail fields (`dr`, `sh`, `p`, `o`, `s`) must come from the venue's own individual event page if one exists. Known constraint: Pour House's own `/shows/` listing paginates, and pages beyond the first are blocked by robots.txt; when that happens, search for the specific show by name + venue to find its individual event page directly, rather than falling back to an aggregator. **Update 2026-09-13:** this per-event-page fallback was confirmed working well past the originally-documented "~6 weeks" pagination cap — a run that same day fetched individual event pages out to mid-December cleanly.
 - **Pour House has multiple independent stages (added 2026-09-13):** Main Stage, Deck Stage, and an outdoor Back Lot Stage, each bookable on the same date independent of the others — finding one show for a given date at this venue is not a signal to stop looking for that date. Deck Stage shows are typically ticketed via `aftontickets.com` (a real, legitimate ticketing platform for this venue, not resale) rather than the venue's usual flow — treat an aftontickets.com link the same as any other direct venue ticket link. See "2026-09-13: Eric Lindell missing from Nov 5" under Incident history above for how this surfaced.
 - **Non-music events — exclude confidently, don't include-and-flag.** An earlier "if ambiguous, include and flag" rule let ten non-music events into the data in one session (Retroland Market, Booty Bounce Charleston, Sploinky Rave: Charleston, Off Campus Night, Gasolina Halloween Party, Sexy Unique Podcast, "Let's F*cking Date with Serena Kerrigan," 90s Burlesque, Emo Night Brooklyn: Halloween Edition) before being caught and removed. Revised rule:
