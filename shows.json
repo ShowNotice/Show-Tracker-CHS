@@ -5037,19 +5037,10 @@
     },
     {
       "d": "2026-10-20",
-      "b": "Connor Sage",
-      "sh": "6:00 PM",
-      "v": "SNOB",
-      "added": "2026-10-08",
-      "flag": "Same date/time/stage as \"Matt Vajdic\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
-    },
-    {
-      "d": "2026-10-20",
       "b": "Matt Vajdic",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "added": "2026-10-08",
-      "flag": "Same date/time/stage as \"Connor Sage\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+      "added": "2026-10-08"
     },
     {
       "d": "2026-10-22",
@@ -5078,7 +5069,7 @@
       "sh": "6:00 PM",
       "v": "SNOB",
       "added": "2026-10-08",
-      "flag": "Same date/time/stage as \"Matt Vajdic\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+      "flag": "Same 6:00 PM slot as \"Matt Vajdic\". Owner checked 2026-10-15: the venue's website lists both acts on 10/27. Kept both for now; recheck on the 2026-10-22 run."
     },
     {
       "d": "2026-10-27",
@@ -5086,7 +5077,7 @@
       "sh": "6:00 PM",
       "v": "SNOB",
       "added": "2026-10-08",
-      "flag": "Same date/time/stage as \"Connor Sage\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
+      "flag": "Same 6:00 PM slot as \"Connor Sage\". Owner checked 2026-10-15: the venue's website lists both acts on 10/27. Kept both for now; recheck on the 2026-10-22 run."
     },
     {
       "d": "2026-10-29",
