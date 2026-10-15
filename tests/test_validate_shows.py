@@ -54,6 +54,12 @@ class CheckFile(unittest.TestCase):
     def test_empty_link_rejected(self):
         self.assertTrue(self.errors([{**SHOW, "u": ""}]))
 
+    def test_flag_needs_flagged_date(self):
+        self.assertTrue(self.errors([{**SHOW, "flag": "open question"}]))
+        self.assertTrue(self.errors([{**SHOW, "flagged": "2026-10-15"}]))
+        self.assertTrue(self.errors([{**SHOW, "flag": "q", "flagged": "10/15"}]))
+        self.assertEqual(self.errors([{**SHOW, "flag": "q", "flagged": "2026-10-15"}]), [])
+
     def test_noncanonical_format(self):
         raw = doc([SHOW]).replace("  ", "    ")
         self.assertTrue(vs.check_file(raw)[1])
@@ -67,6 +73,11 @@ class Review(unittest.TestCase):
         old = [{**SHOW, "confirmed": "2026-10-15"}]
         items, _ = vs.review_items(self.base([]), self.base(old), "2026-10-15")
         self.assertTrue(any("owner confirmed" in i for i in items))
+
+    def test_pruning_past_shows_needs_no_review(self):
+        old = [{**SHOW, "b": f"B{i}", "id": f"b{i}", "d": "2026-09-01", "confirmed": "2026-08-01"} for i in range(60)]
+        items, _ = vs.review_items(self.base([]), self.base(old), "2026-10-15")
+        self.assertEqual(items, [])
 
     def test_mass_removal_flagged(self):
         old = [{**SHOW, "b": f"B{i}", "id": f"b{i}"} for i in range(10)]
@@ -88,6 +99,18 @@ class Review(unittest.TestCase):
     def test_price_outlier_flagged(self):
         items, _ = vs.review_items(self.base([{**SHOW, "p": 250}]), self.base([]), "2026-10-15")
         self.assertTrue(any("outside" in i for i in items))
+
+
+class Prune(unittest.TestCase):
+    def test_keeps_last_five_days_and_multi_day(self):
+        import prune_past
+        shows = [{**SHOW, "id": "a", "b": "A", "d": "2026-10-10"},          # 5 days ago: kept
+                 {**SHOW, "id": "b", "b": "B", "d": "2026-10-09"},          # 6 days ago: removed
+                 {**SHOW, "id": "c", "b": "C", "d": "2026-10-01", "e": "2026-10-12"},  # ended 3 days ago
+                 {**SHOW, "id": "d", "b": "D", "d": "2026-11-01"}]
+        data = {"shows": shows}
+        self.assertEqual(prune_past.prune(data, "2026-10-15"), 1)
+        self.assertEqual([s["id"] for s in data["shows"]], ["a", "c", "d"])
 
 
 if __name__ == "__main__":

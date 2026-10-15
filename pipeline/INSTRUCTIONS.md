@@ -43,7 +43,7 @@ stored prompt (last revised that day), then updated for the items marked "2026-1
 - Diff the results against the current shows.json in the repo.
 - Add genuinely new shows; backfill missing fields (time, price, opener, stage) on existing shows; correct dates where the venue's own site disagrees with the data. Remove a show when the venue has cancelled it or it is no longer on the venue's own site/source (see "Standing decisions").
 - Apply every rule below without exception.
-- Commit the updated shows.json (routines push to a claude/-prefixed branch and open a PR by default).
+- Commit the updated shows.json (routines push to a claude/-prefixed branch and open a PR by default). Title the PR exactly `Weekly show refresh YYYY-MM-DD: <short summary>`, with the run's date. The weekly review check-in finds your PR by that title, and a week without one is reported to the owner as a missed run.
 - If, and only if, every check in "Validation before committing" below passes cleanly, the PR's "Validate shows.json" check is green (see "Checking the PR and merging" below), and none of the "When NOT to auto-merge" conditions apply, merge the PR with a squash merge. Never add the `owner-approved` label yourself — only the owner, or an interactive session the owner directs, adds it. The repo deletes merged head branches automatically, so do not pass --delete-branch. If anything fails validation, or if anything about the diff seems unusual enough that a human should look first (see "When NOT to auto-merge" below), leave the PR open and unmerged instead — do not merge with a caveat, either merge cleanly or don't.
 - For anything that doesn't cleanly resolve under these rules — a judgment call, not a lookup — leave a clear note in the PR description (or a flag field on the specific show) rather than guessing.
 - Policy note (2026-10-01): a separate weekly check-in looks at any PR this leaves open and reviews it in plain language directly with the user, so leaving a PR open isn't a dead end — it just means a person looks at it within about a week.
@@ -216,7 +216,7 @@ These carry over owner decisions that were previously recorded only in the notes
 
 ## Validation before committing (non-negotiable)
 
-- After editing, run `python3 scripts/format_shows.py` (canonical formatting), then `python3 scripts/assign_ids.py` (gives every new show its permanent `id`), then `git show origin/main:shows.json > /tmp/base.json && python3 scripts/validate_shows.py shows.json --base /tmp/base.json`.
+- After editing, run `python3 scripts/format_shows.py` (canonical formatting), then `python3 scripts/prune_past.py` (removes shows that ended more than 5 days ago; owner decision 2026-10-15), then `python3 scripts/assign_ids.py` (gives every new show its permanent `id`), then `git show origin/main:shows.json > /tmp/base.json && python3 scripts/validate_shows.py shows.json --base /tmp/base.json`. Don't remove past shows by hand, and never re-add one the prune removed. Pruned rows don't count toward any review rule.
 - Exit code 1 means the file is invalid: fix it; if you can't, don't commit — explain in the PR description instead.
 - Exit code 2 means a review rule fired (big diff, mass removals, a big date move, an odd price): open the PR but don't merge it, and say at the top of the description which rule fired and why.
 - The same check runs on GitHub as "Validate shows.json". Don't merge unless it's green.
@@ -226,7 +226,8 @@ These carry over owner decisions that were previously recorded only in the notes
   - **A review rule fired (exit code 2):** this is the check asking the owner, not a problem to fix. Don't undo the change or add the `owner-approved` label to turn it green. Leave the PR open, as described under "When NOT to auto-merge".
   - **The unit-test step failed, or the job died before the checker ran** (checkout, setup, a runner error): that isn't the data. Leave the PR open and say so in the description.
   - Fix only `shows.json`. Never edit the checker, the tests, the workflow or `pipeline/do_not_add.json` to make the check pass.
-- The checker also prints every upcoming show that carries a `flag` (the open questions). Copy that list into the PR description under "Flagged upcoming shows". Resolve any flag this run's data settles: update the row and delete the flag. Leave the rest for the owner's weekly review.
+- The checker also prints every upcoming show that carries a `flag` (the open questions), the ones open more than 21 days first. Copy that list into the PR description under "Flagged upcoming shows", keeping the "open more than 21 days" group at the top. Resolve any flag this run's data settles: update the row and delete both `flag` and `flagged`. Leave the rest for the owner's weekly review.
+- **Every flag carries the date it was raised** (added 2026-10-15). When you add a `flag`, set `flagged` to today's date. When you only add detail to an existing flag, keep its `flagged` date; when the question itself changes, set a new date. The checker rejects a `flag` without a `flagged` date.
 - Never change an existing show's `id`, even when you correct its date, venue or name — users' starred shows point at it. A show that moved to a new date keeps its row and id: edit `d`, don't delete and re-add.
 - Unknown times, prices, links and notes are left out, never written as "—", "TBA", "see ticket link", null or "" (see docs/SHOWS_SCHEMA.md).
 

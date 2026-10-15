@@ -27,7 +27,7 @@ ID = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 SHOW_KEYS = {
     "id": str, "d": str, "e": str, "b": str, "v": str, "o": str, "s": str,
     "dr": str, "sh": str, "p": (int, float), "dop": (int, float), "u": str,
-    "added": str, "flag": str, "soldOut": bool, "lowTix": bool, "confirmed": str,
+    "added": str, "flag": str, "flagged": str, "soldOut": bool, "lowTix": bool, "confirmed": str,
 }
 VENUE_KEYS = {"name": str, "site": str, "type": str, "color": str, "address": str}
 VENUE_TYPES = {"venue", "festival"}
@@ -37,6 +37,8 @@ MAX_REMOVALS = 5       # per venue, per PR
 MAX_REMOVAL_SHARE = 0.25
 MAX_DATE_SHIFT_DAYS = 30
 PRICE_RANGE = (5, 200)  # 0 (free) is always fine
+PAST_KEEP_DAYS = 5     # scripts/prune_past.py removes shows that ended longer ago than this
+STALE_FLAG_DAYS = 21   # flags open longer than this are listed first for the owner
 
 
 def key(s):
@@ -126,9 +128,13 @@ def check_file(raw):
         for k in ("id", "d", "b", "v"):
             if not s.get(k):
                 errors.append(f"{where}: missing {k}")
-        for k in ("d", "e", "added", "confirmed"):
+        for k in ("d", "e", "added", "confirmed", "flagged"):
             if k in s and not valid_date(s[k]):
                 errors.append(f"{where}: {k} is not a YYYY-MM-DD date")
+        if "flag" in s and "flagged" not in s:
+            errors.append(f"{where}: flag needs flagged (the date the question was raised, YYYY-MM-DD)")
+        if "flagged" in s and "flag" not in s:
+            errors.append(f"{where}: flagged without a flag (delete both when the question is resolved)")
         if "e" in s and valid_date(s.get("d")) and valid_date(s["e"]) and s["e"] < s["d"]:
             errors.append(f"{where}: e (end date) is before d")
         if s.get("v") and s["v"] not in venues:
@@ -189,8 +195,11 @@ def review_items(new, base, today):
     added = [k for k in added if k not in moved_new]
     removed = [k for k in removed if k not in moved_old]
 
+    # Shows that have already happened leave the file through scripts/prune_past.py;
+    # removing them is expected and never needs review.
     for k in removed:
-        if old_by_key[k].get("confirmed"):
+        o = old_by_key[k]
+        if o.get("confirmed") and (o.get("e") or o["d"]) >= today:
             items.append(f"{k}: removed, but the owner confirmed it on {old_by_key[k]['confirmed']}")
 
     total = len(added) + len(changed) + len(moved)
@@ -226,6 +235,38 @@ def review_items(new, base, today):
     return items, dict(added=len(added), removed=len(removed), changed=len(changed), moved=len(moved))
 
 
+def past_cutoff(today):
+    """Shows whose last day is before this date are old enough to prune."""
+    return (datetime.date.fromisoformat(today) - datetime.timedelta(days=PAST_KEEP_DAYS)).isoformat()
+
+
+def flag_age(s, today):
+    try:
+        return (datetime.date.fromisoformat(today) - datetime.date.fromisoformat(s["flagged"])).days
+    except (KeyError, ValueError):
+        return None
+
+
+def print_flags(shows, today):
+    """List open questions on upcoming shows, the ones open longest first."""
+    flagged = [s for s in shows if s.get("flag") and (s.get("e") or s["d"]) >= today]
+    if not flagged:
+        return
+    line = lambda s: (f"- {s['d']} {s['v']} {s['b']} (flagged {s.get('flagged', '?')}): "
+                      + (s["flag"] if len(s["flag"]) <= 160 else s["flag"][:157] + "..."))
+    old = sorted((s for s in flagged if (flag_age(s, today) or 0) > STALE_FLAG_DAYS),
+                 key=lambda s: (s["flagged"], s["d"]))
+    rest = sorted((s for s in flagged if s not in old), key=lambda s: (s["d"], s["v"]))
+    print(f"\nFlagged upcoming shows ({len(flagged)}) — open questions to resolve or carry forward:")
+    if old:
+        print(f"\nOpen more than {STALE_FLAG_DAYS} days ({len(old)}) — settle these or delete the flag:")
+        for s in old:
+            print(line(s))
+        print("\nThe rest:")
+    for s in rest:
+        print(line(s))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("path")
@@ -246,13 +287,13 @@ def main():
     shows = data["shows"]
     print(f"OK: {len(shows)} shows across {len(data['venues'])} venues; format and schema checks passed.")
 
-    flagged = sorted((s for s in shows if s.get("flag") and (s.get("e") or s["d"]) >= args.today),
-                     key=lambda s: (s["d"], s["v"]))
-    if flagged:
-        print(f"\nFlagged upcoming shows ({len(flagged)}) — open questions to resolve or carry forward:")
-        for s in flagged:
-            note = s["flag"] if len(s["flag"]) <= 160 else s["flag"][:157] + "..."
-            print(f"- {s['d']} {s['v']} {s['b']}: {note}")
+    print_flags(shows, args.today)
+
+    cutoff = past_cutoff(args.today)
+    stale = sum(1 for s in shows if (s.get("e") or s["d"]) < cutoff)
+    if stale:
+        print(f"\nNote: {stale} show(s) ended more than {PAST_KEEP_DAYS} days ago; "
+              "run python3 scripts/prune_past.py to remove them.")
 
     if args.base:
         base_raw = open(args.base, encoding="utf-8").read()

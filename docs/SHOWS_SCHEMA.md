@@ -47,7 +47,8 @@ Keyed by a short uppercase code (`PH`, `MF`, `CHR`, …).
 | `dop` | no | Day-of-show price in dollars |
 | `u` | no | Ticket or event link, `http(s)://…` |
 | `added` | no | Date the show was first added, `YYYY-MM-DD` (drives "Added This Week") |
-| `flag` | no | Internal note for an open question or judgment call; not shown on the site |
+| `flag` | no | Internal note for an open question or judgment call; not shown on the site. Needs `flagged`. |
+| `flagged` | with `flag` | Date the open question was raised, `YYYY-MM-DD`. The checker lists flags open more than 21 days first. Delete it together with `flag`. |
 | `soldOut` | no | `true` when sold out |
 | `lowTix` | no | `true` when the venue says tickets are low |
 | `confirmed` | no | Date the owner entered or confirmed this show, `YYYY-MM-DD`. The routine won't remove or edit it because a source disagrees; removing it needs review. |
@@ -75,6 +76,14 @@ fills in any missing ones), and is never edited afterwards — including when th
 venue or name is corrected. It looks like `ph-20261121-interstellar-echoes`. The date
 and name in it are just a readable label from the moment it was created, not data.
 
+### Past shows
+
+Shows leave the file 5 days after their last day (`e`, or `d` for a one-day show):
+`python3 scripts/prune_past.py` removes them, using Charleston's date (owner decision,
+2026-10-15). The site and digest already hide anything before today, so the 5 days only
+keep recent rows around for corrections. Pruning a removed show also retires its `id`;
+a starred id that no longer matches a show is simply ignored.
+
 ## Review rules
 
 The checker compares a PR's file with `main` and flags these for a person to look at.
@@ -83,5 +92,5 @@ The PR's check fails until someone adds the `owner-approved` label.
 - 40 or more shows added or changed
 - More than 5 upcoming shows removed for one venue, or more than 25% of its upcoming shows
 - A show's date moved by more than 30 days
-- An owner-confirmed show removed
+- An owner-confirmed upcoming show removed (past shows leave through the prune, which never needs review)
 - A new or changed price outside $5–$200 (free is fine)
