@@ -229,6 +229,17 @@ Not removed:
 
 Added at the owner's request: Elise Testone's Student Concert, Pour House Deck Stage, 11/7, doors 11:30 AM, show noon, $10.
 
+### 2026-10-15: Ear For Music added as Firefly's source
+
+`earformusic.com/events` belongs to Ear For Music, the Mount Pleasant promoter (founded by Rob Lamble) that books Firefly Distillery's concerts and many Refinery shows. The owner pointed it out, and its domain was added to the environment allowlist the same day.
+
+- **What it is:** a Squarespace events list with 38 entries, 8 of them upcoming.
+- **robots.txt:** allows `/events`. The AI user-agents it names share the default rules. `?format=json` and `?format=ical` are disallowed, so only the HTML is read.
+- **Value:** it found **Jason Isbell and the 400 Unit x Nathaniel Rateliff at Firefly (2027-04-24)**, which was missing because Firefly's own site is CAPTCHA-blocked. The Refinery and Gaillard listings were already all in `shows.json`.
+- **Caveat:** its listed times (almost always 6:00–10:00 PM) are a placeholder, so times are recorded as "see ticket link."
+- **Not added:** a Charles Wesley Godwin show at Holy City Brewing (12/13), because that venue isn't tracked.
+- **Routine:** its Firefly row now names Ear For Music as the primary source. The first run won't auto-merge, and a Firefly row is not removed just because it's missing from this promoter page.
+
 ### 2026-09-17 → 2026-09-24: routine auto-merge policy — tried, caused a real bug to ship, reverted
 
 Full story consolidated here; see the policy-change note under "Show data collection" above for the standing-rule summary.

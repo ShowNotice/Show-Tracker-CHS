@@ -5981,6 +5981,16 @@
       "v": "CHA",
       "flag": "Hybrid: block party with vendors and kids' activities; live music explicitly billed. Included at the owner's request (2026-10-15).",
       "added": "2026-10-15"
+    },
+    {
+      "d": "2027-04-24",
+      "b": "Jason Isbell and the 400 Unit x Nathaniel Rateliff",
+      "dr": "see ticket link",
+      "sh": "see ticket link",
+      "v": "FD",
+      "u": "https://www.ticketmaster.com/event/2D006530A18FD67A",
+      "flag": "Sourced from promoter Ear For Music's events page (earformusic.com/events), because Firefly's own site is CAPTCHA-blocked. Its listed 6–10 PM is a site-wide placeholder, not a confirmed time.",
+      "added": "2026-10-15"
     }
   ]
 }
