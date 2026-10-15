@@ -3472,14 +3472,6 @@
       "added": "2026-09-01"
     },
     {
-      "d": "2026-10-16",
-      "b": "Grayson Little",
-      "sh": "9:00 PM",
-      "v": "US",
-      "added": "2026-09-01",
-      "flag": "CONFLICT: livemusiccharleston.com no longer lists Grayson Little this night; it lists Moody Bridge at 9:00 PM instead. Left in place pending owner confirmation."
-    },
-    {
       "d": "2026-10-17",
       "b": "Uncle Gary's Band: Live at Commonhouse",
       "sh": "6:00 PM",
@@ -4007,17 +3999,6 @@
       "p": 5,
       "v": "PH",
       "added": "2026-09-01"
-    },
-    {
-      "d": "2026-11-02",
-      "b": "The Headstrings Collective – Monday Muse",
-      "s": "Deck Stage",
-      "dr": "5:00 PM",
-      "sh": "6:00 PM",
-      "p": 0,
-      "v": "PH",
-      "added": "2026-09-01",
-      "flag": "Not shown on the Pour House list page as of 2026-10-15 although neighboring Mondays are; no cancellation notice seen. Left in place."
     },
     {
       "d": "2026-11-06",
@@ -5071,14 +5052,6 @@
       "flag": "Same date/time/stage as \"Connor Sage\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
     },
     {
-      "d": "2026-10-21",
-      "b": "Ben Somerville",
-      "sh": "6:00 PM",
-      "v": "SNOB",
-      "added": "2026-10-08",
-      "flag": "CONFLICT: source now lists a different act (Connor Sage) at 6:00 PM the same night. Left in place pending owner confirmation."
-    },
-    {
       "d": "2026-10-22",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -5116,14 +5089,6 @@
       "flag": "Same date/time/stage as \"Connor Sage\" (both Main Stage, 6:00 PM) per two separate source booking IDs — could be a co-bill or data error; same pattern as 2026-09-29. Kept pending confirmation with the venue."
     },
     {
-      "d": "2026-10-28",
-      "b": "Ben Somerville",
-      "sh": "6:00 PM",
-      "v": "SNOB",
-      "added": "2026-10-08",
-      "flag": "CONFLICT: source now lists a different act (Krystal Halvorson) at 6:00 PM the same night. Left in place pending owner confirmation."
-    },
-    {
       "d": "2026-10-29",
       "b": "Of The Heart",
       "sh": "7:00 PM",
@@ -5143,14 +5108,6 @@
       "sh": "8:00 PM",
       "v": "US",
       "added": "2026-10-08"
-    },
-    {
-      "d": "2026-11-05",
-      "b": "Backseat Company : Live At Commonhouse",
-      "sh": "6:00 PM",
-      "v": "CHA",
-      "added": "2026-10-08",
-      "flag": "Source no longer lists Backseat Company on 11/05 (International Stout Day is listed instead) and lists them on 12/11 (36 days later). Left in place pending owner confirmation."
     },
     {
       "d": "2026-11-07",
@@ -5683,7 +5640,6 @@
       "b": "Moody Bridge",
       "sh": "9:00 PM",
       "v": "US",
-      "flag": "CONFLICT: livemusiccharleston.com lists Moody Bridge at 9:00 PM; the file already has Grayson Little at 9:00 PM the same night. Owner to confirm which is correct.",
       "added": "2026-10-15"
     },
     {
@@ -5698,7 +5654,6 @@
       "b": "Connor Sage",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "flag": "CONFLICT: source now lists this act at 6:00 PM, same slot as Ben Somerville (already in file). Owner to confirm.",
       "added": "2026-10-15"
     },
     {
@@ -5706,7 +5661,6 @@
       "b": "Krystal Halvorson",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "flag": "CONFLICT: source now lists this act at 6:00 PM, same slot as Ben Somerville (already in file). Owner to confirm.",
       "added": "2026-10-15"
     },
     {
@@ -5721,7 +5675,6 @@
       "b": "Backseat Company : Live At Commonhouse",
       "sh": "6:00 PM",
       "v": "CHA",
-      "flag": "Source now lists Backseat Company on 12/11 and a different event on 11/05. See the 11/05 row; owner to confirm which date is right.",
       "added": "2026-10-15"
     }
   ]
