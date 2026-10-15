@@ -1,5 +1,5 @@
 {
-  "dataUpdatedAt": "2026-10-13",
+  "dataUpdatedAt": "2026-10-15",
   "venues": {
     "PH": {
       "name": "Charleston Pour House",
@@ -3476,7 +3476,8 @@
       "b": "Grayson Little",
       "sh": "9:00 PM",
       "v": "US",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "flag": "CONFLICT: livemusiccharleston.com no longer lists Grayson Little this night; it lists Moody Bridge at 9:00 PM instead. Left in place pending owner confirmation."
     },
     {
       "d": "2026-10-17",
@@ -4015,7 +4016,8 @@
       "sh": "6:00 PM",
       "p": 0,
       "v": "PH",
-      "added": "2026-09-01"
+      "added": "2026-09-01",
+      "flag": "Not shown on the Pour House list page as of 2026-10-15 although neighboring Mondays are; no cancellation notice seen. Left in place."
     },
     {
       "d": "2026-11-06",
@@ -4646,8 +4648,11 @@
       "b": "Lee Wilder",
       "v": "TR",
       "u": "https://tockify.com/tinroofschedule/detail/1832/1792107000000",
-      "flag": "Bare listing — no door/show/price text published yet.",
-      "added": "2026-09-24"
+      "added": "2026-09-24",
+      "o": "Moonswimmer",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "p": 10
     },
     {
       "d": "2026-10-19",
@@ -4673,9 +4678,12 @@
       "d": "2026-10-24",
       "b": "Never Any Ordinary",
       "v": "TR",
-      "u": "https://tockify.com/tinroofschedule/detail/1833/1792884600000",
-      "flag": "Band's own 10-year anniversary show (\"Never Any Ordinary 10 year party!\"); no door/show/price published in the feed yet.",
-      "added": "2026-09-24"
+      "u": "https://tockify.com/tinroofschedule/detail/1833/1792879200000",
+      "added": "2026-09-24",
+      "o": "Small Doses, Animal Gamble, Angel Gray, Mason Thomas, secret special guest",
+      "dr": "6:00 PM",
+      "sh": "7:00 PM",
+      "p": 10
     },
     {
       "d": "2026-10-25",
@@ -5067,7 +5075,8 @@
       "b": "Ben Somerville",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "added": "2026-10-08"
+      "added": "2026-10-08",
+      "flag": "CONFLICT: source now lists a different act (Connor Sage) at 6:00 PM the same night. Left in place pending owner confirmation."
     },
     {
       "d": "2026-10-22",
@@ -5111,7 +5120,8 @@
       "b": "Ben Somerville",
       "sh": "6:00 PM",
       "v": "SNOB",
-      "added": "2026-10-08"
+      "added": "2026-10-08",
+      "flag": "CONFLICT: source now lists a different act (Krystal Halvorson) at 6:00 PM the same night. Left in place pending owner confirmation."
     },
     {
       "d": "2026-10-29",
@@ -5139,7 +5149,8 @@
       "b": "Backseat Company : Live At Commonhouse",
       "sh": "6:00 PM",
       "v": "CHA",
-      "added": "2026-10-08"
+      "added": "2026-10-08",
+      "flag": "Source no longer lists Backseat Company on 11/05 (International Stout Day is listed instead) and lists them on 12/11 (36 days later). Left in place pending owner confirmation."
     },
     {
       "d": "2026-11-07",
@@ -5534,6 +5545,184 @@
       "u": "https://linktr.ee/chsharborevents",
       "flag": "Hybrid: oyster roast with live music (Charleston Harbor Resort's \"Oysters on the Point\" series). Entered by hand from the venue's Instagram announcement, which isn't scraped. Start time not published yet (earlier dates in the series run 2–6 PM).",
       "added": "2026-10-13"
+    },
+    {
+      "d": "2026-11-08",
+      "b": "Photon",
+      "o": "ft. Members of Dopapod & Magic Beans (Pre-Sunsquabi)",
+      "s": "Deck Stage",
+      "dr": "5:30 PM",
+      "sh": "6:00 PM",
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/qpxvnvp29e",
+      "p": 10,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-10",
+      "b": "Catholics x Ssighborggg",
+      "o": "Paris Byars Club, Winterteeth",
+      "s": "Main Stage",
+      "dr": "8:00 PM",
+      "sh": "9:00 PM",
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/el9500y7j2",
+      "p": 10,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-19",
+      "b": "Bit Brigade",
+      "o": "Performs \"The Legend of Zelda\" + \"Castlevania\" + \"Tetris\" live",
+      "s": "Main Stage",
+      "dr": "7:30 PM",
+      "sh": "8:30 PM",
+      "v": "PH",
+      "u": "https://aftontickets.com/event/buyticket/3px8ge21j1",
+      "flag": "No price published on the Pour House list page as of 2026-10-15.",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-04",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "v": "PH",
+      "u": "",
+      "p": 10,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-11",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "v": "PH",
+      "u": "",
+      "p": 10,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-18",
+      "b": "The Reckoning (Grateful Dead Tribute)",
+      "s": "Deck Stage",
+      "dr": "5:00 PM",
+      "sh": "6:30 PM",
+      "v": "PH",
+      "u": "",
+      "p": 10,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-10-17",
+      "b": "High Society",
+      "s": "Inside Stage",
+      "dr": "9:30 PM",
+      "sh": "10:00 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85214",
+      "p": 10,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-10-23",
+      "b": "VYNL",
+      "s": "Inside Stage",
+      "dr": "9:30 PM",
+      "sh": "10:00 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85216",
+      "p": 10,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-10-24",
+      "b": "Tanner Beane & Dirty Power",
+      "s": "Inside Stage",
+      "dr": "9:30 PM",
+      "sh": "10:00 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85215",
+      "p": 10,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-21",
+      "b": "Nirvani: A Nirvana Tribute Experience",
+      "s": "Inside Stage",
+      "dr": "9:00 PM",
+      "sh": "9:30 PM",
+      "v": "WJ",
+      "u": "https://whollyticket.com/paymentpage/payment.php?event_id=85213",
+      "p": 15,
+      "dop": 20,
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-07",
+      "b": "434",
+      "sh": "7:30 PM",
+      "v": "TR",
+      "u": "https://tockify.com/tinroofschedule/detail/1848/1794097800000",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2027-02-27",
+      "b": "Kameron Marlowe",
+      "dr": "see ticket link",
+      "sh": "see ticket link",
+      "v": "REF",
+      "u": "https://www.ticketweb.com/event/kameron-marlowe-the-refinery-tickets/14374254",
+      "flag": "Times not published on the venue page; not fetched from a secondary source this run.",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-10-16",
+      "b": "Moody Bridge",
+      "sh": "9:00 PM",
+      "v": "US",
+      "flag": "CONFLICT: livemusiccharleston.com lists Moody Bridge at 9:00 PM; the file already has Grayson Little at 9:00 PM the same night. Owner to confirm which is correct.",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-10-31",
+      "b": "The Regulars",
+      "sh": "2:00 PM",
+      "v": "US",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-10-21",
+      "b": "Connor Sage",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "flag": "CONFLICT: source now lists this act at 6:00 PM, same slot as Ben Somerville (already in file). Owner to confirm.",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-10-28",
+      "b": "Krystal Halvorson",
+      "sh": "6:00 PM",
+      "v": "SNOB",
+      "flag": "CONFLICT: source now lists this act at 6:00 PM, same slot as Ben Somerville (already in file). Owner to confirm.",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-11-13",
+      "b": "The Folly Lama: Live at Commonhouse",
+      "sh": "6:00 PM",
+      "v": "CHA",
+      "added": "2026-10-15"
+    },
+    {
+      "d": "2026-12-11",
+      "b": "Backseat Company : Live At Commonhouse",
+      "sh": "6:00 PM",
+      "v": "CHA",
+      "flag": "Source now lists Backseat Company on 12/11 and a different event on 11/05. See the 11/05 row; owner to confirm which date is right.",
+      "added": "2026-10-15"
     }
   ]
 }
