@@ -220,6 +220,12 @@ These carry over owner decisions that were previously recorded only in the notes
 - Exit code 1 means the file is invalid: fix it; if you can't, don't commit — explain in the PR description instead.
 - Exit code 2 means a review rule fired (big diff, mass removals, a big date move, an odd price): open the PR but don't merge it, and say at the top of the description which rule fired and why.
 - The same check runs on GitHub as "Validate shows.json". Don't merge unless it's green.
+- **If that GitHub check fails on your PR** (added 2026-10-15), read its log to see which step failed and what it printed, then:
+  - **"N error(s)." from the shows.json step (exit code 1):** fix the data on the same branch. Formatting or a missing `id`: re-run `format_shows.py` and `assign_ids.py`. A show on `pipeline/do_not_add.json`: remove that row. Any other error: correct the field the message names, following docs/SHOWS_SCHEMA.md. Re-run the full local validation above, push to the same PR branch, and wait for the check again. Make at most two fix pushes. If it's still red after that, stop: leave the PR open and say at the top of the description what is failing and what you tried.
+  - **A fix that needs a judgment call:** for example, two duplicate rows whose details differ, or an error the rules don't settle. Don't guess. Leave the PR open and explain it in the description.
+  - **A review rule fired (exit code 2):** this is the check asking the owner, not a problem to fix. Don't undo the change or add the `owner-approved` label to turn it green. Leave the PR open, as described under "When NOT to auto-merge".
+  - **The unit-test step failed, or the job died before the checker ran** (checkout, setup, a runner error): that isn't the data. Leave the PR open and say so in the description.
+  - Fix only `shows.json`. Never edit the checker, the tests, the workflow or `pipeline/do_not_add.json` to make the check pass.
 - The checker also prints every upcoming show that carries a `flag` (the open questions). Copy that list into the PR description under "Flagged upcoming shows". Resolve any flag this run's data settles: update the row and delete the flag. Leave the rest for the owner's weekly review.
 - Never change an existing show's `id`, even when you correct its date, venue or name — users' starred shows point at it. A show that moved to a new date keeps its row and id: edit `d`, don't delete and re-add.
 - Unknown times, prices, links and notes are left out, never written as "—", "TBA", "see ticket link", null or "" (see docs/SHOWS_SCHEMA.md).
