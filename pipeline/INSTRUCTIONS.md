@@ -44,7 +44,7 @@ stored prompt (last revised that day), then updated for the items marked "2026-1
 - Add genuinely new shows; backfill missing fields (time, price, opener, stage) on existing shows; correct dates where the venue's own site disagrees with the data. Remove a show when the venue has cancelled it or it is no longer on the venue's own site/source (see "Standing decisions").
 - Apply every rule below without exception.
 - Commit the updated shows.json (routines push to a claude/-prefixed branch and open a PR by default).
-- If, and only if, every check in "Validation before committing" below passes cleanly, the PR's "Validate shows.json" check is green (wait for it: `gh pr checks <number> --watch`), and none of the "When NOT to auto-merge" conditions apply, merge the PR (gh pr merge --squash). Never add the `owner-approved` label yourself — only the owner, or an interactive session the owner directs, adds it. The repo deletes merged head branches automatically, so do not pass --delete-branch. If anything fails validation, or if anything about the diff seems unusual enough that a human should look first (see "When NOT to auto-merge" below), leave the PR open and unmerged instead — do not merge with a caveat, either merge cleanly or don't.
+- If, and only if, every check in "Validation before committing" below passes cleanly, the PR's "Validate shows.json" check is green (see "Checking the PR and merging" below), and none of the "When NOT to auto-merge" conditions apply, merge the PR with a squash merge. Never add the `owner-approved` label yourself — only the owner, or an interactive session the owner directs, adds it. The repo deletes merged head branches automatically, so do not pass --delete-branch. If anything fails validation, or if anything about the diff seems unusual enough that a human should look first (see "When NOT to auto-merge" below), leave the PR open and unmerged instead — do not merge with a caveat, either merge cleanly or don't.
 - For anything that doesn't cleanly resolve under these rules — a judgment call, not a lookup — leave a clear note in the PR description (or a flag field on the specific show) rather than guessing.
 - Policy note (2026-10-01): a separate weekly check-in looks at any PR this leaves open and reviews it in plain language directly with the user, so leaving a PR open isn't a dead end — it just means a person looks at it within about a week.
 
@@ -240,7 +240,17 @@ Leave the PR open for manual review instead of merging if any of these apply:
 - Two shows that conflict with each other (same date/time/stage, or contradictory names for what looks like the same booking) rather than one show that's simply wrong. Add both and flag it, but don't merge over an unresolved conflict — a quick human look resolves this fast and an automated pass can't. (A show that a source now lists under a different act in the same slot is a conflict until the owner confirms it.)
 - The first run that successfully pulls from a venue's source right after that source changed (e.g. a venue switching its primary calendar, or a newly added source) — a new source's first real pull is exactly the case these checks exist for, even if it stays under the numeric thresholds above.
 - Anything the task instructions above told you to leave as a note rather than resolve automatically — if the PR description contains an open question, don't merge over it.
-If none of the above apply and validation passes cleanly, merge with gh pr merge --squash.
+If none of the above apply and validation passes cleanly, squash-merge the PR as described in "Checking the PR and merging" below.
+
+## Checking the PR and merging (changed 2026-10-15)
+
+The `gh` command-line tool may not be installed or signed in where you run. Use the GitHub MCP tools instead (names start with `mcp__github__`). If they're listed as deferred, load them with ToolSearch first.
+
+- **Read the check:** `mcp__github__pull_request_read` with `method: "get_check_runs"`, owner `ShowNotice`, repo `Show-Tracker-CHS` and your PR number. The check run is named `validate`. It's green when `status` is `completed` and `conclusion` is `success`, on your PR's latest commit. It usually finishes within a minute. If it's `queued` or `in_progress`, read it again; don't use `sleep` in the shell. If it still hasn't finished after about 10 minutes, leave the PR open and say so.
+- **Read the log of a failed check:** the check run's `details_url` points to the job. Use `mcp__github__get_job_logs` if you have it. Otherwise, run the same commands the workflow runs (see "Validation before committing") locally to see the errors.
+- **Merge:** `mcp__github__merge_pull_request` with `merge_method: "squash"` and `expectedHeadSha` set to the full 40-character SHA of the commit the check passed on (from `git rev-parse HEAD`). That makes GitHub refuse the merge if the branch changed after the check ran.
+- If `gh` does work in your environment, `gh pr checks <number> --watch` and `gh pr merge --squash` are equivalent.
+- If you can't read the check or merge with either tool, leave the PR open and say so at the top of the description. Never merge without seeing the check green.
 
 ## What NOT to do
 
