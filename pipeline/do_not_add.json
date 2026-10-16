@@ -11,6 +11,7 @@
     {"v": "WJ", "d": "2027-01-01", "b": "The Piedmont Boys", "reason": "Owner 2026-10-15: remove (never on the venue's site)"},
     {"v": "GC", "d": "2026-10-25", "b": "Ghostbusters in Concert", "reason": "Owner 2026-10-15: film screenings with a live orchestra are out"},
     {"v": "NCC", "d": "2026-10-28", "b": "Sonic Live in Concert", "reason": "Owner 2026-10-15: film/game music with a live orchestra is out"},
-    {"v": "CMH", "d": "2027-01-19", "b": "The Sixties Show", "reason": "Owner 2026-10-15: out"}
+    {"v": "CMH", "d": "2027-01-19", "b": "The Sixties Show", "reason": "Owner 2026-10-15: out"},
+    {"v": "CMH", "d": "2026-10-26", "b": "John Cameron Mitchell: Hedwig 25th Anniversary Movie Tour", "reason": "Owner 2026-10-15: not music (a film screening tour)"}
   ]
 }
