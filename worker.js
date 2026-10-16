@@ -917,8 +917,23 @@ async function fetchShowData(env) {
 // filtering is dropping shows before today, same rule the site itself uses (no grace
 // period -- a show drops off the day after it happens), so the email never lists
 // something that's already happened.
+// Charleston's calendar date as YYYY-MM-DD, optionally offset by whole days. Show
+// dates are Charleston dates, so "today" must be too: UTC's date rolls over at 8 PM
+// EDT / 7 PM EST. Must match charlestonToday() in index.html.
+function charlestonToday(offsetDays = 0) {
+  const now = new Date(Date.now() + offsetDays * 86400000);
+  try {
+    const p = {};
+    new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' })
+      .formatToParts(now).forEach(x => { p[x.type] = x.value; });
+    return `${p.year}-${p.month}-${p.day}`;
+  } catch (e) {
+    return now.toISOString().slice(0, 10);
+  }
+}
+
 function upcomingShows(shows) {
-  const cutoff = new Date().toISOString().slice(0, 10);
+  const cutoff = charlestonToday();
   return shows
     .filter(s => (s.e || s.d) >= cutoff)
     .sort((a, b) => a.d.localeCompare(b.d));
@@ -978,7 +993,7 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
   // is first added to the data), not shows-happening-this-week. This is deliberately
   // NOT personalized in the same way My Shows is — every subscriber sees the same
   // new-additions list, just with their own star state on each card.
-  const recentCutoff = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  const recentCutoff = charlestonToday(-7);
   const recentlyAddedShows = upcoming.filter(s => s.added && s.added >= recentCutoff);
   const recentlyAddedIds = new Set(recentlyAddedShows.map(showId));
 
@@ -1038,7 +1053,7 @@ function buildDigestEmailHTML({ shows, venues, unsubscribeLink, siteUrl, baseUrl
       // `p` is the advance price, `dop` is the optional day-of price, and day-of only
       // applies once the show's actual date has arrived (relevant if a digest happens
       // to send on the same day as a show).
-      const todayStr = new Date().toISOString().slice(0, 10);
+      const todayStr = charlestonToday();
       const isShowDay = todayStr === s.d;
       const effectivePrice = (isShowDay && typeof s.dop === 'number') ? s.dop : s.p;
       if (typeof effectivePrice === 'number') {

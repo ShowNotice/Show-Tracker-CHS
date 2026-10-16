@@ -674,6 +674,22 @@ async function loadShowData(){
   }
 }
 
+// Charleston's calendar date as YYYY-MM-DD, optionally offset by whole days. Show
+// dates are Charleston dates, so "today" must be too: UTC's date rolls over at 8 PM
+// EDT / 7 PM EST, which used to hide tonight's shows mid-evening. Must match
+// charlestonToday() in worker.js.
+function charlestonToday(offsetDays){
+  const now = new Date(Date.now() + (offsetDays || 0) * 86400000);
+  try{
+    const p = {};
+    new Intl.DateTimeFormat('en-US', {timeZone:'America/New_York', year:'numeric', month:'2-digit', day:'2-digit'})
+      .formatToParts(now).forEach(x => { p[x.type] = x.value; });
+    return `${p.year}-${p.month}-${p.day}`;
+  }catch(e){
+    return now.toISOString().slice(0, 10);
+  }
+}
+
 function fmtDayDate(iso){
   const opts = {weekday:'long', month:'long', day:'numeric'};
   const d = new Date(iso + "T12:00:00");
@@ -903,7 +919,7 @@ function priceOrTicketsHTML(s, venue){
   // optional -- only some venues publish it, and it only applies once the show's
   // actual date has arrived. Before that date, advance pricing is what's actually
   // available to buy, so that's what's shown regardless of whether `dop` exists.
-  const todayStr = new Date().toISOString().slice(0, 10);
+  const todayStr = charlestonToday();
   const isShowDay = todayStr === s.d;
   const effectivePrice = (isShowDay && typeof s.dop === 'number') ? s.dop : s.p;
   if(typeof effectivePrice === 'number'){
@@ -918,7 +934,7 @@ function priceOrTicketsHTML(s, venue){
 // keeping this in one place is what keeps them from drifting out of sync the way the
 // site and digest email cutoffs previously did.
 function recentAddedCutoff(){
-  return new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  return charlestonToday(-7);
 }
 
 function cardHTML(s, isNew){
@@ -1377,7 +1393,7 @@ async function render(){
   // using the end date for multi-day events so an ongoing festival doesn't disappear
   // mid-run just because its start date has passed. No grace period -- a show drops
   // off the list the day after it happens, not the day after that.
-  const pastCutoff = new Date().toISOString().slice(0, 10);
+  const pastCutoff = charlestonToday();
   const pastCutoffAll = SHOWS
     .filter(s => (s.e || s.d) >= pastCutoff)
     .sort((a,b)=> a.d.localeCompare(b.d));
